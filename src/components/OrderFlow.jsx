@@ -67,23 +67,22 @@ export default function OrderFlow() {
     <>
       {/* ═══════════════════════════════════════════
           FLOATING BASKET PILL (Sepetim / سلتي)
-          Positioned above the fixed bottom wave ribbon (`bottom-16`)
-          Shows item count badge + live total price right on the pill!
+          Always visible above the fixed bottom wave ribbon (`bottom-16`)
           ═══════════════════════════════════════════ */}
-      {cartCount > 0 && !isCartOpen && (
+      {!isCartOpen && (
         <button
           onClick={() => setIsCartOpen(true)}
           className={`fixed bottom-16 ${
             isRTL ? "left-4 sm:left-6" : "right-4 sm:right-6"
-          } z-[99990] flex items-center gap-3 bg-gradient-to-r from-[#0B2B3B] via-[#0E4F4A] to-[#0B2B3B] text-white ps-3.5 pe-4 py-2.5 rounded-2xl shadow-[0_10px_28px_rgba(7,29,43,0.45)] hover:scale-103 active:scale-95 transition-all duration-200 border-2 border-[#B8DCD3] cursor-pointer group ${
+          } z-[99990] flex items-center gap-2.5 bg-gradient-to-r from-[#0B2B3B] via-[#0E4F4A] to-[#0B2B3B] text-white ps-3 pe-4 py-2 rounded-2xl shadow-[0_10px_28px_rgba(7,29,43,0.45)] hover:scale-103 active:scale-95 transition-all duration-200 border-2 border-[#B8DCD3] cursor-pointer group ${
             cartPulse ? "animate-bounce" : ""
           }`}
           aria-label={listTitle}
         >
           {/* Coral Icon Box with Count Badge */}
-          <div className="relative w-10 h-10 rounded-xl bg-[#D93829] flex items-center justify-center text-white shadow-xs shrink-0 group-hover:bg-[#F26B45] transition-colors">
-            <ShoppingBag size={19} />
-            <span className="absolute -top-1.5 -end-1.5 min-w-[20px] h-5 px-1 rounded-full bg-[#F4F1E8] text-[#0B2B3B] text-[11px] font-black flex items-center justify-center border border-[#0B2B3B] shadow-2xs">
+          <div className="relative w-9 h-9 rounded-xl bg-[#D93829] flex items-center justify-center text-white shadow-xs shrink-0 group-hover:bg-[#F26B45] transition-colors">
+            <ShoppingBag size={18} />
+            <span className="absolute -top-1.5 -end-1.5 min-w-[19px] h-[19px] px-1 rounded-full bg-[#F4F1E8] text-[#0B2B3B] text-[10px] font-black flex items-center justify-center border border-[#0B2B3B] shadow-2xs">
               {cartCount}
             </span>
           </div>
@@ -96,12 +95,16 @@ export default function OrderFlow() {
             >
               {listTitle}
             </span>
-            {cartTotal != null && (
+            {cartCount > 0 && cartTotal != null ? (
               <span
-                className="text-xs sm:text-sm font-black text-[#B8DCD3]"
+                className="text-xs font-black text-[#B8DCD3]"
                 style={{ fontFamily: "var(--font-inter)" }}
               >
                 {convertPrice(cartTotal)} {symbol}
+              </span>
+            ) : (
+              <span className="text-[10px] font-semibold text-[#B8DCD3]/85">
+                {lang === "ar" ? "أضف أطباقك" : "Liste Oluştur"}
               </span>
             )}
           </div>
