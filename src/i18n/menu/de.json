@@ -1,0 +1,374 @@
+{
+  "categories": {
+    "izgaralar": "Vom Grill",
+    "tavalar": "Aus der Pfanne",
+    "mezeler": "Vorspeisen (Meze)",
+    "corbalar": "Suppen",
+    "salatalar": "Salate",
+    "ekmek_arasi": "Fischbrötchen",
+    "tatlilar": "Desserts",
+    "icecekler": "Getränke"
+  },
+  "items": {
+    "levrek_izgara": {
+      "name": "Gegrillter Wolfsbarsch (Levrek Izgara)",
+      "desc": "Frischer Wolfsbarsch vom Grill."
+    },
+    "cipura_izgara": {
+      "name": "Gegrillte Goldbrasse (Çipura)",
+      "desc": "Frische Goldbrasse vom Grill."
+    },
+    "levrek_deniz_izgara": {
+      "name": "Wilder Meeres-Wolfsbarsch vom Grill",
+      "desc": "Frischer Meeres-Wolfsbarsch vom Grill."
+    },
+    "cipura_deniz_izgara": {
+      "name": "Wilde Meeres-Goldbrasse vom Grill",
+      "desc": "Meeres-Goldbrasse vom Grill."
+    },
+    "levrek_sis_izgara": {
+      "name": "Wolfsbarsch-Spieß vom Grill",
+      "desc": "Gegrillter Wolfsbarsch am Spieß."
+    },
+    "somon_dilim_izgara": {
+      "name": "Gegrilltes Lachssteak",
+      "desc": "Lachsscheibe frisch vom Grill."
+    },
+    "somon_fileto_izgara": {
+      "name": "Gegrilltes Lachsfilet",
+      "desc": "Grätenfreies Lachsfilet vom Grill."
+    },
+    "somon_sis_izgara": {
+      "name": "Lachsspieß vom Grill",
+      "desc": "Gegrillte Lachswürfel am Spieß."
+    },
+    "lufer_izgara": {
+      "name": "Gegrillter Blaubarsch (Lüfer)",
+      "desc": "Frischer Lüfer vom Grill."
+    },
+    "sari_kanat_izgara": {
+      "name": "Gegrillter Sarıkanat",
+      "desc": "Frischer Sarıkanat-Fisch vom Grill."
+    },
+    "fener_sis_izgara": {
+      "name": "Seeteufel-Spieß vom Grill",
+      "desc": "Zarter Seeteufel am Spieß gegrillt."
+    },
+    "minekop_izgara": {
+      "name": "Gegrillter Schattenfisch (Minekop)",
+      "desc": "Frischer Minekop vom Grill."
+    },
+    "citir_levrek": {
+      "name": "Knuspriger Wolfsbarsch (Çıtır Levrek)",
+      "desc": "Knusprig zubereiteter Wolfsbarsch."
+    },
+    "palamut_izgara": {
+      "name": "Gegrillter Bonito (Palamut)",
+      "desc": "Saisonaler Bonito aus dem Schwarzen Meer vom Grill."
+    },
+    "sardalya_izgara": {
+      "name": "Gegrillte Sardinen",
+      "desc": "Frische Sardinen vom Grill."
+    },
+    "uskumru_izgara": {
+      "name": "Gegrillte Makrele (Uskumru)",
+      "desc": "Frische Makrele vom Grill."
+    },
+    "alabalik_izgara": {
+      "name": "Gegrillte Forelle",
+      "desc": "Frische Forelle vom Grill."
+    },
+    "jumbo_karides": {
+      "name": "Gegrillte Riesengarnelen (Jumbo)",
+      "desc": "Frische Jumbo-Garnelen vom Grill."
+    },
+    "hamsi_tava": {
+      "name": "Gebratene Schwarzmeer-Sardellen (Hamsi Tava)",
+      "desc": "Knusprig in der Pfanne gebratene Sardellen."
+    },
+    "istavrit_tava": {
+      "name": "Gebratener Bastardmakrele (İstavrit)",
+      "desc": "Knusprig gebratener İstavrit."
+    },
+    "sardalya_tava": {
+      "name": "Gebratene Sardinen",
+      "desc": "Goldbraun gebratene frische Sardinen."
+    },
+    "mezgit_tava": {
+      "name": "Gebratener Wittling (Mezgit)",
+      "desc": "Knusprig gebratener Mezgit."
+    },
+    "tekir_tava": {
+      "name": "Gebratene Streifenbarbe (Tekir)",
+      "desc": "Frische Tekir-Barbe aus der Pfanne."
+    },
+    "barbun_tava": {
+      "name": "Gebratene Meerbarbe (Barbun)",
+      "desc": "Frische Rote Meerbarbe aus der Pfanne."
+    },
+    "alabalik_tava": {
+      "name": "Forelle aus der Pfanne",
+      "desc": "Goldbraun gebratene Forelle."
+    },
+    "dil_tava": {
+      "name": "Gebratene Seezunge (Dil Tava)",
+      "desc": "Zarte Seezunge aus der Pfanne."
+    },
+    "dil_sis_tava": {
+      "name": "Seezungen-Spieß aus der Pfanne",
+      "desc": "Knuspriger Seezungenspieß."
+    },
+    "karides_tava": {
+      "name": "Garnelen aus der Pfanne (Karides Tava)",
+      "desc": "Frisch gebratene Garnelen."
+    },
+    "kalamar_tava": {
+      "name": "Gebratener Calamari (Kalamar Tava)",
+      "desc": "Knusprige Tintenfischringe."
+    },
+    "palamut_tava": {
+      "name": "Gebratener Bonito (Palamut Tava)",
+      "desc": "Frischer Bonito aus der Pfanne."
+    },
+    "balik_kokorec": {
+      "name": "Fisch-Kokoreç",
+      "desc": "Fein gewürfelter Fisch, gebraten mit Paprika, Tomaten und Gewürzen."
+    },
+    "zargana_tava": {
+      "name": "Gebratener Hornhecht (Zargana)",
+      "desc": "Knusprig gebratener Hornhecht."
+    },
+    "balik_koftesi": {
+      "name": "Fischfrikadellen (Balık Köftesi)",
+      "desc": "Hausgemachte würzige Fischbällchen."
+    },
+    "okyanus_lokumu": {
+      "name": "Ozean-Happen (Okyanus Lokumu)",
+      "desc": "Zarte, knusprig gebackene Fischhäppchen."
+    },
+    "fener_kavurma": {
+      "name": "Gebratener Seeteufel (Fener Kavurma)",
+      "desc": "In der Pfanne geschmorter Seeteufel."
+    },
+    "levrek_kavurma": {
+      "name": "Wolfsbarsch-Pfanne (Levrek Kavurma)",
+      "desc": "Geschmorte Wolfsbarschstücke aus der Pfanne."
+    },
+    "hamsili_pilav": {
+      "name": "Sardellen-Pilaw (Hamsili Pilav)",
+      "desc": "Schwarzmeer-Spezialität aus Gewürzreis und frischen Sardellen."
+    },
+    "midye_tava": {
+      "name": "Gebackene Muscheln (Midye Tava)",
+      "desc": "Knusprig ausgebackene Miesmuscheln."
+    },
+    "midye_dolma": {
+      "name": "Gefüllte Muscheln (Midye Dolma)",
+      "desc": "Mit Gewürzreis gefüllte Miesmuschel (Pro Stück)."
+    },
+    "ahtapot_salatasi": {
+      "name": "Oktopussalat",
+      "desc": "Zarter Oktopus mit Olivenöl und Zitrone."
+    },
+    "deniz_urunleri_salatasi": {
+      "name": "Meeresfrüchtesalat",
+      "desc": "Frischer Salat mit ausgewählten Meeresfrüchten."
+    },
+    "isli_midye": {
+      "name": "Geräucherte Muscheln (İsli Midye)",
+      "desc": "Fein geräucherte Muschel-Vorspeise."
+    },
+    "lekarda": {
+      "name": "Lakerda (Eingelegter Bonito)",
+      "desc": "Traditionell gereifter Bonito nach Istanbuler Art."
+    },
+    "ciroz": {
+      "name": "Çiroz (Getrockneter Makrelensalat)",
+      "desc": "Traditionelle Makrelen-Vorspeise."
+    },
+    "hamsi_soslu": {
+      "name": "Sardellen in Marinade (Hamsi Soslu)",
+      "desc": "Eingelegte Sardellenfilets in feiner Sauce."
+    },
+    "arnavut_cigeri": {
+      "name": "Leber nach Albanischer Art",
+      "desc": "Zart gebratene Leberwürfel mit Gewürzen."
+    },
+    "peynir_dolgulu_kirmizi_biber": {
+      "name": "Mit Käse gefüllte rote Paprika",
+      "desc": "Aromatische Paprika mit Frischkäsefüllung."
+    },
+    "saksuka_ulas": {
+      "name": "Şakşuka",
+      "desc": "Gebratene Auberginen und Paprika in Tomaten-Knoblauch-Sauce."
+    },
+    "acili_ezme": {
+      "name": "Acılı Ezme (Scharfer Tomatendip)",
+      "desc": "Fein gehackte Tomaten, Paprika und Chili."
+    },
+    "haydari": {
+      "name": "Haydari (Kräuter-Joghurt-Dip)",
+      "desc": "Cremiger Joghurt mit Knoblauch, Dill und Minze."
+    },
+    "patlican_ezmesi": {
+      "name": "Gegrilltes Auberginenpüree",
+      "desc": "Rauchiges Auberginen-Meze mit Olivenöl."
+    },
+    "rus_salatasi": {
+      "name": "Russischer Salat",
+      "desc": "Klassischer Gemüsesalat in feiner Mayonnaise."
+    },
+    "humus_ulas": {
+      "name": "Hummus",
+      "desc": "Cremiges Kichererbsen-Tahini-Püree mit Olivenöl."
+    },
+    "havuc_tarator_ulas": {
+      "name": "Karotten-Tarator",
+      "desc": "Gedünstete Karotten in Knoblauchjoghurt."
+    },
+    "patates_ulas": {
+      "name": "Pommes Frites (Patates)",
+      "desc": "Goldbraun gebackene Kartoffeln."
+    },
+    "sigara_boregi_ulas": {
+      "name": "Sigara Böreği (Käseröllchen)",
+      "desc": "Knusprige Teigröllchen mit Käsefüllung."
+    },
+    "balik_corbasi": {
+      "name": "Fischsuppe (Balık Çorbası)",
+      "desc": "Herzhafte Suppe aus frischer Fischbrühe und Gemüse."
+    },
+    "mercimek_corbasi": {
+      "name": "Linsensuppe (Mercimek Çorbası)",
+      "desc": "Traditionelle türkische rote Linsensuppe."
+    },
+    "mevsim_salata": {
+      "name": "Saisonsalat (Mevsim Salata)",
+      "desc": "Frische Salate der Saison mit Zitrone und Olivenöl."
+    },
+    "roka_salata": {
+      "name": "Rucola-Salat (Roka Salata)",
+      "desc": "Frischer Rucola mit Tomaten und Olivenöl."
+    },
+    "coban_salata_ulas": {
+      "name": "Hirtensalat (Çoban Salata)",
+      "desc": "Frische Tomaten, Gurken, Paprika, Zwiebeln und Petersilie."
+    },
+    "ekmek_arasi_hamsi": {
+      "name": "Sardellen-Fischbrötchen (Ekmek Arası Hamsi)",
+      "desc": "Knusprige Sardellen im frischen Brot mit Salat."
+    },
+    "ekmek_arasi_uskumru": {
+      "name": "Makrelen-Fischbrötchen (Ekmek Arası Uskumru)",
+      "desc": "Gegrilltes Makrelenfilet im Brot mit Zwiebeln und Salat."
+    },
+    "kabak_tatlisi": {
+      "name": "Kürbisdessert mit Tahini (Kabak Tatlısı)",
+      "desc": "Süßer Kürbis, serviert mit Sesampaste und Walnüssen."
+    },
+    "sicak_helva": {
+      "name": "Warmer Ofen-Halva (Sıcak Helva)",
+      "desc": "Im Ofen gebackener warmer Sesam-Halva."
+    },
+    "irmik_tatlisi": {
+      "name": "Grießdessert (İrmik Tatlısı)",
+      "desc": "Traditionelle türkische Grießspeise."
+    },
+    "su_ulas": {
+      "name": "Water",
+      "desc": "Bottled water"
+    },
+    "sade_soda": {
+      "name": "Sparkling Mineral Water (Soda)",
+      "desc": "Natural mineral water"
+    },
+    "limonlu_soda": {
+      "name": "Lemon Soda",
+      "desc": "Lemon sparkling mineral water"
+    },
+    "salgam_ulas": {
+      "name": "Turnip Juice (Şalgam)",
+      "desc": "Traditional fermented purple carrot & turnip drink"
+    },
+    "coco_cola": {
+      "name": "Coca-Cola",
+      "desc": "Chilled soft drink"
+    },
+    "coco_cola_zero": {
+      "name": "Coca-Cola Zero",
+      "desc": "Zero sugar soft drink"
+    },
+    "coco_cola_light": {
+      "name": "Coca-Cola Light",
+      "desc": "Diet soft drink"
+    },
+    "fanta_ulas": {
+      "name": "Fanta",
+      "desc": "Orange soda"
+    },
+    "sprite_ulas": {
+      "name": "Sprite",
+      "desc": "Lemon-lime soda"
+    },
+    "pepsi": {
+      "name": "Pepsi",
+      "desc": "Chilled cola"
+    },
+    "pepsi_max": {
+      "name": "Pepsi Max",
+      "desc": "Maximum taste, no sugar"
+    },
+    "yedigun": {
+      "name": "Yedigün",
+      "desc": "Orange soft drink"
+    },
+    "cappy_meyve_suyu": {
+      "name": "Cappy Fruit Juice",
+      "desc": "Chilled fruit juice"
+    },
+    "tropicana": {
+      "name": "Tropicana Juice",
+      "desc": "Fruit juice"
+    },
+    "ice_tea_seftali": {
+      "name": "Peach Ice Tea",
+      "desc": "Chilled peach iced tea"
+    },
+    "ice_tea_limon": {
+      "name": "Lemon Ice Tea",
+      "desc": "Chilled lemon iced tea"
+    },
+    "lipton": {
+      "name": "Lipton Ice Tea",
+      "desc": "Iced tea"
+    },
+    "coco_cola_1lt": {
+      "name": "Coca-Cola (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "coco_cola_zero_1lt": {
+      "name": "Coca-Cola Zero (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "fanta_1lt": {
+      "name": "Fanta (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_1lt": {
+      "name": "Pepsi (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_max_1lt": {
+      "name": "Pepsi Max (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "yedigun_1lt": {
+      "name": "Yedigün (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "seven_up_1lt": {
+      "name": "7UP (1L)",
+      "desc": "1 Liter bottle"
+    }
+  }
+}

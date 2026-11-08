@@ -1,0 +1,374 @@
+{
+  "categories": {
+    "izgaralar": "Grills",
+    "tavalar": "Pans",
+    "mezeler": "Appetizers",
+    "corbalar": "Soups",
+    "salatalar": "Salads",
+    "ekmek_arasi": "Fish Sandwiches",
+    "tatlilar": "Desserts",
+    "icecekler": "Drinks"
+  },
+  "items": {
+    "levrek_izgara": {
+      "name": "Grilled Sea Bass (Levrek)",
+      "desc": "Fresh sea bass grilled to perfection."
+    },
+    "cipura_izgara": {
+      "name": "Grilled Sea Bream (Çipura)",
+      "desc": "Fresh gilt-head sea bream from the grill."
+    },
+    "levrek_deniz_izgara": {
+      "name": "Wild Sea Bass Grill (Deniz Levrek)",
+      "desc": "Wild-caught sea bass prepared on the grill."
+    },
+    "cipura_deniz_izgara": {
+      "name": "Wild Sea Bream Grill (Deniz Çipura)",
+      "desc": "Wild-caught sea bream prepared on the grill."
+    },
+    "levrek_sis_izgara": {
+      "name": "Sea Bass Skewer (Levrek Şiş)",
+      "desc": "Grilled sea bass fillets on skewers."
+    },
+    "somon_dilim_izgara": {
+      "name": "Grilled Salmon Slice",
+      "desc": "Thick-cut salmon steak prepared on the grill."
+    },
+    "somon_fileto_izgara": {
+      "name": "Grilled Salmon Fillet",
+      "desc": "Boneless salmon fillet from the grill."
+    },
+    "somon_sis_izgara": {
+      "name": "Grilled Salmon Skewer",
+      "desc": "Marinated salmon cubes grilled on skewers."
+    },
+    "lufer_izgara": {
+      "name": "Grilled Bluefish (Lüfer)",
+      "desc": "Prized Bosphorus bluefish prepared on the grill."
+    },
+    "sari_kanat_izgara": {
+      "name": "Grilled Yellowfin Bluefish (Sarıkanat)",
+      "desc": "Fresh Sarıkanat bluefish grilled whole."
+    },
+    "fener_sis_izgara": {
+      "name": "Angler Fish Skewer (Fener Şiş)",
+      "desc": "Firm monkfish pieces grilled on skewers."
+    },
+    "minekop_izgara": {
+      "name": "Grilled Umbrina (Minekop)",
+      "desc": "Fresh shi drum / umbrina fish from the grill."
+    },
+    "citir_levrek": {
+      "name": "Crispy Sea Bass (Çıtır Levrek)",
+      "desc": "Sea bass prepared with a golden crispy finish."
+    },
+    "palamut_izgara": {
+      "name": "Grilled Bonito (Palamut)",
+      "desc": "Seasonal Black Sea bonito grilled fresh."
+    },
+    "sardalya_izgara": {
+      "name": "Grilled Sardines (Sardalya)",
+      "desc": "Fresh sardines grilled over open heat."
+    },
+    "uskumru_izgara": {
+      "name": "Grilled Mackerel (Uskumru)",
+      "desc": "Whole mackerel grilled to a rich, savory finish."
+    },
+    "alabalik_izgara": {
+      "name": "Grilled Trout (Alabalık)",
+      "desc": "Fresh trout delicately grilled."
+    },
+    "jumbo_karides": {
+      "name": "Grilled Jumbo Shrimp",
+      "desc": "Succulent jumbo prawns from the grill."
+    },
+    "hamsi_tava": {
+      "name": "Pan-Fried Black Sea Anchovy (Hamsi Tava)",
+      "desc": "Fresh Black Sea anchovies pan-fried crisp in cornmeal."
+    },
+    "istavrit_tava": {
+      "name": "Fried Horse Mackerel (İstavrit Tava)",
+      "desc": "Crispy pan-fried horse mackerel."
+    },
+    "sardalya_tava": {
+      "name": "Pan-Fried Sardines (Sardalya Tava)",
+      "desc": "Golden pan-fried fresh sardines."
+    },
+    "mezgit_tava": {
+      "name": "Pan-Fried Whiting / Haddock (Mezgit Tava)",
+      "desc": "Tender whiting fillets fried golden crisp."
+    },
+    "tekir_tava": {
+      "name": "Pan-Fried Striped Mullet (Tekir Tava)",
+      "desc": "Delicate striped red mullet fried in the pan."
+    },
+    "barbun_tava": {
+      "name": "Pan-Fried Red Mullet (Barbun Tava)",
+      "desc": "Prized red mullet pan-fried to a crisp finish."
+    },
+    "alabalik_tava": {
+      "name": "Pan-Fried Trout (Alabalık Tava)",
+      "desc": "Fresh trout pan-fried with a golden crust."
+    },
+    "dil_tava": {
+      "name": "Pan-Fried Sole Fish (Dil Tava)",
+      "desc": "Tender boneless sole fish pan-fried."
+    },
+    "dil_sis_tava": {
+      "name": "Sole Fish Skewer Pan (Dil Şiş Tava)",
+      "desc": "Golden pan-fried sole fish skewers."
+    },
+    "karides_tava": {
+      "name": "Pan-Fried Shrimp (Karides Tava)",
+      "desc": "Sautéed fresh shrimp in the pan."
+    },
+    "kalamar_tava": {
+      "name": "Fried Calamari (Kalamar Tava)",
+      "desc": "Golden crispy fried squid rings."
+    },
+    "palamut_tava": {
+      "name": "Pan-Fried Bonito (Palamut Tava)",
+      "desc": "Seasonal Black Sea bonito fried golden."
+    },
+    "balik_kokorec": {
+      "name": "Fish Kokoreç (Balık Kokoreç)",
+      "desc": "Finely diced fish sautéed with peppers, tomatoes, and spices."
+    },
+    "zargana_tava": {
+      "name": "Pan-Fried Garfish / Needlefish (Zargana)",
+      "desc": "Fresh garfish pan-fried crisp."
+    },
+    "balik_koftesi": {
+      "name": "Fish Meatballs (Balık Köftesi)",
+      "desc": "Savory seasoned fish patties pan-fried golden."
+    },
+    "okyanus_lokumu": {
+      "name": "Ocean Delight (Okyanus Lokumu)",
+      "desc": "Bite-sized crispy ocean fish morsels."
+    },
+    "fener_kavurma": {
+      "name": "Sautéed Angler Fish (Fener Kavurma)",
+      "desc": "Monkfish sautéed in a rich pan roast."
+    },
+    "levrek_kavurma": {
+      "name": "Sautéed Sea Bass (Levrek Kavurma)",
+      "desc": "Sea bass fillets roasted in the pan."
+    },
+    "hamsili_pilav": {
+      "name": "Anchovy Rice Pilaf (Hamsili Pilav)",
+      "desc": "Black Sea specialty of aromatic spiced rice wrapped in fresh anchovies."
+    },
+    "midye_tava": {
+      "name": "Fried Mussels (Midye Tava)",
+      "desc": "Crispy battered fried mussels."
+    },
+    "midye_dolma": {
+      "name": "Stuffed Mussels (Midye Dolma)",
+      "desc": "Fresh mussel stuffed with spiced aromatic rice (Per piece)."
+    },
+    "ahtapot_salatasi": {
+      "name": "Octopus Salad (Ahtapot Salatası)",
+      "desc": "Tender octopus marinated in olive oil, lemon, and herbs."
+    },
+    "deniz_urunleri_salatasi": {
+      "name": "Seafood Salad",
+      "desc": "Mixed seafood salad dressed with olive oil and lemon."
+    },
+    "isli_midye": {
+      "name": "Smoked Mussels (İsli Midye)",
+      "desc": "Delicately smoked mussels served cold as a meze."
+    },
+    "lekarda": {
+      "name": "Lakerda (Cured Bonito)",
+      "desc": "Traditional Istanbul cured bonito slices."
+    },
+    "ciroz": {
+      "name": "Dried Mackerel Salad (Çiroz)",
+      "desc": "Traditional cured mackerel meze with olive oil and dill."
+    },
+    "hamsi_soslu": {
+      "name": "Marinated Anchovies in Sauce (Hamsi Soslu)",
+      "desc": "Fresh anchovy fillets marinated in savory herbs and sauce."
+    },
+    "arnavut_cigeri": {
+      "name": "Albanian-Style Fried Liver (Arnavut Ciğeri)",
+      "desc": "Tender cubed liver seasoned with sumac onions."
+    },
+    "peynir_dolgulu_kirmizi_biber": {
+      "name": "Cheese-Filled Red Peppers",
+      "desc": "Sweet-spicy red peppers stuffed with creamy cheese."
+    },
+    "saksuka_ulas": {
+      "name": "Şakşuka",
+      "desc": "Fried eggplant and peppers topped with rich garlic tomato sauce."
+    },
+    "acili_ezme": {
+      "name": "Hot Spicy Tomato Dip (Acılı Ezme)",
+      "desc": "Finely chopped tomatoes, peppers, herbs, andchili."
+    },
+    "haydari": {
+      "name": "Haydari",
+      "desc": "Thick strained yogurt with garlic, dill, mint, and olive oil."
+    },
+    "patlican_ezmesi": {
+      "name": "Eggplant Dip (Patlıcan Ezmesi)",
+      "desc": "Smoky char-grilled eggplant purée with olive oil."
+    },
+    "rus_salatasi": {
+      "name": "Russian Salad (Olivier)",
+      "desc": "Diced vegetables and pickles in a creamy dressing."
+    },
+    "humus_ulas": {
+      "name": "Hummus",
+      "desc": "Smooth chickpea and tahini purée with olive oil."
+    },
+    "havuc_tarator_ulas": {
+      "name": "Carrot Tarator",
+      "desc": "Sautéed grated carrots blended with garlic yogurt."
+    },
+    "patates_ulas": {
+      "name": "French Fries (Patates)",
+      "desc": "Crispy golden fried potatoes."
+    },
+    "sigara_boregi_ulas": {
+      "name": "Cheese Pastry Rolls (Sigara Böreği)",
+      "desc": "Crispy rolled phyllo pastry stuffed with cheese."
+    },
+    "balik_corbasi": {
+      "name": "Fish Soup (Balık Çorbası)",
+      "desc": "Rich, comforting soup crafted with fresh fish broth and vegetables."
+    },
+    "mercimek_corbasi": {
+      "name": "Lentil Soup (Mercimek Çorbası)",
+      "desc": "Classic Turkish red lentil soup."
+    },
+    "mevsim_salata": {
+      "name": "Seasonal Salad (Mevsim Salata)",
+      "desc": "Crisp seasonal greens with olive oil and lemon dressing."
+    },
+    "roka_salata": {
+      "name": "Arugula / Rocket Salad (Roka Salata)",
+      "desc": "Fresh rocket leaves with tomatoes, lemon, and olive oil."
+    },
+    "coban_salata_ulas": {
+      "name": "Shepherd's Salad (Çoban Salata)",
+      "desc": "Diced tomatoes, cucumbers, peppers, onions, and parsley."
+    },
+    "ekmek_arasi_hamsi": {
+      "name": "Anchovy Fish Sandwich (Ekmek Arası Hamsi)",
+      "desc": "Crispy fresh Black Sea anchovies in crusty bread with greens."
+    },
+    "ekmek_arasi_uskumru": {
+      "name": "Mackerel Fish Sandwich (Ekmek Arası Uskumru)",
+      "desc": "Classic Istanbul grilled mackerel sandwich with greens and onion."
+    },
+    "kabak_tatlisi": {
+      "name": "Pumpkin Dessert (Kabak Tatlısı)",
+      "desc": "Candied pumpkin topped with tahini and walnuts."
+    },
+    "sicak_helva": {
+      "name": "Hot Baked Halva (Sıcak Helva)",
+      "desc": "Warm oven-baked tahini halva, a classic after-fish dessert."
+    },
+    "irmik_tatlisi": {
+      "name": "Semolina Dessert (İrmik Tatlısı)",
+      "desc": "Traditional Turkish warm semolina dessert."
+    },
+    "su_ulas": {
+      "name": "Water",
+      "desc": "Bottled water"
+    },
+    "sade_soda": {
+      "name": "Sparkling Mineral Water (Soda)",
+      "desc": "Natural mineral water"
+    },
+    "limonlu_soda": {
+      "name": "Lemon Soda",
+      "desc": "Lemon sparkling mineral water"
+    },
+    "salgam_ulas": {
+      "name": "Turnip Juice (Şalgam)",
+      "desc": "Traditional fermented purple carrot & turnip drink"
+    },
+    "coco_cola": {
+      "name": "Coca-Cola",
+      "desc": "Chilled soft drink"
+    },
+    "coco_cola_zero": {
+      "name": "Coca-Cola Zero",
+      "desc": "Zero sugar soft drink"
+    },
+    "coco_cola_light": {
+      "name": "Coca-Cola Light",
+      "desc": "Diet soft drink"
+    },
+    "fanta_ulas": {
+      "name": "Fanta",
+      "desc": "Orange soda"
+    },
+    "sprite_ulas": {
+      "name": "Sprite",
+      "desc": "Lemon-lime soda"
+    },
+    "pepsi": {
+      "name": "Pepsi",
+      "desc": "Chilled cola"
+    },
+    "pepsi_max": {
+      "name": "Pepsi Max",
+      "desc": "Maximum taste, no sugar"
+    },
+    "yedigun": {
+      "name": "Yedigün",
+      "desc": "Orange soft drink"
+    },
+    "cappy_meyve_suyu": {
+      "name": "Cappy Fruit Juice",
+      "desc": "Chilled fruit juice"
+    },
+    "tropicana": {
+      "name": "Tropicana Juice",
+      "desc": "Fruit juice"
+    },
+    "ice_tea_seftali": {
+      "name": "Peach Ice Tea",
+      "desc": "Chilled peach iced tea"
+    },
+    "ice_tea_limon": {
+      "name": "Lemon Ice Tea",
+      "desc": "Chilled lemon iced tea"
+    },
+    "lipton": {
+      "name": "Lipton Ice Tea",
+      "desc": "Iced tea"
+    },
+    "coco_cola_1lt": {
+      "name": "Coca-Cola (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "coco_cola_zero_1lt": {
+      "name": "Coca-Cola Zero (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "fanta_1lt": {
+      "name": "Fanta (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_1lt": {
+      "name": "Pepsi (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_max_1lt": {
+      "name": "Pepsi Max (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "yedigun_1lt": {
+      "name": "Yedigün (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "seven_up_1lt": {
+      "name": "7UP (1L)",
+      "desc": "1 Liter bottle"
+    }
+  }
+}

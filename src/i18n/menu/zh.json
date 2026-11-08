@@ -1,0 +1,374 @@
+{
+  "categories": {
+    "izgaralar": "炭烤海鲜",
+    "tavalar": "香煎与油炸海鲜",
+    "mezeler": "特色前菜 (Meze)",
+    "corbalar": "汤品",
+    "salatalar": "新鲜沙拉",
+    "ekmek_arasi": "鲜鱼三明治",
+    "tatlilar": "甜点",
+    "icecekler": "饮品"
+  },
+  "items": {
+    "levrek_izgara": {
+      "name": "炭烤海鲈鱼 (Levrek Izgara)",
+      "desc": "精选新鲜海鲈鱼精心炭烤。"
+    },
+    "cipura_izgara": {
+      "name": "炭烤金头鲷 (Çipura Izgara)",
+      "desc": "新鲜金头鲷鱼炭火慢烤。"
+    },
+    "levrek_deniz_izgara": {
+      "name": "野生海鲈鱼炭烤 (Levrek Deniz)",
+      "desc": "野生海捕鲈鱼炭火烤制。"
+    },
+    "cipura_deniz_izgara": {
+      "name": "野生海鲷炭烤 (Çipura Deniz)",
+      "desc": "海捕金头鲷炭火烤制。"
+    },
+    "levrek_sis_izgara": {
+      "name": "炭烤海鲈鱼串 (Levrek Şiş)",
+      "desc": "鲜嫩海鲈鱼块串烤。"
+    },
+    "somon_dilim_izgara": {
+      "name": "炭烤三文鱼排 (Somon Dilim)",
+      "desc": "厚切三文鱼排炭火烤制。"
+    },
+    "somon_fileto_izgara": {
+      "name": "炭烤三文鱼柳 (Somon Fileto)",
+      "desc": "去骨三文鱼柳精心炭烤。"
+    },
+    "somon_sis_izgara": {
+      "name": "炭烤三文鱼串 (Somon Şiş)",
+      "desc": "鲜嫩三文鱼块串烤。"
+    },
+    "lufer_izgara": {
+      "name": "炭烤蓝鱼 (Lüfer Izgara)",
+      "desc": "博斯普鲁斯海峡特色鲜蓝鱼炭烤。"
+    },
+    "sari_kanat_izgara": {
+      "name": "炭烤黄鳍蓝鱼 (Sarı Kanat)",
+      "desc": "当季新鲜黄鳍蓝鱼炭火烤制。"
+    },
+    "fener_sis_izgara": {
+      "name": "炭烤鮟鱇鱼串 (Fener Şiş)",
+      "desc": "紧实鮟鱇鱼肉块串烤。"
+    },
+    "minekop_izgara": {
+      "name": "炭烤石首鱼 (Minekop Izgara)",
+      "desc": "新鲜石首鱼炭火烤制。"
+    },
+    "citir_levrek": {
+      "name": "香脆海鲈鱼 (Çıtır Levrek)",
+      "desc": "外酥里嫩的香脆海鲈鱼。"
+    },
+    "palamut_izgara": {
+      "name": "炭烤鲣鱼 (Palamut Izgara)",
+      "desc": "黑海当季新鲜鲣鱼炭烤。"
+    },
+    "sardalya_izgara": {
+      "name": "炭烤沙丁鱼 (Sardalya Izgara)",
+      "desc": "新鲜沙丁鱼炭火烤制。"
+    },
+    "uskumru_izgara": {
+      "name": "炭烤鲭鱼 (Uskumru Izgara)",
+      "desc": "鲜美鲭鱼炭火直烤。"
+    },
+    "alabalik_izgara": {
+      "name": "炭烤鳟鱼 (Alabalık Izgara)",
+      "desc": "新鲜鳟鱼炭火烤制。"
+    },
+    "jumbo_karides": {
+      "name": "炭烤大明虾 (Jumbo Karides)",
+      "desc": "饱满鲜嫩的特大明虾炭烤。"
+    },
+    "hamsi_tava": {
+      "name": "香煎黑海凤尾鱼 (Hamsi Tava)",
+      "desc": "黑海新鲜凤尾鱼裹玉米粉香煎至金黄酥脆。"
+    },
+    "istavrit_tava": {
+      "name": "香炸竹荚鱼 (İstavrit Tava)",
+      "desc": "酥脆香煎新鲜竹荚鱼。"
+    },
+    "sardalya_tava": {
+      "name": "香煎沙丁鱼 (Sardalya Tava)",
+      "desc": "金黄香脆的煎沙丁鱼。"
+    },
+    "mezgit_tava": {
+      "name": "香酥牙鳕 (Mezgit Tava)",
+      "desc": "外酥里嫩的香炸黑海牙鳕。"
+    },
+    "tekir_tava": {
+      "name": "香煎条纹羊鱼 (Tekir Tava)",
+      "desc": "鲜美条纹红鲻鱼香煎。"
+    },
+    "barbun_tava": {
+      "name": "香煎红鲻鱼 (Barbun Tava)",
+      "desc": "精选新鲜红鲻鱼香煎。"
+    },
+    "alabalik_tava": {
+      "name": "香煎鳟鱼 (Alabalık Tava)",
+      "desc": "金黄酥香的平底锅煎鳟鱼。"
+    },
+    "dil_tava": {
+      "name": "香煎龙利鱼 / 比目鱼 (Dil Tava)",
+      "desc": "去骨鲜嫩龙利鱼香煎。"
+    },
+    "dil_sis_tava": {
+      "name": "香酥龙利鱼串 (Dil Şiş Tava)",
+      "desc": "金黄酥脆的龙利鱼串。"
+    },
+    "karides_tava": {
+      "name": "香煎鲜虾 (Karides Tava)",
+      "desc": "平底锅香煎鲜虾。"
+    },
+    "kalamar_tava": {
+      "name": "黄金炸鱿鱼圈 (Kalamar Tava)",
+      "desc": "金黄酥脆的炸鲜鱿鱼圈。"
+    },
+    "palamut_tava": {
+      "name": "香煎鲣鱼 (Palamut Tava)",
+      "desc": "当季新鲜鲣鱼香煎。"
+    },
+    "balik_kokorec": {
+      "name": "香辣铁板鱼肉粒 (Balık Kokoreç)",
+      "desc": "鲜鱼切丁配辣椒、番茄与特色香料铁板快炒。"
+    },
+    "zargana_tava": {
+      "name": "香煎颌针鱼 (Zargana Tava)",
+      "desc": "酥脆香煎新鲜颌针鱼。"
+    },
+    "balik_koftesi": {
+      "name": "手工鲜鱼饼 (Balık Köftesi)",
+      "desc": "特调香料制作的金黄香煎鱼饼。"
+    },
+    "okyanus_lokumu": {
+      "name": "海洋一口酥 (Okyanus Lokumu)",
+      "desc": "外酥内嫩的无刺鲜鱼块。"
+    },
+    "fener_kavurma": {
+      "name": "特色铁板炒鮟鱇鱼 (Fener Kavurma)",
+      "desc": "鲜嫩鮟鱇鱼块铁板香炒。"
+    },
+    "levrek_kavurma": {
+      "name": "铁板香炒海鲈鱼 (Levrek Kavurma)",
+      "desc": "海鲈鱼柳配秘制酱汁香炒。"
+    },
+    "hamsili_pilav": {
+      "name": "黑海凤尾鱼焖饭 (Hamsili Pilav)",
+      "desc": "黑海经典名菜，香料米饭包裹新鲜凤尾鱼烤制。"
+    },
+    "midye_tava": {
+      "name": "香酥炸青口贝 (Midye Tava)",
+      "desc": "金黄酥脆的炸贻贝。"
+    },
+    "midye_dolma": {
+      "name": "香料米饭酿青口贝 (Midye Dolma)",
+      "desc": "伊斯坦布尔特色香料米饭酿贻贝（按只计价）。"
+    },
+    "ahtapot_salatasi": {
+      "name": "地中海章鱼沙拉 (Ahtapot Salatası)",
+      "desc": "橄榄油与柠檬汁拌鲜嫩章鱼。"
+    },
+    "deniz_urunleri_salatasi": {
+      "name": "什锦海鲜沙拉 (Deniz Ürünleri Salatası)",
+      "desc": "精选多款海鲜配柠檬橄榄油。"
+    },
+    "isli_midye": {
+      "name": "烟熏青口贝 (İsli Midye)",
+      "desc": "风味独特的冷盘烟熏贻贝。"
+    },
+    "lekarda": {
+      "name": "传统盐渍鲣鱼冷盘 (Lakerda)",
+      "desc": "伊斯坦布尔经典腌制鲣鱼片。"
+    },
+    "ciroz": {
+      "name": "风干鲭鱼沙拉 (Çiroz)",
+      "desc": "传统风干鲭鱼配莳萝与橄榄油。"
+    },
+    "hamsi_soslu": {
+      "name": "秘制酱汁腌凤尾鱼 (Hamsi Soslu)",
+      "desc": "特调香草酱汁腌制凤尾鱼柳。"
+    },
+    "arnavut_cigeri": {
+      "name": "传统香炸嫩肝丁 (Arnavut Ciğeri)",
+      "desc": "配洋葱与香料的经典热前菜。"
+    },
+    "peynir_dolgulu_kirmizi_biber": {
+      "name": "奶酪酿红椒 (Peynir Dolgulu Biber)",
+      "desc": "香浓软酪填酿甜辣红椒。"
+    },
+    "saksuka_ulas": {
+      "name": "茄子番茄冷盘 (Şakşuka)",
+      "desc": "香煎茄子配蒜香番茄酱。"
+    },
+    "acili_ezme": {
+      "name": "香辣番茄蔬菜泥 (Acılı Ezme)",
+      "desc": "新鲜番茄、辣椒与石榴糖浆手工剁制。"
+    },
+    "haydari": {
+      "name": "蒜香莳萝酸奶酱 (Haydari)",
+      "desc": "浓稠过滤酸奶配大蒜、薄荷与莳萝。"
+    },
+    "patlican_ezmesi": {
+      "name": "炭烤茄子泥 (Patlıcan Ezmesi)",
+      "desc": "烟熏炭烤茄子配特级初榨橄榄油。"
+    },
+    "rus_salatasi": {
+      "name": "俄式蔬菜沙拉 (Rus Salatası)",
+      "desc": "胡萝卜、土豆、青豆配酸黄瓜蛋黄酱。"
+    },
+    "humus_ulas": {
+      "name": "鹰嘴豆泥 (Humus)",
+      "desc": "丝滑鹰嘴豆配芝麻酱与橄榄油。"
+    },
+    "havuc_tarator_ulas": {
+      "name": "胡萝卜酸奶沙拉 (Havuç Tarator)",
+      "desc": "橄榄油炒胡萝卜丝拌蒜香浓酸奶。"
+    },
+    "patates_ulas": {
+      "name": "黄金炸薯条 (Patates)",
+      "desc": "外酥内软的现炸薯条。"
+    },
+    "sigara_boregi_ulas": {
+      "name": "香脆奶酪春卷 (Sigara Böreği)",
+      "desc": "土耳其传统脆皮奶酪卷。"
+    },
+    "balik_corbasi": {
+      "name": "鲜鱼浓汤 (Balık Çorbası)",
+      "desc": "每日鲜鱼高汤与蔬菜慢炖而成。"
+    },
+    "mercimek_corbasi": {
+      "name": "土耳其红扁豆汤 (Mercimek Çorbası)",
+      "desc": "经典顺滑的传统红扁豆浓汤。"
+    },
+    "mevsim_salata": {
+      "name": "时令田园沙拉 (Mevsim Salata)",
+      "desc": "当季新鲜时蔬配柠檬橄榄油。"
+    },
+    "roka_salata": {
+      "name": "芝麻菜沙拉 (Roka Salata)",
+      "desc": "新鲜芝麻菜配番茄与特级初榨橄榄油。"
+    },
+    "coban_salata_ulas": {
+      "name": "牧羊人沙拉 (Çoban Salata)",
+      "desc": "新鲜番茄、黄瓜、彩椒、洋葱与欧芹切丁。"
+    },
+    "ekmek_arasi_hamsi": {
+      "name": "黑海凤尾鱼三明治 (Ekmek Arası Hamsi)",
+      "desc": "现炸酥脆凤尾鱼配新鲜蔬菜夹面包。"
+    },
+    "ekmek_arasi_uskumru": {
+      "name": "经典炭烤鲭鱼三明治 (Ekmek Arası Uskumru)",
+      "desc": "伊斯坦布尔经典炭烤鲭鱼配洋葱时蔬夹面包。"
+    },
+    "kabak_tatlisi": {
+      "name": "芝麻酱核桃蜜南瓜 (Kabak Tatlısı)",
+      "desc": "传统蜜制南瓜配香浓芝麻酱与碎核桃。"
+    },
+    "sicak_helva": {
+      "name": "烤箱热酥糖 (Sıcak Helva)",
+      "desc": "土耳其鱼餐厅经典餐后热烤芝麻酥糖。"
+    },
+    "irmik_tatlisi": {
+      "name": "传统粗粒小麦粉甜点 (İrmik Tatlısı)",
+      "desc": "口感细腻的经典土耳其甜品。"
+    },
+    "su_ulas": {
+      "name": "Water",
+      "desc": "Bottled water"
+    },
+    "sade_soda": {
+      "name": "Sparkling Mineral Water (Soda)",
+      "desc": "Natural mineral water"
+    },
+    "limonlu_soda": {
+      "name": "Lemon Soda",
+      "desc": "Lemon sparkling mineral water"
+    },
+    "salgam_ulas": {
+      "name": "Turnip Juice (Şalgam)",
+      "desc": "Traditional fermented purple carrot & turnip drink"
+    },
+    "coco_cola": {
+      "name": "Coca-Cola",
+      "desc": "Chilled soft drink"
+    },
+    "coco_cola_zero": {
+      "name": "Coca-Cola Zero",
+      "desc": "Zero sugar soft drink"
+    },
+    "coco_cola_light": {
+      "name": "Coca-Cola Light",
+      "desc": "Diet soft drink"
+    },
+    "fanta_ulas": {
+      "name": "Fanta",
+      "desc": "Orange soda"
+    },
+    "sprite_ulas": {
+      "name": "Sprite",
+      "desc": "Lemon-lime soda"
+    },
+    "pepsi": {
+      "name": "Pepsi",
+      "desc": "Chilled cola"
+    },
+    "pepsi_max": {
+      "name": "Pepsi Max",
+      "desc": "Maximum taste, no sugar"
+    },
+    "yedigun": {
+      "name": "Yedigün",
+      "desc": "Orange soft drink"
+    },
+    "cappy_meyve_suyu": {
+      "name": "Cappy Fruit Juice",
+      "desc": "Chilled fruit juice"
+    },
+    "tropicana": {
+      "name": "Tropicana Juice",
+      "desc": "Fruit juice"
+    },
+    "ice_tea_seftali": {
+      "name": "Peach Ice Tea",
+      "desc": "Chilled peach iced tea"
+    },
+    "ice_tea_limon": {
+      "name": "Lemon Ice Tea",
+      "desc": "Chilled lemon iced tea"
+    },
+    "lipton": {
+      "name": "Lipton Ice Tea",
+      "desc": "Iced tea"
+    },
+    "coco_cola_1lt": {
+      "name": "Coca-Cola (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "coco_cola_zero_1lt": {
+      "name": "Coca-Cola Zero (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "fanta_1lt": {
+      "name": "Fanta (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_1lt": {
+      "name": "Pepsi (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_max_1lt": {
+      "name": "Pepsi Max (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "yedigun_1lt": {
+      "name": "Yedigün (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "seven_up_1lt": {
+      "name": "7UP (1L)",
+      "desc": "1 Liter bottle"
+    }
+  }
+}

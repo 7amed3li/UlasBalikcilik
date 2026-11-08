@@ -1,0 +1,374 @@
+{
+  "categories": {
+    "izgaralar": "Grillades",
+    "tavalar": "Poêlées & Fritures",
+    "mezeler": "Mezzés & Entrées",
+    "corbalar": "Soupes",
+    "salatalar": "Salades",
+    "ekmek_arasi": "Sandwichs de Poisson",
+    "tatlilar": "Desserts",
+    "icecekler": "Boissons"
+  },
+  "items": {
+    "levrek_izgara": {
+      "name": "Bar Grillé (Levrek Izgara)",
+      "desc": "Bar frais soigneusement grillé."
+    },
+    "cipura_izgara": {
+      "name": "Dorade Royale Grillée (Çipura)",
+      "desc": "Dorade fraîche préparée au gril."
+    },
+    "levrek_deniz_izgara": {
+      "name": "Bar de Mer Sauvage Grillé",
+      "desc": "Bar de mer grillé à la perfection."
+    },
+    "cipura_deniz_izgara": {
+      "name": "Dorade de Mer Sauvage Grillée",
+      "desc": "Dorade de mer préparée au gril."
+    },
+    "levrek_sis_izgara": {
+      "name": "Brochette de Bar Grillée",
+      "desc": "Brochette de filets de bar au gril."
+    },
+    "somon_dilim_izgara": {
+      "name": "Darne de Saumon Grillée",
+      "desc": "Tranche de saumon préparée au gril."
+    },
+    "somon_fileto_izgara": {
+      "name": "Filet de Saumon Grillé",
+      "desc": "Filet de saumon sans arêtes au gril."
+    },
+    "somon_sis_izgara": {
+      "name": "Brochette de Saumon Grillée",
+      "desc": "Cubes de saumon grillés en brochette."
+    },
+    "lufer_izgara": {
+      "name": "Tassergal Grillé (Lüfer)",
+      "desc": "Tassergal frais du Bosphore au gril."
+    },
+    "sari_kanat_izgara": {
+      "name": "Sarıkanat Grillé",
+      "desc": "Poisson bleu Sarıkanat frais au gril."
+    },
+    "fener_sis_izgara": {
+      "name": "Brochette de Lotte Grillée",
+      "desc": "Morceaux de lotte grillés en brochette."
+    },
+    "minekop_izgara": {
+      "name": "Ombrine Grillée (Minekop)",
+      "desc": "Ombrine fraîche préparée au gril."
+    },
+    "citir_levrek": {
+      "name": "Bar Croustillant (Çıtır Levrek)",
+      "desc": "Bar préparé avec une texture croustillante."
+    },
+    "palamut_izgara": {
+      "name": "Bonite Grillée (Palamut)",
+      "desc": "Bonite fraîche de la mer Noire au gril."
+    },
+    "sardalya_izgara": {
+      "name": "Sardines Grillées",
+      "desc": "Sardines fraîches préparées au gril."
+    },
+    "uskumru_izgara": {
+      "name": "Maquereau Grillé (Uskumru)",
+      "desc": "Maquereau entier grillé."
+    },
+    "alabalik_izgara": {
+      "name": "Truite Grillée",
+      "desc": "Truite fraîche préparée au gril."
+    },
+    "jumbo_karides": {
+      "name": "Crevettes Jumbo Grillées",
+      "desc": "Grosses crevettes jumbo au gril."
+    },
+    "hamsi_tava": {
+      "name": "Anchois de la Mer Noire Poêlés (Hamsi Tava)",
+      "desc": "Anchois frais dorés à la poêle."
+    },
+    "istavrit_tava": {
+      "name": "Chinchard Frit (İstavrit Tava)",
+      "desc": "Chinchard frais doré à la poêle."
+    },
+    "sardalya_tava": {
+      "name": "Sardines Poêlées",
+      "desc": "Sardines fraîches dorées à la poêle."
+    },
+    "mezgit_tava": {
+      "name": "Merlan Frit (Mezgit Tava)",
+      "desc": "Merlan frais doré à la poêle."
+    },
+    "tekir_tava": {
+      "name": "Rouget de Roche Poêlé (Tekir)",
+      "desc": "Rouget frais doré à la poêle."
+    },
+    "barbun_tava": {
+      "name": "Rouget Barbet Poêlé (Barbun)",
+      "desc": "Rouget barbet frais doré à la poêle."
+    },
+    "alabalik_tava": {
+      "name": "Truite Poêlée",
+      "desc": "Truite fraîche dorée à la poêle."
+    },
+    "dil_tava": {
+      "name": "Sole Poêlée (Dil Tava)",
+      "desc": "Sole fraîche dorée à la poêle."
+    },
+    "dil_sis_tava": {
+      "name": "Brochette de Sole Poêlée",
+      "desc": "Brochette de sole dorée à la poêle."
+    },
+    "karides_tava": {
+      "name": "Crevettes Poêlées (Karides Tava)",
+      "desc": "Crevettes fraîches sautées à la poêle."
+    },
+    "kalamar_tava": {
+      "name": "Calamars Frits (Kalamar Tava)",
+      "desc": "Beignets de calamars dorés et croustillants."
+    },
+    "palamut_tava": {
+      "name": "Bonite Poêlée (Palamut Tava)",
+      "desc": "Bonite fraîche dorée à la poêle."
+    },
+    "balik_kokorec": {
+      "name": "Kokoreç de Poisson",
+      "desc": "Poisson émincé sauté aux poivrons, tomates et épices."
+    },
+    "zargana_tava": {
+      "name": "Orphie Poêlée (Zargana)",
+      "desc": "Orphie fraîche dorée à la poêle."
+    },
+    "balik_koftesi": {
+      "name": "Boulettes de Poisson (Balık Köftesi)",
+      "desc": "Croquettes de poisson maison dorées."
+    },
+    "okyanus_lokumu": {
+      "name": "Délice de l'Océan (Okyanus Lokumu)",
+      "desc": "Bouchées de poisson tendres et croustillantes."
+    },
+    "fener_kavurma": {
+      "name": "Poêlée de Lotte (Fener Kavurma)",
+      "desc": "Lotte sautée à la turque."
+    },
+    "levrek_kavurma": {
+      "name": "Poêlée de Bar (Levrek Kavurma)",
+      "desc": "Filets de bar sautés à la poêle."
+    },
+    "hamsili_pilav": {
+      "name": "Pilaf aux Anchois (Hamsili Pilav)",
+      "desc": "Riz parfumé de la mer Noire garni d'anchois frais."
+    },
+    "midye_tava": {
+      "name": "Moules Frites en Beignets (Midye Tava)",
+      "desc": "Moules croustillantes dorées."
+    },
+    "midye_dolma": {
+      "name": "Moules Farcies (Midye Dolma)",
+      "desc": "Moule farcie au riz épicé (À l'unité)."
+    },
+    "ahtapot_salatasi": {
+      "name": "Salade de Poulpe",
+      "desc": "Poulpe tendre mariné à l'huile d'olive et au citron."
+    },
+    "deniz_urunleri_salatasi": {
+      "name": "Salade de Fruits de Mer",
+      "desc": "Mélange de fruits de mer frais à l'huile d'olive."
+    },
+    "isli_midye": {
+      "name": "Moules Fumées (İsli Midye)",
+      "desc": "Mezzé de moules délicatement fumées."
+    },
+    "lekarda": {
+      "name": "Lakerda (Bonite Marinée)",
+      "desc": "Spécialité stambouliote de bonite affinée."
+    },
+    "ciroz": {
+      "name": "Salade Çiroz (Maquereau Séché)",
+      "desc": "Mezzé traditionnel de maquereau mariné."
+    },
+    "hamsi_soslu": {
+      "name": "Anchois Marinés en Sauce",
+      "desc": "Filets d'anchois marinés aux herbes."
+    },
+    "arnavut_cigeri": {
+      "name": "Foie à l'Albanaise (Arnavut Ciğeri)",
+      "desc": "Dés de foie sautés aux épices."
+    },
+    "peynir_dolgulu_kirmizi_biber": {
+      "name": "Poivrons Rouges Farcis au Fromage",
+      "desc": "Poivrons doux farcis au fromage frais."
+    },
+    "saksuka_ulas": {
+      "name": "Şakşuka (Aubergines à la Tomate)",
+      "desc": "Aubergines et poivrons en sauce tomate à l'ail."
+    },
+    "acili_ezme": {
+      "name": "Acılı Ezme (Tartinade Épicée)",
+      "desc": "concassé épicé de tomates fraîches et piments."
+    },
+    "haydari": {
+      "name": "Haydari",
+      "desc": "Yaourt épais à l'ail, à l'aneth et à la menthe."
+    },
+    "patlican_ezmesi": {
+      "name": "Caviar d'Aubergines Grillées",
+      "desc": "Purée d'aubergines fumées à l'huile d'olive."
+    },
+    "rus_salatasi": {
+      "name": "Salade Russe (Macédoine)",
+      "desc": "Légumes en dés et cornichons en sauce crémeuse."
+    },
+    "humus_ulas": {
+      "name": "Houmous",
+      "desc": "Purée onctueuse de pois chiches et tahini."
+    },
+    "havuc_tarator_ulas": {
+      "name": "Tarator de Carottes",
+      "desc": "Carottes sautées au yaourt à l'ail."
+    },
+    "patates_ulas": {
+      "name": "Frites Dorées (Patates)",
+      "desc": "Pommes de terre frites croustillantes."
+    },
+    "sigara_boregi_ulas": {
+      "name": "Sigara Böreği (Rouleaux au Fromage)",
+      "desc": "Feuilletés croustillants roulés au fromage."
+    },
+    "balik_corbasi": {
+      "name": "Soupe de Poisson (Balık Çorbası)",
+      "desc": "Soupe savoureuse au bouillon de poisson frais."
+    },
+    "mercimek_corbasi": {
+      "name": "Soupe de Lentilles Corail",
+      "desc": "Velouté traditionnel turc aux lentilles rouges."
+    },
+    "mevsim_salata": {
+      "name": "Salade de Saison",
+      "desc": "Verdure et légumes de saison à l'huile d'olive."
+    },
+    "roka_salata": {
+      "name": "Salade de Roquette (Roka)",
+      "desc": "Roquette fraîche, tomates et huile d'olive."
+    },
+    "coban_salata_ulas": {
+      "name": "Salade du Berger (Çoban Salata)",
+      "desc": "Tomates, concombres, poivrons, oignons et persil."
+    },
+    "ekmek_arasi_hamsi": {
+      "name": "Sandwich aux Anchois Frais",
+      "desc": "Anchois croustillants servis dans du pain frais."
+    },
+    "ekmek_arasi_uskumru": {
+      "name": "Sandwich au Maquereau Grillé",
+      "desc": "Le classique Balık Ekmek stambouliote au maquereau."
+    },
+    "kabak_tatlisi": {
+      "name": "Dessert au Potiron et Tahini (Kabak Tatlısı)",
+      "desc": "Potiron confit nappé de tahini et noix."
+    },
+    "sicak_helva": {
+      "name": "Halva Chaud au Four (Sıcak Helva)",
+      "desc": "Halva au tahini servi chaud à la sortie du four."
+    },
+    "irmik_tatlisi": {
+      "name": "Gâteau de Semoule (İrmik Tatlısı)",
+      "desc": "Dessert traditionnel turc à la semoule."
+    },
+    "su_ulas": {
+      "name": "Water",
+      "desc": "Bottled water"
+    },
+    "sade_soda": {
+      "name": "Sparkling Mineral Water (Soda)",
+      "desc": "Natural mineral water"
+    },
+    "limonlu_soda": {
+      "name": "Lemon Soda",
+      "desc": "Lemon sparkling mineral water"
+    },
+    "salgam_ulas": {
+      "name": "Turnip Juice (Şalgam)",
+      "desc": "Traditional fermented purple carrot & turnip drink"
+    },
+    "coco_cola": {
+      "name": "Coca-Cola",
+      "desc": "Chilled soft drink"
+    },
+    "coco_cola_zero": {
+      "name": "Coca-Cola Zero",
+      "desc": "Zero sugar soft drink"
+    },
+    "coco_cola_light": {
+      "name": "Coca-Cola Light",
+      "desc": "Diet soft drink"
+    },
+    "fanta_ulas": {
+      "name": "Fanta",
+      "desc": "Orange soda"
+    },
+    "sprite_ulas": {
+      "name": "Sprite",
+      "desc": "Lemon-lime soda"
+    },
+    "pepsi": {
+      "name": "Pepsi",
+      "desc": "Chilled cola"
+    },
+    "pepsi_max": {
+      "name": "Pepsi Max",
+      "desc": "Maximum taste, no sugar"
+    },
+    "yedigun": {
+      "name": "Yedigün",
+      "desc": "Orange soft drink"
+    },
+    "cappy_meyve_suyu": {
+      "name": "Cappy Fruit Juice",
+      "desc": "Chilled fruit juice"
+    },
+    "tropicana": {
+      "name": "Tropicana Juice",
+      "desc": "Fruit juice"
+    },
+    "ice_tea_seftali": {
+      "name": "Peach Ice Tea",
+      "desc": "Chilled peach iced tea"
+    },
+    "ice_tea_limon": {
+      "name": "Lemon Ice Tea",
+      "desc": "Chilled lemon iced tea"
+    },
+    "lipton": {
+      "name": "Lipton Ice Tea",
+      "desc": "Iced tea"
+    },
+    "coco_cola_1lt": {
+      "name": "Coca-Cola (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "coco_cola_zero_1lt": {
+      "name": "Coca-Cola Zero (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "fanta_1lt": {
+      "name": "Fanta (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_1lt": {
+      "name": "Pepsi (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_max_1lt": {
+      "name": "Pepsi Max (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "yedigun_1lt": {
+      "name": "Yedigün (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "seven_up_1lt": {
+      "name": "7UP (1L)",
+      "desc": "1 Liter bottle"
+    }
+  }
+}

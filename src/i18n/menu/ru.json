@@ -1,0 +1,374 @@
+{
+  "categories": {
+    "izgaralar": "На гриле",
+    "tavalar": "На сковороде",
+    "mezeler": "Закуски (Мезе)",
+    "corbalar": "Супы",
+    "salatalar": "Салаты",
+    "ekmek_arasi": "Балык-экмек",
+    "tatlilar": "Десерты",
+    "icecekler": "Напитки"
+  },
+  "items": {
+    "levrek_izgara": {
+      "name": "Сибас на гриле (Levrek Izgara)",
+      "desc": "Свежий сибас, приготовленный на гриле."
+    },
+    "cipura_izgara": {
+      "name": "Дорадо на гриле (Çipura Izgara)",
+      "desc": "Свежая дорадо, запеченная на гриле."
+    },
+    "levrek_deniz_izgara": {
+      "name": "Морской сибас на гриле",
+      "desc": "Дикий морской сибас на гриле."
+    },
+    "cipura_deniz_izgara": {
+      "name": "Морская дорадо на гриле",
+      "desc": "Дикая морская дорадо на гриле."
+    },
+    "levrek_sis_izgara": {
+      "name": "Шашлычок из сибаса на гриле",
+      "desc": "Филе сибаса на шпажках на гриле."
+    },
+    "somon_dilim_izgara": {
+      "name": "Стейк лосося на гриле",
+      "desc": "Ломтик лосося, приготовленный на гриле."
+    },
+    "somon_fileto_izgara": {
+      "name": "Филе лосося на гриле",
+      "desc": "Нежное филе лосося на гриле."
+    },
+    "somon_sis_izgara": {
+      "name": "Шашлычок из лосося на гриле",
+      "desc": "Кусочки лосося на шпажках на гриле."
+    },
+    "lufer_izgara": {
+      "name": "Луфарь на гриле (Lüfer)",
+      "desc": "Знаменитый черноморский луфарь на гриле."
+    },
+    "sari_kanat_izgara": {
+      "name": "Сарыканат на гриле",
+      "desc": "Свежий черноморский сарыканат на гриле."
+    },
+    "fener_sis_izgara": {
+      "name": "Шашлычок из морского черта",
+      "desc": "Филе морского черта на шпажках на гриле."
+    },
+    "minekop_izgara": {
+      "name": "Минекоп (Умбрина) на гриле",
+      "desc": "Свежая умбрина, запеченная на гриле."
+    },
+    "citir_levrek": {
+      "name": "Хрустящий сибас (Çıtır Levrek)",
+      "desc": "Сибас с золотистой хрустящей корочкой."
+    },
+    "palamut_izgara": {
+      "name": "Паламут (Пеламида) на гриле",
+      "desc": "Сезонная черноморская пеламида на гриле."
+    },
+    "sardalya_izgara": {
+      "name": "Сардины на гриле",
+      "desc": "Свежие сардины, запеченные на гриле."
+    },
+    "uskumru_izgara": {
+      "name": "Скумбрия на гриле",
+      "desc": "Ароматная скумбрия, приготовленная на гриле."
+    },
+    "alabalik_izgara": {
+      "name": "Форель на гриле",
+      "desc": "Свежая форель, запеченная на гриле."
+    },
+    "jumbo_karides": {
+      "name": "Королевские креветки (Джамбо)",
+      "desc": "Крупные креветки джамбо на гриле."
+    },
+    "hamsi_tava": {
+      "name": "Хамса на сковороде (Hamsi Tava)",
+      "desc": "Свежая черноморская хамса, обжаренная до хрустящей корочки."
+    },
+    "istavrit_tava": {
+      "name": "Ставрида на сковороде (İstavrit)",
+      "desc": "Хрустящая жареная черноморская ставрида."
+    },
+    "sardalya_tava": {
+      "name": "Сардины на сковороде",
+      "desc": "Свежие жареные сардины."
+    },
+    "mezgit_tava": {
+      "name": "Мерланг на сковороде (Mezgit)",
+      "desc": "Нежный черноморский мерланг на сковороде."
+    },
+    "tekir_tava": {
+      "name": "Барабулька (Текир) на сковороде",
+      "desc": "Свежая барабулька текир, обжаренная на сковороде."
+    },
+    "barbun_tava": {
+      "name": "Султанка (Барбун) на сковороде",
+      "desc": "Отборная черноморская барабулька-султанка."
+    },
+    "alabalik_tava": {
+      "name": "Форель на сковороде",
+      "desc": "Свежая форель, обжаренная на сковороде."
+    },
+    "dil_tava": {
+      "name": "Морской язык на сковороде (Dil Balığı)",
+      "desc": "Нежное филе морского языка на сковороде."
+    },
+    "dil_sis_tava": {
+      "name": "Шашлычок из морского языка на сковороде",
+      "desc": "Хрустящий морской язык на шпажках."
+    },
+    "karides_tava": {
+      "name": "Креветки на сковороде (Karides Tava)",
+      "desc": "Свежие креветки, обжаренные на сковороде."
+    },
+    "kalamar_tava": {
+      "name": "Кальмары во фритюре (Kalamar Tava)",
+      "desc": "Золотистые хрустящие кольца кальмара."
+    },
+    "palamut_tava": {
+      "name": "Паламут на сковороде",
+      "desc": "Черноморская пеламида, обжаренная на сковороде."
+    },
+    "balik_kokorec": {
+      "name": "Рыбный кокореч (Balık Kokoreç)",
+      "desc": "Мелко рубленная рыба, обжаренная со специями, перцем и томатами."
+    },
+    "zargana_tava": {
+      "name": "Сарган на сковороде (Zargana)",
+      "desc": "Свежий черноморский сарган на сковороде."
+    },
+    "balik_koftesi": {
+      "name": "Рыбные котлеты (Balık Köftesi)",
+      "desc": "Нежные рыбные котлетки со специями."
+    },
+    "okyanus_lokumu": {
+      "name": "«Океанский лукум» (Okyanus Lokumu)",
+      "desc": "Нежные кусочки морского филе в хрустящей панировке."
+    },
+    "fener_kavurma": {
+      "name": "Жаркое из морского черта (Fener Kavurma)",
+      "desc": "Филе морского черта, обжаренное в соусе со специями."
+    },
+    "levrek_kavurma": {
+      "name": "Жаркое из сибаса (Levrek Kavurma)",
+      "desc": "Кусочки сибаса, обжаренные на сковороде."
+    },
+    "hamsili_pilav": {
+      "name": "Плов с хамсой (Hamsili Pilav)",
+      "desc": "Черноморский пряный плов, запеченный со свежей хамсой."
+    },
+    "midye_tava": {
+      "name": "Мидии во фритюре (Midye Tava)",
+      "desc": "Хрустящие жареные мидии на шпажках."
+    },
+    "midye_dolma": {
+      "name": "Фаршированные мидии (Midye Dolma)",
+      "desc": "Свежие мидии с пряным рисом и лимоном (за шт.)."
+    },
+    "ahtapot_salatasi": {
+      "name": "Салат из осьминога",
+      "desc": "Нежный осьминог в маринаде из оливкового масла и лимона."
+    },
+    "deniz_urunleri_salatasi": {
+      "name": "Салат из морепродуктов",
+      "desc": "Ассорти морепродуктов с оливковым маслом и зеленью."
+    },
+    "isli_midye": {
+      "name": "Копченые мидии (İsli Midye)",
+      "desc": "Ароматные подкопченные мидии мезе."
+    },
+    "lekarda": {
+      "name": "Лакерда (Маринованная пеламида)",
+      "desc": "Традиционная стамбульская закуска из выдержанной рыбы."
+    },
+    "ciroz": {
+      "name": "Чироз (Салат из вяленой скумбрии)",
+      "desc": "Традиционная рыбная закуска с укропом и маслом."
+    },
+    "hamsi_soslu": {
+      "name": "Хамса в соусе (Hamsi Soslu)",
+      "desc": "Филе хамсы в пряном маринаде."
+    },
+    "arnavut_cigeri": {
+      "name": "Печень по-албански (Arnavut Ciğeri)",
+      "desc": "Нежные кубики печени со специями и луком."
+    },
+    "peynir_dolgulu_kirmizi_biber": {
+      "name": "Красный перец, фаршированный сыром",
+      "desc": "Перчики с нежной сырной начинкой."
+    },
+    "saksuka_ulas": {
+      "name": "Шакшука (Şakşuka)",
+      "desc": "Обжаренные баклажаны и перцы в томатно-чесночном соусе."
+    },
+    "acili_ezme": {
+      "name": "Аджылы Эзме (Острая закуска)",
+      "desc": "Острая паста из свежих томатов, перца и зелени."
+    },
+    "haydari": {
+      "name": "Хайдари (Haydari)",
+      "desc": "Густой сцеженный йогурт с чесноком, мятой и укропом."
+    },
+    "patlican_ezmesi": {
+      "name": "Пюре из печеных баклажанов",
+      "desc": "Ароматная закуска из запеченных на углях баклажанов."
+    },
+    "rus_salatasi": {
+      "name": "Русский салат (Оливье)",
+      "desc": "Классический овощной салат с солеными огурчиками."
+    },
+    "humus_ulas": {
+      "name": "Хумус (Humus)",
+      "desc": "Нежное пюре из нута с тахини и оливковым маслом."
+    },
+    "havuc_tarator_ulas": {
+      "name": "Морковный таратор (Havuç Tarator)",
+      "desc": "Томленая морковь с густым чесночным йогуртом."
+    },
+    "patates_ulas": {
+      "name": "Картофель фри (Patates)",
+      "desc": "Золотистый хрустящий картофель."
+    },
+    "sigara_boregi_ulas": {
+      "name": "Сигара Бёрек (Трубочки с сыром)",
+      "desc": "Хрустящие рулетики из теста юфка с сыром."
+    },
+    "balik_corbasi": {
+      "name": "Рыбный суп (Balık Çorbası)",
+      "desc": "Наваристый суп из свежей рыбы с овощами."
+    },
+    "mercimek_corbasi": {
+      "name": "Чечевичный суп (Mercimek Çorbası)",
+      "desc": "Традиционный турецкий крем-суп из красной чечевицы."
+    },
+    "mevsim_salata": {
+      "name": "Сезонный салат (Mevsim Salata)",
+      "desc": "Свежая сезонная зелень и овощи с оливковым маслом."
+    },
+    "roka_salata": {
+      "name": "Салат с рукколой (Roka Salata)",
+      "desc": "Свежая руккола с томатами, лимоном и оливковым маслом."
+    },
+    "coban_salata_ulas": {
+      "name": "Пастуший салат (Çoban Salata)",
+      "desc": "Свежие томаты, огурцы, перец, лук и петрушка."
+    },
+    "ekmek_arasi_hamsi": {
+      "name": "Балык-экмек с хамсой",
+      "desc": "Хрустящая черноморская хамса в свежем хлебе с зеленью."
+    },
+    "ekmek_arasi_uskumru": {
+      "name": "Балык-экмек со скумбрией",
+      "desc": "Филе скумбрии на гриле в хлебе с луком и зеленью."
+    },
+    "kabak_tatlisi": {
+      "name": "Десерт из тыквы с тахини (Kabak Tatlısı)",
+      "desc": "Традиционная карамелизированная тыква с кунжутной пастой."
+    },
+    "sicak_helva": {
+      "name": "Горячая запеченная халва (Sıcak Helva)",
+      "desc": "Теплая тахинная халва из печи — классический десерт после рыбы."
+    },
+    "irmik_tatlisi": {
+      "name": "Манный десерт (İrmik Tatlısı)",
+      "desc": "Традиционный турецкий десерт из манной крупы."
+    },
+    "su_ulas": {
+      "name": "Water",
+      "desc": "Bottled water"
+    },
+    "sade_soda": {
+      "name": "Sparkling Mineral Water (Soda)",
+      "desc": "Natural mineral water"
+    },
+    "limonlu_soda": {
+      "name": "Lemon Soda",
+      "desc": "Lemon sparkling mineral water"
+    },
+    "salgam_ulas": {
+      "name": "Turnip Juice (Şalgam)",
+      "desc": "Traditional fermented purple carrot & turnip drink"
+    },
+    "coco_cola": {
+      "name": "Coca-Cola",
+      "desc": "Chilled soft drink"
+    },
+    "coco_cola_zero": {
+      "name": "Coca-Cola Zero",
+      "desc": "Zero sugar soft drink"
+    },
+    "coco_cola_light": {
+      "name": "Coca-Cola Light",
+      "desc": "Diet soft drink"
+    },
+    "fanta_ulas": {
+      "name": "Fanta",
+      "desc": "Orange soda"
+    },
+    "sprite_ulas": {
+      "name": "Sprite",
+      "desc": "Lemon-lime soda"
+    },
+    "pepsi": {
+      "name": "Pepsi",
+      "desc": "Chilled cola"
+    },
+    "pepsi_max": {
+      "name": "Pepsi Max",
+      "desc": "Maximum taste, no sugar"
+    },
+    "yedigun": {
+      "name": "Yedigün",
+      "desc": "Orange soft drink"
+    },
+    "cappy_meyve_suyu": {
+      "name": "Cappy Fruit Juice",
+      "desc": "Chilled fruit juice"
+    },
+    "tropicana": {
+      "name": "Tropicana Juice",
+      "desc": "Fruit juice"
+    },
+    "ice_tea_seftali": {
+      "name": "Peach Ice Tea",
+      "desc": "Chilled peach iced tea"
+    },
+    "ice_tea_limon": {
+      "name": "Lemon Ice Tea",
+      "desc": "Chilled lemon iced tea"
+    },
+    "lipton": {
+      "name": "Lipton Ice Tea",
+      "desc": "Iced tea"
+    },
+    "coco_cola_1lt": {
+      "name": "Coca-Cola (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "coco_cola_zero_1lt": {
+      "name": "Coca-Cola Zero (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "fanta_1lt": {
+      "name": "Fanta (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_1lt": {
+      "name": "Pepsi (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_max_1lt": {
+      "name": "Pepsi Max (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "yedigun_1lt": {
+      "name": "Yedigün (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "seven_up_1lt": {
+      "name": "7UP (1L)",
+      "desc": "1 Liter bottle"
+    }
+  }
+}

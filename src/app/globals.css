@@ -1,0 +1,227 @@
+@import "tailwindcss";
+
+:root {
+  /* Ulaş Balıkçılık — Modern Fish Market & Black Sea Fisherman Notebook Palette */
+  --bg: #EAE7DF;             /* Light Coastal Paper Background */
+  --bg-card: #F4F1E8;        /* Approved Light Ivory Card Surface */
+  --primary: #0E4F4A;        /* Approved Petrol Sea Green */
+  --primary-dim: #0B2B3B;    /* Approved Deep Black Sea Navy */
+  --navy: #0B2B3B;           /* Deep Black Sea Navy */
+  --sea-glass: #B8DCD3;      /* Approved Sea Glass Green for details & borders */
+  --accent: #F26B45;         /* Approved Warm Coral/Orange for Add buttons & badges */
+  --gold: #F26B45;           /* Mapped to Warm Coral Accent */
+  --text: #18323B;           /* Approved High-Contrast Dark Text */
+  --text-secondary: #47626B; /* Muted Maritime Slate Secondary Text */
+  --error: #D94E34;          /* Alert Coral Red */
+  
+  /* Legacy mapping aliases for gradual component compatibility */
+  --ink: #EAE7DF;
+  --ink-2: #F4F1E8;
+  --teal: #0E4F4A;
+  --teal-dim: #0B2B3B;
+  --copper: #F26B45;
+  --cream: #18323B;
+  --cream-dim: #47626B;
+  --brick: #D94E34;
+  --ink-text: #F4F1E8;
+
+  /* Spacing & Radius Tokens */
+  --spacing-margin-ext: 16px;
+  --spacing-padding-card: 12px;
+  --spacing-gap-card: 8px;
+  --spacing-gap-section: 28px;
+  --radius-card: 14px;
+  --radius-btn: 10px;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-card: var(--bg-card);
+  --color-primary: var(--primary);
+  --color-primary-dim: var(--primary-dim);
+  --color-navy: var(--navy);
+  --color-sea-glass: var(--sea-glass);
+  --color-accent: var(--accent);
+  --color-gold: var(--accent);
+  --color-text: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-error: var(--error);
+
+  /* Mapping legacy Tailwind utility names */
+  --color-ink: var(--bg);
+  --color-ink-2: var(--bg-card);
+  --color-teal: var(--primary);
+  --color-teal-dim: var(--primary-dim);
+  --color-copper: var(--accent);
+  --color-cream: var(--text);
+  --color-cream-dim: var(--text-secondary);
+  --color-brick: var(--error);
+  
+  --font-cairo: "Cairo", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-amiri: "Amiri", Georgia, serif;
+}
+
+/* ==========================================================================
+   BASE STYLES & LAYOUT
+   ========================================================================== */
+
+html {
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  overflow-x: hidden;
+}
+
+/* Utility to hide scrollbars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ==========================================================================
+   ANIMATION KEYFRAMES
+   ========================================================================== */
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out both;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ==========================================================================
+   CARD & COASTAL NOTEBOOK SURFACES
+   ========================================================================== */
+
+.glass-card,
+.flat-card {
+  background: var(--bg-card);
+  border: 1px solid rgba(184, 220, 211, 0.7);
+  border-radius: var(--radius-card);
+}
+
+.glass-card-strong,
+.flat-card-strong {
+  background: #FFFFFF;
+  border: 1px solid var(--sea-glass);
+  border-radius: var(--radius-card);
+}
+
+/* Subtle fish scale / sea notebook background texture */
+.notebook-surface {
+  background-color: var(--bg-card);
+  background-image: radial-gradient(rgba(14, 79, 74, 0.045) 1px, transparent 1px);
+  background-size: 18px 18px;
+}
+
+/* Market awning subtle stripe border */
+.market-awning-bar {
+  background: repeating-linear-gradient(
+    90deg,
+    #0E4F4A 0px,
+    #0E4F4A 18px,
+    #F4F1E8 18px,
+    #F4F1E8 36px
+  );
+  height: 6px;
+  width: 100%;
+  opacity: 0.85;
+}
+
+/* ==========================================================================
+   COASTAL WAVE DIVIDERS (Replacing Ottoman Dividers)
+   ========================================================================== */
+
+.ottoman-divider,
+.coastal-divider {
+  position: relative;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(14, 79, 74, 0.2) 20%,
+    rgba(14, 79, 74, 0.5) 50%,
+    rgba(14, 79, 74, 0.2) 80%,
+    transparent
+  );
+  margin: 1.5rem 0;
+}
+
+/* ==========================================================================
+   MAP CONTAINER
+   ========================================================================== */
+
+.map-dark-container {
+  position: relative;
+  border-radius: var(--radius-card);
+  overflow: hidden;
+  border: 1px solid var(--sea-glass);
+}
+
+.map-dark-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ==========================================================================
+   FOOD CARD HOVER EFFECTS
+   ========================================================================== */
+
+.food-card-hover {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.food-card-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* ==========================================================================
+   MODAL OVERLAY
+   ========================================================================== */
+
+.modal-overlay {
+  animation: fadeIn 0.2s ease-out both;
+  background-color: rgba(11, 43, 59, 0.72);
+}
+
+.modal-content {
+  animation: scaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+}

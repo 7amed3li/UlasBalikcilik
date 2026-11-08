@@ -1,0 +1,374 @@
+{
+  "categories": {
+    "izgaralar": "کبابی و گریل",
+    "tavalar": "تابه‌ای و سرخ‌شده",
+    "mezeler": "پیش‌غذا و مزه",
+    "corbalar": "سوپ‌ها",
+    "salatalar": "سالادها",
+    "ekmek_arasi": "ساندویچ ماهی",
+    "tatlilar": "دسرها",
+    "icecekler": "نوشیدنی‌ها"
+  },
+  "items": {
+    "levrek_izgara": {
+      "name": "ماهی سی‌باس کبابی (Levrek Izgara)",
+      "desc": "ماهی سی‌باس تازه کباب‌شده روی گریل."
+    },
+    "cipura_izgara": {
+      "name": "ماهی شانک کبابی (Çipura Izgara)",
+      "desc": "ماهی چوپرا تازه کباب‌شده روی گریل."
+    },
+    "levrek_deniz_izgara": {
+      "name": "سی‌باس دریایی کبابی",
+      "desc": "ماهی سی‌باس دریایی تازه روی گریل."
+    },
+    "cipura_deniz_izgara": {
+      "name": "چوپرا دریایی کبابی",
+      "desc": "ماهی چوپرا دریایی تازه روی گریل."
+    },
+    "levrek_sis_izgara": {
+      "name": "شیشلیک سی‌باس کبابی",
+      "desc": "فیله ماهی سی‌باس به سیخ کشیده روی گریل."
+    },
+    "somon_dilim_izgara": {
+      "name": "استیک سالمون کبابی",
+      "desc": "برش ماهی سالمون تازه روی گریل."
+    },
+    "somon_fileto_izgara": {
+      "name": "فیله سالمون کبابی",
+      "desc": "فیله بدون استخوان سالمون روی گریل."
+    },
+    "somon_sis_izgara": {
+      "name": "شیشلیک سالمون کبابی",
+      "desc": "تکه‌های سالمون به سیخ کشیده روی گریل."
+    },
+    "lufer_izgara": {
+      "name": "ماهی لوفر کبابی (Lüfer)",
+      "desc": "ماهی لوفر تازه فصل روی گریل."
+    },
+    "sari_kanat_izgara": {
+      "name": "ماهی ساری‌کانات کبابی",
+      "desc": "ماهی ساری‌کانات تازه روی گریل."
+    },
+    "fener_sis_izgara": {
+      "name": "شیشلیک ماهی فنر کبابی",
+      "desc": "تکه‌های ماهی فنر روی گریل."
+    },
+    "minekop_izgara": {
+      "name": "ماهی مینه‌کوپ کبابی",
+      "desc": "ماهی مینه‌کوپ تازه روی گریل."
+    },
+    "citir_levrek": {
+      "name": "سی‌باس سوخاری ترد (Çıtır Levrek)",
+      "desc": "ماهی سی‌باس با بافت ترد و طلایی."
+    },
+    "palamut_izgara": {
+      "name": "ماهی پالاموت کبابی",
+      "desc": "ماهی پالاموت تازه دریای سیاه روی گریل."
+    },
+    "sardalya_izgara": {
+      "name": "ماهی ساردین کبابی",
+      "desc": "ساردین تازه کباب‌شده روی گریل."
+    },
+    "uskumru_izgara": {
+      "name": "ماهی خال‌مخالی کبابی (Uskumru)",
+      "desc": "ماهی اسقومری تازه روی گریل."
+    },
+    "alabalik_izgara": {
+      "name": "ماهی قزل‌آلا کبابی",
+      "desc": "قزل‌آلای تازه کباب‌شده روی گریل."
+    },
+    "jumbo_karides": {
+      "name": "میگو جامبو کبابی",
+      "desc": "میگوی جامبو تازه روی گریل."
+    },
+    "hamsi_tava": {
+      "name": "ماهی هامسی سرخ‌شده (Hamsi Tava)",
+      "desc": "ماهی آنچوی تازه دریای سیاه سرخ‌شده در تابه."
+    },
+    "istavrit_tava": {
+      "name": "ماهی ایستاوریت تابه‌ای",
+      "desc": "ماهی ایستاوریت تازه و برشته."
+    },
+    "sardalya_tava": {
+      "name": "ساردین تابه‌ای",
+      "desc": "ماهی ساردین تازه سرخ‌شده در تابه."
+    },
+    "mezgit_tava": {
+      "name": "ماهی مزگیت تابه‌ای",
+      "desc": "ماهی مزگیت تازه سرخ‌شده."
+    },
+    "tekir_tava": {
+      "name": "ماهی تکیر تابه‌ای",
+      "desc": "ماهی تکیر تازه سرخ‌شده در تابه."
+    },
+    "barbun_tava": {
+      "name": "ماهی باربون تابه‌ای",
+      "desc": "ماهی باربون تازه سرخ‌شده در تابه."
+    },
+    "alabalik_tava": {
+      "name": "قزل‌آلا تابه‌ای",
+      "desc": "ماهی قزل‌آلای تازه سرخ‌شده در تابه."
+    },
+    "dil_tava": {
+      "name": "ماهی حلوا / زبان تابه‌ای",
+      "desc": "ماهی دیل تازه سرخ‌شده در تابه."
+    },
+    "dil_sis_tava": {
+      "name": "شیشلیک ماهی دیل تابه‌ای",
+      "desc": "سیخ ماهی دیل سرخ‌شده و ترد."
+    },
+    "karides_tava": {
+      "name": "میگو تابه‌ای (Karides Tava)",
+      "desc": "میگوی تازه تفت‌داده‌شده در تابه."
+    },
+    "kalamar_tava": {
+      "name": "کالاماری سرخ‌شده (Kalamar Tava)",
+      "desc": "حلقه‌های کالاماری ترد و طلایی."
+    },
+    "palamut_tava": {
+      "name": "ماهی پالاموت تابه‌ای",
+      "desc": "ماهی پالاموت تازه سرخ‌شده در تابه."
+    },
+    "balik_kokorec": {
+      "name": "کوکورچ ماهی (Balık Kokoreç)",
+      "desc": "ماهی خردشده تفت‌داده‌شده با فلفل، گوجه و ادویه‌های مخصوص."
+    },
+    "zargana_tava": {
+      "name": "ماهی زارگانا تابه‌ای",
+      "desc": "ماهی سوزنی تازه سرخ‌شده در تابه."
+    },
+    "balik_koftesi": {
+      "name": "کوفته ماهی (Balık Köftesi)",
+      "desc": "کتلت و کوفته ماهی تازه و خوش‌عطر."
+    },
+    "okyanus_lokumu": {
+      "name": "لقمه اقیانوس (Okyanus Lokumu)",
+      "desc": "تکه‌های لطیف و ترد فیله ماهی."
+    },
+    "fener_kavurma": {
+      "name": "فِنِر کاوورما (خوراک ماهی فنر)",
+      "desc": "ماهی فنر تفت‌داده‌شده با سبزیجات و سس ویژه."
+    },
+    "levrek_kavurma": {
+      "name": "سی‌باس کاوورما",
+      "desc": "فیله سی‌باس تفت‌داده‌شده در تابه."
+    },
+    "hamsili_pilav": {
+      "name": "پلو با ماهی هامسی (Hamsili Pilav)",
+      "desc": "پلوی معطر دریای سیاه با پوشش ماهی هامسی تازه."
+    },
+    "midye_tava": {
+      "name": "صدف سرخ‌شده (Midye Tava)",
+      "desc": "صدف‌های تازه سوخاری و ترد."
+    },
+    "midye_dolma": {
+      "name": "میدیه دولما (صدف شکم‌پر)",
+      "desc": "صدف تازه پرشده با برنج معطر و ادویه (هر عدد)."
+    },
+    "ahtapot_salatasi": {
+      "name": "سالاد اختاپوس",
+      "desc": "اختاپوس تازه مرینیت‌شده با روغن زیتون و لیمو."
+    },
+    "deniz_urunleri_salatasi": {
+      "name": "سالاد غذاهای دریایی",
+      "desc": "ترکیبی از غذاهای دریایی تازه با سس لیمو و روغن زیتون."
+    },
+    "isli_midye": {
+      "name": "صدف دودی (İsli Midye)",
+      "desc": "مزه صدف با عطر دودی ویژه."
+    },
+    "lekarda": {
+      "name": "لاکِردا (ماهی عمل‌آوری‌شده)",
+      "desc": "پیش‌غذای سنتی استانبول از ماهی پالاموت."
+    },
+    "ciroz": {
+      "name": "سالاد چیروز (ماهی خشک‌شده)",
+      "desc": "مزه سنتی ماهی اسقومری با شوید و روغن زیتون."
+    },
+    "hamsi_soslu": {
+      "name": "هامسی با سس مخصوص",
+      "desc": "فیله ماهی هامسی مرینیت‌شده در سس."
+    },
+    "arnavut_cigeri": {
+      "name": "جگر به سبک آلبانیایی (Arnavut Ciğeri)",
+      "desc": "جگر حبه‌ای سرخ‌شده ترد و لطیف."
+    },
+    "peynir_dolgulu_kirmizi_biber": {
+      "name": "فلفل قرمز شکم‌پر با پنیر",
+      "desc": "فلفل قرمز پرشده با پنیر خامه‌ای ویژه."
+    },
+    "saksuka_ulas": {
+      "name": "شاکشوکا (خوراک بادمجان)",
+      "desc": "بادمجان و فلفل سرخ‌شده با سس گوجه‌فرنگی و سیر."
+    },
+    "acili_ezme": {
+      "name": "آجیلی ازمه (ازمه تند)",
+      "desc": "پیش‌غذای تند از گوجه‌فرنگی، فلفل و رب انار."
+    },
+    "haydari": {
+      "name": "هایداری (ماست چکیده و سبزیجات)",
+      "desc": "ماست چکیده با سیر، شوید، نعناع و روغن زیتون."
+    },
+    "patlican_ezmesi": {
+      "name": "پوره بادمجان کبابی",
+      "desc": "بادمجان کبابی با سیر و روغن زیتون."
+    },
+    "rus_salatasi": {
+      "name": "سالاد الویه / روسی",
+      "desc": "سبزیجات خردشده با خیارشور و سس خامه‌ای."
+    },
+    "humus_ulas": {
+      "name": "حمص (نخود و ارده)",
+      "desc": "پوره نخود با ارده، لیمو و روغن زیتون."
+    },
+    "havuc_tarator_ulas": {
+      "name": "تاراتور هویج",
+      "desc": "هویج تفت‌داده‌شده با ماست چکیده و سیر."
+    },
+    "patates_ulas": {
+      "name": "سیب‌زمینی سرخ‌کرده",
+      "desc": "سیب‌زمینی سرخ‌شده طلایی و ترد."
+    },
+    "sigara_boregi_ulas": {
+      "name": "سیگارا بورک (رول پنیری)",
+      "desc": "رول‌های ترد خمیر یوفکا پرشده با پنیر."
+    },
+    "balik_corbasi": {
+      "name": "سوپ ماهی (Balık Çorbası)",
+      "desc": "سوپ گرم و مقوی از عصاره ماهی تازه و سبزیجات."
+    },
+    "mercimek_corbasi": {
+      "name": "سوپ عدس (مرجیمک)",
+      "desc": "سوپ سنتی دال عدس به سبک ترکی."
+    },
+    "mevsim_salata": {
+      "name": "سالاد فصل (Mevsim Salata)",
+      "desc": "سبزیجات تازه فصل با روغن زیتون و آب‌لیمو."
+    },
+    "roka_salata": {
+      "name": "سالاد روکا (ترتیزک)",
+      "desc": "برگ‌های تازه روکا با گوجه‌فرنگی و روغن زیتون."
+    },
+    "coban_salata_ulas": {
+      "name": "سالاد چوپان (Çoban Salata)",
+      "desc": "گوجه‌فرنگی، خیار، فلفل، پیاز و جعفری تازه."
+    },
+    "ekmek_arasi_hamsi": {
+      "name": "ساندویچ ماهی هامسی",
+      "desc": "ماهی هامسی تازه و ترد در نان با سبزیجات."
+    },
+    "ekmek_arasi_uskumru": {
+      "name": "ساندویچ ماهی اسقومری کبابی",
+      "desc": "ماهی اسقومری کبابی در نان تازه با سبزیجات."
+    },
+    "kabak_tatlisi": {
+      "name": "دسر کدو حلوایی با ارده (Kabak Tatlısı)",
+      "desc": "دسر سنتی کدو حلوایی با ارده و گردو."
+    },
+    "sicak_helva": {
+      "name": "حلوای داغ تنوری (Sıcak Helva)",
+      "desc": "حلوای ارده گرم‌شده در فر، دسر کلاسیک پس از ماهی."
+    },
+    "irmik_tatlisi": {
+      "name": "دسر ایرمیک (حلوای سمولینا)",
+      "desc": "دسر سنتی ترکی تهیه شده از ایرمیک."
+    },
+    "su_ulas": {
+      "name": "Water",
+      "desc": "Bottled water"
+    },
+    "sade_soda": {
+      "name": "Sparkling Mineral Water (Soda)",
+      "desc": "Natural mineral water"
+    },
+    "limonlu_soda": {
+      "name": "Lemon Soda",
+      "desc": "Lemon sparkling mineral water"
+    },
+    "salgam_ulas": {
+      "name": "Turnip Juice (Şalgam)",
+      "desc": "Traditional fermented purple carrot & turnip drink"
+    },
+    "coco_cola": {
+      "name": "Coca-Cola",
+      "desc": "Chilled soft drink"
+    },
+    "coco_cola_zero": {
+      "name": "Coca-Cola Zero",
+      "desc": "Zero sugar soft drink"
+    },
+    "coco_cola_light": {
+      "name": "Coca-Cola Light",
+      "desc": "Diet soft drink"
+    },
+    "fanta_ulas": {
+      "name": "Fanta",
+      "desc": "Orange soda"
+    },
+    "sprite_ulas": {
+      "name": "Sprite",
+      "desc": "Lemon-lime soda"
+    },
+    "pepsi": {
+      "name": "Pepsi",
+      "desc": "Chilled cola"
+    },
+    "pepsi_max": {
+      "name": "Pepsi Max",
+      "desc": "Maximum taste, no sugar"
+    },
+    "yedigun": {
+      "name": "Yedigün",
+      "desc": "Orange soft drink"
+    },
+    "cappy_meyve_suyu": {
+      "name": "Cappy Fruit Juice",
+      "desc": "Chilled fruit juice"
+    },
+    "tropicana": {
+      "name": "Tropicana Juice",
+      "desc": "Fruit juice"
+    },
+    "ice_tea_seftali": {
+      "name": "Peach Ice Tea",
+      "desc": "Chilled peach iced tea"
+    },
+    "ice_tea_limon": {
+      "name": "Lemon Ice Tea",
+      "desc": "Chilled lemon iced tea"
+    },
+    "lipton": {
+      "name": "Lipton Ice Tea",
+      "desc": "Iced tea"
+    },
+    "coco_cola_1lt": {
+      "name": "Coca-Cola (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "coco_cola_zero_1lt": {
+      "name": "Coca-Cola Zero (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "fanta_1lt": {
+      "name": "Fanta (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_1lt": {
+      "name": "Pepsi (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "pepsi_max_1lt": {
+      "name": "Pepsi Max (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "yedigun_1lt": {
+      "name": "Yedigün (1L)",
+      "desc": "1 Liter bottle"
+    },
+    "seven_up_1lt": {
+      "name": "7UP (1L)",
+      "desc": "1 Liter bottle"
+    }
+  }
+}

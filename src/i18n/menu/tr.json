@@ -1,0 +1,374 @@
+{
+  "categories": {
+    "izgaralar": "Izgaralar",
+    "tavalar": "Tavalar",
+    "mezeler": "Mezeler",
+    "corbalar": "Çorbalar",
+    "salatalar": "Salatalar",
+    "ekmek_arasi": "Ekmek Arası",
+    "tatlilar": "Tatlılar",
+    "icecekler": "İçecekler"
+  },
+  "items": {
+    "levrek_izgara": {
+      "name": "Levrek Izgara",
+      "desc": "Taze levrek, ızgarada özenle pişirilir."
+    },
+    "cipura_izgara": {
+      "name": "Çipura Izgara",
+      "desc": "Taze çipura, ızgarada özenle pişirilir."
+    },
+    "levrek_deniz_izgara": {
+      "name": "Levrek Deniz Izgara",
+      "desc": "Deniz levreği, ızgarada pişirilir."
+    },
+    "cipura_deniz_izgara": {
+      "name": "Çipura Deniz Izgara",
+      "desc": "Deniz çipurası, ızgarada pişirilir."
+    },
+    "levrek_sis_izgara": {
+      "name": "Levrek Şiş Izgara",
+      "desc": "Izgarada pişirilmiş levrek şiş."
+    },
+    "somon_dilim_izgara": {
+      "name": "Somon Dilim Izgara",
+      "desc": "Izgarada pişirilmiş somon dilim."
+    },
+    "somon_fileto_izgara": {
+      "name": "Somon Fileto Izgara",
+      "desc": "Izgarada pişirilmiş kılçıksız somon fileto."
+    },
+    "somon_sis_izgara": {
+      "name": "Somon Şiş Izgara",
+      "desc": "Izgarada pişirilmiş somon şiş."
+    },
+    "lufer_izgara": {
+      "name": "Lüfer Izgara",
+      "desc": "Mevsiminde taze lüfer ızgara."
+    },
+    "sari_kanat_izgara": {
+      "name": "Sarı Kanat Izgara",
+      "desc": "Taze sarıkanat ızgara."
+    },
+    "fener_sis_izgara": {
+      "name": "Fener Şiş Izgara",
+      "desc": "Izgarada pişirilmiş fener balığı şiş."
+    },
+    "minekop_izgara": {
+      "name": "Minekop Izgara",
+      "desc": "Taze minekop balığı ızgara."
+    },
+    "citir_levrek": {
+      "name": "Çıtır Levrek",
+      "desc": "Özel çıtır dokusuyla pişirilmiş levrek."
+    },
+    "palamut_izgara": {
+      "name": "Palamut Izgara",
+      "desc": "Mevsiminde taze Karadeniz palamutu ızgara."
+    },
+    "sardalya_izgara": {
+      "name": "Sardalya Izgara",
+      "desc": "Taze sardalya ızgara."
+    },
+    "uskumru_izgara": {
+      "name": "Uskumru Izgara",
+      "desc": "Izgarada pişirilmiş taze uskumru."
+    },
+    "alabalik_izgara": {
+      "name": "Alabalık Izgara",
+      "desc": "Izgarada pişirilmiş taze alabalık."
+    },
+    "jumbo_karides": {
+      "name": "Jumbo Karides",
+      "desc": "Izgarada pişirilmiş taze jumbo karides."
+    },
+    "hamsi_tava": {
+      "name": "Hamsi Tava",
+      "desc": "Karadeniz'in taze hamsisi, mısır unuyla tavada çıtır pişirilir."
+    },
+    "istavrit_tava": {
+      "name": "İstavrit Tava",
+      "desc": "Çıtır tavada pişirilmiş taze istavrit."
+    },
+    "sardalya_tava": {
+      "name": "Sardalya Tava",
+      "desc": "Tavada altın sarısı pişirilmiş taze sardalya."
+    },
+    "mezgit_tava": {
+      "name": "Mezgit Tava",
+      "desc": "Tavada çıtır pişirilmiş taze mezgit."
+    },
+    "tekir_tava": {
+      "name": "Tekir Tava",
+      "desc": "Tavada özenle kızartılmış taze tekir balığı."
+    },
+    "barbun_tava": {
+      "name": "Barbun Tava",
+      "desc": "Tavada pişirilmiş taze barbun balığı."
+    },
+    "alabalik_tava": {
+      "name": "Alabalık Tava",
+      "desc": "Tavada pişirilmiş taze alabalık."
+    },
+    "dil_tava": {
+      "name": "Dil Tava",
+      "desc": "Kılçıksız taze dil balığı tava."
+    },
+    "dil_sis_tava": {
+      "name": "Dil Şiş Tava",
+      "desc": "Şişte hazırlanmış çıtır dil balığı tava."
+    },
+    "karides_tava": {
+      "name": "Karides Tava",
+      "desc": "Tavada özenle hazırlanmış taze karides."
+    },
+    "kalamar_tava": {
+      "name": "Kalamar Tava",
+      "desc": "Çıtır kaplamasıyla altın sarısı pişirilmiş taze kalamar."
+    },
+    "palamut_tava": {
+      "name": "Palamut Tava",
+      "desc": "Mevsiminde taze palamut tava."
+    },
+    "balik_kokorec": {
+      "name": "Balık Kokoreç",
+      "desc": "Baharatlar, biber ve domatesle harmanlanmış özel balık kokoreç."
+    },
+    "zargana_tava": {
+      "name": "Zargana Tava",
+      "desc": "Tavada çıtır pişirilmiş taze zargana balığı."
+    },
+    "balik_koftesi": {
+      "name": "Balık Köftesi",
+      "desc": "Özel harcıyla hazırlanmış sıcak balık köftesi."
+    },
+    "okyanus_lokumu": {
+      "name": "Okyanus Lokumu",
+      "desc": "Yumuşacık dokusuyla kızartılmış okyanus lokumu."
+    },
+    "fener_kavurma": {
+      "name": "Fener Kavurma",
+      "desc": "Sebze ve özel sos eşliğinde sotelenmiş fener balığı kavurma."
+    },
+    "levrek_kavurma": {
+      "name": "Levrek Kavurma",
+      "desc": "Özel sos ve sebzelerle sotelenmiş levrek kavurma."
+    },
+    "hamsili_pilav": {
+      "name": "Hamsili Pilav",
+      "desc": "Karadeniz usulü baharatlı iç pilav ile fırınlanmış taze hamsi."
+    },
+    "midye_tava": {
+      "name": "Midye Tava",
+      "desc": "Çıtır kaplamasıyla kızartılmış taze midye tava."
+    },
+    "midye_dolma": {
+      "name": "Midye Dolma",
+      "desc": "Baharatlı iç pilavla doldurulmuş taze midye dolma (Adet)."
+    },
+    "ahtapot_salatasi": {
+      "name": "Ahtapot Salatası",
+      "desc": "Zeytinyağı ve limon sosuyla marine edilmiş taze ahtapot salatası."
+    },
+    "deniz_urunleri_salatasi": {
+      "name": "Deniz Ürünleri Salatası",
+      "desc": "Seçkin deniz mahsulleriyle hazırlanan taze salata."
+    },
+    "isli_midye": {
+      "name": "İsli Midye",
+      "desc": "Özel isli aromasıyla hazırlanmış midye mezesi."
+    },
+    "lekarda": {
+      "name": "Lakerda",
+      "desc": "Geleneksel usulde dinlendirilmiş torik/palamut lakerdası."
+    },
+    "ciroz": {
+      "name": "Çiroz",
+      "desc": "Geleneksel usulde hazırlanmış çiroz salatası."
+    },
+    "hamsi_soslu": {
+      "name": "Hamsi Soslu",
+      "desc": "Özel marinasyon ve sos içinde hazırlanmış hamsi mezesi."
+    },
+    "arnavut_cigeri": {
+      "name": "Arnavut Ciğeri",
+      "desc": "Küp doğranmış, yumuşacık pişirilmiş geleneksel Arnavut ciğeri."
+    },
+    "peynir_dolgulu_kirmizi_biber": {
+      "name": "Peynir Dolgulu Kırmızı Biber",
+      "desc": "Özel peynir dolgulu köz kırmızı biber mezesi."
+    },
+    "saksuka_ulas": {
+      "name": "Şakşuka",
+      "desc": "Domates soslu kızarmış patlıcan, biber ve sarımsak mezesi."
+    },
+    "acili_ezme": {
+      "name": "Acılı Ezme",
+      "desc": "Taze domates, biber, soğan ve nar ekşisiyle hazırlanan acılı ezme."
+    },
+    "haydari": {
+      "name": "Haydari",
+      "desc": "Süzme yoğurt, sarımsak, dereotu ve zeytinyağı ile hazırlanan klasik meze."
+    },
+    "patlican_ezmesi": {
+      "name": "Patlıcan Ezmesi",
+      "desc": "Közlenmiş patlıcan, zeytinyağı ve sarımsakla hazırlanan meze."
+    },
+    "rus_salatasi": {
+      "name": "Rus Salatası",
+      "desc": "Havuç, patates, bezelye ve kornişon turşulu klasik Rus salatası."
+    },
+    "humus_ulas": {
+      "name": "Humus",
+      "desc": "Nohut, tahin, limon ve sızma zeytinyağı ile hazırlanan humus."
+    },
+    "havuc_tarator_ulas": {
+      "name": "Havuç Tarator",
+      "desc": "Sotelenmiş havuç, süzme yoğurt ve sarımsakla hazırlanan meze."
+    },
+    "patates_ulas": {
+      "name": "Patates",
+      "desc": "Altın sarısı çıtır patates kızartması."
+    },
+    "sigara_boregi_ulas": {
+      "name": "Sigara Böreği",
+      "desc": "Peynir dolgulu çıtır sigara böreği."
+    },
+    "balik_corbasi": {
+      "name": "Balık Çorbası",
+      "desc": "Taze balık suyu ve sebzelerle hazırlanan sıcak balık çorbası."
+    },
+    "mercimek_corbasi": {
+      "name": "Mercimek Çorbası",
+      "desc": "Geleneksel usulde süzme kırmızı mercimek çorbası."
+    },
+    "mevsim_salata": {
+      "name": "Mevsim Salata",
+      "desc": "Taze mevsim yeşillikleri, zeytinyağı ve limon sosuyla."
+    },
+    "roka_salata": {
+      "name": "Roka Salata",
+      "desc": "Taze roka yaprakları, domates, zeytinyağı ve limon ile."
+    },
+    "coban_salata_ulas": {
+      "name": "Çoban Salata",
+      "desc": "Domates, salatalık, biber, soğan ve maydanoz ile hazırlanan taze salata."
+    },
+    "ekmek_arasi_hamsi": {
+      "name": "Ekmek Arası Hamsi",
+      "desc": "Taze çıtır hamsi, yeşillik ve soğan ile sıcak ekmek arasında."
+    },
+    "ekmek_arasi_uskumru": {
+      "name": "Ekmek Arası Uskumru",
+      "desc": "Izgarada pişirilmiş taze uskumru, yeşillik ve soğan ile ekmek arasında."
+    },
+    "kabak_tatlisi": {
+      "name": "Kabak Tatlısı",
+      "desc": "Tahin ve ceviz eşliğinde sunulan geleneksel kabak tatlısı."
+    },
+    "sicak_helva": {
+      "name": "Sıcak Helva",
+      "desc": "Balık sonrası fırında ısıtılarak sıcak servis edilen tahin helvası."
+    },
+    "irmik_tatlisi": {
+      "name": "İrmik Tatlısı",
+      "desc": "Özel kıvamıyla hazırlanan geleneksel irmik tatlısı."
+    },
+    "su_ulas": {
+      "name": "Su",
+      "desc": "İçme suyu"
+    },
+    "sade_soda": {
+      "name": "Sade Soda",
+      "desc": "Doğal maden suyu"
+    },
+    "limonlu_soda": {
+      "name": "Limonlu Soda",
+      "desc": "Limon aromalı maden suyu"
+    },
+    "salgam_ulas": {
+      "name": "Şalgam",
+      "desc": "Geleneksel şalgam suyu"
+    },
+    "coco_cola": {
+      "name": "Coca-Cola",
+      "desc": "Kutu soğuk içecek"
+    },
+    "coco_cola_zero": {
+      "name": "Coca-Cola Zero",
+      "desc": "Şekersiz soğuk içecek"
+    },
+    "coco_cola_light": {
+      "name": "Coca-Cola Light",
+      "desc": "Light soğuk içecek"
+    },
+    "fanta_ulas": {
+      "name": "Fanta",
+      "desc": "Portakal aromalı gazoz"
+    },
+    "sprite_ulas": {
+      "name": "Sprite",
+      "desc": "Limon-misket limonu aromalı gazoz"
+    },
+    "pepsi": {
+      "name": "Pepsi",
+      "desc": "Soğuk içecek"
+    },
+    "pepsi_max": {
+      "name": "Pepsi Max",
+      "desc": "Şekersiz soğuk içecek"
+    },
+    "yedigun": {
+      "name": "Yedigün",
+      "desc": "Portakal aromalı soğuk içecek"
+    },
+    "cappy_meyve_suyu": {
+      "name": "Cappy Meyve Suyu",
+      "desc": "Meyve suyu çeşitleri"
+    },
+    "tropicana": {
+      "name": "Tropicana",
+      "desc": "Meyve suyu"
+    },
+    "ice_tea_seftali": {
+      "name": "Ice Tea Şeftali",
+      "desc": "Şeftali aromalı soğuk çay"
+    },
+    "ice_tea_limon": {
+      "name": "Ice Tea Limon",
+      "desc": "Limon aromalı soğuk çay"
+    },
+    "lipton": {
+      "name": "Lipton Ice Tea",
+      "desc": "Soğuk çay"
+    },
+    "coco_cola_1lt": {
+      "name": "Coca-Cola (1 Lt.)",
+      "desc": "1 Litre paylaşımlık boy"
+    },
+    "coco_cola_zero_1lt": {
+      "name": "Coca-Cola Zero (1 Lt.)",
+      "desc": "1 Litre şekersiz"
+    },
+    "fanta_1lt": {
+      "name": "Fanta (1 Lt.)",
+      "desc": "1 Litre paylaşımlık boy"
+    },
+    "pepsi_1lt": {
+      "name": "Pepsi (1 Lt.)",
+      "desc": "1 Litre paylaşımlık boy"
+    },
+    "pepsi_max_1lt": {
+      "name": "Pepsi Max (1 Lt.)",
+      "desc": "1 Litre şekersiz"
+    },
+    "yedigun_1lt": {
+      "name": "Yedigün (1 Lt.)",
+      "desc": "1 Litre paylaşımlık boy"
+    },
+    "seven_up_1lt": {
+      "name": "7UP (1 Lt.)",
+      "desc": "1 Litre paylaşımlık boy"
+    }
+  }
+}
