@@ -11,7 +11,14 @@ const nextConfig = {
     root: __dirname,
   },
   experimental: {
-    optimizePackageImports: ['@phosphor-icons/react', 'lucide-react'],
+    optimizePackageImports: [
+      "@phosphor-icons/react",
+      "lucide-react",
+      "react-icons",
+      "react-icons/tb",
+      "react-icons/fa6",
+      "react-icons/pi",
+    ],
   },
   // Image optimization
   images: {
@@ -31,10 +38,10 @@ const nextConfig = {
         has: [
           {
             type: 'host',
-            value: 'kardeslercihangir.com',
+            value: 'ulasbalik.com',
           },
         ],
-        destination: 'https://www.kardeslercihangir.com/:path*',
+        destination: 'https://www.ulasbalik.com/:path*',
         permanent: true,
       },
       // Old WordPress WooCommerce product pages -> /menu
@@ -182,22 +189,22 @@ const nextConfig = {
       },
       // Fix for malformed /https:// or /http:// URLs indexed by Google
       {
-        source: "/https\\://kardeslercihangir.com/:path*",
+        source: "/https\\://ulasbalik.com/:path*",
         destination: "/:path*",
         permanent: true,
       },
       {
-        source: "/http\\://kardeslercihangir.com/:path*",
+        source: "/http\\://ulasbalik.com/:path*",
         destination: "/:path*",
         permanent: true,
       },
       {
-        source: "/https\\://www.kardeslercihangir.com/:path*",
+        source: "/https\\://www.ulasbalik.com/:path*",
         destination: "/:path*",
         permanent: true,
       },
       {
-        source: "/http\\://www.kardeslercihangir.com/:path*",
+        source: "/http\\://www.ulasbalik.com/:path*",
         destination: "/:path*",
         permanent: true,
       },
