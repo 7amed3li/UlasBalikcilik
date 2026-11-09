@@ -9,11 +9,11 @@ export const devProfileContent = {
       role: "Web Designer & Developer for restaurants and local businesses",
       headline: "I build fast, multilingual websites that turn visitors into customers — like the one you're looking at right now.",
       ctaQuote: "Get a Quote",
-      ctaWork: "See My Work →"
+      ctaWork: "See My Work"
     },
     proof: {
       title: "REAL PROOF",
-      subtitle: "This site — kardeslercihangir.com — is a live example of my work, not a mockup.",
+      subtitle: "This site — Ulaş Balıkçılık (ulasbalik.com) — is a live example of my work, not a mockup.",
       points: [
         "Loads fast on mobile, where 85%+ of restaurant visitors come from",
         "Automatically shows menu prices in the visitor's currency (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -51,7 +51,7 @@ export const devProfileContent = {
       title: "Want a site like this one for your business?",
       whatsapp: "WhatsApp Me",
       email: "Email Me",
-      portfolio: "See More Work →",
+      portfolio: "See More Work",
       whatsappLink: "https://wa.me/905060453906", // TODO: REPLACE WITH ACTUAL NUMBER
       emailLink: "mailto:hamed.m.kamel2@gmail.com", // TODO: REPLACE WITH ACTUAL EMAIL
       portfolioLink: "https://hamedmohamed.dev"
@@ -67,11 +67,11 @@ export const devProfileContent = {
       role: "Restoranlar ve yerel işletmeler için web tasarımcısı & geliştiricisi",
       headline: "Ziyaretçiyi müşteriye çeviren, hızlı ve çok dilli web siteleri kuruyorum — şu an baktığınız site gibi.",
       ctaQuote: "Teklif Al",
-      ctaWork: "Çalışmalarımı Gör →"
+      ctaWork: "Çalışmalarımı Gör"
     },
     proof: {
       title: "GERÇEK KANIT",
-      subtitle: "Bu site — kardeslercihangir.com — bir maket değil, canlı bir örnek.",
+      subtitle: "Bu site — Ulaş Balıkçılık (ulasbalik.com) — bir maket değil, canlı bir örnek.",
       points: [
         "Restoran ziyaretçilerinin %85'inden fazlasının geldiği mobilde hızlı açılıyor",
         "Ziyaretçinin para birimine göre menü fiyatlarını otomatik gösteriyor (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -109,7 +109,7 @@ export const devProfileContent = {
       title: "Sizin için de böyle bir site istiyor musunuz?",
       whatsapp: "WhatsApp'tan Yaz",
       email: "E-posta Gönder",
-      portfolio: "Daha Fazla Çalışma Gör →",
+      portfolio: "Daha Fazla Çalışma Gör",
       whatsappLink: "https://wa.me/905060453906",
       emailLink: "mailto:hamed.m.kamel2@gmail.com",
       portfolioLink: "https://hamedmohamed.dev"
@@ -125,11 +125,11 @@ export const devProfileContent = {
       role: "مصمم ومطور مواقع للمطاعم والمشاريع المحلية",
       headline: "أبني مواقع سريعة ومتعددة اللغات بتحوّل الزائر لعميل — زي الموقع اللي إنت واقف فيه دلوقتي.",
       ctaQuote: "اطلب عرض سعر",
-      ctaWork: "شوف شغلي →"
+      ctaWork: "شوف شغلي"
     },
     proof: {
       title: "إثبات حقيقي",
-      subtitle: "الموقع ده — kardeslercihangir.com — مش نموذج تجريبي، ده شغل حقيقي شغال دلوقتي.",
+      subtitle: "الموقع ده — Ulaş Balıkçılık (ulasbalik.com) — مش نموذج تجريبي، ده شغل حقيقي شغال دلوقتي.",
       points: [
         "بيفتح بسرعة على الموبايل، اللي منه بيجي أكتر من 85% من زوار المطاعم",
         "يعرض أسعار المنيو تلقائيًا بعملة الزائر (ليرة تركي، دولار، يورو، جنيه إسترليني، روبل، ريال سعودي)",
@@ -167,7 +167,7 @@ export const devProfileContent = {
       title: "عايز موقع زي ده لبيزنسك؟",
       whatsapp: "كلمني واتساب",
       email: "ابعتلي إيميل",
-      portfolio: "شوف شغل تاني →",
+      portfolio: "شوف شغل تاني",
       whatsappLink: "https://wa.me/905060453906",
       emailLink: "mailto:hamed.m.kamel2@gmail.com",
       portfolioLink: "https://hamedmohamed.dev"
@@ -183,11 +183,11 @@ export const devProfileContent = {
       role: "Webdesigner & Entwickler für Restaurants und lokale Unternehmen",
       headline: "Ich baue schnelle, mehrsprachige Websites, die Besucher zu Kunden machen — genau wie die, die Sie gerade sehen.",
       ctaQuote: "Angebot anfordern",
-      ctaWork: "Meine Arbeit ansehen →"
+      ctaWork: "Meine Arbeit ansehen"
     },
     proof: {
       title: "ECHTER BEWEIS",
-      subtitle: "Diese Seite — kardeslercihangir.com — ist kein Entwurf, sondern ein reales, funktionierendes Beispiel.",
+      subtitle: "Diese Seite — Ulaş Balıkçılık (ulasbalik.com) — ist kein Entwurf, sondern ein reales, funktionierendes Beispiel.",
       points: [
         "Lädt rasend schnell auf dem Smartphone (woher über 85% der Restaurant-Gäste kommen)",
         "Zeigt Menüpreise automatisch in der Währung des Besuchers an (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -225,7 +225,7 @@ export const devProfileContent = {
       title: "Möchten Sie so eine Website für Ihr Geschäft?",
       whatsapp: "WhatsApp schreiben",
       email: "E-Mail senden",
-      portfolio: "Mehr Arbeiten sehen →",
+      portfolio: "Mehr Arbeiten sehen",
       whatsappLink: "https://wa.me/905060453906",
       emailLink: "mailto:hamed.m.kamel2@gmail.com",
       portfolioLink: "https://hamedmohamed.dev"
@@ -241,11 +241,11 @@ export const devProfileContent = {
       role: "Diseñador y Desarrollador Web para restaurantes y negocios locales",
       headline: "Creo sitios web rápidos y multilingües que convierten visitantes en clientes — como este que estás viendo ahora.",
       ctaQuote: "Pedir Cotización",
-      ctaWork: "Ver Mi Trabajo →"
+      ctaWork: "Ver Mi Trabajo"
     },
     proof: {
       title: "PRUEBA REAL",
-      subtitle: "Este sitio — kardeslercihangir.com — es un ejemplo en vivo de mi trabajo, no una maqueta.",
+      subtitle: "Este sitio — Ulaş Balıkçılık (ulasbalik.com) — es un ejemplo en vivo de mi trabajo, no una maqueta.",
       points: [
         "Carga rápida en móviles, de donde provienen más del 85% de las visitas de restaurantes",
         "Muestra automáticamente los precios del menú en la moneda del visitante (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -283,7 +283,7 @@ export const devProfileContent = {
       title: "¿Quieres un sitio como este para tu negocio?",
       whatsapp: "Escríbeme por WhatsApp",
       email: "Envíame un Email",
-      portfolio: "Ver Más Trabajos →",
+      portfolio: "Ver Más Trabajos",
       whatsappLink: "https://wa.me/905060453906",
       emailLink: "mailto:hamed.m.kamel2@gmail.com",
       portfolioLink: "https://hamedmohamed.dev"
@@ -299,11 +299,11 @@ export const devProfileContent = {
       role: "طراح و توسعه‌دهنده وب برای رستوران‌ها و کسب‌وکارهای محلی",
       headline: "من سایت‌های سریع و چندزبانه‌ای می‌سازم که بازدیدکنندگان را به مشتری تبدیل می‌کنند — درست مثل همین سایتی که در حال مشاهده آن هستید.",
       ctaQuote: "درخواست قیمت",
-      ctaWork: "مشاهده نمونه کارها →"
+      ctaWork: "مشاهده نمونه کارها"
     },
     proof: {
       title: "اثبات واقعی",
-      subtitle: "این سایت — kardeslercihangir.com — یک نمونه آزمایشی نیست، بلکه یک پروژه واقعی در حال کار است.",
+      subtitle: "این سایت — Ulaş Balıkçılık (ulasbalik.com) — یک نمونه آزمایشی نیست، بلکه یک پروژه واقعی در حال کار است.",
       points: [
         "بارگذاری بسیار سریع در موبایل، جایی که بیش از ۸۵٪ مشتریان رستوران از آنجا می‌آیند",
         "نمایش خودکار قیمت منو به ارز بازدیدکننده (لیر، دلار، یورو، پوند، روبل، ریال سعودی)",
@@ -341,7 +341,7 @@ export const devProfileContent = {
       title: "آیا برای کسب‌وکارتان سایتی شبیه به این می‌خواهید؟",
       whatsapp: "پیام در واتس‌اپ",
       email: "ارسال ایمیل",
-      portfolio: "مشاهده کارهای بیشتر →",
+      portfolio: "مشاهده کارهای بیشتر",
       whatsappLink: "https://wa.me/905060453906",
       emailLink: "mailto:hamed.m.kamel2@gmail.com",
       portfolioLink: "https://hamedmohamed.dev"
@@ -357,11 +357,11 @@ export const devProfileContent = {
       role: "Concepteur et développeur web pour restaurants et entreprises locales",
       headline: "Je crée des sites web rapides et multilingues qui transforment les visiteurs en clients — comme celui que vous regardez en ce moment.",
       ctaQuote: "Demander un devis",
-      ctaWork: "Voir mon travail →"
+      ctaWork: "Voir mon travail"
     },
     proof: {
       title: "PREUVE CONCRÈTE",
-      subtitle: "Ce site — kardeslercihangir.com — est un exemple réel de mon travail, pas une simple maquette.",
+      subtitle: "Ce site — Ulaş Balıkçılık (ulasbalik.com) — est un exemple réel de mon travail, pas une simple maquette.",
       points: [
         "Se charge rapidement sur mobile, d'où proviennent plus de 85% des clients de restaurants",
         "Affiche automatiquement les prix du menu dans la devise du visiteur (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -399,7 +399,7 @@ export const devProfileContent = {
       title: "Vous souhaitez un site comme celui-ci pour votre entreprise ?",
       whatsapp: "Contactez-moi sur WhatsApp",
       email: "Envoyez-moi un E-mail",
-      portfolio: "Voir d'autres projets →",
+      portfolio: "Voir d'autres projets",
       whatsappLink: "https://wa.me/905060453906",
       emailLink: "mailto:hamed.m.kamel2@gmail.com",
       portfolioLink: "https://hamedmohamed.dev"
@@ -415,11 +415,11 @@ export const devProfileContent = {
       role: "Web Designer e Sviluppatore per ristoranti e attività locali",
       headline: "Realizzo siti web veloci e multilingue che trasformano i visitatori in clienti — proprio come quello che stai guardando ora.",
       ctaQuote: "Richiedi Preventivo",
-      ctaWork: "Guarda i Miei Lavori →"
+      ctaWork: "Guarda i Miei Lavori"
     },
     proof: {
       title: "PROVA REALE",
-      subtitle: "Questo sito — kardeslercihangir.com — è un esempio reale del mio lavoro, non un modello finto.",
+      subtitle: "Questo sito — Ulaş Balıkçılık (ulasbalik.com) — è un esempio reale del mio lavoro, non un modello finto.",
       points: [
         "Si carica velocemente su mobile, da dove proviene oltre l'85% dei clienti dei ristoranti",
         "Mostra automaticamente i prezzi del menu nella valuta del visitatore (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -457,7 +457,7 @@ export const devProfileContent = {
       title: "Vuoi un sito come questo per la tua attività?",
       whatsapp: "Scrivimi su WhatsApp",
       email: "Inviami un'E-mail",
-      portfolio: "Vedi Altri Lavori →",
+      portfolio: "Vedi Altri Lavori",
       whatsappLink: "https://wa.me/905060453906",
       emailLink: "mailto:hamed.m.kamel2@gmail.com",
       portfolioLink: "https://hamedmohamed.dev"
@@ -473,11 +473,11 @@ export const devProfileContent = {
       role: "Веб-дизайнер и разработчик для ресторанов и локального бизнеса",
       headline: "Я создаю быстрые, многоязычные сайты, которые превращают посетителей в клиентов — как тот, который вы сейчас видите.",
       ctaQuote: "Запросить цену",
-      ctaWork: "Посмотреть мои работы →"
+      ctaWork: "Посмотреть мои работы"
     },
     proof: {
       title: "РЕАЛЬНЫЕ РЕЗУЛЬТАТЫ",
-      subtitle: "Этот сайт — kardeslercihangir.com — это живой пример моей работы, а не просто макет.",
+      subtitle: "Этот сайт — Ulaş Balıkçılık (ulasbalik.com) — это живой пример моей работы, а не просто макет.",
       points: [
         "Быстро загружается на мобильных устройствах (откуда приходит более 85% гостей ресторанов)",
         "Автоматически показывает цены в меню в валюте посетителя (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -515,7 +515,7 @@ export const devProfileContent = {
       title: "Хотите такой же сайт для вашего бизнеса?",
       whatsapp: "Написать в WhatsApp",
       email: "Написать на Email",
-      portfolio: "Больше моих работ →",
+      portfolio: "Больше моих работ",
       whatsappLink: "https://wa.me/905060453906",
       emailLink: "mailto:hamed.m.kamel2@gmail.com",
       portfolioLink: "https://hamedmohamed.dev"
@@ -531,11 +531,11 @@ export const devProfileContent = {
       role: "专为餐厅及本地企业服务的网站设计师与开发者",
       headline: "我致力于构建能够将访客转化为实际客户的快速、多语言网站 — 正如您现在浏览的这个网站。",
       ctaQuote: "获取报价",
-      ctaWork: "查看我的作品 →"
+      ctaWork: "查看我的作品"
     },
     proof: {
       title: "真实案例",
-      subtitle: "本网站 — kardeslercihangir.com — 是我开发的一个真实上线项目，而非演示模型。",
+      subtitle: "本网站 — Ulaş Balıkçılık (ulasbalik.com) — 是我开发的一个真实上线项目，而非演示模型。",
       points: [
         "在移动设备上加载迅速（超过85%的餐厅访客使用手机访问）",
         "根据访客所在地区自动显示对应的菜单货币 (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -573,7 +573,7 @@ export const devProfileContent = {
       title: "想为您的企业打造一个类似的网站吗？",
       whatsapp: "WhatsApp联系我",
       email: "发送电子邮件",
-      portfolio: "查看更多作品 →",
+      portfolio: "查看更多作品",
       whatsappLink: "https://wa.me/905060453906",
       emailLink: "mailto:hamed.m.kamel2@gmail.com",
       portfolioLink: "https://hamedmohamed.dev"

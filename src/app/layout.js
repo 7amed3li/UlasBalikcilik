@@ -1,4 +1,10 @@
-import { Cairo, Inter, Caveat } from "next/font/google";
+import {
+  Outfit,
+  Plus_Jakarta_Sans,
+  Alexandria,
+  Cormorant_Garamond,
+  Caveat,
+} from "next/font/google";
 import { AppProvider } from "@/context/AppContext";
 import Header from "@/components/Header";
 import SmartSplash from "@/components/SmartSplash";
@@ -12,25 +18,42 @@ import Footer from "@/components/Footer";
 import { ULAS_CONFIG } from "@/data/ulasConfig";
 import "./globals.css";
 
-const cairo = Cairo({
-  subsets: ["latin", "arabic"],
+const outfit = Outfit({
+  subsets: ["latin", "latin-ext"],
   weight: ["400", "500", "600", "700", "800", "900"],
   display: "swap",
-  variable: "--font-cairo",
+  variable: "--font-outfit",
   preload: true,
 });
 
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+const plusJakarta = Plus_Jakarta_Sans({
+  subsets: ["latin", "latin-ext"],
+  weight: ["400", "500", "600", "700", "800"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-jakarta",
+  preload: true,
+});
+
+const alexandria = Alexandria({
+  subsets: ["arabic", "latin"],
+  weight: ["400", "500", "600", "700", "800", "900"],
+  display: "swap",
+  variable: "--font-alexandria",
+  preload: true,
+});
+
+const cormorant = Cormorant_Garamond({
+  subsets: ["latin", "latin-ext"],
+  weight: ["600", "700"],
+  style: ["normal", "italic"],
+  display: "swap",
+  variable: "--font-cormorant",
   preload: true,
 });
 
 const caveat = Caveat({
-  subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  subsets: ["latin", "latin-ext"],
+  weight: ["600", "700"],
   display: "swap",
   variable: "--font-caveat",
   preload: true,
@@ -243,7 +266,7 @@ export default async function RootLayout({ children }) {
       lang={locale}
       dir={dir}
       suppressHydrationWarning
-      className={`h-full antialiased ${cairo.variable} ${inter.variable} ${caveat.variable}`}
+      className={`h-full antialiased ${outfit.variable} ${plusJakarta.variable} ${alexandria.variable} ${cormorant.variable} ${caveat.variable}`}
       data-scroll-behavior="smooth"
     >
       <head>
@@ -270,7 +293,7 @@ export default async function RootLayout({ children }) {
         />
       </head>
       <body
-        className="min-h-full flex flex-col bg-[#EAE7DF] text-[#18323B] font-[var(--font-inter)]"
+        className="min-h-full flex flex-col bg-[#DCE8E6] text-[#18323B] font-[var(--font-inter)]"
         suppressHydrationWarning
       >
         <GoogleTagManager gtmId="GTM-PRHLP84Z" />

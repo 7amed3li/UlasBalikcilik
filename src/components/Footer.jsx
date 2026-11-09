@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useAppContext } from "../context/AppContext";
 import { MapPin, Phone, Clock, ChevronRight, ChevronLeft, AlertCircle, Navigation } from "lucide-react";
+import { FaStar, FaInstagram } from "react-icons/fa6";
 import RestaurantMap from "./RestaurantMap";
 import { ULAS_CONFIG } from "../data/ulasConfig";
 import { SeaWaves } from "./BrandIcons";
@@ -81,8 +82,9 @@ export default function Footer() {
                   <span className="w-2 h-2 rounded-full bg-[#0E4F4A] ring-2 ring-[#8CC7C0]" />
                   <span>Cihangir Şube</span>
                 </h3>
-                <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-[#0E4F4A] text-[#DCECE7]">
-                  ★ 4.8 (558)
+                <span className="text-[10px] font-extrabold px-2 py-0.5 rounded-full bg-[#0E4F4A] text-[#DCECE7] inline-flex items-center gap-1">
+                  <FaStar size={10} className="text-[#F5C242]" />
+                  <span>4.8 (558)</span>
                 </span>
               </div>
 
@@ -213,49 +215,37 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/about"
-                    className="text-[#F4F1E8]/85 hover:text-[#B8DCD3] transition-colors inline-flex items-center gap-1.5"
-                  >
-                    <ArrowIcon size={13} className="text-[#8CC7C0]" />
-                    <span>{fc.about || "Hakkımızda"}</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/contact"
-                    className="text-[#F4F1E8]/85 hover:text-[#B8DCD3] transition-colors inline-flex items-center gap-1.5"
-                  >
-                    <ArrowIcon size={13} className="text-[#8CC7C0]" />
-                    <span>{fc.contact || "Şubeler & İletişim"}</span>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
-            <div className="w-full space-y-2">
-              <a
-                href="https://www.instagram.com/ulasbalik/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Ulaş Balık Instagram"
-                className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-white/10 border border-[#B8DCD3]/30 text-xs font-bold text-[#F4F1E8] hover:bg-[#0E4F4A] transition-colors"
-              >
-                <svg
-                  viewBox="0 0 24 24"
-                  className="w-4 h-4"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
+                <Link
+                  href={`${prefix}/about`}
+                  className="text-[#F4F1E8]/85 hover:text-[#B8DCD3] transition-colors inline-flex items-center gap-1.5"
                 >
-                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
-                </svg>
-                <span>@ulasbalik</span>
-              </a>
+                  <ArrowIcon size={13} className="text-[#8CC7C0]" />
+                  <span>{fc.about || "Hakkımızda"}</span>
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href={`${prefix}/contact`}
+                  className="text-[#F4F1E8]/85 hover:text-[#B8DCD3] transition-colors inline-flex items-center gap-1.5"
+                >
+                  <ArrowIcon size={13} className="text-[#8CC7C0]" />
+                  <span>{fc.contact || "Şubeler & İletişim"}</span>
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div className="w-full space-y-2">
+            <a
+              href="https://www.instagram.com/ulasbalik/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Ulaş Balık Instagram"
+              className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl bg-white/10 border border-[#B8DCD3]/30 text-xs font-bold text-[#F4F1E8] hover:bg-[#0E4F4A] transition-colors"
+            >
+              <FaInstagram size={15} />
+              <span>@ulasbalik</span>
+            </a>
 
               <a
                 href={cihangir.mapUrl || "#"}

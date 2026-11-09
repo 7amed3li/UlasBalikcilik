@@ -206,6 +206,17 @@ export function AppProvider({ children }) {
     return rateData.symbol;
   };
 
+  const formatPrice = (priceInTRY) => {
+    if (priceInTRY == null) return "— ₺";
+    const converted = convertPrice(priceInTRY);
+    const symbol = getCurrencySymbol();
+    return (
+      <>
+        {converted} {symbol}
+      </>
+    );
+  };
+
   // ═══════════════════════════════════════════
   // CART OPERATIONS
   // ═══════════════════════════════════════════
@@ -327,6 +338,7 @@ export function AppProvider({ children }) {
     getCurrencySymbol,
     getLivePrice,
     convertPrice,
+    formatPrice,
     cart,
     isCartOpen,
     setIsCartOpen,

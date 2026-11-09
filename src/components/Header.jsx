@@ -6,10 +6,10 @@ import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 import CurrencySwitcher from "./CurrencySwitcher";
 import { useAppContext } from "../context/AppContext";
-import { List, House, BookOpen, Info, Phone, MapPin, Tote } from "@phosphor-icons/react";
+import { List, House, BookOpen, Info, Phone, MapPin } from "@phosphor-icons/react";
 
 export default function Header() {
-  const { t, lang, cartCount, setIsCartOpen } = useAppContext();
+  const { t, lang } = useAppContext();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null);
   const headerRef = useRef(null);
@@ -136,24 +136,10 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Right Side Dark Translucent Controls (`₺ TRY ⌄`, `TR TR ⌄`, Basket, `☰`) */}
+          {/* Right Side Dark Translucent Controls (`₺ TRY ⌄`, `TR TR ⌄`, `☰`) */}
           <div className="flex items-center gap-1.5 sm:gap-2">
             <CurrencySwitcher />
             <LanguageSwitcher />
-
-            {/* Header Basket Button */}
-            <button
-              onClick={() => setIsCartOpen(true)}
-              aria-label="Sepetim"
-              className="relative w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl border bg-[#092230]/70 border-[#6CA6A1]/45 text-white hover:bg-[#0E394D]/80 transition-colors cursor-pointer"
-            >
-              <Tote size={19} weight="bold" />
-              {cartCount > 0 && (
-                <span className="absolute -top-1.5 -end-1.5 min-w-[18px] h-[18px] px-1 rounded-full bg-[#D93829] text-white text-[10px] font-black flex items-center justify-center border border-[#F4F1E8] shadow-xs">
-                  {cartCount}
-                </span>
-              )}
-            </button>
 
             {/* Hamburger Menu Button */}
             <div className="relative" ref={menuRef}>
@@ -197,7 +183,7 @@ export default function Header() {
                       <span style={{ fontFamily: "var(--font-cairo)" }}>{getNavLabel("menu")}</span>
                     </Link>
                     <Link
-                      href="/about"
+                      href={`${prefix}/about`}
                       onClick={() => setIsMenuOpen(false)}
                       className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#18323B] hover:bg-[#DCECE7] transition-colors"
                     >
@@ -205,7 +191,7 @@ export default function Header() {
                       <span style={{ fontFamily: "var(--font-cairo)" }}>{getNavLabel("about")}</span>
                     </Link>
                     <Link
-                      href="/contact"
+                      href={`${prefix}/contact`}
                       onClick={() => setIsMenuOpen(false)}
                       className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#18323B] hover:bg-[#DCECE7] transition-colors"
                     >

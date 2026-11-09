@@ -32,6 +32,17 @@
   --spacing-gap-section: 28px;
   --radius-card: 14px;
   --radius-btn: 10px;
+
+  /* Elevated Coastal Typography Stack:
+     - Headings (`--font-cairo` / `--font-heading`): Outfit (Latin/TR) + Alexandria (AR/FA)
+     - Body & Prices (`--font-inter` / `--font-body`): Plus Jakarta Sans (Latin/TR) + Alexandria (AR/FA)
+     - Editorial Serif (`--font-display`): Cormorant Garamond
+  */
+  --font-cairo: var(--font-outfit), var(--font-alexandria), system-ui, sans-serif;
+  --font-inter: var(--font-jakarta), var(--font-alexandria), system-ui, sans-serif;
+  --font-heading: var(--font-outfit), var(--font-alexandria), system-ui, sans-serif;
+  --font-body: var(--font-jakarta), var(--font-alexandria), system-ui, sans-serif;
+  --font-display: var(--font-cormorant), Georgia, serif;
 }
 
 @theme inline {
@@ -57,9 +68,9 @@
   --color-cream-dim: var(--text-secondary);
   --color-brick: var(--error);
   
-  --font-cairo: "Cairo", sans-serif;
-  --font-inter: "Inter", sans-serif;
-  --font-amiri: "Amiri", Georgia, serif;
+  --font-cairo: var(--font-outfit), var(--font-alexandria), sans-serif;
+  --font-inter: var(--font-jakarta), var(--font-alexandria), sans-serif;
+  --font-amiri: var(--font-cormorant), Georgia, serif;
 }
 
 /* ==========================================================================
@@ -69,12 +80,20 @@
 html {
   background-color: var(--bg);
   color: var(--text);
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
 body {
   background-color: var(--bg);
   color: var(--text);
   overflow-x: hidden;
+  font-family: var(--font-inter);
+  letter-spacing: -0.005em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cairo);
+  letter-spacing: -0.015em;
 }
 
 /* Utility to hide scrollbars */

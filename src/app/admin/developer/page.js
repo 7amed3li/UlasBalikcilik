@@ -7,99 +7,123 @@ import { includeUnstoredNewMenuItems } from "@/lib/adminMenuItems";
 
 export default async function DeveloperPage() {
   const supabase = await createClient();
-  const { data: { user } } = await supabase.auth.getUser();
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
 
   if (!user || user.user_metadata?.role !== "developer") {
     redirect("/admin");
   }
 
-  // Fetch price history
   const { data: history, error: historyError } = await supabase
     .from("price_history")
     .select("*, items(id, categories(name_tr))")
     .order("created_at", { ascending: false })
     .limit(50);
 
-  // Fetch items for price editing
   const { data: items, error: itemsError } = await supabase
     .from("items")
     .select("*, categories(name_tr, name_en)")
     .order("category_id");
   const adminItems = includeUnstoredNewMenuItems(items || []);
 
-  // Fetch all users securely on the server
   const adminAuth = createAdminClient().auth.admin;
-  const { data: { users }, error: usersError } = await adminAuth.listUsers();
+  const {
+    data: { users },
+    error: usersError,
+  } = await adminAuth.listUsers();
 
   return (
-    <div className="min-h-screen bg-ink text-cream font-sans">
-      <nav className="bg-ink-2 border-b border-teal-dim/20 px-6 py-4 flex justify-between items-center sticky top-0 z-10">
+    <div className="min-h-screen bg-[#DCE8E6] text-[#18323B] font-sans">
+      <nav className="bg-gradient-to-r from-[#071D2B] via-[#0B2B3B] to-[#0E4F4A] text-white border-b border-[#B8DCD3]/30 px-6 py-4 flex justify-between items-center sticky top-0 z-10 shadow-md">
         <div>
-          <h1 className="text-xl font-bold text-teal tracking-widest uppercase">Geliştirici Paneli</h1>
-          <p className="text-xs text-cream-dim uppercase tracking-wider">Tam Yetkili Yönetim</p>
+          <h1
+            className="text-xl font-black text-white tracking-wider uppercase"
+            style={{ fontFamily: "var(--font-cairo)" }}
+          >
+            Ulaş Balıkçılık — Geliştirici Paneli
+          </h1>
+          <p className="text-xs text-[#B8DCD3] uppercase tracking-wider font-bold">
+            Tam Yetkili Yönetim
+          </p>
         </div>
         <div className="flex gap-4">
           <form action="/api/auth/signout" method="POST">
-            <button type="submit" className="text-sm px-4 py-2 border border-copper/50 rounded hover:bg-copper/10 transition-colors text-copper">
+            <button
+              type="submit"
+              className="text-xs font-extrabold uppercase tracking-wider px-4 py-2 bg-[#D93829] hover:bg-[#B82D20] rounded-xl transition-colors text-white cursor-pointer"
+            >
               Çıkış Yap
             </button>
           </form>
         </div>
       </nav>
-      
-      <main className="max-w-5xl mx-auto p-6 space-y-12">
-        
-        {/* User Management Section */}
+
+      <main className="max-w-5xl mx-auto p-4 sm:p-6 space-y-10">
         {usersError ? (
-           <div className="text-red-500">Error loading users: {usersError.message}</div>
+          <div className="text-[#D93829] font-bold">
+            Error loading users: {usersError.message}
+          </div>
         ) : (
-           <UserManagementClient initialUsers={users || []} />
+          <UserManagementClient initialUsers={users || []} />
         )}
 
-        {/* Price Management Section */}
         <section>
-          <h2 className="text-xl font-bold mb-4 text-cream tracking-wide">Ürünler ve Fiyat Yönetimi</h2>
+          <h2
+            className="text-xl font-black mb-4 text-[#0B2B3B]"
+            style={{ fontFamily: "var(--font-cairo)" }}
+          >
+            Ürünler ve Fiyat Yönetimi (81 Çeşit)
+          </h2>
           {itemsError ? (
-            <div className="text-red-500">Error loading items: {itemsError.message}</div>
+            <div className="text-[#D93829] font-bold">
+              Error loading items: {itemsError.message}
+            </div>
           ) : (
             <OwnerDashboardClient items={adminItems} />
           )}
         </section>
 
-        {/* Price History Section */}
         <section>
-          <h2 className="text-xl font-bold mb-4 text-cream tracking-wide">Fiyat Değişim Geçmişi (Son 50)</h2>
+          <h2
+            className="text-xl font-black mb-4 text-[#0B2B3B]"
+            style={{ fontFamily: "var(--font-cairo)" }}
+          >
+            Fiyat Değişim Geçmişi (Son 50)
+          </h2>
           {historyError ? (
-            <div className="text-red-500">Error: {historyError.message}</div>
+            <div className="text-[#D93829] font-bold">Error: {historyError.message}</div>
           ) : (
-            <div className="bg-ink-2 rounded-xl border border-teal-dim/20 overflow-hidden">
+            <div className="bg-[#F4F1E8] rounded-2xl border border-[#B8DCD3] overflow-hidden shadow-xs">
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="bg-ink text-cream-dim border-b border-teal-dim/20 text-sm uppercase tracking-wider">
-                    <th className="p-4 font-medium">Tarih</th>
-                    <th className="p-4 font-medium">Ürün</th>
-                    <th className="p-4 font-medium">Eski Fiyat</th>
-                    <th className="p-4 font-medium">Yeni Fiyat</th>
-                    <th className="p-4 font-medium">Yapan (User ID)</th>
+                  <tr className="bg-[#0B2B3B] text-white border-b border-[#B8DCD3] text-xs uppercase tracking-wider">
+                    <th className="p-4 font-extrabold">Tarih</th>
+                    <th className="p-4 font-extrabold">Ürün</th>
+                    <th className="p-4 font-extrabold">Eski Fiyat</th>
+                    <th className="p-4 font-extrabold">Yeni Fiyat</th>
+                    <th className="p-4 font-extrabold">Kullanıcı</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-teal-dim/10">
+                <tbody className="divide-y divide-[#B8DCD3]/60">
                   {history?.map((record) => (
-                    <tr key={record.id} className="hover:bg-ink-2/80 transition-colors">
-                      <td className="p-4 text-sm text-cream-dim">
-                        {new Date(record.created_at).toLocaleString('tr-TR')}
+                    <tr key={record.id} className="hover:bg-white/60 transition-colors">
+                      <td className="p-4 text-sm text-[#47626B]">
+                        {new Date(record.created_at).toLocaleString("tr-TR")}
                       </td>
-                      <td className="p-4 font-medium text-cream">{record.item_id}</td>
-                      <td className="p-4 text-cream-dim">{record.old_price} ₺</td>
-                      <td className="p-4 text-gold font-bold">{record.new_price} ₺</td>
-                      <td className="p-4 text-xs text-cream-dim/50 font-mono">
+                      <td className="p-4 font-bold text-[#0B2B3B]">{record.item_id}</td>
+                      <td className="p-4 text-[#47626B]">{record.old_price} ₺</td>
+                      <td className="p-4 text-[#0E4F4A] font-black">{record.new_price} ₺</td>
+                      <td className="p-4 text-xs text-[#47626B] font-mono">
                         {record.modified_by || "Bilinmiyor"}
                       </td>
                     </tr>
                   ))}
                   {history?.length === 0 && (
                     <tr>
-                      <td colSpan="5" className="p-8 text-center text-cream-dim">Geçmiş kaydı yok.</td>
+                      <td colSpan="5" className="p-8 text-center text-[#47626B] font-medium">
+                        Geçmiş kaydı yok.
+                      </td>
                     </tr>
                   )}
                 </tbody>

@@ -1,56 +1,47 @@
 "use client";
 
-import React from 'react';
+import React from "react";
 import { menuData } from "@/data/menuData";
 import { menuTranslations } from "@/i18n/translations";
 import { useAppContext } from "@/context/AppContext";
+import { ULAS_CONFIG } from "@/data/ulasConfig";
 
-export default function DeepMenuSchema({ locale = "en" }) {
+export default function DeepMenuSchema({ locale = "tr" }) {
   const { getLivePrice } = useAppContext();
-  const mt = menuTranslations[locale] || menuTranslations.en;
-  
-  const baseUrl = "https://kardeslercihangir.com";
-  // The locale-specific menu path
-  const localePath = locale === "en" ? "/menu" : `/${locale}/menu`;
+  const mt = menuTranslations[locale] || menuTranslations.tr;
+
+  const baseUrl = ULAS_CONFIG.siteUrl;
+  const localePath = locale === "tr" ? "/menu" : `/${locale}/menu`;
   const menuUrl = `${baseUrl}${localePath}`;
 
-  // Build the hasMenuSection array
-  const hasMenuSection = menuData.map(category => {
-    // Translate category name
-    const categoryName = mt.categories?.[category.id] || category.category[locale] || category.category.en;
+  const hasMenuSection = menuData.map((category) => {
+    const categoryName =
+      mt.categories?.[category.id] || category.category[locale] || category.category.tr;
 
-    // Build the hasMenuItem array for this category
-    const hasMenuItem = category.items.map(item => {
-      const itemName = mt.items?.[item.id]?.name || item.name?.en || item.id;
-      const itemDesc = mt.items?.[item.id]?.desc || item.description?.en || "";
-      
+    const hasMenuItem = category.items.map((item) => {
+      const itemName =
+        mt.items?.[item.id]?.name || item.name?.[locale] || item.name?.tr || item.id;
+      const itemDesc =
+        mt.items?.[item.id]?.desc || item.description?.[locale] || item.description?.tr || "";
+
       const menuItem = {
         "@type": "MenuItem",
-        "name": itemName,
-        "description": itemDesc,
-        "url": `${menuUrl}#${item.id}`,
-        "offers": {
+        name: itemName,
+        description: itemDesc,
+        url: `${menuUrl}#${item.id}`,
+        offers: {
           "@type": "Offer",
-          "price": getLivePrice(item) || 0,
-          "priceCurrency": "TRY",
-          "availability": "https://schema.org/InStock"
-        }
+          price: getLivePrice(item) || 0,
+          priceCurrency: "TRY",
+          availability: "https://schema.org/InStock",
+        },
       };
 
       if (item.image) {
-        // ensure image url is absolute
-        const imageUrl = item.image.startsWith('http') ? item.image : `${baseUrl}${item.image}`;
+        const imageUrl = item.image.startsWith("http")
+          ? item.image
+          : `${baseUrl}${item.image}`;
         menuItem.image = imageUrl;
-      }
-
-      // Add suitableForDiet if applicable
-      if (item.tags) {
-        const diets = [];
-        if (item.tags.includes("vegetarian")) diets.push("https://schema.org/VegetarianDiet");
-        if (item.tags.includes("vegan")) diets.push("https://schema.org/VeganDiet");
-        if (diets.length > 0) {
-          menuItem.suitableForDiet = diets;
-        }
       }
 
       return menuItem;
@@ -58,8 +49,8 @@ export default function DeepMenuSchema({ locale = "en" }) {
 
     return {
       "@type": "MenuSection",
-      "name": categoryName,
-      "hasMenuItem": hasMenuItem
+      name: categoryName,
+      hasMenuItem,
     };
   });
 
@@ -67,11 +58,11 @@ export default function DeepMenuSchema({ locale = "en" }) {
     "@context": "https://schema.org",
     "@type": "Menu",
     "@id": `${menuUrl}/#menu`,
-    "name": `Kardeşler Kebap & Breakfast - Menu (${locale.toUpperCase()})`,
-    "url": menuUrl,
-    "mainEntityOfPage": menuUrl,
-    "isPartOf": { "@id": `${baseUrl}/#restaurant` },
-    "hasMenuSection": hasMenuSection
+    name: `Ulaş Balıkçılık — Fish & Seafood Menu (${locale.toUpperCase()})`,
+    url: menuUrl,
+    mainEntityOfPage: menuUrl,
+    isPartOf: { "@id": `${baseUrl}/#restaurant` },
+    hasMenuSection,
   };
 
   return (

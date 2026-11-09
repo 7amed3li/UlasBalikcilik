@@ -2,20 +2,20 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { ChevronDown, Check, Globe } from "lucide-react";
+import { TbWorld, TbChevronDown, TbCheck } from "react-icons/tb";
 import { useAppContext } from "../context/AppContext";
 
 const languagesConfig = [
-  { code: "tr", name: "Türkçe", short: "TR", flag: "🇹🇷" },
-  { code: "en", name: "English", short: "EN", flag: "🇬🇧" },
-  { code: "ar", name: "العربية", short: "AR", flag: "🇸🇦" },
-  { code: "ru", name: "Русский", short: "RU", flag: "🇷🇺" },
-  { code: "fa", name: "فارسی", short: "FA", flag: "🇮🇷" },
-  { code: "fr", name: "Français", short: "FR", flag: "🇫🇷" },
-  { code: "de", name: "Deutsch", short: "DE", flag: "🇩🇪" },
-  { code: "it", name: "Italiano", short: "IT", flag: "🇮🇹" },
-  { code: "es", name: "Español", short: "ES", flag: "🇪🇸" },
-  { code: "zh", name: "中文", short: "ZH", flag: "🇨🇳" },
+  { code: "tr", name: "Türkçe", short: "TR", region: "TR" },
+  { code: "en", name: "English", short: "EN", region: "GB" },
+  { code: "ar", name: "العربية", short: "AR", region: "SA" },
+  { code: "ru", name: "Русский", short: "RU", region: "RU" },
+  { code: "fa", name: "فارسی", short: "FA", region: "IR" },
+  { code: "fr", name: "Français", short: "FR", region: "FR" },
+  { code: "de", name: "Deutsch", short: "DE", region: "DE" },
+  { code: "it", name: "Italiano", short: "IT", region: "IT" },
+  { code: "es", name: "Español", short: "ES", region: "ES" },
+  { code: "zh", name: "中文", short: "ZH", region: "CN" },
 ];
 
 export default function LanguageSwitcher() {
@@ -48,12 +48,6 @@ export default function LanguageSwitcher() {
     let targetUrl;
     if (isDevProfile) {
       targetUrl = code === "tr" ? "/tasarim-gelistirme" : `/${code}/design-development`;
-    } else if (
-      routeWithoutLocale === "/about" ||
-      routeWithoutLocale === "/contact" ||
-      routeWithoutLocale.startsWith("/dish/")
-    ) {
-      targetUrl = routeWithoutLocale;
     } else {
       if (code === "tr") {
         targetUrl = routeWithoutLocale === "/" ? "/" : routeWithoutLocale;
@@ -94,9 +88,11 @@ export default function LanguageSwitcher() {
             : "bg-[#092230]/70 border-[#6CA6A1]/45 text-white hover:bg-[#0E394D]/80"
         }`}
       >
-        <span className="text-[10px] font-black text-white">{currentLangObj.short}</span>
-        <span className="tracking-wider font-semibold text-white/95">{currentLangObj.short}</span>
-        <ChevronDown
+        <TbWorld size={15} className="text-[#8CC7C0]" />
+        <span className="tracking-wider font-extrabold text-white/95">
+          {currentLangObj.short}
+        </span>
+        <TbChevronDown
           size={13}
           className={`transition-transform duration-200 text-white/80 ${
             isOpen ? "rotate-180" : ""
@@ -106,10 +102,10 @@ export default function LanguageSwitcher() {
 
       {isOpen && (
         <div className="absolute mt-2 end-0 w-48 bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl shadow-2xl overflow-hidden z-50 p-1.5 animate-fadeIn text-[#18323B]">
-          <div className="px-3 py-1.5 flex items-center justify-between text-[10px] uppercase tracking-wider text-[#0E4F4A] font-bold border-b border-[#B8DCD3]">
-            <span className="flex items-center gap-1">
-              <Globe size={11} className="text-[#0E4F4A]" />
-              Dil / Language
+          <div className="px-3 py-1.5 flex items-center justify-between text-[10px] uppercase tracking-wider text-[#0E4F4A] font-extrabold border-b border-[#B8DCD3]">
+            <span className="flex items-center gap-1.5">
+              <TbWorld size={13} className="text-[#0E4F4A]" />
+              <span>Dil / Language</span>
             </span>
           </div>
 
@@ -127,10 +123,18 @@ export default function LanguageSwitcher() {
                   }`}
                 >
                   <div className="flex items-center gap-2.5">
-                    <span className="text-base leading-none">{item.flag}</span>
-                    <span className="font-semibold">{item.name}</span>
+                    <span
+                      className={`w-6 h-5 rounded-md text-[10px] font-extrabold flex items-center justify-center border ${
+                        isSelected
+                          ? "bg-white/20 text-white border-white/30"
+                          : "bg-white text-[#0E4F4A] border-[#B8DCD3]"
+                      }`}
+                    >
+                      {item.short}
+                    </span>
+                    <span className="font-bold">{item.name}</span>
                   </div>
-                  {isSelected && <Check size={14} className="text-white shrink-0" />}
+                  {isSelected && <TbCheck size={15} className="text-white shrink-0" />}
                 </button>
               );
             })}

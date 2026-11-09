@@ -15,6 +15,7 @@ import {
 } from "@phosphor-icons/react";
 import Image from "next/image";
 import { CategoryIcon, FishLineArt } from "./BrandIcons";
+import { FaAward, FaLeaf, FaPepperHot } from "react-icons/fa6";
 
 function CartCounter({ item, compact = false }) {
   const { addToCart, removeFromCart, getItemQuantity, t } = useAppContext();
@@ -35,9 +36,8 @@ function CartCounter({ item, compact = false }) {
       <button
         onClick={handleAdd}
         aria-label="Add to list"
-        className={`flex items-center justify-center gap-1.5 rounded-xl bg-[#D93829] text-white hover:bg-[#B82D20] active:scale-95 transition-all shadow-sm cursor-pointer ${
-          compact ? "w-9 h-9" : "px-5 py-2.5 w-full max-w-[220px] font-bold text-sm"
-        }`}
+        className={`flex items-center justify-center gap-1.5 rounded-xl bg-[#D93829] text-white hover:bg-[#B82D20] active:scale-95 transition-all shadow-sm cursor-pointer ${compact ? "w-9 h-9" : "px-5 py-2.5 w-full max-w-[220px] font-bold text-sm"
+          }`}
       >
         <Plus size={compact ? 18 : 20} weight="bold" />
         {!compact && <span>{t?.addToCart || "Listeme Ekle"}</span>}
@@ -110,8 +110,8 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
     lang === "ar"
       ? "مكان الصورة"
       : lang === "tr"
-      ? "Görsel Alanı"
-      : "Photo Slot";
+        ? "Görsel Alanı"
+        : "Photo Slot";
 
   const handleCopyLink = async (e) => {
     e.stopPropagation();
@@ -132,15 +132,13 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
       <div
         id={item.id}
         dir={isRTL ? "rtl" : "ltr"}
-        className={`group relative rounded-2xl bg-[#F4F1E8] border border-[#B8DCD3] shadow-sm hover:shadow-md hover:border-[#0E4F4A]/50 overflow-hidden transition-all duration-200 flex ${
-          isVertical ? "flex-col" : "flex-row"
-        } items-stretch ${isVertical ? "h-auto" : "min-h-[136px]"} text-start`}
+        className={`group relative rounded-2xl bg-[#F4F1E8] border border-[#B8DCD3] shadow-sm hover:shadow-md hover:border-[#0E4F4A]/50 overflow-hidden transition-all duration-200 flex ${isVertical ? "flex-col" : "flex-row"
+          } items-stretch ${isVertical ? "h-auto" : "min-h-[136px]"} text-start`}
       >
         {/* Left Dish Image / Ceramic Plate Slot */}
         <div
-          className={`${
-            isVertical ? "w-full aspect-[4/3]" : "w-[136px] sm:w-[162px] shrink-0"
-          } relative overflow-hidden bg-gradient-to-br from-[#12384B] via-[#0B2B3B] to-[#0E4F4A] z-10 cursor-pointer flex flex-col items-center justify-center p-2.5`}
+          className={`${isVertical ? "w-full aspect-[4/3]" : "w-[136px] sm:w-[162px] shrink-0"
+            } relative overflow-hidden bg-gradient-to-br from-[#12384B] via-[#0B2B3B] to-[#0E4F4A] z-10 cursor-pointer flex flex-col items-center justify-center p-2.5`}
           onClick={() => setIsModalOpen(true)}
         >
           {item.image ? (
@@ -169,21 +167,21 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
             </div>
           )}
 
-          {/* Bottom-Left Tag Pill Over Image matching Reference Concept */}
+          {/* Bottom-Left Tag Pill Over Image */}
           <div className="absolute bottom-2 start-2 z-20 flex flex-wrap gap-1 pointer-events-none">
             {item.tags?.includes("signature") ? (
               <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[9px] uppercase tracking-wider text-white bg-[#0B2B3B]/90 backdrop-blur-xs rounded-full font-extrabold border border-white/15 shadow-xs">
-                <span>★</span>
+                <FaAward size={10} className="text-[#F5C242]" />
                 <span>{t.signature || "ŞEFİN SEÇİMİ"}</span>
               </span>
             ) : item.tags?.includes("vegetarian") ? (
               <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[9px] uppercase tracking-wider text-white bg-[#1E6B43]/90 backdrop-blur-xs rounded-full font-extrabold border border-white/15 shadow-xs">
-                <span>🌿</span>
+                <FaLeaf size={10} className="text-[#8CC7C0]" />
                 <span>{t.vegetarian || "VEJETARYEN"}</span>
               </span>
             ) : item.tags?.includes("spicy") ? (
               <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[9px] uppercase tracking-wider text-white bg-[#D93829]/90 backdrop-blur-xs rounded-full font-extrabold border border-white/15 shadow-xs">
-                <span>🌶️</span>
+                <FaPepperHot size={10} className="text-white" />
                 <span>{t.spicy || "ACILI"}</span>
               </span>
             ) : null}
@@ -221,9 +219,8 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
               <CaretRight
                 size={15}
                 weight="bold"
-                className={`text-[#0B2B3B]/70 group-hover:text-[#0B2B3B] transition-transform ${
-                  isRTL ? "-scale-x-100" : ""
-                }`}
+                className={`text-[#0B2B3B]/70 group-hover:text-[#0B2B3B] transition-transform ${isRTL ? "-scale-x-100" : ""
+                  }`}
               />
             </div>
 

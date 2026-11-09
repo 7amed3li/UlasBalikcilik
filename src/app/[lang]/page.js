@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import MenuPage from "@/app/menu/page";
+import Home from "@/app/page";
 
 export default function LocalizedHome() {
-  return <MenuPage />;
+  return <Home />;
 }

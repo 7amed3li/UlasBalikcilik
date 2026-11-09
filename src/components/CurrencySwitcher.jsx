@@ -1,7 +1,15 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { ChevronDown, Check } from "lucide-react";
+import {
+  TbChevronDown,
+  TbCheck,
+  TbCurrencyLira,
+  TbCurrencyDollar,
+  TbCurrencyEuro,
+  TbCurrencyPound,
+} from "react-icons/tb";
+import { FaRubleSign } from "react-icons/fa6";
 import { useAppContext } from "../context/AppContext";
 import SaudiRiyalIcon from "./SaudiRiyalIcon";
 export { SaudiRiyalIcon };
@@ -12,12 +20,12 @@ export default function CurrencySwitcher() {
   const dropdownRef = useRef(null);
 
   const currencies = [
-    { code: "TRY", label: "Türk Lirası", symbol: "₺" },
-    { code: "USD", label: "US Dollar", symbol: "$" },
-    { code: "EUR", label: "Euro", symbol: "€" },
-    { code: "GBP", label: "British Pound", symbol: "£" },
-    { code: "SAR", label: "ريال سعودي", symbol: <SaudiRiyalIcon className="h-3.5 w-auto" /> },
-    { code: "RUB", label: "Российский рубль", symbol: "₽" },
+    { code: "TRY", label: "Türk Lirası", icon: <TbCurrencyLira size={15} /> },
+    { code: "USD", label: "US Dollar", icon: <TbCurrencyDollar size={15} /> },
+    { code: "EUR", label: "Euro", icon: <TbCurrencyEuro size={15} /> },
+    { code: "GBP", label: "British Pound", icon: <TbCurrencyPound size={15} /> },
+    { code: "SAR", label: "ريال سعودي", icon: <SaudiRiyalIcon className="h-3.5 w-auto" /> },
+    { code: "RUB", label: "Российский рубль", icon: <FaRubleSign size={12} /> },
   ];
 
   const currentCurrencyObj = currencies.find((c) => c.code === currency) || currencies[0];
@@ -45,18 +53,19 @@ export default function CurrencySwitcher() {
             : "bg-[#092230]/70 border-[#6CA6A1]/45 text-white hover:bg-[#0E394D]/80"
         }`}
       >
-        <span className="text-white font-extrabold">{currentCurrencyObj.symbol}</span>
-        <span className="tracking-wider text-white/95">{currency}</span>
-        <ChevronDown
+        <span className="text-[#8CC7C0] flex items-center">{currentCurrencyObj.icon}</span>
+        <span className="tracking-wider font-extrabold text-white/95">{currency}</span>
+        <TbChevronDown
           size={13}
-          className={`transition-transform duration-200 text-white/80 ${isOpen ? "rotate-180" : ""
-            }`}
+          className={`transition-transform duration-200 text-white/80 ${
+            isOpen ? "rotate-180" : ""
+          }`}
         />
       </button>
 
       {isOpen && (
         <div className="absolute mt-2 w-44 bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl overflow-hidden shadow-2xl z-50 end-0 p-1.5 animate-fadeIn text-[#18323B]">
-          <div className="px-3 py-1.5 text-[10px] uppercase tracking-wider text-[#0E4F4A] font-bold border-b border-[#B8DCD3]">
+          <div className="px-3 py-1.5 text-[10px] uppercase tracking-wider text-[#0E4F4A] font-extrabold border-b border-[#B8DCD3]">
             Döviz / Currency
           </div>
           <div className="py-1 space-y-0.5">
@@ -69,23 +78,25 @@ export default function CurrencySwitcher() {
                     changeCurrency(c.code);
                     setIsOpen(false);
                   }}
-                  className={`w-full text-start px-3 py-2 text-xs rounded-xl font-medium transition-colors flex items-center justify-between gap-2 cursor-pointer ${isSelected
-                    ? "bg-[#0E4F4A] text-white font-bold"
-                    : "text-[#18323B] hover:bg-[#DCECE7]"
-                    }`}
+                  className={`w-full text-start px-3 py-2 text-xs rounded-xl font-medium transition-colors flex items-center justify-between gap-2 cursor-pointer ${
+                    isSelected
+                      ? "bg-[#0E4F4A] text-white font-bold"
+                      : "text-[#18323B] hover:bg-[#DCECE7]"
+                  }`}
                 >
                   <div className="flex items-center gap-2.5">
                     <span
-                      className={`w-5 h-5 rounded-md flex items-center justify-center font-bold text-xs border ${isSelected
-                        ? "bg-white/20 text-white border-white/30"
-                        : "bg-white text-[#0E4F4A] border-[#B8DCD3]"
-                        }`}
+                      className={`w-6 h-5 rounded-md flex items-center justify-center font-bold text-xs border ${
+                        isSelected
+                          ? "bg-white/20 text-white border-white/30"
+                          : "bg-white text-[#0E4F4A] border-[#B8DCD3]"
+                      }`}
                     >
-                      {c.symbol}
+                      {c.icon}
                     </span>
-                    <span className="font-semibold">{c.code}</span>
+                    <span className="font-bold">{c.code}</span>
                   </div>
-                  {isSelected && <Check size={14} className="text-white shrink-0" />}
+                  {isSelected && <TbCheck size={15} className="text-white shrink-0" />}
                 </button>
               );
             })}

@@ -46,8 +46,8 @@ export function proxy(request) {
     );
   }
 
-  // 1. Fix malformed crawler URLs like /https:/kardeslercihangir.com/foo or /http:/...
-  const malformedMatch = pathname.match(/^\/(?:https?:(?:\/)*(?:kardeslercihangir\.com)?)(.*)$/i);
+  // 1. Fix malformed crawler URLs like /https:/ulasbalik.com/foo or /http:/...
+  const malformedMatch = pathname.match(/^\/(?:https?:(?:\/)*(?:ulasbalik\.com)?)(.*)$/i);
   if (malformedMatch) {
     let cleanPath = malformedMatch[1] || "/";
     if (!cleanPath.startsWith("/")) cleanPath = "/" + cleanPath;

@@ -9,7 +9,7 @@
 function getUTMParams() {
   if (typeof window === "undefined") return {};
   try {
-    const stored = sessionStorage.getItem("kardesler_utm");
+    const stored = sessionStorage.getItem("ulasbalik_utm");
     return stored ? JSON.parse(stored) : {};
   } catch {
     return {};
@@ -68,7 +68,7 @@ export function captureUTMParams() {
       }
     }
     if (hasUTM) {
-      sessionStorage.setItem("kardesler_utm", JSON.stringify(utm));
+      sessionStorage.setItem("ulasbalik_utm", JSON.stringify(utm));
     }
   } catch {
     // Silently fail in restricted environments

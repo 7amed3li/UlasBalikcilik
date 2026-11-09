@@ -53,6 +53,7 @@ export default function DeveloperProfile({ content, isRTL, lang }) {
             className="w-full sm:w-auto px-7 py-3.5 bg-[#F4F1E8] border border-[#B8DCD3] text-[#0B2B3B] hover:border-[#0E4F4A] font-extrabold rounded-xl transition-all shadow-2xs flex items-center justify-center gap-2 text-sm"
           >
             <span>{hero.ctaWork}</span>
+            <ArrowRight size={15} className={isRTL ? "rotate-180" : ""} />
           </a>
         </div>
       </section>
@@ -198,7 +199,8 @@ export default function DeveloperProfile({ content, isRTL, lang }) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-xs sm:text-sm text-[#8CC7C0] hover:text-white transition-colors underline underline-offset-4 font-bold"
           >
-            {cta.portfolio}
+            <span>{cta.portfolio}</span>
+            <ArrowRight size={14} className={isRTL ? "rotate-180" : ""} />
           </a>
         </div>
       </section>
