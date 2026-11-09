@@ -2,7 +2,6 @@ import {
   Outfit,
   Plus_Jakarta_Sans,
   Alexandria,
-  Cormorant_Garamond,
   Caveat,
 } from "next/font/google";
 import { AppProvider } from "@/context/AppContext";
@@ -42,17 +41,8 @@ const alexandria = Alexandria({
   preload: true,
 });
 
-const cormorant = Cormorant_Garamond({
-  subsets: ["latin", "latin-ext"],
-  weight: ["600", "700"],
-  style: ["normal", "italic"],
-  display: "swap",
-  variable: "--font-cormorant",
-  preload: true,
-});
-
 const caveat = Caveat({
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
   weight: ["600", "700"],
   display: "swap",
   variable: "--font-caveat",
@@ -266,7 +256,7 @@ export default async function RootLayout({ children }) {
       lang={locale}
       dir={dir}
       suppressHydrationWarning
-      className={`h-full antialiased ${outfit.variable} ${plusJakarta.variable} ${alexandria.variable} ${cormorant.variable} ${caveat.variable}`}
+      className={`h-full antialiased ${outfit.variable} ${plusJakarta.variable} ${alexandria.variable} ${caveat.variable}`}
       data-scroll-behavior="smooth"
     >
       <head>

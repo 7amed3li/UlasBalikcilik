@@ -7,7 +7,7 @@ import { X, Calendar, Clock, Users, User, MessageCircle, Phone } from "lucide-re
 const reservationTranslations = {
   tr: {
     title: "Masa Rezervasyonu",
-    subtitle: "Kardeşler Cihangir'de yerinizi hemen ayırtın",
+    subtitle: "Ulaş Balıkçılık'de yerinizi hemen ayırtın",
     nameLabel: "Adınız Soyadınız",
     namePlaceholder: "Örn: Ahmet Yılmaz",
     guestsLabel: "Kişi Sayısı",
@@ -21,7 +21,7 @@ const reservationTranslations = {
   },
   en: {
     title: "Table Reservation",
-    subtitle: "Reserve your table at Kardeşler Cihangir",
+    subtitle: "Reserve your table at Ulaş Balıkçılık",
     nameLabel: "Full Name",
     namePlaceholder: "e.g. John Doe",
     guestsLabel: "Guests",
@@ -49,7 +49,7 @@ const reservationTranslations = {
   },
   ru: {
     title: "Бронирование Столика",
-    subtitle: "Забронируйте столик в Kardeşler Cihangir",
+    subtitle: "Забронируйте столик в Ulaş Balıkçılık",
     nameLabel: "Ваше Имя",
     namePlaceholder: "например, Иван Петров",
     guestsLabel: "Количество гостей",
@@ -77,7 +77,7 @@ const reservationTranslations = {
   },
   fr: {
     title: "Réservation de Table",
-    subtitle: "Réservez votre table chez Kardeşler Cihangir",
+    subtitle: "Réservez votre table chez Ulaş Balıkçılık",
     nameLabel: "Nom Complet",
     namePlaceholder: "ex: Jean Dupont",
     guestsLabel: "Nombre de personnes",
@@ -91,7 +91,7 @@ const reservationTranslations = {
   },
   de: {
     title: "Tischreservierung",
-    subtitle: "Reservieren Sie Ihren Tisch im Kardeşler Cihangir",
+    subtitle: "Reservieren Sie Ihren Tisch im Ulaş Balıkçılık",
     nameLabel: "Vollständiger Name",
     namePlaceholder: "z.B. Max Mustermann",
     guestsLabel: "Gästeanzahl",
@@ -105,7 +105,7 @@ const reservationTranslations = {
   },
   it: {
     title: "Prenotazione Tavolo",
-    subtitle: "Prenota il tuo tavolo da Kardeşler Cihangir",
+    subtitle: "Prenota il tuo tavolo da Ulaş Balıkçılık",
     nameLabel: "Nome Completo",
     namePlaceholder: "es: Mario Rossi",
     guestsLabel: "Numero di ospiti",
@@ -119,7 +119,7 @@ const reservationTranslations = {
   },
   es: {
     title: "Reserva de Mesa",
-    subtitle: "Reserva tu mesa en Kardeşler Cihangir",
+    subtitle: "Reserva tu mesa en Ulaş Balıkçılık",
     nameLabel: "Nombre Completo",
     namePlaceholder: "ej: Juan Pérez",
     guestsLabel: "Número de personas",
@@ -133,7 +133,7 @@ const reservationTranslations = {
   },
   zh: {
     title: "餐位预订",
-    subtitle: "在 Kardeşler Cihangir 预订您的专属餐位",
+    subtitle: "在 Ulaş Balıkçılık 预订您的专属餐位",
     nameLabel: "姓名",
     namePlaceholder: "例如：张先生",
     guestsLabel: "用餐人数",

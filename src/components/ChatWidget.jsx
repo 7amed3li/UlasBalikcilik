@@ -41,66 +41,66 @@ const chatI18n = {
     loading: "Yazıyor..."
   },
   ar: {
-    greeting: "مرحباً بكم في كارديشلر! هل تبحث عن أطباق ومشاوي تقليدية أم اقتراحات خاصة؟ هل لديك أي تفضيلات غذائية؟",
+    greeting: "مرحباً بكم في مطعم Ulaş Balıkçılık! هل تبحث عن أسماك مشوية أو مقلية أو مقبلات بحرية خاصة؟",
     placeholder: "اكتب استفسارك هنا...",
     send: "إرسال",
-    contact: "تواصل معنا مباشرة عبر واتساب",
+    contact: "اتصل بفرع مسلك: 0212 813 57 57",
     loading: "جاري الرد..."
   },
   fa: {
-    greeting: "سلام! به کاردشلر خوش آمدید. به دنبال غذاهای سنتی هستید یا پیشنهادهای ویژه؟",
+    greeting: "سلام! به رستوران Ulaş Balıkçılık خوش آمدید. به دنبال ماهی کبابی، سرخ‌شده یا پیش‌غذاهای دریایی هستید؟",
     placeholder: "پیام خود را بنویسید...",
     send: "ارسال",
-    contact: "ارتباط با ما در واتس‌اپ",
+    contact: "تماس با شعبه مسلک: 0212 813 57 57",
     loading: "در حال پاسخگویی..."
   },
   ru: {
-    greeting: "Здравствуйте! Ищете традиционные турецкие блюда или наши фирменные кебабы? Есть ли диетические пожелания?",
+    greeting: "Здравствуйте! Добро пожаловать в Ulaş Balıkçılık. Ищете свежую черноморскую рыбу на гриле или закуски мезе?",
     placeholder: "Напишите ваш вопрос...",
     send: "Отправить",
-    contact: "Связаться через WhatsApp",
+    contact: "Позвонить в филиал Маслак: 0212 813 57 57",
     loading: "Печатает..."
   },
   fr: {
-    greeting: "Bonjour ! Cherchez-vous des spécialités traditionnelles au feu de bois ou des recommandations particulières ?",
+    greeting: "Bonjour ! Bienvenue chez Ulaş Balıkçılık. Cherchez-vous du poisson frais grillé ou des mezzés de la mer ?",
     placeholder: "Écrivez votre message...",
     send: "Envoyer",
-    contact: "Contactez-nous sur WhatsApp",
+    contact: "Appeler Maslak 1453 : 0212 813 57 57",
     loading: "En train d'écrire..."
   },
   de: {
-    greeting: "Hallo! Suchen Sie traditionelle Spezialitäten vom Holzkohlegrill oder Empfehlungen? Haben Sie Ernährungswünsche?",
+    greeting: "Hallo! Willkommen bei Ulaş Balıkçılık. Suchen Sie frischen Fisch vom Grill oder Meeresfrüchte-Mezze?",
     placeholder: "Nachricht eingeben...",
     send: "Senden",
-    contact: "Kontakt über WhatsApp",
+    contact: "Maslak 1453 anrufen: 0212 813 57 57",
     loading: "Schreibt..."
   },
   it: {
-    greeting: "Ciao! Cerchi piatti tradizionali alla brace o consigli speciali? Hai preferenze alimentari?",
+    greeting: "Ciao! Benvenuto da Ulaş Balıkçılık. Cerchi pesce fresco alla griglia o antipasti di mare?",
     placeholder: "Scrivi un messaggio...",
     send: "Invia",
-    contact: "Contattaci su WhatsApp",
+    contact: "Chiama Maslak 1453: 0212 813 57 57",
     loading: "Sta scrivendo..."
   },
   es: {
-    greeting: "¡Hola! ¿Buscas especialidades tradicionales al carbón o recomendaciones del chef? ¿Alguna preferencia?",
+    greeting: "¡Hola! Bienvenido a Ulaş Balıkçılık. ¿Buscas pescado fresco a la parrilla o entrantes marinos?",
     placeholder: "Escribe un mensaje...",
     send: "Enviar",
-    contact: "Contáctanos por WhatsApp",
+    contact: "Llamar a Maslak 1453: 0212 813 57 57",
     loading: "Escribiendo..."
   },
   zh: {
-    greeting: "您好！欢迎光临 Kardeşler。您想品尝正宗炭烤特色菜还是需要推荐？有特殊饮食偏好吗？",
+    greeting: "您好！欢迎光临 Ulaş Balıkçılık 鱼餐厅。您想品尝新鲜黑海烤鱼还是海鲜前菜？",
     placeholder: "请输入您的消息...",
     send: "发送",
-    contact: "通过 WhatsApp 与我们联系",
+    contact: "致电 Maslak 分店：0212 813 57 57",
     loading: "正在输入..."
   },
   en: {
-    greeting: "Hi there! Looking for our charcoal grill specialties, traditional dishes, or recommendations? Any dietary preferences?",
+    greeting: "Hi there! Welcome to Ulaş Balıkçılık. Looking for daily fresh grilled fish, crispy pans, or seafood mezze?",
     placeholder: "Type a message...",
     send: "Send",
-    contact: "Contact us on WhatsApp",
+    contact: "Call Maslak 1453: 0212 813 57 57",
     loading: "Typing..."
   }
 };

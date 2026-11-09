@@ -79,7 +79,7 @@ export default function SmartReview({ onClose }) {
 
         <div className="text-center mb-6">
           <h2 className="text-2xl font-bold text-white mb-2">{t.rateUs}</h2>
-          <p className="text-sm text-gray-300">How was your experience at Kardeşler Cihangir?</p>
+          <p className="text-sm text-gray-300">How was your experience at Ulaş Balıkçılık?</p>
         </div>
 
         <div className={`flex justify-center gap-2 mb-8 ${isRtl ? 'flex-row-reverse' : ''}`}>
