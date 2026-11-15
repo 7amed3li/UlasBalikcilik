@@ -69,10 +69,10 @@ const featuredDishes = [
     image: null,
   },
   {
-    id: "sicak_helva",
-    menuItemId: "sicak_helva",
+    id: "kabak_tatlisi",
+    menuItemId: "kabak_tatlisi",
     categoryId: "tatlilar",
-    image: null,
+    image: "/images/menu_photos/tatl-lar/tatl-lar__kabak-tatl-s__3535484.jpg",
   },
 ];
 

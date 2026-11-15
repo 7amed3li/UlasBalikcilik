@@ -187,8 +187,8 @@ export default function DishModal({
                   src={image}
                   alt={name}
                   fill
-                  style={{ objectFit: "contain" }}
-                  sizes="(max-width: 768px) 100vw, 400px"
+                  style={{ objectFit: "cover" }}
+                  sizes="(max-width: 768px) 100vw, 450px"
                 />
                 <button
                   onClick={() => setIsFullscreenImage(true)}

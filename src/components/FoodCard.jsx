@@ -299,13 +299,13 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
                     src={item.image}
                     alt={name}
                     fill
-                    style={{ objectFit: "contain" }}
-                    sizes="(max-width: 768px) 100vw, 400px"
+                    style={{ objectFit: "cover" }}
+                    sizes="(max-width: 768px) 100vw, 450px"
                   />
                   <button
                     onClick={() => setIsFullscreenImage(true)}
                     aria-label="View fullscreen image"
-                    className="absolute bottom-3 end-3 z-20 w-9 h-9 flex items-center justify-center rounded-xl bg-[#0B2B3B] text-white hover:bg-[#0E4F4A] transition-colors shadow-md"
+                    className="absolute bottom-3 end-3 z-20 w-9 h-9 flex items-center justify-center rounded-xl bg-[#0B2B3B] text-white hover:bg-[#0E4F4A] transition-colors shadow-md cursor-pointer"
                   >
                     <MagnifyingGlassPlus size={16} weight="bold" />
                   </button>
@@ -371,6 +371,40 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
                   {t.close || "Kapat"}
                 </button>
               </div>
+            </div>
+          </div>,
+          document.body
+        )}
+
+      {/* Fullscreen Image Lightbox */}
+      {isMounted &&
+        isFullscreenImage &&
+        item.image &&
+        createPortal(
+          <div
+            className="fixed inset-0 z-[999999] flex items-center justify-center bg-black/95 backdrop-blur-xl p-4"
+            onClick={() => setIsFullscreenImage(false)}
+          >
+            <button
+              onClick={() => setIsFullscreenImage(false)}
+              aria-label="Close fullscreen image"
+              className="absolute top-6 end-6 z-[9999999] w-12 h-12 flex items-center justify-center rounded-full bg-white text-[#0B2B3B] hover:bg-[#D93829] hover:text-white transition-all shadow-lg cursor-pointer"
+            >
+              <X size={26} weight="bold" />
+            </button>
+
+            <div
+              className="relative w-full h-full max-w-5xl max-h-[90vh]"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Image
+                src={item.image}
+                alt={name}
+                fill
+                style={{ objectFit: "contain" }}
+                sizes="100vw"
+                quality={100}
+              />
             </div>
           </div>,
           document.body

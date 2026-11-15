@@ -9,6 +9,7 @@ import {
   TbCake,
   TbGlassFull,
   TbStarFilled,
+  TbToolsKitchen2,
 } from "react-icons/tb";
 import { PiWavesBold, PiFishSimpleDuotone } from "react-icons/pi";
 
@@ -58,6 +59,8 @@ export function CategoryIcon({ id, categoryId, className = "text-current", size 
       return <TbCake size={size} className={className} />;
     case "icecekler":
       return <TbGlassFull size={size} className={className} />;
+    case "ekonomik_menuler":
+      return <TbToolsKitchen2 size={size} className={className} />;
     default:
       return <TbFish size={size} className={className} />;
   }

@@ -25,20 +25,25 @@ import {
 } from "lucide-react";
 
 const DAILY_CATCH_HIGHLIGHTS = [
-  { id: "hamsi_tava", catId: "tavalar", badgeTr: "Karadeniz", badgeAr: "البحر الأسود", badgeEn: "Black Sea" },
   { id: "levrek_izgara", catId: "izgaralar", badgeTr: "Izgara", badgeAr: "مشوي", badgeEn: "Charcoal Grill" },
-  { id: "kalamar_tava", catId: "mezeler", badgeTr: "Çıtır", badgeAr: "مقرمش", badgeEn: "Crispy" },
-  { id: "karides_guvec", catId: "mezeler", badgeTr: "Güveç", badgeAr: "طاجن", badgeEn: "Clay Pot" },
+  { id: "cipura_izgara", catId: "izgaralar", badgeTr: "Izgara", badgeAr: "مشوي", badgeEn: "Charcoal Grill" },
+  { id: "hamsi_tava", catId: "tavalar", badgeTr: "Karadeniz", badgeAr: "البحر الأسود", badgeEn: "Black Sea" },
+  { id: "kalamar_tava", catId: "tavalar", badgeTr: "Çıtır", badgeAr: "مقرمش", badgeEn: "Crispy" },
+  { id: "jumbo_karides", catId: "izgaralar", badgeTr: "Jumbo", badgeAr: "جامبو", badgeEn: "Jumbo" },
+  { id: "hamsili_pilav", catId: "tavalar", badgeTr: "Karadeniz", badgeAr: "بالأرز", badgeEn: "Black Sea" },
+  { id: "midye_dolma", catId: "mezeler", badgeTr: "Klasik", badgeAr: "محشي", badgeEn: "Classic" },
   { id: "balik_corbasi", catId: "corbalar", badgeTr: "Sıcak", badgeAr: "ساخن", badgeEn: "Chef Special" },
 ];
 
 const FEATURED_DISH_IDS = [
+  "levrek_izgara",
   "cipura_izgara",
   "hamsi_tava",
-  "somon_izgara",
   "kalamar_tava",
-  "balik_ekmek_uskumru",
-  "firinda_helva",
+  "fener_kavurma",
+  "jumbo_karides",
+  "midye_dolma",
+  "kabak_tatlisi",
 ];
 
 export default function Home() {
@@ -253,16 +258,29 @@ export default function Home() {
                   className="shrink-0 w-[148px] sm:w-[172px] bg-white/80 hover:bg-white rounded-2xl p-3 border border-[#B8DCD3] shadow-2xs hover:shadow-md transition-all flex flex-col items-center text-center justify-between group"
                 >
                   <Link href={`${prefix}/dish/${item.id}`} className="w-full flex flex-col items-center">
-                    <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-gradient-to-b from-[#0E4F4A] to-[#082433] shadow-md mb-2.5 flex items-center justify-center">
-                      <div className="w-full h-full rounded-full bg-gradient-to-br from-[#0F384C] via-[#0B2B3B] to-[#071D2B] border border-[#6CA6A1]/40 flex flex-col items-center justify-center relative overflow-hidden">
-                        <CategoryIcon
-                          id={item.categoryId}
-                          size={30}
-                          className="text-[#F4F1E8] drop-shadow-xs transition-transform duration-300 group-hover:scale-110"
-                        />
-                        <span className="mt-0.5 text-[8px] font-bold tracking-wider uppercase text-[#8CC7C0]">
-                          {badge}
-                        </span>
+                    <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-white border border-[#B8DCD3] shadow-md mb-2.5 flex items-center justify-center group-hover:border-[#0E4F4A] transition-all">
+                      <div className="w-full h-full rounded-full bg-gradient-to-br from-[#0F384C] via-[#0B2B3B] to-[#071D2B] border border-[#DCECE7] flex flex-col items-center justify-center relative overflow-hidden">
+                        {item.image ? (
+                          <Image
+                            src={item.image}
+                            alt={name}
+                            fill
+                            style={{ objectFit: "cover" }}
+                            sizes="96px"
+                            className="transition-transform duration-500 group-hover:scale-105"
+                          />
+                        ) : (
+                          <>
+                            <CategoryIcon
+                              id={item.categoryId}
+                              size={30}
+                              className="text-[#F4F1E8] drop-shadow-xs transition-transform duration-300 group-hover:scale-110"
+                            />
+                            <span className="mt-0.5 text-[8px] font-bold tracking-wider uppercase text-[#8CC7C0]">
+                              {badge}
+                            </span>
+                          </>
+                        )}
                       </div>
                     </div>
 
@@ -457,9 +475,19 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Story Banner */}
-        <div className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-6 sm:p-8 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
-          <div className="space-y-2 max-w-2xl">
+        {/* Story Banner with Official Restaurant Photo */}
+        <div className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-6 sm:p-8 shadow-xs flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="relative w-full md:w-64 h-44 sm:h-48 shrink-0 rounded-2xl overflow-hidden border border-[#B8DCD3] shadow-sm">
+            <Image
+              src="/images/ulas-balik-restaurant-hero.jpg"
+              alt="Ulaş Balıkçılık"
+              fill
+              style={{ objectFit: "cover" }}
+              sizes="(max-width: 768px) 100vw, 256px"
+            />
+          </div>
+
+          <div className="space-y-2 flex-1">
             <div className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#0E4F4A] uppercase tracking-wider">
               <Sparkles size={14} />
               <span>{t.about || "Hakkımızda"}</span>

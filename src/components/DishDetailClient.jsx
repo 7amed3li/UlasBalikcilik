@@ -111,12 +111,13 @@ export default function DishDetailClient({ itemId, livePrice }) {
         <section className="bg-[#F4F1E8] rounded-3xl shadow-md overflow-hidden border border-[#B8DCD3] flex flex-col md:flex-row">
           {/* Left Visual Panel */}
           {itemData.image ? (
-            <div className="w-full md:w-2/5 min-h-[240px] relative bg-white border-b md:border-b-0 md:border-e border-[#B8DCD3]">
+            <div className="w-full md:w-2/5 min-h-[260px] relative bg-white border-b md:border-b-0 md:border-e border-[#B8DCD3] overflow-hidden">
               <Image
                 src={itemData.image}
                 alt={itemName}
                 fill
-                style={{ objectFit: "contain", padding: "1.25rem" }}
+                style={{ objectFit: "cover" }}
+                sizes="(max-width: 768px) 100vw, 400px"
                 priority
               />
             </div>
