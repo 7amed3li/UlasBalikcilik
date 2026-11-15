@@ -1,7 +1,11 @@
 "use client";
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { MapPin, ExternalLink, Navigation } from "lucide-react";
+import {
+  TbMapPin as MapPin,
+  TbExternalLink as ExternalLink,
+  TbNavigation as Navigation,
+} from "react-icons/tb";
 import { useAppContext } from "../context/AppContext";
 import { ULAS_CONFIG } from "../data/ulasConfig";
 

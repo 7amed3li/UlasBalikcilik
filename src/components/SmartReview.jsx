@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Star, X, MapPin } from "lucide-react";
+import { TbStarFilled as Star, TbX as X, TbMapPin as MapPin } from "react-icons/tb";
 import { useAppContext } from "../context/AppContext";
 
 export default function SmartReview({ onClose }) {
@@ -94,11 +94,10 @@ export default function SmartReview({ onClose }) {
             >
               <Star
                 size={40}
-                className={`transition-colors ${
-                  (hoverRating || rating) >= star
+                className={`transition-colors ${(hoverRating || rating) >= star
                     ? "text-[#D4AF37]"
                     : "text-white/10"
-                }`}
+                  }`}
                 fill={(hoverRating || rating) >= star ? "currentColor" : "none"}
               />
             </button>

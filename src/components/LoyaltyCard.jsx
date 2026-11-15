@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Gift, X } from "lucide-react";
+import { TbGift as Gift, TbX as X } from "react-icons/tb";
 import { useAppContext } from "../context/AppContext";
 
 export default function LoyaltyCard() {

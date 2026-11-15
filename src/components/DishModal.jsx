@@ -4,7 +4,12 @@ import React, { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
 import Image from "next/image";
 import { useMounted } from "../hooks/useMounted";
-import { X, MagnifyingGlassPlus, Plus, Minus } from "@phosphor-icons/react";
+import {
+  TbX as X,
+  TbZoomIn as MagnifyingGlassPlus,
+  TbPlus as Plus,
+  TbMinus as Minus,
+} from "react-icons/tb";
 import { useAppContext } from "../context/AppContext";
 import { trackViewItem } from "@/lib/analytics";
 import { CategoryIcon, FishLineArt } from "./BrandIcons";

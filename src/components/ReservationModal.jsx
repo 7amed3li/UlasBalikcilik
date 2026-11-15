@@ -2,7 +2,15 @@
 
 import React, { useState, useEffect } from "react";
 import { useAppContext } from "@/context/AppContext";
-import { X, Calendar, Clock, Users, User, MessageCircle, Phone } from "lucide-react";
+import {
+  TbX as X,
+  TbCalendar as Calendar,
+  TbClock as Clock,
+  TbUsers as Users,
+  TbUser as User,
+  TbMessageCircle as MessageCircle,
+  TbPhone as Phone,
+} from "react-icons/tb";
 
 const reservationTranslations = {
   tr: {

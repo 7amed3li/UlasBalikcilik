@@ -1,9 +1,3 @@
-import {
-  Outfit,
-  Plus_Jakarta_Sans,
-  Alexandria,
-  Caveat,
-} from "next/font/google";
 import { AppProvider } from "@/context/AppContext";
 import Header from "@/components/Header";
 import SmartSplash from "@/components/SmartSplash";
@@ -16,38 +10,6 @@ import { headers } from "next/headers";
 import Footer from "@/components/Footer";
 import { ULAS_CONFIG } from "@/data/ulasConfig";
 import "./globals.css";
-
-const outfit = Outfit({
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  display: "swap",
-  variable: "--font-outfit",
-  preload: true,
-});
-
-const plusJakarta = Plus_Jakarta_Sans({
-  subsets: ["latin", "latin-ext"],
-  weight: ["400", "500", "600", "700", "800"],
-  display: "swap",
-  variable: "--font-jakarta",
-  preload: true,
-});
-
-const alexandria = Alexandria({
-  subsets: ["arabic", "latin"],
-  weight: ["400", "500", "600", "700", "800", "900"],
-  display: "swap",
-  variable: "--font-alexandria",
-  preload: true,
-});
-
-const caveat = Caveat({
-  subsets: ["latin"],
-  weight: ["600", "700"],
-  display: "swap",
-  variable: "--font-caveat",
-  preload: true,
-});
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.ulasbalik.com";
 
@@ -256,10 +218,16 @@ export default async function RootLayout({ children }) {
       lang={locale}
       dir={dir}
       suppressHydrationWarning
-      className={`h-full antialiased ${outfit.variable} ${plusJakarta.variable} ${alexandria.variable} ${caveat.variable}`}
+      className="h-full antialiased"
       data-scroll-behavior="smooth"
     >
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800;900&family=Caveat:wght@600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
         {process.env.NEXT_PUBLIC_GA4_ID && (
           <>
             <Script

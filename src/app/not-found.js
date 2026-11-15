@@ -2,7 +2,13 @@
 
 import React from "react";
 import Link from "next/link";
-import { Utensils, Home, Phone, MapPin, Compass } from "lucide-react";
+import {
+  TbToolsKitchen2 as Utensils,
+  TbHome as Home,
+  TbPhone as Phone,
+  TbMapPin as MapPin,
+  TbCompass as Compass,
+} from "react-icons/tb";
 import { useAppContext } from "@/context/AppContext";
 
 export default function NotFound() {

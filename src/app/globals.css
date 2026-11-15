@@ -36,13 +36,17 @@
   /* Elevated Coastal Typography Stack:
      - Headings (`--font-cairo` / `--font-heading`): Outfit (Latin/TR) + Alexandria (AR/FA)
      - Body & Prices (`--font-inter` / `--font-body`): Plus Jakarta Sans (Latin/TR) + Alexandria (AR/FA)
-     - Editorial Serif (`--font-display`): Cormorant Garamond
+     - Editorial Script (`--font-caveat`): Caveat
   */
-  --font-cairo: var(--font-outfit), var(--font-alexandria), system-ui, sans-serif;
-  --font-inter: var(--font-jakarta), var(--font-alexandria), system-ui, sans-serif;
-  --font-heading: var(--font-outfit), var(--font-alexandria), system-ui, sans-serif;
-  --font-body: var(--font-jakarta), var(--font-alexandria), system-ui, sans-serif;
-  --font-display: var(--font-cormorant), Georgia, serif;
+  --font-outfit: "Outfit", "Alexandria", system-ui, sans-serif;
+  --font-jakarta: "Plus Jakarta Sans", "Alexandria", system-ui, sans-serif;
+  --font-alexandria: "Alexandria", system-ui, sans-serif;
+  --font-caveat: "Caveat", cursive;
+  --font-cairo: "Outfit", "Alexandria", system-ui, sans-serif;
+  --font-inter: "Plus Jakarta Sans", "Alexandria", system-ui, sans-serif;
+  --font-heading: "Outfit", "Alexandria", system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", "Alexandria", system-ui, sans-serif;
+  --font-display: Georgia, serif;
 }
 
 @theme inline {

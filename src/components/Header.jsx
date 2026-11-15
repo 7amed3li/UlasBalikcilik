@@ -6,7 +6,14 @@ import Image from "next/image";
 import LanguageSwitcher from "./LanguageSwitcher";
 import CurrencySwitcher from "./CurrencySwitcher";
 import { useAppContext } from "../context/AppContext";
-import { List, House, BookOpen, Info, Phone, MapPin } from "@phosphor-icons/react";
+import {
+  TbMenu2 as List,
+  TbHome as House,
+  TbBook2 as BookOpen,
+  TbInfoCircle as Info,
+  TbPhone as Phone,
+  TbMapPin as MapPin,
+} from "react-icons/tb";
 
 export default function Header() {
   const { t, lang } = useAppContext();
@@ -136,7 +143,7 @@ export default function Header() {
             </div>
           </Link>
 
-          {/* Right Side Dark Translucent Controls (`₺ TRY ⌄`, `TR TR ⌄`, `☰`) */}
+          {/* Right Side Dark Translucent Controls (Currency, Language, Menu) */}
           <div className="flex items-center gap-1.5 sm:gap-2">
             <CurrencySwitcher />
             <LanguageSwitcher />

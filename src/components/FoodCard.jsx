@@ -5,14 +5,14 @@ import { createPortal } from "react-dom";
 import { useAppContext } from "../context/AppContext";
 import { useMounted } from "../hooks/useMounted";
 import {
-  X,
-  MagnifyingGlassPlus,
-  Plus,
-  Minus,
-  ShareNetwork,
-  Check,
-  CaretRight,
-} from "@phosphor-icons/react";
+  TbX as X,
+  TbZoomIn as MagnifyingGlassPlus,
+  TbPlus as Plus,
+  TbMinus as Minus,
+  TbShare as ShareNetwork,
+  TbCheck as Check,
+  TbChevronRight as CaretRight,
+} from "react-icons/tb";
 import Image from "next/image";
 import { CategoryIcon, FishLineArt } from "./BrandIcons";
 import { FaAward, FaLeaf, FaPepperHot } from "react-icons/fa6";

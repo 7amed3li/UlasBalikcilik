@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-import { Flame, Compass } from 'lucide-react';
+import { TbFlame as Flame, TbCompass as Compass } from 'react-icons/tb';
 import DishModal from './DishModal';
 
 export default function SeoStorytelling({ locale = 'en' }) {

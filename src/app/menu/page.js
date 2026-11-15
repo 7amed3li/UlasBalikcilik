@@ -8,7 +8,7 @@ import { useAppContext } from "@/context/AppContext";
 import dynamic from "next/dynamic";
 const SmartFilters = dynamic(() => import("@/components/SmartFilters"), { ssr: false });
 const DishModal = dynamic(() => import("@/components/DishModal"), { ssr: false });
-import { CaretRight } from "@phosphor-icons/react";
+import { TbChevronRight as CaretRight } from "react-icons/tb";
 import { CategoryIcon } from "@/components/BrandIcons";
 import { trackViewItemList } from "@/lib/analytics";
 

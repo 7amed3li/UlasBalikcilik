@@ -1,7 +1,11 @@
 "use client";
 
 import { useState } from "react";
-import { UserPlus, Trash2, KeyRound } from "lucide-react";
+import {
+  TbUserPlus as UserPlus,
+  TbTrash as Trash2,
+  TbKey as KeyRound,
+} from "react-icons/tb";
 
 export default function UserManagementClient({ initialUsers }) {
   const [users, setUsers] = useState(initialUsers);

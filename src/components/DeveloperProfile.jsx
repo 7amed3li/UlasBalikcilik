@@ -2,7 +2,12 @@
 
 import React from "react";
 import Link from "next/link";
-import { ArrowRight, Mail, Code2, MessageCircle } from "lucide-react";
+import {
+  TbArrowRight as ArrowRight,
+  TbMail as Mail,
+  TbCode as Code2,
+  TbMessageCircle as MessageCircle,
+} from "react-icons/tb";
 
 export default function DeveloperProfile({ content, isRTL, lang }) {
   const { hero, proof, services, whyMe, process: workProcess, cta } = content;

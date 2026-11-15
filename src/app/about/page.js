@@ -4,19 +4,19 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
-  MapPin,
-  Phone,
-  Clock,
-  AlertCircle,
-  Utensils,
-  Sparkles,
-  Anchor,
-  ShieldCheck,
-  Flame,
-  Fish,
-  ArrowRight,
-  Star,
-} from "lucide-react";
+  TbMapPin as MapPin,
+  TbPhone as Phone,
+  TbClock as Clock,
+  TbInfoCircle as AlertCircle,
+  TbToolsKitchen2 as Utensils,
+  TbAnchor as Anchor,
+  TbShieldCheck as ShieldCheck,
+  TbGrill as Flame,
+  TbFish as Fish,
+  TbArrowRight as ArrowRight,
+  TbStarFilled as Star,
+} from "react-icons/tb";
+import { PiFishSimpleDuotone } from "react-icons/pi";
 import { useAppContext } from "@/context/AppContext";
 import RestaurantMap from "@/components/RestaurantMap";
 import { ULAS_CONFIG } from "@/data/ulasConfig";
@@ -41,7 +41,7 @@ export default function AboutPage() {
         lang === "ar"
           ? "نختار يومياً أجود أسماك الموسم من الهمسي واللوفر والدنيس والقاروص لتُطهى طازجة على الشواية أو المقلاة."
           : t.adanaDesc ||
-            "Mevsiminde günlük seçilen hamsi, lüfer, çipura, levrek ve somon çeşitlerimiz ızgara ve tavada ustalıkla hazırlanır.",
+          "Mevsiminde günlük seçilen hamsi, lüfer, çipura, levrek ve somon çeşitlerimiz ızgara ve tavada ustalıkla hazırlanır.",
     },
     {
       cat: "mezeler",
@@ -53,7 +53,7 @@ export default function AboutPage() {
         lang === "ar"
           ? "تشكيلة غنية من المقبلات الباردة والساخنة تشمل الكاليماري والمحار المحشي والجمبري بالفخار."
           : t.pideDesc ||
-            "Lakerda, deniz börülcesi, fava, midye dolma, kalamar tava ve tereyağlı karides güveç ile eksiksiz bir balık sofrası.",
+          "Lakerda, deniz börülcesi, fava, midye dolma, kalamar tava ve tereyağlı karides güveç ile eksiksiz bir balık sofrası.",
     },
     {
       cat: "tatlilar",
@@ -65,7 +65,7 @@ export default function AboutPage() {
         lang === "ar"
           ? "نختتم مائدتنا البحرية بالحلاوة الساخنة في الفرن وحلوى اليقطين بالطحينة والجوز."
           : t.breakfastDesc ||
-            "Balık ziyafetinin ardından fırında sıcak helva, tahinli cevizli kabak tatlısı ve irmik tatlısı.",
+          "Balık ziyafetinin ardından fırında sıcak helva, tahinli cevizli kabak tatlısı ve irmik tatlısı.",
     },
   ];
 
@@ -164,7 +164,7 @@ export default function AboutPage() {
         {/* Story Section */}
         <section className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-6 sm:p-8 shadow-xs">
           <div className="flex items-center gap-2 text-[#0E4F4A] text-xs font-extrabold uppercase tracking-wider mb-2">
-            <Sparkles size={14} />
+            <PiFishSimpleDuotone size={16} />
             <span>{lang === "ar" ? "قصتنا وتراثنا البحري" : "Hikayemiz & Mutfak Kültürümüz"}</span>
           </div>
           <h2

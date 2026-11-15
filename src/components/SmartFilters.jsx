@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import { FaAward, FaPepperHot, FaLeaf } from "react-icons/fa6";
-import { TbSearch, TbX, TbSparkles } from "react-icons/tb";
+import { FaAward, FaPepperHot, FaLeaf, FaSeedling } from "react-icons/fa6";
+import { TbSearch, TbX } from "react-icons/tb";
 import { useAppContext } from "../context/AppContext";
 
 export default function SmartFilters({
@@ -39,8 +39,8 @@ export default function SmartFilters({
     }
     if (type === "vegan") {
       return (
-        <TbSparkles
-          size={14}
+        <FaSeedling
+          size={13}
           className={`shrink-0 ${isActive ? "text-white" : "text-[#0E4F4A]"}`}
         />
       );

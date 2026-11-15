@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { ZoomIn } from "lucide-react";
+import { TbZoomIn as ZoomIn } from "react-icons/tb";
 import DishModal from "./DishModal";
 
 export default function HeroImageWithModal() {

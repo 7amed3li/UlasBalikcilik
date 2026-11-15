@@ -19,7 +19,7 @@ export const reviewsList = [
     id: "highlight-1",
     platform: "google",
     author: "Taze Deniz Ürünleri & Çeşitlilik",
-    initial: "★",
+    initial: "U",
     rating: 5,
     verified: true,
     date: {
@@ -65,7 +65,7 @@ export const reviewsList = [
     id: "highlight-2",
     platform: "google",
     author: "Çorba, Salata & Sıcak Helva",
-    initial: "★",
+    initial: "U",
     rating: 5,
     verified: true,
     date: {
@@ -111,7 +111,7 @@ export const reviewsList = [
     id: "highlight-3",
     platform: "google",
     author: "Samimi Mahalle Atmosferi & Servis",
-    initial: "★",
+    initial: "U",
     rating: 5,
     verified: true,
     date: {

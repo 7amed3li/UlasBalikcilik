@@ -4,17 +4,17 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
-  MapPin,
-  Phone,
-  Clock,
-  AlertCircle,
-  ExternalLink,
-  PhoneCall,
-  Utensils,
-  Star,
-  ArrowRight,
-} from "lucide-react";
-import { InstagramLogo } from "@phosphor-icons/react";
+  TbMapPin as MapPin,
+  TbPhone as Phone,
+  TbClock as Clock,
+  TbInfoCircle as AlertCircle,
+  TbExternalLink as ExternalLink,
+  TbPhoneCall as PhoneCall,
+  TbToolsKitchen2 as Utensils,
+  TbStarFilled as Star,
+  TbArrowRight as ArrowRight,
+} from "react-icons/tb";
+import { FaInstagram } from "react-icons/fa6";
 import { useAppContext } from "@/context/AppContext";
 import RestaurantMap from "@/components/RestaurantMap";
 import { ULAS_CONFIG } from "@/data/ulasConfig";
@@ -221,7 +221,7 @@ export default function ContactPage() {
           <div className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-5 flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#0B2B3B] to-[#0E4F4A] text-white flex items-center justify-center shrink-0">
-                <InstagramLogo size={20} weight="bold" />
+                <FaInstagram size={20} />
               </div>
               <div>
                 <h2 className="text-base font-black text-[#0B2B3B]">@ulasbalik</h2>

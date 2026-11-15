@@ -5,16 +5,16 @@ import { useAppContext } from "../context/AppContext";
 import { useMounted } from "../hooks/useMounted";
 import Image from "next/image";
 import {
-  ShoppingBag,
-  X,
-  Plus,
-  Minus,
-  Trash2,
-  PhoneCall,
-  Info,
-  Sparkles,
-  Utensils,
-} from "lucide-react";
+  TbShoppingBag as ShoppingBag,
+  TbX as X,
+  TbPlus as Plus,
+  TbMinus as Minus,
+  TbTrash as Trash2,
+  TbPhoneCall as PhoneCall,
+  TbInfoCircle as Info,
+  TbToolsKitchen2 as Utensils,
+} from "react-icons/tb";
+import { PiFishSimpleDuotone } from "react-icons/pi";
 import { ULAS_CONFIG } from "../data/ulasConfig";
 import { CategoryIcon, FishLineArt } from "./BrandIcons";
 
@@ -154,7 +154,7 @@ export default function OrderFlow() {
 
             {/* Waiter / Table Order Banner */}
             <div className="bg-[#F4F1E8] border-b border-[#B8DCD3] px-4 py-2.5 flex items-center justify-center gap-2 text-center shrink-0">
-              <Sparkles size={14} className="text-[#0E4F4A] shrink-0" />
+              <PiFishSimpleDuotone size={15} className="text-[#0E4F4A] shrink-0" />
               <p
                 className="font-extrabold text-xs text-[#0B2B3B] leading-snug"
                 style={{ fontFamily: "var(--font-cairo)" }}

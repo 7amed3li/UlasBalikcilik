@@ -3,7 +3,18 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Fire, ForkKnife, ArrowUpRight, ArrowUpLeft, CaretRight, CaretLeft, Coins, Check, MagnifyingGlassPlus, Phone } from "@phosphor-icons/react";
+import {
+  TbFlame as Fire,
+  TbToolsKitchen2 as ForkKnife,
+  TbArrowUpRight as ArrowUpRight,
+  TbArrowUpLeft as ArrowUpLeft,
+  TbChevronRight as CaretRight,
+  TbChevronLeft as CaretLeft,
+  TbCoins as Coins,
+  TbCheck as Check,
+  TbZoomIn as MagnifyingGlassPlus,
+  TbPhone as Phone,
+} from "react-icons/tb";
 import { useAppContext } from "../context/AppContext";
 import SaudiRiyalIcon from "./SaudiRiyalIcon";
 import DishModal from "./DishModal";

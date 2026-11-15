@@ -9,16 +9,16 @@ import { ULAS_CONFIG } from "@/data/ulasConfig";
 import { CategoryIcon } from "@/components/BrandIcons";
 import FoodCard from "@/components/FoodCard";
 import {
-  ChevronLeft,
-  Plus,
-  Minus,
-  ShoppingBag,
-  Phone,
-  MapPin,
-  Sparkles,
-  Utensils,
-  ArrowRight,
-} from "lucide-react";
+  TbChevronLeft as ChevronLeft,
+  TbPlus as Plus,
+  TbMinus as Minus,
+  TbShoppingBag as ShoppingBag,
+  TbPhone as Phone,
+  TbMapPin as MapPin,
+  TbToolsKitchen2 as Utensils,
+  TbArrowRight as ArrowRight,
+} from "react-icons/tb";
+import { FaAward } from "react-icons/fa6";
 
 export default function DishDetailClient({ itemId, livePrice }) {
   const { t, lang, convertPrice, getCurrencySymbol, cart, addToCart, removeFromCart, setIsCartOpen } =
@@ -151,7 +151,7 @@ export default function DishDetailClient({ itemId, livePrice }) {
                 </span>
                 {itemData.trending && (
                   <span className="px-3 py-0.5 rounded-full bg-[#D93829] text-white text-[11px] font-extrabold uppercase tracking-wider flex items-center gap-1">
-                    <Sparkles size={11} />
+                    <FaAward size={11} />
                     <span>{t.trending || "Popüler Seçim"}</span>
                   </span>
                 )}

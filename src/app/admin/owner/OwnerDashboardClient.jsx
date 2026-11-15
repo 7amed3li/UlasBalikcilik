@@ -1,7 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Search, Save, CheckCircle, AlertCircle } from "lucide-react";
+import {
+  TbSearch as Search,
+  TbDeviceFloppy as Save,
+  TbCircleCheck as CheckCircle,
+  TbAlertCircle as AlertCircle,
+} from "react-icons/tb";
 import menuTr from "@/i18n/menu/tr.json";
 import { menuData } from "@/data/menuData";
 
@@ -88,11 +93,10 @@ export default function OwnerDashboardClient({ items }) {
     <div className="space-y-6">
       {message.text && (
         <div
-          className={`p-4 rounded-xl flex items-center gap-3 font-bold text-sm ${
-            message.type === "success"
+          className={`p-4 rounded-xl flex items-center gap-3 font-bold text-sm ${message.type === "success"
               ? "bg-[#0E4F4A]/15 text-[#0E4F4A] border border-[#0E4F4A]"
               : "bg-[#D93829]/15 text-[#D93829] border border-[#D93829]"
-          }`}
+            }`}
         >
           {message.type === "success" ? <CheckCircle size={20} /> : <AlertCircle size={20} />}
           <span>{message.text}</span>

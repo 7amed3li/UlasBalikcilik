@@ -4,7 +4,15 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useAppContext } from "../context/AppContext";
-import { MapPin, Phone, Clock, ChevronRight, ChevronLeft, AlertCircle, Navigation } from "lucide-react";
+import {
+  TbMapPin as MapPin,
+  TbPhone as Phone,
+  TbClock as Clock,
+  TbChevronRight as ChevronRight,
+  TbChevronLeft as ChevronLeft,
+  TbInfoCircle as AlertCircle,
+  TbNavigation as Navigation,
+} from "react-icons/tb";
 import { FaStar, FaInstagram } from "react-icons/fa6";
 import RestaurantMap from "./RestaurantMap";
 import { ULAS_CONFIG } from "../data/ulasConfig";

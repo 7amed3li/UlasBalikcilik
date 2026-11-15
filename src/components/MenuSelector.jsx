@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useEffect } from "react";
 import { useAppContext } from "../context/AppContext";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { TbChevronLeft as ChevronLeft, TbChevronRight as ChevronRight } from "react-icons/tb";
 
 export default function MenuSelector({ categories, activeCategory, setActiveCategory }) {
   const { menuT } = useAppContext();

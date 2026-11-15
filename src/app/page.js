@@ -10,19 +10,19 @@ import FoodCard from "@/components/FoodCard";
 import RestaurantMap from "@/components/RestaurantMap";
 import { CategoryIcon, SeaWaves } from "@/components/BrandIcons";
 import {
-  MapPin,
-  Phone,
-  Clock,
-  Star,
-  Utensils,
-  ArrowRight,
-  Sparkles,
-  Anchor,
-  AlertCircle,
-  Plus,
-  Check,
-  Compass,
-} from "lucide-react";
+  TbMapPin as MapPin,
+  TbPhone as Phone,
+  TbClock as Clock,
+  TbStarFilled as Star,
+  TbToolsKitchen2 as Utensils,
+  TbArrowRight as ArrowRight,
+  TbAnchor as Anchor,
+  TbInfoCircle as AlertCircle,
+  TbPlus as Plus,
+  TbCheck as Check,
+  TbCompass as Compass,
+} from "react-icons/tb";
+import { PiFishSimpleDuotone } from "react-icons/pi";
 
 const DAILY_CATCH_HIGHLIGHTS = [
   { id: "levrek_izgara", catId: "izgaralar", badgeTr: "Izgara", badgeAr: "مشوي", badgeEn: "Charcoal Grill" },
@@ -90,116 +90,186 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#DCE8E6] text-[#18323B] pb-20">
       {/* 1. HERO SECTION */}
-      <section className="relative pt-7 pb-6 px-3 sm:px-5 max-w-5xl mx-auto">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#071D2B] via-[#0B2B3B] to-[#0E4F4A] text-white p-6 sm:p-10 border border-[#B8DCD3]/40 shadow-xl">
-          {/* Decorative Topographic Sea Lines */}
-          <svg
-            viewBox="0 0 1000 320"
-            preserveAspectRatio="none"
-            className="absolute inset-0 w-full h-full opacity-[0.12] pointer-events-none"
-            aria-hidden="true"
-          >
-            <g fill="none" stroke="#B8DCD3" strokeWidth="1.4">
-              <path d="M-60,40 C200,130 420,-30 700,80 C880,150 960,40 1060,90" />
-              <path d="M-60,110 C220,200 440,40 720,150 C900,220 970,110 1060,160" />
-              <path d="M-60,180 C240,270 460,110 740,220 C920,290 980,180 1060,230" />
-              <path d="M-60,250 C260,340 480,180 760,290 C940,360 990,250 1060,300" />
-            </g>
-          </svg>
+      <section className="relative pt-5 pb-4 px-3 sm:px-5 max-w-5xl mx-auto">
+        <div className="relative overflow-hidden rounded-3xl bg-[#071D2B] text-white border border-[#B8DCD3]/30 shadow-2xl">
+          {/* Background Seafood Table Photography */}
+          <div className="absolute inset-0 z-0">
+            <Image
+              src="/images/ulas-balik-restaurant-hero.jpg"
+              alt="Ulaş Balıkçılık — Taze Deniz Ürünleri"
+              fill
+              priority
+              unoptimized={true}
+              style={{ objectFit: "cover", objectPosition: "center" }}
+              className="opacity-35 scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#071D2B] via-[#071D2B]/90 to-[#0B2B3B]/65" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#071D2B] via-transparent to-[#071D2B]/40" />
+          </div>
 
-          <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6 sm:gap-8">
-            {/* Left Column: Brand & Headlines */}
-            <div className="flex-1 text-center md:text-start">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 border border-[#B8DCD3]/30 text-[#B8DCD3] text-[11px] font-extrabold uppercase tracking-widest mb-4">
-                <Anchor size={13} className="text-[#F26B45]" />
-                <span>{t.storyBadge || "Taze Deniz Ürünleri • Cihangir & Maslak 1453"}</span>
+          <div className="relative z-10 p-6 sm:p-9 lg:p-11 grid grid-cols-1 lg:grid-cols-12 gap-7 items-center">
+            {/* Left Column: Editorial Brand & CTAs */}
+            <div className="lg:col-span-7 text-start">
+              {/* Subtle Location Pill */}
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-[#0E4F4A]/80 border border-[#9BCAC3]/30 text-[#B8DCD3] text-[11px] font-bold uppercase tracking-wider mb-4">
+                <PiFishSimpleDuotone size={15} className="text-[#F26B45] shrink-0" />
+                <span>{t.storyBadge || "Cihangir & Maslak 1453 • İstanbul"}</span>
               </div>
 
               <h1
-                className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-[1.12] mb-2"
+                className="text-3xl sm:text-5xl font-black text-white tracking-tight leading-[1.08] mb-2"
                 style={{ fontFamily: "var(--font-cairo)" }}
               >
                 ULAŞ BALIKÇILIK
               </h1>
 
               <p
-                className="text-xl sm:text-2xl text-[#9BCAC3] font-semibold -rotate-1 mb-3"
+                className="text-xl sm:text-2xl text-[#9BCAC3] font-semibold mb-3"
                 style={{ fontFamily: "var(--font-caveat), cursive" }}
               >
                 {lang === "ar"
-                  ? "خيرات البحر الأسود الطازجة على مائدتنا"
+                  ? "خيرات البحر الأسود الطازجة على مائدتنا يومياً"
                   : "Karadeniz'in Bereketi Soframızda"}
               </p>
 
-              <p className="text-xs sm:text-base text-[#DCECE7]/90 max-w-xl mx-auto md:mx-0 leading-relaxed mb-6 font-medium">
+              <p className="text-xs sm:text-sm md:text-base text-[#DCECE7]/85 max-w-xl leading-relaxed mb-6 font-medium">
                 {t.subtitle ||
                   "Cihangir ve Maslak 1453 şubelerimizde günlük taze Karadeniz balıkları, kömürde ızgaralar, çıtır tavalar ve geleneksel deniz mezeleri."}
               </p>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-wrap items-center justify-center md:justify-start gap-3">
+              {/* Clean 2-Button Action Row */}
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 mb-6">
                 <Link
                   href={`${prefix}/menu`}
-                  className="inline-flex items-center gap-2 px-6 py-3.5 rounded-2xl bg-[#D93829] hover:bg-[#B82D20] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#D93829] hover:bg-[#B82D20] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all cursor-pointer"
                   style={{ fontFamily: "var(--font-cairo)" }}
                 >
-                  <Utensils size={16} />
+                  <Utensils size={17} />
                   <span>{t.heroCta || "Menüyü Keşfet"}</span>
                   <ArrowRight size={15} />
                 </Link>
 
-                <Link
-                  href={`${prefix}/contact`}
-                  className="inline-flex items-center gap-2 px-5 py-3.5 rounded-2xl bg-white/10 hover:bg-white/20 border border-[#B8DCD3]/40 text-white font-extrabold text-xs sm:text-sm uppercase tracking-wider transition-all"
-                  style={{ fontFamily: "var(--font-cairo)" }}
-                >
-                  <MapPin size={16} className="text-[#9BCAC3]" />
-                  <span>{lang === "ar" ? "الفروع والتواصل" : "Şubelerimiz"}</span>
-                </Link>
+                <div className="grid grid-cols-2 sm:flex items-center gap-2.5">
+                  <Link
+                    href={`${prefix}/contact`}
+                    className="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-extrabold text-xs sm:text-sm transition-all"
+                    style={{ fontFamily: "var(--font-cairo)" }}
+                  >
+                    <MapPin size={16} className="text-[#9BCAC3] shrink-0" />
+                    <span>{lang === "ar" ? "الفروع" : "Şubelerimiz"}</span>
+                  </Link>
 
-                <a
-                  href={maslak.phoneHref}
-                  className="inline-flex items-center gap-2 px-4 py-3.5 rounded-2xl bg-[#0E4F4A] hover:bg-[#13635D] border border-[#8CC7C0]/40 text-white font-extrabold text-xs sm:text-sm transition-all"
-                >
-                  <Phone size={15} className="text-[#F26B45]" />
-                  <span>Maslak: {maslak.confirmedPhone}</span>
-                </a>
+                  <a
+                    href={maslak.phoneHref}
+                    className="inline-flex items-center justify-center gap-1.5 px-4 py-3.5 rounded-xl bg-[#0E4F4A] hover:bg-[#13635D] border border-[#9BCAC3]/35 text-white font-extrabold text-xs sm:text-sm transition-all"
+                  >
+                    <Phone size={15} className="text-[#F26B45] shrink-0" />
+                    <span className="truncate">{maslak.confirmedPhone}</span>
+                  </a>
+                </div>
+              </div>
+
+              {/* Clean Horizontal Trust Bar */}
+              <div className="pt-4 border-t border-white/15 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs">
+                <div className="flex items-center gap-1.5">
+                  <Star size={14} className="text-[#F26B45]" />
+                  <span className="font-black text-white">4.8</span>
+                  <span className="text-[#B8DCD3]/80 font-medium">(558+ Google)</span>
+                </div>
+                <span className="text-white/20">•</span>
+                <div className="flex items-center gap-1.5">
+                  <span className="font-black text-white">95+</span>
+                  <span className="text-[#B8DCD3]/80 font-medium">
+                    {lang === "ar" ? "صنف بحري طازج" : t.statsDishes || "Deniz Lezzeti"}
+                  </span>
+                </div>
+                <span className="text-white/20">•</span>
+                <div className="flex items-center gap-1.5">
+                  <Clock size={14} className="text-[#9BCAC3]" />
+                  <span className="text-[#B8DCD3]/90 font-semibold">11:30 – 22:00</span>
+                </div>
               </div>
             </div>
 
-            {/* Right Column: Official Logo Card + Stats Badges */}
-            <div className="shrink-0 flex flex-col items-center gap-3">
-              <div className="relative w-44 h-28 sm:w-52 sm:h-32 rounded-3xl bg-white p-3 border-2 border-[#B8DCD3] shadow-xl flex items-center justify-center">
-                <Image
-                  src="/ulas-logo.jpg"
-                  alt="Ulaş Balık — Fish Restaurant"
-                  fill
-                  priority
-                  unoptimized={true}
-                  style={{ objectFit: "contain", padding: "8px" }}
-                />
-              </div>
+            {/* Right Column: Featured Visual Plate Collage */}
+            <div className="lg:col-span-5">
+              <div className="grid grid-cols-2 gap-3">
+                <Link
+                  href={`${prefix}/menu/levrek_izgara`}
+                  className="group relative h-36 sm:h-44 rounded-2xl overflow-hidden border border-white/20 shadow-lg bg-[#0B2B3B]"
+                >
+                  <Image
+                    src="/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-levrek__3535450.jpg"
+                    alt="Izgara Levrek"
+                    fill
+                    unoptimized={true}
+                    style={{ objectFit: "cover" }}
+                    className="group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#071D2B]/90 via-transparent to-transparent" />
+                  <div className="absolute bottom-2.5 inset-x-3 flex items-end justify-between gap-1">
+                    <div>
+                      <span className="block text-[10px] font-bold uppercase tracking-wider text-[#9BCAC3]">
+                        {lang === "ar" ? "مشوي على الفحم" : "Kömürde Izgara"}
+                      </span>
+                      <span className="text-xs sm:text-sm font-black text-white">
+                        {lang === "ar" ? "قاروص مشوي" : "Izgara Levrek"}
+                      </span>
+                    </div>
+                  </div>
+                </Link>
 
-              <div className="grid grid-cols-3 gap-2 w-full">
-                <div className="rounded-xl bg-[#071D2B]/80 border border-[#B8DCD3]/25 px-3 py-2 text-center">
-                  <div className="text-sm sm:text-base font-black text-[#F26B45] flex items-center justify-center gap-0.5">
-                    <span>4.8</span>
-                    <Star size={12} className="fill-[#F26B45] text-[#F26B45]" />
+                <Link
+                  href={`${prefix}/menu/hamsi_tava`}
+                  className="group relative h-36 sm:h-44 rounded-2xl overflow-hidden border border-white/20 shadow-lg bg-[#0B2B3B]"
+                >
+                  <Image
+                    src="/images/menu_photos/tavada-bal-klar/tavada-bal-klar__hamsi-tava__3535417.jpg"
+                    alt="Karadeniz Hamsi Tava"
+                    fill
+                    unoptimized={true}
+                    style={{ objectFit: "cover" }}
+                    className="group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#071D2B]/90 via-transparent to-transparent" />
+                  <div className="absolute bottom-2.5 inset-x-3 flex items-end justify-between gap-1">
+                    <div>
+                      <span className="block text-[10px] font-bold uppercase tracking-wider text-[#F26B45]">
+                        {lang === "ar" ? "البحر الأسود" : "Karadeniz"}
+                      </span>
+                      <span className="text-xs sm:text-sm font-black text-white">
+                        {lang === "ar" ? "همسي مقلي مقرمش" : "Hamsi Tava"}
+                      </span>
+                    </div>
                   </div>
-                  <div className="text-[10px] text-[#B8DCD3] font-bold">558+ Google</div>
-                </div>
-                <div className="rounded-xl bg-[#071D2B]/80 border border-[#B8DCD3]/25 px-3 py-2 text-center">
-                  <div className="text-sm sm:text-base font-black text-white">81</div>
-                  <div className="text-[10px] text-[#B8DCD3] font-bold">
-                    {t.statsDishes || "ÇEŞİT"}
+                </Link>
+
+                <Link
+                  href={`${prefix}/menu/kalamar_tava`}
+                  className="group relative h-32 sm:h-36 rounded-2xl overflow-hidden border border-white/20 shadow-lg bg-[#0B2B3B] col-span-2"
+                >
+                  <Image
+                    src="/images/menu_photos/tavada-bal-klar/tavada-bal-klar__kalamar-tava__3535430.jpg"
+                    alt="Kalamar Tava & Mezeler"
+                    fill
+                    unoptimized={true}
+                    style={{ objectFit: "cover" }}
+                    className="group-hover:scale-105 transition-transform duration-300"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#071D2B]/90 via-[#071D2B]/45 to-transparent" />
+                  <div className="absolute inset-y-0 start-4 flex flex-col justify-center">
+                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#9BCAC3]">
+                      {lang === "ar" ? "الأكثر طلباً" : "En Çok Tercih Edilen"}
+                    </span>
+                    <span className="text-sm sm:text-base font-black text-white">
+                      {lang === "ar" ? "كاليماري مقرمش ومقبلات بحرية" : "Çıtır Kalamar Tava & Mezeler"}
+                    </span>
+                    <span className="text-[11px] font-bold text-[#F26B45] mt-0.5 flex items-center gap-1">
+                      <span>{lang === "ar" ? "اطلب الآن" : "Detayları Gör"}</span>
+                      <ArrowRight size={12} />
+                    </span>
                   </div>
-                </div>
-                <div className="rounded-xl bg-[#071D2B]/80 border border-[#B8DCD3]/25 px-3 py-2 text-center">
-                  <div className="text-sm sm:text-base font-black text-[#9BCAC3]">2</div>
-                  <div className="text-[10px] text-[#B8DCD3] font-bold">
-                    {lang === "ar" ? "فرع" : "ŞUBE"}
-                  </div>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -489,7 +559,7 @@ export default function Home() {
 
           <div className="space-y-2 flex-1">
             <div className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#0E4F4A] uppercase tracking-wider">
-              <Sparkles size={14} />
+              <PiFishSimpleDuotone size={16} />
               <span>{t.about || "Hakkımızda"}</span>
             </div>
             <h2

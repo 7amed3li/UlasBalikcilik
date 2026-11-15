@@ -3,7 +3,12 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { MapPin, Clock, Phone, Navigation } from "lucide-react";
+import {
+  TbMapPin as MapPin,
+  TbClock as Clock,
+  TbPhone as Phone,
+  TbNavigation as Navigation,
+} from "react-icons/tb";
 import { menuData } from "@/data/menuData";
 import breakfastTranslations from "@/i18n/breakfastTranslations";
 import { useAppContext } from "@/context/AppContext";

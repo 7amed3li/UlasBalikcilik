@@ -1,7 +1,12 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from "react";
-import { MessageCircle, X, Send, UtensilsCrossed } from "lucide-react";
+import {
+  TbMessageCircle as MessageCircle,
+  TbX as X,
+  TbSend as Send,
+  TbToolsKitchen2 as UtensilsCrossed,
+} from "react-icons/tb";
 
 import { useAppContext } from "@/context/AppContext";
 
