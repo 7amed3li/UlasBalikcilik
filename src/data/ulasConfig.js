@@ -16,6 +16,7 @@ export const CIHANGIR_CONFIRMED_PHONE_DISPLAY = null; // Set to "0212 434 25 02"
 export const ULAS_CONFIG = {
   brandName: "Ulaş Balıkçılık",
   shortName: "Ulaş Balık",
+  siteUrl: "https://www.ulasbalikcilik.com",
   tagline: {
     tr: "Balık Restaurant • Cihangir & Maslak 1453",
     en: "Fish Restaurant • Cihangir & Maslak 1453",

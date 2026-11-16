@@ -1,6 +1,6 @@
 export async function generateMetadata({ params }) {
   const { lang } = await params;
-  const baseUrl = "https://www.ulasbalik.com";
+  const baseUrl = "https://www.ulasbalikcilik.com";
 
   const localeMap = {
     tr: "tr_TR",

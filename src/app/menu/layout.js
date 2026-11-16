@@ -21,7 +21,7 @@ export const metadata = {
     title: "Menü | Ulaş Balıkçılık — Cihangir & Maslak 1453",
     description:
       "Günlük taze balıklar, ızgaralar, tavalar, deniz mezeleri ve tatlılar.",
-    url: "https://www.ulasbalik.com/menu",
+    url: "https://www.ulasbalikcilik.com/menu",
     siteName: "Ulaş Balıkçılık",
     images: [
       {
@@ -35,7 +35,7 @@ export const metadata = {
 };
 
 export default async function MenuLayout({ children }) {
-  const siteUrl = "https://www.ulasbalik.com";
+  const siteUrl = "https://www.ulasbalikcilik.com";
   const livePrices = await getLivePricesMap();
 
   const menuSections = menuData.map((cat) => {

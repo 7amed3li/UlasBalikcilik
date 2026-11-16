@@ -6,7 +6,7 @@ export const metadata = {
   openGraph: {
     title: devProfileContent.tr.meta.title,
     description: devProfileContent.tr.meta.description,
-    url: "https://www.ulasbalik.com/tasarim-gelistirme",
+    url: "https://www.ulasbalikcilik.com/tasarim-gelistirme",
     siteName: "Ulaş Balıkçılık",
     locale: "tr_TR",
     type: "profile",

@@ -13,7 +13,7 @@ export const devProfileContent = {
     },
     proof: {
       title: "REAL PROOF",
-      subtitle: "This site — Ulaş Balıkçılık (ulasbalik.com) — is a live example of my work, not a mockup.",
+      subtitle: "This site — Ulaş Balıkçılık (ulasbalikcilik.com) — is a live example of my work, not a mockup.",
       points: [
         "Loads fast on mobile, where 85%+ of restaurant visitors come from",
         "Automatically shows menu prices in the visitor's currency (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -71,7 +71,7 @@ export const devProfileContent = {
     },
     proof: {
       title: "GERÇEK KANIT",
-      subtitle: "Bu site — Ulaş Balıkçılık (ulasbalik.com) — bir maket değil, canlı bir örnek.",
+      subtitle: "Bu site — Ulaş Balıkçılık (ulasbalikcilik.com) — bir maket değil, canlı bir örnek.",
       points: [
         "Restoran ziyaretçilerinin %85'inden fazlasının geldiği mobilde hızlı açılıyor",
         "Ziyaretçinin para birimine göre menü fiyatlarını otomatik gösteriyor (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -129,7 +129,7 @@ export const devProfileContent = {
     },
     proof: {
       title: "إثبات حقيقي",
-      subtitle: "الموقع ده — Ulaş Balıkçılık (ulasbalik.com) — مش نموذج تجريبي، ده شغل حقيقي شغال دلوقتي.",
+      subtitle: "الموقع ده — Ulaş Balıkçılık (ulasbalikcilik.com) — مش نموذج تجريبي، ده شغل حقيقي شغال دلوقتي.",
       points: [
         "بيفتح بسرعة على الموبايل، اللي منه بيجي أكتر من 85% من زوار المطاعم",
         "يعرض أسعار المنيو تلقائيًا بعملة الزائر (ليرة تركي، دولار، يورو، جنيه إسترليني، روبل، ريال سعودي)",
@@ -187,7 +187,7 @@ export const devProfileContent = {
     },
     proof: {
       title: "ECHTER BEWEIS",
-      subtitle: "Diese Seite — Ulaş Balıkçılık (ulasbalik.com) — ist kein Entwurf, sondern ein reales, funktionierendes Beispiel.",
+      subtitle: "Diese Seite — Ulaş Balıkçılık (ulasbalikcilik.com) — ist kein Entwurf, sondern ein reales, funktionierendes Beispiel.",
       points: [
         "Lädt rasend schnell auf dem Smartphone (woher über 85% der Restaurant-Gäste kommen)",
         "Zeigt Menüpreise automatisch in der Währung des Besuchers an (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -245,7 +245,7 @@ export const devProfileContent = {
     },
     proof: {
       title: "PRUEBA REAL",
-      subtitle: "Este sitio — Ulaş Balıkçılık (ulasbalik.com) — es un ejemplo en vivo de mi trabajo, no una maqueta.",
+      subtitle: "Este sitio — Ulaş Balıkçılık (ulasbalikcilik.com) — es un ejemplo en vivo de mi trabajo, no una maqueta.",
       points: [
         "Carga rápida en móviles, de donde provienen más del 85% de las visitas de restaurantes",
         "Muestra automáticamente los precios del menú en la moneda del visitante (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -303,7 +303,7 @@ export const devProfileContent = {
     },
     proof: {
       title: "اثبات واقعی",
-      subtitle: "این سایت — Ulaş Balıkçılık (ulasbalik.com) — یک نمونه آزمایشی نیست، بلکه یک پروژه واقعی در حال کار است.",
+      subtitle: "این سایت — Ulaş Balıkçılık (ulasbalikcilik.com) — یک نمونه آزمایشی نیست، بلکه یک پروژه واقعی در حال کار است.",
       points: [
         "بارگذاری بسیار سریع در موبایل، جایی که بیش از ۸۵٪ مشتریان رستوران از آنجا می‌آیند",
         "نمایش خودکار قیمت منو به ارز بازدیدکننده (لیر، دلار، یورو، پوند، روبل، ریال سعودی)",
@@ -361,7 +361,7 @@ export const devProfileContent = {
     },
     proof: {
       title: "PREUVE CONCRÈTE",
-      subtitle: "Ce site — Ulaş Balıkçılık (ulasbalik.com) — est un exemple réel de mon travail, pas une simple maquette.",
+      subtitle: "Ce site — Ulaş Balıkçılık (ulasbalikcilik.com) — est un exemple réel de mon travail, pas une simple maquette.",
       points: [
         "Se charge rapidement sur mobile, d'où proviennent plus de 85% des clients de restaurants",
         "Affiche automatiquement les prix du menu dans la devise du visiteur (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -419,7 +419,7 @@ export const devProfileContent = {
     },
     proof: {
       title: "PROVA REALE",
-      subtitle: "Questo sito — Ulaş Balıkçılık (ulasbalik.com) — è un esempio reale del mio lavoro, non un modello finto.",
+      subtitle: "Questo sito — Ulaş Balıkçılık (ulasbalikcilik.com) — è un esempio reale del mio lavoro, non un modello finto.",
       points: [
         "Si carica velocemente su mobile, da dove proviene oltre l'85% dei clienti dei ristoranti",
         "Mostra automaticamente i prezzi del menu nella valuta del visitatore (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -477,7 +477,7 @@ export const devProfileContent = {
     },
     proof: {
       title: "РЕАЛЬНЫЕ РЕЗУЛЬТАТЫ",
-      subtitle: "Этот сайт — Ulaş Balıkçılık (ulasbalik.com) — это живой пример моей работы, а не просто макет.",
+      subtitle: "Этот сайт — Ulaş Balıkçılık (ulasbalikcilik.com) — это живой пример моей работы, а не просто макет.",
       points: [
         "Быстро загружается на мобильных устройствах (откуда приходит более 85% гостей ресторанов)",
         "Автоматически показывает цены в меню в валюте посетителя (TRY, USD, EUR, GBP, RUB, SAR)",
@@ -535,7 +535,7 @@ export const devProfileContent = {
     },
     proof: {
       title: "真实案例",
-      subtitle: "本网站 — Ulaş Balıkçılık (ulasbalik.com) — 是我开发的一个真实上线项目，而非演示模型。",
+      subtitle: "本网站 — Ulaş Balıkçılık (ulasbalikcilik.com) — 是我开发的一个真实上线项目，而非演示模型。",
       points: [
         "在移动设备上加载迅速（超过85%的餐厅访客使用手机访问）",
         "根据访客所在地区自动显示对应的菜单货币 (TRY, USD, EUR, GBP, RUB, SAR)",

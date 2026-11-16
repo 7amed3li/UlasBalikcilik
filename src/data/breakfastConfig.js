@@ -38,8 +38,8 @@ export const RESTAURANT_INFO = {
   googleMapsUrl:
     "https://www.google.com/maps/place/Cihangir+Ula%C5%9F+Bal%C4%B1k%C3%A7%C4%B1l%C4%B1k/@41.0329702,28.9823786,17z/data=!4m8!3m7!1s0x14cab9df517a6c03:0x98fabf0a208b9fa2!8m2!3d41.0329702!4d28.9823786!9m1!1b1!16s%2Fg%2F11ggr51qp4?hl=en",
   googleMapsPlaceId: "0x14cab9df517a6c03:0x98fabf0a208b9fa2",
-  siteUrl: "https://www.ulasbalik.com",
-  instagram: "https://www.instagram.com/ulasbalik_restaurant/",
+  siteUrl: "https://www.ulasbalikcilik.com",
+  instagram: "https://www.instagram.com/ulasbalik/",
   generalHours: { opens: "11:00", closes: "02:00" },
 };
 

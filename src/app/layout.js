@@ -11,7 +11,7 @@ import Footer from "@/components/Footer";
 import { ULAS_CONFIG } from "@/data/ulasConfig";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.ulasbalik.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.ulasbalikcilik.com";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),

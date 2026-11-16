@@ -1,5 +1,5 @@
 export default function robots() {
-  const siteUrl = "https://www.ulasbalik.com";
+  const siteUrl = "https://www.ulasbalikcilik.com";
 
   return {
     rules: [

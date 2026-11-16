@@ -144,7 +144,7 @@ export default function DishModal({
     "@context": "https://schema.org/",
     "@type": "Product",
     name: name,
-    image: image ? `https://www.ulasbalik.com${image}` : undefined,
+    image: image ? `https://www.ulasbalikcilik.com${image}` : undefined,
     description: description || name,
     offers: {
       "@type": "Offer",

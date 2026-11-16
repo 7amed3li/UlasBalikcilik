@@ -64,11 +64,10 @@ export default function SmartFilters({
             <button
               key={f.id}
               onClick={() => setActiveFilter(isActive ? null : f.id)}
-              className={`shrink-0 flex items-center justify-center gap-2 px-4 sm:px-5 py-2 rounded-full text-xs sm:text-[13px] font-extrabold tracking-wide transition-all cursor-pointer border ${
-                isActive
+              className={`shrink-0 flex items-center justify-center gap-2 px-4 sm:px-5 py-2 rounded-full text-xs sm:text-[13px] font-extrabold tracking-wide transition-all cursor-pointer border ${isActive
                   ? "bg-gradient-to-r from-[#0B2B3B] to-[#0E4F4A] text-white border-[#0B2B3B] shadow-md"
                   : "bg-[#F4F1E8] border-[#B8DCD3] text-[#18323B] hover:border-[#0E4F4A] shadow-2xs"
-              }`}
+                }`}
             >
               {renderIcon(f.icon, isActive)}
               <span>{f.label}</span>

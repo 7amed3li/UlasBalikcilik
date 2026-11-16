@@ -11,7 +11,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }) {
   const { lang } = await params;
   const content = devProfileContent[lang] || devProfileContent.en;
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.ulasbalik.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.ulasbalikcilik.com";
 
   return {
     title: content.meta.title,

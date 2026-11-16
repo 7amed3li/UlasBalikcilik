@@ -74,7 +74,7 @@ export default function DeveloperProfile({ content, isRTL, lang }) {
               className="text-xl sm:text-2xl font-black leading-snug text-white"
               style={{ fontFamily: "var(--font-cairo)" }}
             >
-              {proof.subtitle?.replace(/kardeslercihangir\.com/gi, "ulasbalik.com")}
+              {proof.subtitle?.replace(/kardeslercihangir\.com|ulasbalik\.com/gi, "ulasbalikcilik.com")}
             </p>
           </div>
 

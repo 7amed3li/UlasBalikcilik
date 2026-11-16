@@ -1,7 +1,7 @@
 import { menuData } from "@/data/menuData";
 
 export default async function sitemap() {
-  const baseUrl = "https://www.ulasbalik.com";
+  const baseUrl = "https://www.ulasbalikcilik.com";
   const currentDate = new Date();
   const locales = ["tr", "en", "ar", "ru", "fa", "fr", "de", "it", "es", "zh"];
 
