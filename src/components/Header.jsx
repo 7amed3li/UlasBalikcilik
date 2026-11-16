@@ -80,16 +80,16 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className="sticky top-0 z-40 w-full bg-gradient-to-r from-[#13202E] via-[#1E2D3D] to-[#0077B6] text-white overflow-visible select-none"
+      className="sticky top-0 z-40 w-full bg-gradient-to-r from-[#006BA6] via-[#0088CC] to-[#1AA3E8] text-white overflow-visible select-none"
     >
       {/* Background Decorative Layer: Topographic Sea Contour Lines + Radial Glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
         <svg
           viewBox="0 0 1000 180"
           preserveAspectRatio="none"
-          className="absolute inset-0 w-full h-full opacity-[0.14]"
+          className="absolute inset-0 w-full h-full opacity-[0.18]"
         >
-          <g fill="none" stroke="#C5E1F5" strokeWidth="1.2">
+          <g fill="none" stroke="#FFFFFF" strokeWidth="1.2">
             <path d="M-50,20 C180,90 360,-30 620,55 C820,120 940,30 1060,70" />
             <path d="M-50,55 C200,125 380,5 640,90 C840,155 950,65 1060,105" />
             <path d="M-50,90 C220,160 400,40 660,125 C860,190 960,100 1060,140" />
@@ -99,9 +99,9 @@ export default function Header() {
         </svg>
 
         <div
-          className="absolute -top-10 end-12 w-72 h-44 rounded-full opacity-25 blur-2xl"
+          className="absolute -top-10 end-12 w-72 h-44 rounded-full opacity-30 blur-2xl"
           style={{
-            background: "radial-gradient(circle, #0088CC 0%, transparent 70%)",
+            background: "radial-gradient(circle, #38B6FF 0%, transparent 70%)",
           }}
         />
       </div>
@@ -154,8 +154,8 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className={`w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl border transition-colors cursor-pointer ${
                   isMenuOpen
-                    ? "bg-[#29ABE2] border-[#29ABE2] text-white"
-                    : "bg-[#162536]/70 border-[#38B6FF]/45 text-white hover:bg-[#1F364D]/80"
+                    ? "bg-white border-white text-[#0088CC]"
+                    : "bg-white/15 border-white/35 text-white hover:bg-white/25"
                 }`}
                 aria-label="Menu"
               >
@@ -164,11 +164,11 @@ export default function Header() {
 
               {isMenuOpen && (
                 <div className="absolute end-0 mt-2 w-60 rounded-2xl bg-[#F8FBFE] border border-[#C5E1F5] shadow-2xl overflow-hidden z-50 animate-fadeIn text-[#1E2D3D]">
-                  <div className="px-4 py-2.5 bg-[#1E2D3D] text-[#F8FBFE] flex items-center justify-between">
+                  <div className="px-4 py-2.5 bg-[#0088CC] text-white flex items-center justify-between">
                     <span className="text-[11px] font-bold tracking-wider uppercase">
                       Ulaş Balıkçılık
                     </span>
-                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#0077B6] text-[#C5E1F5] font-semibold">
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-white/20 text-white font-semibold">
                       Cihangir &amp; Maslak
                     </span>
                   </div>
@@ -225,7 +225,7 @@ export default function Header() {
         {/* Lower Right: Handwritten Tagline + Detailed Black Sea Fishing Trawler Silhouette */}
         <div className="flex items-end justify-end gap-2 sm:gap-3 mt-0.5 pe-1 relative z-10 pointer-events-none">
           <div
-            className="text-[14px] sm:text-[17px] font-semibold text-[#38B6FF] leading-[1.05] text-center -rotate-6"
+            className="text-[14px] sm:text-[17px] font-semibold text-white/95 leading-[1.05] text-center -rotate-6"
             style={{ fontFamily: "var(--font-caveat), cursive" }}
           >
             <div>
@@ -237,38 +237,36 @@ export default function Header() {
           {/* Black Sea Trawler Silhouette */}
           <svg
             viewBox="0 0 120 50"
-            className="w-18 h-8 sm:w-22 sm:h-9 text-[#051824]/80 shrink-0 translate-y-1"
+            className="w-18 h-8 sm:w-22 sm:h-9 text-[#004A75] shrink-0 translate-y-1"
             aria-hidden="true"
           >
             <path
               d="M0 40 Q25 35 55 39 T120 38 L120 44 L0 44 Z"
-              fill="#061D2B"
+              fill="#005585"
               opacity="0.7"
             />
             <path
               d="M52 6 L52 30 M76 10 L76 30 M52 9 L30 29 M52 9 L76 14 M76 12 L98 27 M45 16 L59 16"
-              stroke="#041520"
+              stroke="#00446B"
               strokeWidth="1.5"
               strokeLinecap="round"
             />
-            <path d="M56 20 H74 L77 29 H54 Z" fill="#041520" />
-            <rect x="60" y="22" width="5" height="3.5" fill="#184B59" opacity="0.7" />
-            <rect x="67" y="22" width="5" height="3.5" fill="#184B59" opacity="0.7" />
-            <path d="M22 26 L50 29 L96 27 L90 38 L30 38 Z" fill="#041520" />
+            <path d="M56 20 H74 L77 29 H54 Z" fill="#00446B" />
+            <rect x="60" y="22" width="5" height="3.5" fill="#EBF4FA" opacity="0.85" />
+            <rect x="67" y="22" width="5" height="3.5" fill="#EBF4FA" opacity="0.85" />
+            <path d="M22 26 L50 29 L96 27 L90 38 L30 38 Z" fill="#00446B" />
             <path
               d="M18 40 Q45 38 75 41 T112 40"
-              stroke="#38B6FF"
+              stroke="#FFFFFF"
               strokeWidth="1"
               fill="none"
-              opacity="0.45"
+              opacity="0.65"
             />
           </svg>
         </div>
       </div>
 
-      {/* Transparent Bottom Wave Overhang:
-          Instead of filling the bottom of the SVG with a solid cream block (which created a two-tone seam when scrolling),
-          we fill the UPPER portion of the wave with the dark header gradient so the bottom edge itself IS curved and transparent underneath! */}
+      {/* Transparent Bottom Wave Overhang */}
       <div className="absolute left-0 right-0 top-full w-full overflow-hidden leading-none pointer-events-none z-30 -mt-px">
         <svg
           viewBox="0 0 1200 44"
@@ -277,23 +275,21 @@ export default function Header() {
         >
           <defs>
             <linearGradient id="ulasHeaderWaveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#13202E" />
-              <stop offset="50%" stopColor="#1E2D3D" />
-              <stop offset="100%" stopColor="#0077B6" />
+              <stop offset="0%" stopColor="#006BA6" />
+              <stop offset="50%" stopColor="#0088CC" />
+              <stop offset="100%" stopColor="#1AA3E8" />
             </linearGradient>
           </defs>
-          {/* Dark header wave hanging down from the top of the SVG; transparent below the curve! */}
           <path
             d="M0,0 L1200,0 L1200,34 C1080,42 940,38 740,22 C480,2 240,2 0,24 Z"
             fill="url(#ulasHeaderWaveGrad)"
           />
-          {/* Subtle sea-glass highlight rim along the curve */}
           <path
             d="M0,24 C240,2 480,2 740,22 C940,38 1080,42 1200,34"
             fill="none"
-            stroke="#38B6FF"
+            stroke="#FFFFFF"
             strokeWidth="2"
-            opacity="0.4"
+            opacity="0.55"
           />
         </svg>
       </div>

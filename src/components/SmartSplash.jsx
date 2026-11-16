@@ -47,7 +47,7 @@ export default function SmartSplash() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(160deg, #1E2D3D 0%, #0077B6 100%);
+          background: linear-gradient(160deg, #006BA6 0%, #0088CC 50%, #29ABE2 100%);
           overflow: hidden;
           font-family: var(--font-inter, sans-serif);
           transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);

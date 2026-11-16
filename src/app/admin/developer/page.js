@@ -35,7 +35,7 @@ export default async function DeveloperPage() {
 
   return (
     <div className="min-h-screen bg-[#EBF4FA] text-[#1E2D3D] font-sans">
-      <nav className="bg-gradient-to-r from-[#13202E] via-[#1E2D3D] to-[#0077B6] text-white border-b border-[#C5E1F5]/30 px-6 py-4 flex justify-between items-center sticky top-0 z-10 shadow-md">
+      <nav className="bg-gradient-to-r from-[#006BA6] via-[#0088CC] to-[#1AA3E8] text-white border-b border-[#C5E1F5]/30 px-6 py-4 flex justify-between items-center sticky top-0 z-10 shadow-md">
         <div>
           <h1
             className="text-xl font-black text-white tracking-wider uppercase"

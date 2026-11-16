@@ -64,7 +64,7 @@ export default function DeveloperProfile({ content, isRTL, lang }) {
       </section>
 
       {/* 2. REAL PROOF */}
-      <section className="bg-gradient-to-br from-[#13202E] via-[#1E2D3D] to-[#0077B6] text-white rounded-3xl p-7 sm:p-10 shadow-lg relative overflow-hidden border border-[#C5E1F5]/30">
+      <section className="bg-gradient-to-br from-[#006BA6] via-[#0088CC] to-[#1AA3E8] text-white rounded-3xl p-7 sm:p-10 shadow-lg relative overflow-hidden border border-[#C5E1F5]/30">
         <div className="relative z-10 space-y-6">
           <div className="space-y-2">
             <h2 className="text-[#38B6FF] text-xs font-extrabold tracking-widest uppercase">

@@ -170,7 +170,7 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
           {/* Bottom-Left Tag Pill Over Image */}
           <div className="absolute bottom-2 start-2 z-20 flex flex-wrap gap-1 pointer-events-none">
             {item.tags?.includes("signature") ? (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[9px] uppercase tracking-wider text-white bg-[#1E2D3D]/90 backdrop-blur-xs rounded-full font-extrabold border border-white/15 shadow-xs">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[9px] uppercase tracking-wider text-white bg-[#004A75]/90 backdrop-blur-xs rounded-full font-extrabold border border-white/15 shadow-xs">
                 <FaAward size={10} className="text-[#F5C242]" />
                 <span>{t.signature || "ŞEFİN SEÇİMİ"}</span>
               </span>

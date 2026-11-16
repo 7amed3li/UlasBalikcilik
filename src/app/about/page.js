@@ -100,7 +100,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-[#EBF4FA] text-[#1E2D3D] pt-7 pb-20">
       <div className="max-w-4xl mx-auto px-3 sm:px-5 space-y-6">
         {/* Hero Card */}
-        <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#13202E] via-[#1E2D3D] to-[#0077B6] text-white p-6 sm:p-10 text-center border border-[#C5E1F5]/30 shadow-lg">
+        <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#006BA6] via-[#0088CC] to-[#1AA3E8] text-white p-6 sm:p-10 text-center border border-[#C5E1F5]/30 shadow-lg">
           <div className="relative w-44 h-20 mx-auto mb-4 rounded-2xl bg-white p-2.5 border border-[#C5E1F5] shadow-md">
             <Image
               src="/ulas-logo.jpg"
@@ -144,7 +144,7 @@ export default function AboutPage() {
               className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-5 shadow-xs flex flex-col justify-between"
             >
               <div>
-                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#0077B6] to-[#1E2D3D] text-white flex items-center justify-center mb-3.5 shadow-2xs">
+                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#0088CC] to-[#006BA6] text-white flex items-center justify-center mb-3.5 shadow-2xs">
                   <CategoryIcon id={item.cat} size={24} className="text-white" />
                 </div>
                 <h2

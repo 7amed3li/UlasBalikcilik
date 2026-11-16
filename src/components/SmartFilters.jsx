@@ -65,7 +65,7 @@ export default function SmartFilters({
               key={f.id}
               onClick={() => setActiveFilter(isActive ? null : f.id)}
               className={`shrink-0 flex items-center justify-center gap-2 px-4 sm:px-5 py-2 rounded-full text-xs sm:text-[13px] font-extrabold tracking-wide transition-all cursor-pointer border ${isActive
-                  ? "bg-gradient-to-r from-[#1E2D3D] to-[#0077B6] text-white border-[#1E2D3D] shadow-md"
+                  ? "bg-gradient-to-r from-[#006BA6] to-[#0088CC] text-white border-[#1E2D3D] shadow-md"
                   : "bg-[#F8FBFE] border-[#C5E1F5] text-[#1E2D3D] hover:border-[#0077B6] shadow-2xs"
                 }`}
             >

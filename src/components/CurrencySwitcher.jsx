@@ -49,12 +49,12 @@ export default function CurrencySwitcher() {
         aria-label={`Current Currency: ${currency}`}
         className={`flex items-center gap-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-xl border transition-colors h-9 sm:h-10 text-xs font-bold cursor-pointer ${
           isOpen
-            ? "bg-[#1F364D] border-[#38B6FF]/70 text-white"
-            : "bg-[#162536]/70 border-[#38B6FF]/45 text-white hover:bg-[#1F364D]/80"
+            ? "bg-white border-white text-[#0077B6]"
+            : "bg-white/15 border-white/35 text-white hover:bg-white/25"
         }`}
       >
-        <span className="text-[#38B6FF] flex items-center">{currentCurrencyObj.icon}</span>
-        <span className="tracking-wider font-extrabold text-white/95">{currency}</span>
+        <span className={isOpen ? "text-[#0077B6] flex items-center" : "text-white flex items-center"}>{currentCurrencyObj.icon}</span>
+        <span className={`tracking-wider font-extrabold ${isOpen ? "text-[#0077B6]" : "text-white"}`}>{currency}</span>
         <TbChevronDown
           size={13}
           className={`transition-transform duration-200 text-white/80 ${

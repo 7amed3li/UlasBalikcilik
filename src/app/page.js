@@ -91,7 +91,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#EBF4FA] text-[#1E2D3D] pb-20">
       {/* 1. HERO SECTION */}
       <section className="relative pt-5 pb-4 px-3 sm:px-5 max-w-5xl mx-auto">
-        <div className="relative overflow-hidden rounded-3xl bg-[#13202E] text-white border border-[#C5E1F5]/30 shadow-2xl">
+        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#006BA6] via-[#0088CC] to-[#1AA3E8] text-white border border-[#C5E1F5]/50 shadow-2xl">
           {/* Background Seafood Table Photography */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -101,18 +101,18 @@ export default function Home() {
               priority
               unoptimized={true}
               style={{ objectFit: "cover", objectPosition: "center" }}
-              className="opacity-35 scale-105"
+              className="opacity-25 scale-105 mix-blend-luminosity"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-[#13202E] via-[#13202E]/90 to-[#1E2D3D]/65" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#13202E] via-transparent to-[#13202E]/40" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#006BA6]/95 via-[#0088CC]/90 to-[#1AA3E8]/75" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#005F94]/90 via-transparent to-[#006BA6]/40" />
           </div>
 
           <div className="relative z-10 p-6 sm:p-9 lg:p-11 grid grid-cols-1 lg:grid-cols-12 gap-7 items-center">
             {/* Left Column: Editorial Brand & CTAs */}
             <div className="lg:col-span-7 text-start">
               {/* Subtle Location Pill */}
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-[#0077B6]/80 border border-[#38B6FF]/30 text-[#C5E1F5] text-[11px] font-bold uppercase tracking-wider mb-4">
-                <PiFishSimpleDuotone size={15} className="text-[#29ABE2] shrink-0" />
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-lg bg-white/15 border border-white/30 text-white text-[11px] font-bold uppercase tracking-wider mb-4">
+                <PiFishSimpleDuotone size={15} className="text-white shrink-0" />
                 <span>{t.storyBadge || "Cihangir & Maslak 1453 • İstanbul"}</span>
               </div>
 
@@ -124,7 +124,7 @@ export default function Home() {
               </h1>
 
               <p
-                className="text-xl sm:text-2xl text-[#38B6FF] font-semibold mb-3"
+                className="text-xl sm:text-2xl text-[#EBF4FA] font-semibold mb-3"
                 style={{ fontFamily: "var(--font-caveat), cursive" }}
               >
                 {lang === "ar"
@@ -132,7 +132,7 @@ export default function Home() {
                   : "Karadeniz'in Bereketi Soframızda"}
               </p>
 
-              <p className="text-xs sm:text-sm md:text-base text-[#EBF4FA]/85 max-w-xl leading-relaxed mb-6 font-medium">
+              <p className="text-xs sm:text-sm md:text-base text-white/90 max-w-xl leading-relaxed mb-6 font-medium">
                 {t.subtitle ||
                   "Cihangir ve Maslak 1453 şubelerimizde günlük taze Karadeniz balıkları, kömürde ızgaralar, çıtır tavalar ve geleneksel deniz mezeleri."}
               </p>
@@ -141,7 +141,7 @@ export default function Home() {
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-2.5 sm:gap-3 mb-6">
                 <Link
                   href={`${prefix}/menu`}
-                  className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#0088CC] hover:bg-[#006DA3] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all cursor-pointer"
+                  className="inline-flex items-center justify-center gap-2.5 px-6 py-3.5 rounded-xl bg-white hover:bg-[#F0F8FF] text-[#0077B6] font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all cursor-pointer"
                   style={{ fontFamily: "var(--font-cairo)" }}
                 >
                   <Utensils size={17} />
@@ -152,41 +152,41 @@ export default function Home() {
                 <div className="grid grid-cols-2 sm:flex items-center gap-2.5">
                   <Link
                     href={`${prefix}/contact`}
-                    className="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-white/10 hover:bg-white/15 border border-white/20 text-white font-extrabold text-xs sm:text-sm transition-all"
+                    className="inline-flex items-center justify-center gap-2 px-4 py-3.5 rounded-xl bg-white/15 hover:bg-white/25 border border-white/30 text-white font-extrabold text-xs sm:text-sm transition-all"
                     style={{ fontFamily: "var(--font-cairo)" }}
                   >
-                    <MapPin size={16} className="text-[#38B6FF] shrink-0" />
+                    <MapPin size={16} className="text-white shrink-0" />
                     <span>{lang === "ar" ? "الفروع" : "Şubelerimiz"}</span>
                   </Link>
 
                   <a
                     href={maslak.phoneHref}
-                    className="inline-flex items-center justify-center gap-1.5 px-4 py-3.5 rounded-xl bg-[#0077B6] hover:bg-[#0088CC] border border-[#38B6FF]/35 text-white font-extrabold text-xs sm:text-sm transition-all"
+                    className="inline-flex items-center justify-center gap-1.5 px-4 py-3.5 rounded-xl bg-[#005585] hover:bg-[#00446B] border border-white/30 text-white font-extrabold text-xs sm:text-sm transition-all"
                   >
-                    <Phone size={15} className="text-[#29ABE2] shrink-0" />
+                    <Phone size={15} className="text-[#38B6FF] shrink-0" />
                     <span className="truncate">{maslak.confirmedPhone}</span>
                   </a>
                 </div>
               </div>
 
               {/* Clean Horizontal Trust Bar */}
-              <div className="pt-4 border-t border-white/15 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs">
+              <div className="pt-4 border-t border-white/20 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs">
                 <div className="flex items-center gap-1.5">
-                  <Star size={14} className="text-[#29ABE2]" />
+                  <Star size={14} className="text-[#FFD166]" />
                   <span className="font-black text-white">4.8</span>
-                  <span className="text-[#C5E1F5]/80 font-medium">(558+ Google)</span>
+                  <span className="text-white/85 font-medium">(558+ Google)</span>
                 </div>
-                <span className="text-white/20">•</span>
+                <span className="text-white/30">•</span>
                 <div className="flex items-center gap-1.5">
                   <span className="font-black text-white">95+</span>
-                  <span className="text-[#C5E1F5]/80 font-medium">
+                  <span className="text-white/85 font-medium">
                     {lang === "ar" ? "صنف بحري طازج" : t.statsDishes || "Deniz Lezzeti"}
                   </span>
                 </div>
-                <span className="text-white/20">•</span>
+                <span className="text-white/30">•</span>
                 <div className="flex items-center gap-1.5">
-                  <Clock size={14} className="text-[#38B6FF]" />
-                  <span className="text-[#C5E1F5]/90 font-semibold">11:30 – 22:00</span>
+                  <Clock size={14} className="text-white" />
+                  <span className="text-white/95 font-semibold">11:30 – 22:00</span>
                 </div>
               </div>
             </div>
@@ -196,7 +196,7 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-3">
                 <Link
                   href={`${prefix}/menu/levrek_izgara`}
-                  className="group relative h-36 sm:h-44 rounded-2xl overflow-hidden border border-white/20 shadow-lg bg-[#1E2D3D]"
+                  className="group relative h-36 sm:h-44 rounded-2xl overflow-hidden border border-white/30 shadow-lg bg-[#005585]"
                 >
                   <Image
                     src="/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-levrek__3535450.jpg"
@@ -206,10 +206,10 @@ export default function Home() {
                     style={{ objectFit: "cover" }}
                     className="group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#13202E]/90 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#00446B]/90 via-transparent to-transparent" />
                   <div className="absolute bottom-2.5 inset-x-3 flex items-end justify-between gap-1">
                     <div>
-                      <span className="block text-[10px] font-bold uppercase tracking-wider text-[#38B6FF]">
+                      <span className="block text-[10px] font-bold uppercase tracking-wider text-[#80D4FF]">
                         {lang === "ar" ? "مشوي على الفحم" : "Kömürde Izgara"}
                       </span>
                       <span className="text-xs sm:text-sm font-black text-white">
@@ -221,7 +221,7 @@ export default function Home() {
 
                 <Link
                   href={`${prefix}/menu/hamsi_tava`}
-                  className="group relative h-36 sm:h-44 rounded-2xl overflow-hidden border border-white/20 shadow-lg bg-[#1E2D3D]"
+                  className="group relative h-36 sm:h-44 rounded-2xl overflow-hidden border border-white/30 shadow-lg bg-[#005585]"
                 >
                   <Image
                     src="/images/menu_photos/tavada-bal-klar/tavada-bal-klar__hamsi-tava__3535417.jpg"
@@ -231,10 +231,10 @@ export default function Home() {
                     style={{ objectFit: "cover" }}
                     className="group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#13202E]/90 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#00446B]/90 via-transparent to-transparent" />
                   <div className="absolute bottom-2.5 inset-x-3 flex items-end justify-between gap-1">
                     <div>
-                      <span className="block text-[10px] font-bold uppercase tracking-wider text-[#29ABE2]">
+                      <span className="block text-[10px] font-bold uppercase tracking-wider text-[#80D4FF]">
                         {lang === "ar" ? "البحر الأسود" : "Karadeniz"}
                       </span>
                       <span className="text-xs sm:text-sm font-black text-white">
@@ -246,7 +246,7 @@ export default function Home() {
 
                 <Link
                   href={`${prefix}/menu/kalamar_tava`}
-                  className="group relative h-32 sm:h-36 rounded-2xl overflow-hidden border border-white/20 shadow-lg bg-[#1E2D3D] col-span-2"
+                  className="group relative h-32 sm:h-36 rounded-2xl overflow-hidden border border-white/30 shadow-lg bg-[#005585] col-span-2"
                 >
                   <Image
                     src="/images/menu_photos/tavada-bal-klar/tavada-bal-klar__kalamar-tava__3535430.jpg"
@@ -256,15 +256,15 @@ export default function Home() {
                     style={{ objectFit: "cover" }}
                     className="group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-r from-[#13202E]/90 via-[#13202E]/45 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#00446B]/90 via-[#005585]/45 to-transparent" />
                   <div className="absolute inset-y-0 start-4 flex flex-col justify-center">
-                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#38B6FF]">
+                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#80D4FF]">
                       {lang === "ar" ? "الأكثر طلباً" : "En Çok Tercih Edilen"}
                     </span>
                     <span className="text-sm sm:text-base font-black text-white">
                       {lang === "ar" ? "كاليماري مقرمش ومقبلات بحرية" : "Çıtır Kalamar Tava & Mezeler"}
                     </span>
-                    <span className="text-[11px] font-bold text-[#29ABE2] mt-0.5 flex items-center gap-1">
+                    <span className="text-[11px] font-bold text-white mt-0.5 flex items-center gap-1">
                       <span>{lang === "ar" ? "اطلب الآن" : "Detayları Gör"}</span>
                       <ArrowRight size={12} />
                     </span>
@@ -329,7 +329,7 @@ export default function Home() {
                 >
                   <Link href={`${prefix}/dish/${item.id}`} className="w-full flex flex-col items-center">
                     <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-white border border-[#C5E1F5] shadow-md mb-2.5 flex items-center justify-center group-hover:border-[#0077B6] transition-all">
-                      <div className="w-full h-full rounded-full bg-gradient-to-br from-[#0F384C] via-[#1E2D3D] to-[#13202E] border border-[#EBF4FA] flex flex-col items-center justify-center relative overflow-hidden">
+                      <div className="w-full h-full rounded-full bg-gradient-to-br from-[#006BA6] via-[#0088CC] to-[#1AA3E8] border border-[#EBF4FA] flex flex-col items-center justify-center relative overflow-hidden">
                         {item.image ? (
                           <Image
                             src={item.image}
@@ -426,7 +426,7 @@ export default function Home() {
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
-                    <div className="w-11 h-11 rounded-xl bg-gradient-to-b from-[#0077B6] to-[#1E2D3D] text-white flex items-center justify-center shadow-2xs group-hover:scale-105 transition-transform">
+                    <div className="w-11 h-11 rounded-xl bg-gradient-to-b from-[#0088CC] to-[#006BA6] text-white flex items-center justify-center shadow-2xs group-hover:scale-105 transition-transform">
                       <CategoryIcon id={cat.id} size={24} className="text-white" />
                     </div>
                     <span className="px-2.5 py-0.5 rounded-full bg-[#EBF4FA] text-[#0077B6] text-[11px] font-black">
@@ -482,7 +482,7 @@ export default function Home() {
         <div className="mt-5 text-center">
           <Link
             href={`${prefix}/menu`}
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#1E2D3D] to-[#0077B6] hover:from-[#0077B6] hover:to-[#1E2D3D] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-md transition-all"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#006BA6] to-[#0088CC] hover:from-[#0077B6] hover:to-[#1E2D3D] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-md transition-all"
             style={{ fontFamily: "var(--font-cairo)" }}
           >
             <Utensils size={16} className="text-[#29ABE2]" />

@@ -34,7 +34,7 @@ export default function MobileStickyCTA() {
         </div>
 
         {/* Compact Dark Navy Banner Body */}
-        <div className="relative bg-gradient-to-r from-[#13202E] via-[#13202E] to-[#13202E] text-[#F8FBFE] px-3.5 sm:px-6 pt-0.5 pb-2 sm:pb-2.5 overflow-hidden shadow-2xl">
+        <div className="relative bg-gradient-to-r from-[#006BA6] via-[#0088CC] to-[#006BA6] text-[#F8FBFE] px-3.5 sm:px-6 pt-0.5 pb-2 sm:pb-2.5 overflow-hidden shadow-2xl">
           {/* Subtle Scallop / Fish-Scale Pattern Watermark */}
           <svg
             className="absolute inset-0 w-full h-full opacity-[0.08] pointer-events-none"

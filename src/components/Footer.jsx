@@ -41,11 +41,11 @@ export default function Footer() {
     maslak?.hoursNote?.[lang] || maslak?.hoursNote?.tr || "Çalışma saatleri teyit bekliyor";
 
   return (
-    <footer className="relative bg-gradient-to-b from-[#13202E] to-[#13202E] text-[#F8FBFE] pt-8 pb-24 px-4 overflow-hidden select-none">
+    <footer className="relative bg-gradient-to-b from-[#0077B6] via-[#006BA6] to-[#005585] text-[#F8FBFE] pt-8 pb-24 px-4 overflow-hidden select-none">
       {/* Subtle Topographic Sea Lines in Footer Background */}
-      <div className="absolute inset-0 pointer-events-none opacity-[0.07]" aria-hidden="true">
+      <div className="absolute inset-0 pointer-events-none opacity-[0.14]" aria-hidden="true">
         <svg viewBox="0 0 1200 400" preserveAspectRatio="none" className="w-full h-full">
-          <g fill="none" stroke="#38B6FF" strokeWidth="1.2">
+          <g fill="none" stroke="#FFFFFF" strokeWidth="1.2">
             <path d="M-100,60 C250,180 550,-40 900,110 C1050,170 1180,80 1300,130" />
             <path d="M-100,160 C280,280 580,60 930,210 C1080,270 1190,180 1300,230" />
             <path d="M-100,260 C310,380 610,160 960,310 C1100,370 1200,280 1300,330" />
@@ -127,7 +127,7 @@ export default function Footer() {
                 <span>{cihangir.confirmedPhone}</span>
               </a>
             ) : (
-              <div className="p-2.5 rounded-xl bg-[#1E2D3D]/90 border border-dashed border-[#38B6FF]/35 text-[11px] text-[#F8FBFE]/85 flex items-start gap-2 w-full">
+              <div className="p-2.5 rounded-xl bg-[#004A75]/90 border border-dashed border-[#38B6FF]/35 text-[11px] text-[#F8FBFE]/85 flex items-start gap-2 w-full">
                 <AlertCircle size={14} className="text-[#29ABE2] shrink-0 mt-0.5" />
                 <div className="leading-snug">
                   <span className="font-bold text-[#C5E1F5] block mb-0.5">

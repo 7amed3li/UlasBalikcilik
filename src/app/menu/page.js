@@ -258,7 +258,7 @@ function MenuCategoryBar({ categories, activeCategory, setActiveCategory }) {
                 onClick={() => setActiveCategory(cat.id)}
                 className={`relative shrink-0 flex flex-col items-center justify-center gap-1 min-w-[74px] sm:min-w-[96px] py-2.5 px-2.5 rounded-xl transition-all duration-200 cursor-pointer ${
                   isActive
-                    ? "bg-gradient-to-b from-[#0077B6] to-[#1E2D3D] text-white shadow-sm"
+                    ? "bg-gradient-to-b from-[#0088CC] to-[#006BA6] text-white shadow-sm"
                     : "bg-transparent text-[#1E2D3D] hover:bg-[#EBF4FA]/60"
                 }`}
               >
