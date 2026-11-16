@@ -110,19 +110,19 @@ export default function Header() {
       <div className="relative max-w-5xl mx-auto px-3 sm:px-5 pt-2.5 pb-3">
         {/* Top Row: Official Ulaş Balık Logo (`/ulas-logo.jpg`) + ULAŞ BALIKÇILIK | Controls */}
         <div className="flex items-center justify-between gap-2 relative z-20">
-          {/* Official Restaurant Logo + Brand Name */}
+          {/* Official Restaurant Logo Icon + Brand Name */}
           <Link
             href={prefix || "/"}
             className="flex items-center gap-2.5 sm:gap-3 hover:opacity-95 transition-opacity shrink-0 group"
           >
-            <div className="relative w-24 h-11 sm:w-28 sm:h-12 shrink-0 rounded-xl bg-white border border-[#C5E1F5]/80 shadow-md overflow-hidden flex items-center justify-center px-1.5 py-1">
+            <div className="relative w-12 h-10 sm:w-14 sm:h-11 shrink-0 rounded-xl bg-white border border-white/50 shadow-md overflow-hidden flex items-center justify-center p-1.5">
               <Image
-                src="/ulas-logo.jpg"
-                alt="Ulaş Balık"
+                src="/ulas-fish-icon.png"
+                alt="Ulaş Balıkçılık"
                 fill
                 priority
                 unoptimized={true}
-                style={{ objectFit: "contain", padding: "3px" }}
+                style={{ objectFit: "contain", padding: "2px" }}
                 className="transition-transform duration-200 group-hover:scale-105"
               />
             </div>
