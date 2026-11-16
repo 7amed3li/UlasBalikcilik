@@ -115,14 +115,14 @@ export default function Header() {
             href={prefix || "/"}
             className="flex items-center gap-2.5 sm:gap-3 hover:opacity-95 transition-opacity shrink-0 group"
           >
-            <div className="relative w-16 h-11 sm:w-20 sm:h-13 shrink-0 rounded-xl bg-white border border-[#C5E1F5]/80 shadow-md overflow-hidden flex items-center justify-center p-1">
+            <div className="relative w-24 h-11 sm:w-28 sm:h-12 shrink-0 rounded-xl bg-white border border-[#C5E1F5]/80 shadow-md overflow-hidden flex items-center justify-center px-1.5 py-1">
               <Image
                 src="/ulas-logo.jpg"
-                alt="Ulaş Balık — Fish Restaurant"
+                alt="Ulaş Balık"
                 fill
                 priority
                 unoptimized={true}
-                style={{ objectFit: "contain", padding: "2px" }}
+                style={{ objectFit: "contain", padding: "3px" }}
                 className="transition-transform duration-200 group-hover:scale-105"
               />
             </div>

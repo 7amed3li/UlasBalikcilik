@@ -58,7 +58,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-7 mb-8 text-start">
           {/* 1. Brand & Official Logo Card */}
           <div className="flex flex-col items-start text-start bg-white/[0.04] border border-[#C5E1F5]/15 rounded-2xl p-5">
-            <div className="relative w-32 h-20 rounded-xl bg-white p-2 border border-[#C5E1F5] shadow-md mb-3.5">
+            <div className="relative w-36 h-16 rounded-xl bg-white p-2 border border-[#C5E1F5] shadow-md mb-3.5">
               <Image
                 src="/ulas-logo.jpg"
                 alt="Ulaş Balıkçılık Logo"

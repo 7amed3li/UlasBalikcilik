@@ -101,7 +101,7 @@ export default function AboutPage() {
       <div className="max-w-4xl mx-auto px-3 sm:px-5 space-y-6">
         {/* Hero Card */}
         <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#13202E] via-[#1E2D3D] to-[#0077B6] text-white p-6 sm:p-10 text-center border border-[#C5E1F5]/30 shadow-lg">
-          <div className="relative w-36 h-22 mx-auto mb-4 rounded-2xl bg-white p-2.5 border border-[#C5E1F5] shadow-md">
+          <div className="relative w-44 h-20 mx-auto mb-4 rounded-2xl bg-white p-2.5 border border-[#C5E1F5] shadow-md">
             <Image
               src="/ulas-logo.jpg"
               alt="Ulaş Balıkçılık Logo"
