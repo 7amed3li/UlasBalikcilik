@@ -97,11 +97,11 @@ export default function AboutPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#DCE8E6] text-[#18323B] pt-7 pb-20">
+    <div className="min-h-screen bg-[#EBF4FA] text-[#1E2D3D] pt-7 pb-20">
       <div className="max-w-4xl mx-auto px-3 sm:px-5 space-y-6">
         {/* Hero Card */}
-        <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#071D2B] via-[#0B2B3B] to-[#0E4F4A] text-white p-6 sm:p-10 text-center border border-[#B8DCD3]/30 shadow-lg">
-          <div className="relative w-36 h-22 mx-auto mb-4 rounded-2xl bg-white p-2.5 border border-[#B8DCD3] shadow-md">
+        <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#13202E] via-[#1E2D3D] to-[#0077B6] text-white p-6 sm:p-10 text-center border border-[#C5E1F5]/30 shadow-lg">
+          <div className="relative w-36 h-22 mx-auto mb-4 rounded-2xl bg-white p-2.5 border border-[#C5E1F5] shadow-md">
             <Image
               src="/ulas-logo.jpg"
               alt="Ulaş Balıkçılık Logo"
@@ -111,7 +111,7 @@ export default function AboutPage() {
             />
           </div>
 
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 border border-[#B8DCD3]/30 text-[#B8DCD3] text-[11px] font-extrabold uppercase tracking-widest mb-3">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white/10 border border-[#C5E1F5]/30 text-[#C5E1F5] text-[11px] font-extrabold uppercase tracking-widest mb-3">
             <Anchor size={12} />
             <span>Ulaş Balıkçılık • Fish Restaurant</span>
           </div>
@@ -124,13 +124,13 @@ export default function AboutPage() {
           </h1>
 
           <p
-            className="text-lg sm:text-2xl text-[#9BCAC3] font-semibold -rotate-2 mb-3"
+            className="text-lg sm:text-2xl text-[#38B6FF] font-semibold -rotate-2 mb-3"
             style={{ fontFamily: "var(--font-caveat), cursive" }}
           >
             Karadeniz&apos;in Bereketi Soframızda
           </p>
 
-          <p className="text-xs sm:text-sm text-[#DCECE7]/90 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xs sm:text-sm text-[#EBF4FA]/90 max-w-2xl mx-auto leading-relaxed">
             {content.storyP1 ||
               "Ulaş Balıkçılık olarak Cihangir ve Maslak 1453 şubelerimizde denizden sofraya günlük taze balık, ızgara, tava ve geleneksel mezelerimizi sunuyoruz."}
           </p>
@@ -141,19 +141,19 @@ export default function AboutPage() {
           {highlights.map((item, idx) => (
             <div
               key={idx}
-              className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-5 shadow-xs flex flex-col justify-between"
+              className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-5 shadow-xs flex flex-col justify-between"
             >
               <div>
-                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#0E4F4A] to-[#0B2B3B] text-white flex items-center justify-center mb-3.5 shadow-2xs">
+                <div className="w-11 h-11 rounded-xl bg-gradient-to-br from-[#0077B6] to-[#1E2D3D] text-white flex items-center justify-center mb-3.5 shadow-2xs">
                   <CategoryIcon id={item.cat} size={24} className="text-white" />
                 </div>
                 <h2
-                  className="text-base sm:text-lg font-black text-[#0B2B3B] mb-2"
+                  className="text-base sm:text-lg font-black text-[#1E2D3D] mb-2"
                   style={{ fontFamily: "var(--font-cairo)" }}
                 >
                   {item.title}
                 </h2>
-                <p className="text-xs sm:text-sm text-[#47626B] leading-relaxed font-medium">
+                <p className="text-xs sm:text-sm text-[#52667A] leading-relaxed font-medium">
                   {item.desc}
                 </p>
               </div>
@@ -162,43 +162,43 @@ export default function AboutPage() {
         </section>
 
         {/* Story Section */}
-        <section className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-6 sm:p-8 shadow-xs">
-          <div className="flex items-center gap-2 text-[#0E4F4A] text-xs font-extrabold uppercase tracking-wider mb-2">
+        <section className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-6 sm:p-8 shadow-xs">
+          <div className="flex items-center gap-2 text-[#0077B6] text-xs font-extrabold uppercase tracking-wider mb-2">
             <PiFishSimpleDuotone size={16} />
             <span>{lang === "ar" ? "قصتنا وتراثنا البحري" : "Hikayemiz & Mutfak Kültürümüz"}</span>
           </div>
           <h2
-            className="text-xl sm:text-2xl font-black text-[#0B2B3B] mb-3"
+            className="text-xl sm:text-2xl font-black text-[#1E2D3D] mb-3"
             style={{ fontFamily: "var(--font-cairo)" }}
           >
             {content.storyTitle || "Ulaş Balıkçılık: Denizden Sofraya Günlük Tazelik"}
           </h2>
-          <p className="text-[#18323B] leading-relaxed mb-3.5 text-sm sm:text-base font-medium">
+          <p className="text-[#1E2D3D] leading-relaxed mb-3.5 text-sm sm:text-base font-medium">
             {content.storyP1}
           </p>
-          <p className="text-[#47626B] leading-relaxed text-sm sm:text-base font-medium">
+          <p className="text-[#52667A] leading-relaxed text-sm sm:text-base font-medium">
             {content.storyP2}
           </p>
 
           {/* Quality Promises Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6 pt-6 border-t border-[#B8DCD3]">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-6 pt-6 border-t border-[#C5E1F5]">
             {qualityPromises.map((q, i) => {
               const Icon = q.icon;
               return (
-                <div key={i} className="bg-white/75 rounded-xl p-4 border border-[#DCE8E6]">
-                  <Icon size={20} className="text-[#0E4F4A] mb-2" />
-                  <h3 className="text-sm font-black text-[#0B2B3B] mb-1">{q.title}</h3>
-                  <p className="text-xs text-[#47626B] leading-relaxed">{q.desc}</p>
+                <div key={i} className="bg-white/75 rounded-xl p-4 border border-[#EBF4FA]">
+                  <Icon size={20} className="text-[#0077B6] mb-2" />
+                  <h3 className="text-sm font-black text-[#1E2D3D] mb-1">{q.title}</h3>
+                  <p className="text-xs text-[#52667A] leading-relaxed">{q.desc}</p>
                 </div>
               );
             })}
           </div>
 
-          <div className="mt-6 pt-4 border-t border-[#B8DCD3] flex flex-wrap items-center justify-between gap-3">
-            <SeaWaves className="w-28 h-3 text-[#0E4F4A]/50" />
+          <div className="mt-6 pt-4 border-t border-[#C5E1F5] flex flex-wrap items-center justify-between gap-3">
+            <SeaWaves className="w-28 h-3 text-[#0077B6]/50" />
             <Link
               href={`${prefix}/menu`}
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#D93829] hover:bg-[#B82D20] text-white font-extrabold text-xs uppercase tracking-wider transition-colors shadow-xs"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0088CC] hover:bg-[#006DA3] text-white font-extrabold text-xs uppercase tracking-wider transition-colors shadow-xs"
             >
               <Utensils size={15} />
               <span>{t.allMenuCta || "Menüyü İncele"}</span>
@@ -207,17 +207,17 @@ export default function AboutPage() {
         </section>
 
         {/* 8 Culinary Categories Overview */}
-        <section className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-6 shadow-xs">
+        <section className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-6 shadow-xs">
           <div className="flex items-center justify-between mb-4">
             <h2
-              className="text-xl font-black text-[#0B2B3B]"
+              className="text-xl font-black text-[#1E2D3D]"
               style={{ fontFamily: "var(--font-cairo)" }}
             >
               {lang === "ar" ? "أقسام مطبخنا البحري (81 صنف)" : "Mutfak Kategorilerimiz (81 Çeşit)"}
             </h2>
             <Link
               href={`${prefix}/menu`}
-              className="text-xs font-extrabold text-[#0E4F4A] hover:underline flex items-center gap-1"
+              className="text-xs font-extrabold text-[#0077B6] hover:underline flex items-center gap-1"
             >
               <span>{t.menu || "Menü"}</span>
               <ArrowRight size={13} />
@@ -229,16 +229,16 @@ export default function AboutPage() {
               <Link
                 key={cat.id}
                 href={`${prefix}/menu#${cat.id}`}
-                className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-[#B8DCD3] hover:border-[#0E4F4A] transition-colors"
+                className="flex items-center gap-2.5 p-3 rounded-xl bg-white border border-[#C5E1F5] hover:border-[#0077B6] transition-colors"
               >
-                <div className="w-9 h-9 rounded-lg bg-[#0E4F4A] text-white flex items-center justify-center shrink-0">
+                <div className="w-9 h-9 rounded-lg bg-[#0077B6] text-white flex items-center justify-center shrink-0">
                   <CategoryIcon id={cat.id} size={18} className="text-white" />
                 </div>
                 <div className="min-w-0">
-                  <div className="text-xs font-black text-[#0B2B3B] truncate">
+                  <div className="text-xs font-black text-[#1E2D3D] truncate">
                     {cat.category[lang] || cat.category.tr}
                   </div>
-                  <div className="text-[10px] font-bold text-[#47626B]">
+                  <div className="text-[10px] font-bold text-[#52667A]">
                     {cat.items.length} {lang === "ar" ? "صنف" : "çeşit"}
                   </div>
                 </div>
@@ -250,45 +250,45 @@ export default function AboutPage() {
         {/* Two Branches Section */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Cihangir Branch */}
-          <section className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-6 shadow-xs flex flex-col justify-between">
+          <section className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-6 shadow-xs flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between gap-2 mb-3">
-                <span className="inline-block px-3 py-1 rounded-full bg-[#0E4F4A] text-white text-[11px] font-extrabold uppercase tracking-wider">
+                <span className="inline-block px-3 py-1 rounded-full bg-[#0077B6] text-white text-[11px] font-extrabold uppercase tracking-wider">
                   Beyoğlu / İstanbul
                 </span>
-                <span className="text-xs font-extrabold text-[#0E4F4A] inline-flex items-center gap-1">
-                  <Star size={12} className="fill-[#0E4F4A] text-[#0E4F4A]" />
+                <span className="text-xs font-extrabold text-[#0077B6] inline-flex items-center gap-1">
+                  <Star size={12} className="fill-[#0077B6] text-[#0077B6]" />
                   <span>4.8 (558)</span>
                 </span>
               </div>
               <h3
-                className="text-xl font-black text-[#0B2B3B] mb-3"
+                className="text-xl font-black text-[#1E2D3D] mb-3"
                 style={{ fontFamily: "var(--font-cairo)" }}
               >
                 {cihangir.name[lang] || cihangir.name.tr}
               </h3>
 
-              <div className="space-y-3 text-xs sm:text-sm text-[#47626B]">
+              <div className="space-y-3 text-xs sm:text-sm text-[#52667A]">
                 <div className="flex items-start gap-2.5">
-                  <MapPin size={16} className="text-[#0E4F4A] shrink-0 mt-0.5" />
+                  <MapPin size={16} className="text-[#0077B6] shrink-0 mt-0.5" />
                   <span>{cihangir.address}</span>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <Clock size={16} className="text-[#0E4F4A] shrink-0 mt-0.5" />
+                  <Clock size={16} className="text-[#0077B6] shrink-0 mt-0.5" />
                   <span>{cihangir.hours[lang] || cihangir.hours.tr}</span>
                 </div>
                 {cihangir.phoneHref ? (
                   <div className="flex items-center gap-2.5">
-                    <Phone size={16} className="text-[#0E4F4A] shrink-0" />
-                    <a href={cihangir.phoneHref} className="font-bold text-[#0B2B3B]">
+                    <Phone size={16} className="text-[#0077B6] shrink-0" />
+                    <a href={cihangir.phoneHref} className="font-bold text-[#1E2D3D]">
                       {cihangir.confirmedPhone}
                     </a>
                   </div>
                 ) : (
-                  <div className="p-3 rounded-xl bg-white border border-dashed border-[#0E4F4A]/40 text-[11px] flex items-start gap-2">
-                    <AlertCircle size={14} className="text-[#D93829] shrink-0 mt-0.5" />
+                  <div className="p-3 rounded-xl bg-white border border-dashed border-[#0077B6]/40 text-[11px] flex items-start gap-2">
+                    <AlertCircle size={14} className="text-[#0088CC] shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-[#0B2B3B] block">Telefon Teyit Bekliyor:</strong>
+                      <strong className="text-[#1E2D3D] block">Telefon Teyit Bekliyor:</strong>
                       <span>Google: 0212 434 25 02 • Instagram: 0212 434 23 02</span>
                     </div>
                   </div>
@@ -298,42 +298,42 @@ export default function AboutPage() {
           </section>
 
           {/* Maslak 1453 Branch */}
-          <section className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-6 shadow-xs flex flex-col justify-between">
+          <section className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-6 shadow-xs flex flex-col justify-between">
             <div>
               <div className="flex items-center justify-between gap-2 mb-3">
-                <span className="inline-block px-3 py-1 rounded-full bg-[#D93829] text-white text-[11px] font-extrabold uppercase tracking-wider">
+                <span className="inline-block px-3 py-1 rounded-full bg-[#0088CC] text-white text-[11px] font-extrabold uppercase tracking-wider">
                   Yeni Şube • Sarıyer
                 </span>
-                <span className="text-xs font-bold text-[#47626B]">Ağaoğlu Maslak 1453</span>
+                <span className="text-xs font-bold text-[#52667A]">Ağaoğlu Maslak 1453</span>
               </div>
               <h3
-                className="text-xl font-black text-[#0B2B3B] mb-3"
+                className="text-xl font-black text-[#1E2D3D] mb-3"
                 style={{ fontFamily: "var(--font-cairo)" }}
               >
                 {maslak.name[lang] || maslak.name.tr}
               </h3>
 
-              <div className="space-y-3 text-xs sm:text-sm text-[#47626B]">
+              <div className="space-y-3 text-xs sm:text-sm text-[#52667A]">
                 <div className="flex items-start gap-2.5">
-                  <MapPin size={16} className="text-[#0E4F4A] shrink-0 mt-0.5" />
+                  <MapPin size={16} className="text-[#0077B6] shrink-0 mt-0.5" />
                   <div>
                     <div>{maslak.address}</div>
-                    <div className="text-[11px] text-[#47626B]/80 mt-0.5">
+                    <div className="text-[11px] text-[#52667A]/80 mt-0.5">
                       ({maslak.addressNote[lang] || maslak.addressNote.tr})
                     </div>
                   </div>
                 </div>
                 <div className="flex items-center gap-2.5">
-                  <Phone size={16} className="text-[#D93829] shrink-0" />
+                  <Phone size={16} className="text-[#0088CC] shrink-0" />
                   <a
                     href={maslak.phoneHref}
-                    className="font-extrabold text-[#0B2B3B] hover:text-[#D93829]"
+                    className="font-extrabold text-[#1E2D3D] hover:text-[#0088CC]"
                   >
                     {maslak.confirmedPhone}
                   </a>
                 </div>
                 <div className="flex items-start gap-2.5">
-                  <Clock size={16} className="text-[#0E4F4A] shrink-0 mt-0.5" />
+                  <Clock size={16} className="text-[#0077B6] shrink-0 mt-0.5" />
                   <span>{maslak.hoursNote[lang] || maslak.hoursNote.tr}</span>
                 </div>
               </div>
@@ -342,9 +342,9 @@ export default function AboutPage() {
         </div>
 
         {/* Map Section */}
-        <section className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-6 shadow-xs">
+        <section className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-6 shadow-xs">
           <h2
-            className="text-xl font-black text-[#0B2B3B] mb-4"
+            className="text-xl font-black text-[#1E2D3D] mb-4"
             style={{ fontFamily: "var(--font-cairo)" }}
           >
             Cihangir Şube Konumu

@@ -55,10 +55,10 @@ export default function AdminLogin() {
   };
 
   return (
-    <div className="min-h-screen bg-[#DCE8E6] flex flex-col justify-center items-center px-4 font-sans text-[#18323B]">
-      <div className="max-w-md w-full bg-[#F4F1E8] p-8 rounded-3xl border border-[#B8DCD3] shadow-xl">
+    <div className="min-h-screen bg-[#EBF4FA] flex flex-col justify-center items-center px-4 font-sans text-[#1E2D3D]">
+      <div className="max-w-md w-full bg-[#F8FBFE] p-8 rounded-3xl border border-[#C5E1F5] shadow-xl">
         <div className="flex flex-col items-center mb-6">
-          <div className="relative w-32 h-20 rounded-2xl bg-white p-2 border border-[#B8DCD3] shadow-xs mb-3">
+          <div className="relative w-32 h-20 rounded-2xl bg-white p-2 border border-[#C5E1F5] shadow-xs mb-3">
             <Image
               src="/ulas-logo.jpg"
               alt="Ulaş Balıkçılık"
@@ -68,31 +68,31 @@ export default function AdminLogin() {
             />
           </div>
           <h1
-            className="text-2xl font-black text-[#0B2B3B] tracking-wider uppercase"
+            className="text-2xl font-black text-[#1E2D3D] tracking-wider uppercase"
             style={{ fontFamily: "var(--font-cairo)" }}
           >
             Ulaş Balıkçılık Yönetim
           </h1>
-          <p className="text-xs font-bold text-[#47626B] mt-0.5">
+          <p className="text-xs font-bold text-[#52667A] mt-0.5">
             Fiyat &amp; Menü Yönetim Paneli
           </p>
         </div>
 
         <form onSubmit={handleLogin} className="space-y-5">
           {error && (
-            <div className="bg-[#D93829]/10 border border-[#D93829]/40 text-[#D93829] p-3 rounded-xl text-sm font-bold text-center">
+            <div className="bg-[#0088CC]/10 border border-[#0088CC]/40 text-[#0088CC] p-3 rounded-xl text-sm font-bold text-center">
               {error}
             </div>
           )}
 
           <div>
-            <label className="block text-xs font-extrabold text-[#0B2B3B] mb-1.5 uppercase tracking-wider">
+            <label className="block text-xs font-extrabold text-[#1E2D3D] mb-1.5 uppercase tracking-wider">
               E-posta
             </label>
             <input
               type="email"
               required
-              className="w-full bg-white border border-[#B8DCD3] rounded-xl px-4 py-3 text-[#18323B] focus:outline-none focus:border-[#0E4F4A] transition-colors"
+              className="w-full bg-white border border-[#C5E1F5] rounded-xl px-4 py-3 text-[#1E2D3D] focus:outline-none focus:border-[#0077B6] transition-colors"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               disabled={loading}
@@ -100,13 +100,13 @@ export default function AdminLogin() {
           </div>
 
           <div>
-            <label className="block text-xs font-extrabold text-[#0B2B3B] mb-1.5 uppercase tracking-wider">
+            <label className="block text-xs font-extrabold text-[#1E2D3D] mb-1.5 uppercase tracking-wider">
               Şifre
             </label>
             <input
               type="password"
               required
-              className="w-full bg-white border border-[#B8DCD3] rounded-xl px-4 py-3 text-[#18323B] focus:outline-none focus:border-[#0E4F4A] transition-colors"
+              className="w-full bg-white border border-[#C5E1F5] rounded-xl px-4 py-3 text-[#1E2D3D] focus:outline-none focus:border-[#0077B6] transition-colors"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
               disabled={loading}
@@ -116,7 +116,7 @@ export default function AdminLogin() {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#0E4F4A] hover:bg-[#0B2B3B] text-white font-extrabold py-3.5 rounded-xl shadow-md transition-all uppercase tracking-wider text-xs cursor-pointer disabled:opacity-50"
+            className="w-full bg-[#0077B6] hover:bg-[#1E2D3D] text-white font-extrabold py-3.5 rounded-xl shadow-md transition-all uppercase tracking-wider text-xs cursor-pointer disabled:opacity-50"
           >
             {loading ? "Giriş Yapılıyor..." : "Giriş Yap"}
           </button>

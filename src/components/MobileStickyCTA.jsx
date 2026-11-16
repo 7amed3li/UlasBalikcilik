@@ -22,7 +22,7 @@ export default function MobileStickyCTA() {
             {/* Subtle Light Sea-Glass Rim Highlight */}
             <path
               d="M0,26 C210,3 440,2 670,22 C880,39 1050,9 1200,18 L1200,42 L0,42 Z"
-              fill="#8CC7C0"
+              fill="#38B6FF"
               opacity="0.45"
             />
             {/* Deep Black Sea Navy Wave Body */}
@@ -34,7 +34,7 @@ export default function MobileStickyCTA() {
         </div>
 
         {/* Compact Dark Navy Banner Body */}
-        <div className="relative bg-gradient-to-r from-[#072131] via-[#092C40] to-[#082537] text-[#F4F1E8] px-3.5 sm:px-6 pt-0.5 pb-2 sm:pb-2.5 overflow-hidden shadow-2xl">
+        <div className="relative bg-gradient-to-r from-[#13202E] via-[#13202E] to-[#13202E] text-[#F8FBFE] px-3.5 sm:px-6 pt-0.5 pb-2 sm:pb-2.5 overflow-hidden shadow-2xl">
           {/* Subtle Scallop / Fish-Scale Pattern Watermark */}
           <svg
             className="absolute inset-0 w-full h-full opacity-[0.08] pointer-events-none"
@@ -50,7 +50,7 @@ export default function MobileStickyCTA() {
                 <path
                   d="M0 18 A15 15 0 0 1 30 18 M-15 9 A15 15 0 0 1 15 9 M15 9 A15 15 0 0 1 45 9"
                   fill="none"
-                  stroke="#8CC7C0"
+                  stroke="#38B6FF"
                   strokeWidth="1"
                 />
               </pattern>

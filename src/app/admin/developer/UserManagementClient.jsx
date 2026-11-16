@@ -107,17 +107,17 @@ export default function UserManagementClient({ initialUsers }) {
     <section className="space-y-6">
       <div className="flex flex-col md:flex-row gap-6">
         {/* Create User Form */}
-        <div className="w-full md:w-1/3 bg-[#F4F1E8] p-6 rounded-2xl border border-[#B8DCD3] shadow-xs">
-          <h2 className="text-lg font-black mb-4 text-[#0B2B3B] flex items-center gap-2">
-            <UserPlus size={20} className="text-[#0E4F4A]" /> Yeni Kullanıcı
+        <div className="w-full md:w-1/3 bg-[#F8FBFE] p-6 rounded-2xl border border-[#C5E1F5] shadow-xs">
+          <h2 className="text-lg font-black mb-4 text-[#1E2D3D] flex items-center gap-2">
+            <UserPlus size={20} className="text-[#0077B6]" /> Yeni Kullanıcı
           </h2>
 
           {message.text && (
             <div
               className={`p-3 rounded-xl mb-4 text-xs font-bold ${
                 message.type === "success"
-                  ? "bg-[#0E4F4A]/15 text-[#0E4F4A] border border-[#0E4F4A]"
-                  : "bg-[#D93829]/15 text-[#D93829] border border-[#D93829]"
+                  ? "bg-[#0077B6]/15 text-[#0077B6] border border-[#0077B6]"
+                  : "bg-[#0088CC]/15 text-[#0088CC] border border-[#0088CC]"
               }`}
             >
               {message.text}
@@ -126,36 +126,36 @@ export default function UserManagementClient({ initialUsers }) {
 
           <form onSubmit={handleCreate} className="space-y-4">
             <div>
-              <label className="block text-xs font-extrabold text-[#47626B] mb-1 uppercase tracking-wider">
+              <label className="block text-xs font-extrabold text-[#52667A] mb-1 uppercase tracking-wider">
                 E-posta
               </label>
               <input
                 type="email"
                 required
-                className="w-full bg-white border border-[#B8DCD3] rounded-xl px-3 py-2 text-[#18323B] focus:border-[#0E4F4A] outline-none text-sm"
+                className="w-full bg-white border border-[#C5E1F5] rounded-xl px-3 py-2 text-[#1E2D3D] focus:border-[#0077B6] outline-none text-sm"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div>
-              <label className="block text-xs font-extrabold text-[#47626B] mb-1 uppercase tracking-wider">
+              <label className="block text-xs font-extrabold text-[#52667A] mb-1 uppercase tracking-wider">
                 Şifre
               </label>
               <input
                 type="password"
                 required
                 minLength={6}
-                className="w-full bg-white border border-[#B8DCD3] rounded-xl px-3 py-2 text-[#18323B] focus:border-[#0E4F4A] outline-none text-sm"
+                className="w-full bg-white border border-[#C5E1F5] rounded-xl px-3 py-2 text-[#1E2D3D] focus:border-[#0077B6] outline-none text-sm"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <div>
-              <label className="block text-xs font-extrabold text-[#47626B] mb-1 uppercase tracking-wider">
+              <label className="block text-xs font-extrabold text-[#52667A] mb-1 uppercase tracking-wider">
                 Yetki
               </label>
               <select
-                className="w-full bg-white border border-[#B8DCD3] rounded-xl px-3 py-2 text-[#18323B] focus:border-[#0E4F4A] outline-none text-sm"
+                className="w-full bg-white border border-[#C5E1F5] rounded-xl px-3 py-2 text-[#1E2D3D] focus:border-[#0077B6] outline-none text-sm"
                 value={role}
                 onChange={(e) => setRole(e.target.value)}
               >
@@ -166,7 +166,7 @@ export default function UserManagementClient({ initialUsers }) {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-[#0E4F4A] text-white py-2.5 rounded-xl text-xs font-extrabold uppercase tracking-wider hover:bg-[#0B2B3B] transition disabled:opacity-50 mt-2 cursor-pointer"
+              className="w-full bg-[#0077B6] text-white py-2.5 rounded-xl text-xs font-extrabold uppercase tracking-wider hover:bg-[#1E2D3D] transition disabled:opacity-50 mt-2 cursor-pointer"
             >
               {loading ? "Oluşturuluyor..." : "Oluştur"}
             </button>
@@ -174,37 +174,37 @@ export default function UserManagementClient({ initialUsers }) {
         </div>
 
         {/* Users List */}
-        <div className="w-full md:w-2/3 bg-[#F4F1E8] rounded-2xl border border-[#B8DCD3] overflow-hidden shadow-xs">
-          <div className="p-4 border-b border-[#B8DCD3]">
-            <h2 className="text-lg font-black text-[#0B2B3B]">Kayıtlı Kullanıcılar</h2>
+        <div className="w-full md:w-2/3 bg-[#F8FBFE] rounded-2xl border border-[#C5E1F5] overflow-hidden shadow-xs">
+          <div className="p-4 border-b border-[#C5E1F5]">
+            <h2 className="text-lg font-black text-[#1E2D3D]">Kayıtlı Kullanıcılar</h2>
           </div>
           <div className="overflow-x-auto">
             <table className="w-full text-left border-collapse block md:table">
               <thead className="hidden md:table-header-group">
-                <tr className="bg-[#0B2B3B] text-white border-b border-[#B8DCD3] text-xs uppercase tracking-wider">
+                <tr className="bg-[#1E2D3D] text-white border-b border-[#C5E1F5] text-xs uppercase tracking-wider">
                   <th className="p-4 font-extrabold">E-posta</th>
                   <th className="p-4 font-extrabold">Yetki</th>
                   <th className="p-4 font-extrabold text-right">İşlem</th>
                 </tr>
               </thead>
-              <tbody className="block md:table-row-group divide-y divide-[#B8DCD3]/60">
+              <tbody className="block md:table-row-group divide-y divide-[#C5E1F5]/60">
                 {users.map((u) => (
                   <tr
                     key={u.id}
                     className="block md:table-row hover:bg-white/60 transition-colors p-4 md:p-0"
                   >
                     <td className="flex justify-between md:table-cell p-2 md:p-4 items-center">
-                      <span className="md:hidden text-xs font-bold text-[#47626B] uppercase">
+                      <span className="md:hidden text-xs font-bold text-[#52667A] uppercase">
                         E-posta
                       </span>
-                      <span className="text-sm font-bold text-[#0B2B3B]">{u.email}</span>
+                      <span className="text-sm font-bold text-[#1E2D3D]">{u.email}</span>
                     </td>
                     <td className="flex justify-between md:table-cell p-2 md:p-4 items-center">
-                      <span className="md:hidden text-xs font-bold text-[#47626B] uppercase">
+                      <span className="md:hidden text-xs font-bold text-[#52667A] uppercase">
                         Yetki
                       </span>
                       <select
-                        className="bg-white border border-[#B8DCD3] rounded-lg px-2.5 py-1 text-[#0B2B3B] text-xs font-bold focus:border-[#0E4F4A] outline-none"
+                        className="bg-white border border-[#C5E1F5] rounded-lg px-2.5 py-1 text-[#1E2D3D] text-xs font-bold focus:border-[#0077B6] outline-none"
                         value={u.user_metadata?.role || "owner"}
                         onChange={(e) => handleRoleChange(u.id, e.target.value)}
                       >
@@ -216,14 +216,14 @@ export default function UserManagementClient({ initialUsers }) {
                       <div className="flex justify-end gap-2">
                         <button
                           onClick={() => handlePasswordChange(u.id)}
-                          className="text-[#0E4F4A] hover:text-[#0B2B3B] p-1.5 transition-colors cursor-pointer"
+                          className="text-[#0077B6] hover:text-[#1E2D3D] p-1.5 transition-colors cursor-pointer"
                           title="Şifreyi Değiştir"
                         >
                           <KeyRound size={17} />
                         </button>
                         <button
                           onClick={() => handleDelete(u.id)}
-                          className="text-[#D93829] hover:opacity-80 p-1.5 transition-colors cursor-pointer"
+                          className="text-[#0088CC] hover:opacity-80 p-1.5 transition-colors cursor-pointer"
                           title="Sil"
                         >
                           <Trash2 size={17} />
@@ -234,7 +234,7 @@ export default function UserManagementClient({ initialUsers }) {
                 ))}
                 {users.length === 0 && (
                   <tr>
-                    <td colSpan="3" className="p-8 text-center text-[#47626B] text-sm font-medium">
+                    <td colSpan="3" className="p-8 text-center text-[#52667A] text-sm font-medium">
                       Kullanıcı bulunamadı.
                     </td>
                   </tr>

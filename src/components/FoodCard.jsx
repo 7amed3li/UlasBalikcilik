@@ -36,7 +36,7 @@ function CartCounter({ item, compact = false }) {
       <button
         onClick={handleAdd}
         aria-label="Add to list"
-        className={`flex items-center justify-center gap-1.5 rounded-xl bg-[#D93829] text-white hover:bg-[#B82D20] active:scale-95 transition-all shadow-sm cursor-pointer ${compact ? "w-9 h-9" : "px-5 py-2.5 w-full max-w-[220px] font-bold text-sm"
+        className={`flex items-center justify-center gap-1.5 rounded-xl bg-[#0088CC] text-white hover:bg-[#006DA3] active:scale-95 transition-all shadow-sm cursor-pointer ${compact ? "w-9 h-9" : "px-5 py-2.5 w-full max-w-[220px] font-bold text-sm"
           }`}
       >
         <Plus size={compact ? 18 : 20} weight="bold" />
@@ -47,23 +47,23 @@ function CartCounter({ item, compact = false }) {
 
   return (
     <div
-      className="flex items-center min-h-[36px] rounded-xl border border-[#0E4F4A]/30 bg-[#DCECE7] px-1 py-0.5 gap-1 shrink-0"
+      className="flex items-center min-h-[36px] rounded-xl border border-[#0077B6]/30 bg-[#EBF4FA] px-1 py-0.5 gap-1 shrink-0"
       onClick={(e) => e.stopPropagation()}
     >
       <button
         onClick={handleRemove}
         aria-label="Decrease quantity"
-        className="w-7 h-7 flex items-center justify-center rounded-lg bg-white text-[#18323B] hover:text-[#D93829] transition-colors shadow-2xs cursor-pointer"
+        className="w-7 h-7 flex items-center justify-center rounded-lg bg-white text-[#1E2D3D] hover:text-[#0088CC] transition-colors shadow-2xs cursor-pointer"
       >
         <Minus size={13} weight="bold" />
       </button>
-      <span key={qty} className="text-center font-extrabold text-[#0B2B3B] w-5 text-xs">
+      <span key={qty} className="text-center font-extrabold text-[#1E2D3D] w-5 text-xs">
         {qty}
       </span>
       <button
         onClick={handleAdd}
         aria-label="Increase quantity"
-        className="w-7 h-7 flex items-center justify-center rounded-lg bg-[#D93829] text-white hover:bg-[#B82D20] transition-colors shadow-2xs cursor-pointer"
+        className="w-7 h-7 flex items-center justify-center rounded-lg bg-[#0088CC] text-white hover:bg-[#006DA3] transition-colors shadow-2xs cursor-pointer"
       >
         <Plus size={13} weight="bold" />
       </button>
@@ -132,13 +132,13 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
       <div
         id={item.id}
         dir={isRTL ? "rtl" : "ltr"}
-        className={`group relative rounded-2xl bg-[#F4F1E8] border border-[#B8DCD3] shadow-sm hover:shadow-md hover:border-[#0E4F4A]/50 overflow-hidden transition-all duration-200 flex ${isVertical ? "flex-col" : "flex-row"
+        className={`group relative rounded-2xl bg-[#F8FBFE] border border-[#C5E1F5] shadow-sm hover:shadow-md hover:border-[#0077B6]/50 overflow-hidden transition-all duration-200 flex ${isVertical ? "flex-col" : "flex-row"
           } items-stretch ${isVertical ? "h-auto" : "min-h-[136px]"} text-start`}
       >
         {/* Left Dish Image / Ceramic Plate Slot */}
         <div
           className={`${isVertical ? "w-full aspect-[4/3]" : "w-[136px] sm:w-[162px] shrink-0"
-            } relative overflow-hidden bg-gradient-to-br from-[#12384B] via-[#0B2B3B] to-[#0E4F4A] z-10 cursor-pointer flex flex-col items-center justify-center p-2.5`}
+            } relative overflow-hidden bg-gradient-to-br from-[#12384B] via-[#1E2D3D] to-[#0077B6] z-10 cursor-pointer flex flex-col items-center justify-center p-2.5`}
           onClick={() => setIsModalOpen(true)}
         >
           {item.image ? (
@@ -154,10 +154,10 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
             </div>
           ) : (
             /* Ceramic Plate Illustration Slot matching Reference Concept */
-            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-[#F4F1E8]/95 border-2 border-[#1E4E68] shadow-inner flex flex-col items-center justify-center p-2 group-hover:scale-105 transition-transform duration-300">
-              <div className="w-full h-full rounded-full border border-dashed border-[#0E4F4A]/40 flex flex-col items-center justify-center text-[#0B2B3B]">
-                <CategoryIcon id={categoryId} size={32} className="text-[#0E4F4A]" />
-                <span className="text-[8px] font-extrabold uppercase tracking-wider text-[#47626B] mt-0.5">
+            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-[#F8FBFE]/95 border-2 border-[#1E4E68] shadow-inner flex flex-col items-center justify-center p-2 group-hover:scale-105 transition-transform duration-300">
+              <div className="w-full h-full rounded-full border border-dashed border-[#0077B6]/40 flex flex-col items-center justify-center text-[#1E2D3D]">
+                <CategoryIcon id={categoryId} size={32} className="text-[#0077B6]" />
+                <span className="text-[8px] font-extrabold uppercase tracking-wider text-[#52667A] mt-0.5">
                   {placeholderLabel}
                 </span>
               </div>
@@ -170,17 +170,17 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
           {/* Bottom-Left Tag Pill Over Image */}
           <div className="absolute bottom-2 start-2 z-20 flex flex-wrap gap-1 pointer-events-none">
             {item.tags?.includes("signature") ? (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[9px] uppercase tracking-wider text-white bg-[#0B2B3B]/90 backdrop-blur-xs rounded-full font-extrabold border border-white/15 shadow-xs">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[9px] uppercase tracking-wider text-white bg-[#1E2D3D]/90 backdrop-blur-xs rounded-full font-extrabold border border-white/15 shadow-xs">
                 <FaAward size={10} className="text-[#F5C242]" />
                 <span>{t.signature || "ŞEFİN SEÇİMİ"}</span>
               </span>
             ) : item.tags?.includes("vegetarian") ? (
               <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[9px] uppercase tracking-wider text-white bg-[#1E6B43]/90 backdrop-blur-xs rounded-full font-extrabold border border-white/15 shadow-xs">
-                <FaLeaf size={10} className="text-[#8CC7C0]" />
+                <FaLeaf size={10} className="text-[#38B6FF]" />
                 <span>{t.vegetarian || "VEJETARYEN"}</span>
               </span>
             ) : item.tags?.includes("spicy") ? (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[9px] uppercase tracking-wider text-white bg-[#D93829]/90 backdrop-blur-xs rounded-full font-extrabold border border-white/15 shadow-xs">
+              <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[9px] uppercase tracking-wider text-white bg-[#0088CC]/90 backdrop-blur-xs rounded-full font-extrabold border border-white/15 shadow-xs">
                 <FaPepperHot size={10} className="text-white" />
                 <span>{t.spicy || "ACILI"}</span>
               </span>
@@ -191,7 +191,7 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
         {/* Right Content Section matching `media_1794142386195_ac1f9251.jpg` */}
         <div
           dir={isRTL ? "rtl" : "ltr"}
-          className="flex flex-col flex-grow p-3.5 sm:p-4 justify-between relative z-10 w-full min-w-0 bg-[#F4F1E8] text-start"
+          className="flex flex-col flex-grow p-3.5 sm:p-4 justify-between relative z-10 w-full min-w-0 bg-[#F8FBFE] text-start"
         >
           {/* Top Row: Sea-Glass Brush Price Pill on Left + Chevron on Right */}
           <div
@@ -201,13 +201,13 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
             <div className="flex items-center justify-between gap-2 mb-1.5">
               {/* Sea-Glass Brush Price Badge */}
               <span
-                className="inline-flex items-center px-3 py-0.5 rounded-md bg-[#CFE3DF] text-[#0B2B3B] font-black text-xs sm:text-sm tracking-wide"
+                className="inline-flex items-center px-3 py-0.5 rounded-md bg-[#CFE3DF] text-[#1E2D3D] font-black text-xs sm:text-sm tracking-wide"
                 style={{ fontFamily: "var(--font-inter)" }}
               >
                 {pricesLoading && displayPrice == null ? (
                   <span className="animate-pulse">...</span>
                 ) : displayPrice == null ? (
-                  <span className="text-[#0B2B3B]">— {symbol}</span>
+                  <span className="text-[#1E2D3D]">— {symbol}</span>
                 ) : (
                   <>
                     {displayPrice} {symbol}
@@ -219,14 +219,14 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
               <CaretRight
                 size={15}
                 weight="bold"
-                className={`text-[#0B2B3B]/70 group-hover:text-[#0B2B3B] transition-transform ${isRTL ? "-scale-x-100" : ""
+                className={`text-[#1E2D3D]/70 group-hover:text-[#1E2D3D] transition-transform ${isRTL ? "-scale-x-100" : ""
                   }`}
               />
             </div>
 
             {/* Dish Title */}
             <h3
-              className="font-black text-base sm:text-[18px] text-[#0B2B3B] leading-snug group-hover:text-[#0E4F4A] transition-colors text-start"
+              className="font-black text-base sm:text-[18px] text-[#1E2D3D] leading-snug group-hover:text-[#0077B6] transition-colors text-start"
               style={{ fontFamily: "var(--font-cairo)" }}
             >
               {name}
@@ -235,7 +235,7 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
             {/* Description + Add Button Row */}
             <div className="flex items-end justify-between gap-2 mt-1">
               <p
-                className="text-xs text-[#47626B] line-clamp-2 leading-relaxed font-medium text-start flex-1"
+                className="text-xs text-[#52667A] line-clamp-2 leading-relaxed font-medium text-start flex-1"
                 style={{ fontFamily: isRTL ? "var(--font-cairo)" : "var(--font-inter)" }}
               >
                 {description}
@@ -250,7 +250,7 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
 
         {/* Quantity Badge Overlay */}
         {qty > 0 && (
-          <div className="absolute top-2 start-2 z-20 w-6 h-6 rounded-full bg-[#D93829] text-white text-xs font-extrabold flex items-center justify-center border-2 border-[#F4F1E8] shadow-xs pointer-events-none">
+          <div className="absolute top-2 start-2 z-20 w-6 h-6 rounded-full bg-[#0088CC] text-white text-xs font-extrabold flex items-center justify-center border-2 border-[#F8FBFE] shadow-xs pointer-events-none">
             {qty}
           </div>
         )}
@@ -261,12 +261,12 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
         isModalOpen &&
         createPortal(
           <div
-            className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#0B2B3B]/80 backdrop-blur-sm p-4"
+            className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#1E2D3D]/80 backdrop-blur-sm p-4"
             onClick={() => setIsModalOpen(false)}
           >
             <div
               dir={isRTL ? "rtl" : "ltr"}
-              className="bg-[#F4F1E8] rounded-2xl w-full max-w-md max-h-[90vh] overflow-hidden flex flex-col shadow-2xl relative border border-[#B8DCD3] text-start"
+              className="bg-[#F8FBFE] rounded-2xl w-full max-w-md max-h-[90vh] overflow-hidden flex flex-col shadow-2xl relative border border-[#C5E1F5] text-start"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Action Buttons: Share & Close */}
@@ -274,10 +274,10 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
                 <button
                   onClick={handleCopyLink}
                   aria-label="Copy link to dish"
-                  className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/90 text-[#18323B] hover:text-[#0E4F4A] transition-all border border-[#B8DCD3] shadow-xs cursor-pointer"
+                  className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/90 text-[#1E2D3D] hover:text-[#0077B6] transition-all border border-[#C5E1F5] shadow-xs cursor-pointer"
                 >
                   {isCopied ? (
-                    <Check size={16} weight="bold" className="text-[#0E4F4A]" />
+                    <Check size={16} weight="bold" className="text-[#0077B6]" />
                   ) : (
                     <ShareNetwork size={16} weight="bold" />
                   )}
@@ -286,7 +286,7 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
                 <button
                   onClick={() => setIsModalOpen(false)}
                   aria-label="Close modal"
-                  className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/90 text-[#18323B] hover:text-[#D93829] transition-all border border-[#B8DCD3] shadow-xs cursor-pointer"
+                  className="w-9 h-9 flex items-center justify-center rounded-xl bg-white/90 text-[#1E2D3D] hover:text-[#0088CC] transition-all border border-[#C5E1F5] shadow-xs cursor-pointer"
                 >
                   <X size={18} weight="bold" />
                 </button>
@@ -305,18 +305,18 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
                   <button
                     onClick={() => setIsFullscreenImage(true)}
                     aria-label="View fullscreen image"
-                    className="absolute bottom-3 end-3 z-20 w-9 h-9 flex items-center justify-center rounded-xl bg-[#0B2B3B] text-white hover:bg-[#0E4F4A] transition-colors shadow-md cursor-pointer"
+                    className="absolute bottom-3 end-3 z-20 w-9 h-9 flex items-center justify-center rounded-xl bg-[#1E2D3D] text-white hover:bg-[#0077B6] transition-colors shadow-md cursor-pointer"
                   >
                     <MagnifyingGlassPlus size={16} weight="bold" />
                   </button>
                 </div>
               ) : (
-                <div className="w-full h-44 shrink-0 relative bg-gradient-to-br from-[#0B2B3B] via-[#0E4F4A] to-[#14635C] flex flex-col items-center justify-center p-4 text-center">
-                  <div className="w-16 h-16 rounded-2xl bg-white/10 border border-[#B8DCD3]/30 flex items-center justify-center text-[#F4F1E8] mb-2">
-                    <CategoryIcon id={categoryId} size={36} className="text-[#F4F1E8]" />
+                <div className="w-full h-44 shrink-0 relative bg-gradient-to-br from-[#1E2D3D] via-[#0077B6] to-[#14635C] flex flex-col items-center justify-center p-4 text-center">
+                  <div className="w-16 h-16 rounded-2xl bg-white/10 border border-[#C5E1F5]/30 flex items-center justify-center text-[#F8FBFE] mb-2">
+                    <CategoryIcon id={categoryId} size={36} className="text-[#F8FBFE]" />
                   </div>
-                  <div className="flex items-center gap-2 text-[#B8DCD3] text-xs font-bold uppercase tracking-widest">
-                    <FishLineArt className="w-5 h-2.5 text-[#B8DCD3]" />
+                  <div className="flex items-center gap-2 text-[#C5E1F5] text-xs font-bold uppercase tracking-widest">
+                    <FishLineArt className="w-5 h-2.5 text-[#C5E1F5]" />
                     <span>Ulaş Balıkçılık • {placeholderLabel}</span>
                   </div>
                 </div>
@@ -326,13 +326,13 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
               <div className="p-5 sm:p-6 overflow-y-auto no-scrollbar flex flex-col gap-4">
                 <div className="flex justify-between items-start gap-3">
                   <h2
-                    className="text-xl sm:text-2xl font-black text-[#0B2B3B] leading-tight"
+                    className="text-xl sm:text-2xl font-black text-[#1E2D3D] leading-tight"
                     style={{ fontFamily: "var(--font-cairo)" }}
                   >
                     {name}
                   </h2>
                   <span
-                    className="shrink-0 text-base sm:text-lg font-extrabold text-[#0B2B3B] bg-[#CFE3DF] px-3 py-1 rounded-xl border border-[#B8DCD3]"
+                    className="shrink-0 text-base sm:text-lg font-extrabold text-[#1E2D3D] bg-[#CFE3DF] px-3 py-1 rounded-xl border border-[#C5E1F5]"
                     style={{ fontFamily: "var(--font-inter)" }}
                   >
                     {displayPrice != null ? (
@@ -347,11 +347,11 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
 
                 {description && (
                   <div className="mt-1">
-                    <h4 className="text-xs font-extrabold text-[#0E4F4A] mb-1 uppercase tracking-widest">
+                    <h4 className="text-xs font-extrabold text-[#0077B6] mb-1 uppercase tracking-widest">
                       {t.description || "Detaylar"}
                     </h4>
                     <p
-                      className="text-[#47626B] leading-relaxed text-sm"
+                      className="text-[#52667A] leading-relaxed text-sm"
                       style={{ fontFamily: isRTL ? "var(--font-cairo)" : "var(--font-inter)" }}
                     >
                       {description}
@@ -366,7 +366,7 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
                 <button
                   onClick={() => setIsModalOpen(false)}
                   aria-label="Close modal"
-                  className="mt-1 w-full py-2.5 rounded-xl bg-white text-[#18323B] font-bold hover:bg-[#0B2B3B] hover:text-white transition-colors border border-[#B8DCD3] text-xs uppercase tracking-wider cursor-pointer"
+                  className="mt-1 w-full py-2.5 rounded-xl bg-white text-[#1E2D3D] font-bold hover:bg-[#1E2D3D] hover:text-white transition-colors border border-[#C5E1F5] text-xs uppercase tracking-wider cursor-pointer"
                 >
                   {t.close || "Kapat"}
                 </button>
@@ -388,7 +388,7 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
             <button
               onClick={() => setIsFullscreenImage(false)}
               aria-label="Close fullscreen image"
-              className="absolute top-6 end-6 z-[9999999] w-12 h-12 flex items-center justify-center rounded-full bg-white text-[#0B2B3B] hover:bg-[#D93829] hover:text-white transition-all shadow-lg cursor-pointer"
+              className="absolute top-6 end-6 z-[9999999] w-12 h-12 flex items-center justify-center rounded-full bg-white text-[#1E2D3D] hover:bg-[#0088CC] hover:text-white transition-all shadow-lg cursor-pointer"
             >
               <X size={26} weight="bold" />
             </button>

@@ -87,7 +87,7 @@ export const metadata = {
     follow: true,
   },
   other: {
-    "theme-color": "#0E4F4A",
+    "theme-color": "#0077B6",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "default",
   },
@@ -251,7 +251,7 @@ export default async function RootLayout({ children }) {
         />
       </head>
       <body
-        className="min-h-full flex flex-col bg-[#DCE8E6] text-[#18323B] font-[var(--font-inter)]"
+        className="min-h-full flex flex-col bg-[#EBF4FA] text-[#1E2D3D] font-[var(--font-inter)]"
         suppressHydrationWarning
       >
         <GoogleTagManager gtmId="GTM-PRHLP84Z" />

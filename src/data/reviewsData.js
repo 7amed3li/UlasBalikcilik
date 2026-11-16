@@ -7,9 +7,9 @@ export const platforms = [
     totalCountNumber: 558,
     link: "https://www.google.com/maps/search/?api=1&query=41.0329702,28.9823786",
     writeReviewUrl: "https://www.google.com/maps/search/?api=1&query=41.0329702,28.9823786",
-    color: "#0E4F4A",
-    badgeBg: "rgba(14, 79, 74, 0.12)",
-    badgeBorder: "rgba(14, 79, 74, 0.3)",
+    color: "#0088CC",
+    badgeBg: "rgba(0, 136, 204, 0.12)",
+    badgeBorder: "rgba(0, 136, 204, 0.3)",
   },
 ];
 

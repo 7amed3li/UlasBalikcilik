@@ -17,7 +17,7 @@ import { PiWavesBold, PiFishSimpleDuotone } from "react-icons/pi";
  * BrandIcons — Ulaş Balıkçılık React Icon Components (`react-icons`)
  */
 
-export function FishLineArt({ className = "text-[#0E4F4A]", size = 24, ...props }) {
+export function FishLineArt({ className = "text-[#0077B6]", size = 24, ...props }) {
   return (
     <PiFishSimpleDuotone
       size={size}
@@ -28,7 +28,7 @@ export function FishLineArt({ className = "text-[#0E4F4A]", size = 24, ...props 
   );
 }
 
-export function SeaWaves({ className = "text-[#0E4F4A]", size = 26, ...props }) {
+export function SeaWaves({ className = "text-[#0077B6]", size = 26, ...props }) {
   return (
     <PiWavesBold
       size={size}
@@ -66,19 +66,19 @@ export function CategoryIcon({ id, categoryId, className = "text-current", size 
   }
 }
 
-export function OttomanSeal({ className = "text-[#0E4F4A]", size = 24, ...props }) {
+export function OttomanSeal({ className = "text-[#0077B6]", size = 24, ...props }) {
   return <FishLineArt className={className} size={size} {...props} />;
 }
 
-export function KebabSkewer({ className = "text-[#0E4F4A]", size = 20, ...props }) {
+export function KebabSkewer({ className = "text-[#0077B6]", size = 20, ...props }) {
   return <FishLineArt className={className} size={size} {...props} />;
 }
 
-export function StoneOven({ className = "text-[#F26B45]", size = 20, ...props }) {
+export function StoneOven({ className = "text-[#29ABE2]", size = 20, ...props }) {
   return <SeaWaves className={className} size={size} {...props} />;
 }
 
-export function OttomanStar({ className = "text-[#F26B45]", size = 16, ...props }) {
+export function OttomanStar({ className = "text-[#29ABE2]", size = 16, ...props }) {
   return (
     <TbStarFilled
       size={size}

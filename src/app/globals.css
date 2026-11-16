@@ -1,29 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  /* Ulaş Balıkçılık — Modern Fish Market & Black Sea Fisherman Notebook Palette */
-  --bg: #EAE7DF;             /* Light Coastal Paper Background */
-  --bg-card: #F4F1E8;        /* Approved Light Ivory Card Surface */
-  --primary: #0E4F4A;        /* Approved Petrol Sea Green */
-  --primary-dim: #0B2B3B;    /* Approved Deep Black Sea Navy */
-  --navy: #0B2B3B;           /* Deep Black Sea Navy */
-  --sea-glass: #B8DCD3;      /* Approved Sea Glass Green for details & borders */
-  --accent: #F26B45;         /* Approved Warm Coral/Orange for Add buttons & badges */
-  --gold: #F26B45;           /* Mapped to Warm Coral Accent */
-  --text: #18323B;           /* Approved High-Contrast Dark Text */
-  --text-secondary: #47626B; /* Muted Maritime Slate Secondary Text */
-  --error: #D94E34;          /* Alert Coral Red */
+  /* Ulaş Balıkçılık — Official Logo Color Palette (Ocean Blue, Sky Wave, Dark Slate Navy & Crisp White) */
+  --bg: #EDF5FC;             /* Clean Coastal Ice-Blue Page Background */
+  --bg-card: #FFFFFF;        /* Crisp Logo White Card Surface */
+  --primary: #0088CC;        /* Official Ulaş Balık Logo Ocean Blue */
+  --primary-dim: #1E2D3D;    /* Official Ulaş Balık Logo Fish Slate Navy */
+  --navy: #1E2D3D;           /* Deep Slate Navy */
+  --sea-glass: #C5E1F5;      /* Soft Sky Blue for borders & details */
+  --accent: #29ABE2;         /* Official Logo Light Wave Sky Blue */
+  --gold: #29ABE2;           /* Mapped to Logo Sky Blue Accent */
+  --text: #1E2D3D;           /* High-Contrast Dark Slate Navy Text */
+  --text-secondary: #52667A; /* Muted Maritime Slate Secondary Text */
+  --error: #006DA3;          /* Deep Ocean Blue */
   
   /* Legacy mapping aliases for gradual component compatibility */
-  --ink: #EAE7DF;
-  --ink-2: #F4F1E8;
-  --teal: #0E4F4A;
-  --teal-dim: #0B2B3B;
-  --copper: #F26B45;
-  --cream: #18323B;
-  --cream-dim: #47626B;
-  --brick: #D94E34;
-  --ink-text: #F4F1E8;
+  --ink: #EDF5FC;
+  --ink-2: #FFFFFF;
+  --teal: #0088CC;
+  --teal-dim: #1E2D3D;
+  --copper: #29ABE2;
+  --cream: #1E2D3D;
+  --cream-dim: #52667A;
+  --brick: #006DA3;
+  --ink-text: #FFFFFF;
 
   /* Spacing & Radius Tokens */
   --spacing-margin-ext: 16px;
@@ -156,7 +156,7 @@ h1, h2, h3, h4, h5, h6 {
 .glass-card,
 .flat-card {
   background: var(--bg-card);
-  border: 1px solid rgba(184, 220, 211, 0.7);
+  border: 1px solid rgba(197, 225, 245, 0.85);
   border-radius: var(--radius-card);
 }
 
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Subtle fish scale / sea notebook background texture */
 .notebook-surface {
   background-color: var(--bg-card);
-  background-image: radial-gradient(rgba(14, 79, 74, 0.045) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(0, 136, 204, 0.05) 1px, transparent 1px);
   background-size: 18px 18px;
 }
 
@@ -178,10 +178,10 @@ h1, h2, h3, h4, h5, h6 {
 .market-awning-bar {
   background: repeating-linear-gradient(
     90deg,
-    #0E4F4A 0px,
-    #0E4F4A 18px,
-    #F4F1E8 18px,
-    #F4F1E8 36px
+    #0088CC 0px,
+    #0088CC 18px,
+    #FFFFFF 18px,
+    #FFFFFF 36px
   );
   height: 6px;
   width: 100%;
@@ -199,9 +199,9 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(
     to right,
     transparent,
-    rgba(14, 79, 74, 0.2) 20%,
-    rgba(14, 79, 74, 0.5) 50%,
-    rgba(14, 79, 74, 0.2) 80%,
+    rgba(0, 136, 204, 0.2) 20%,
+    rgba(0, 136, 204, 0.5) 50%,
+    rgba(0, 136, 204, 0.2) 80%,
     transparent
   );
   margin: 1.5rem 0;

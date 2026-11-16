@@ -80,7 +80,7 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className="sticky top-0 z-40 w-full bg-gradient-to-r from-[#071D2B] via-[#0B2B3B] to-[#0E4F4A] text-white overflow-visible select-none"
+      className="sticky top-0 z-40 w-full bg-gradient-to-r from-[#13202E] via-[#1E2D3D] to-[#0077B6] text-white overflow-visible select-none"
     >
       {/* Background Decorative Layer: Topographic Sea Contour Lines + Radial Glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
@@ -89,7 +89,7 @@ export default function Header() {
           preserveAspectRatio="none"
           className="absolute inset-0 w-full h-full opacity-[0.14]"
         >
-          <g fill="none" stroke="#B8DCD3" strokeWidth="1.2">
+          <g fill="none" stroke="#C5E1F5" strokeWidth="1.2">
             <path d="M-50,20 C180,90 360,-30 620,55 C820,120 940,30 1060,70" />
             <path d="M-50,55 C200,125 380,5 640,90 C840,155 950,65 1060,105" />
             <path d="M-50,90 C220,160 400,40 660,125 C860,190 960,100 1060,140" />
@@ -101,7 +101,7 @@ export default function Header() {
         <div
           className="absolute -top-10 end-12 w-72 h-44 rounded-full opacity-25 blur-2xl"
           style={{
-            background: "radial-gradient(circle, #1E7A72 0%, transparent 70%)",
+            background: "radial-gradient(circle, #0088CC 0%, transparent 70%)",
           }}
         />
       </div>
@@ -115,7 +115,7 @@ export default function Header() {
             href={prefix || "/"}
             className="flex items-center gap-2.5 sm:gap-3 hover:opacity-95 transition-opacity shrink-0 group"
           >
-            <div className="relative w-16 h-11 sm:w-20 sm:h-13 shrink-0 rounded-xl bg-white border border-[#B8DCD3]/80 shadow-md overflow-hidden flex items-center justify-center p-1">
+            <div className="relative w-16 h-11 sm:w-20 sm:h-13 shrink-0 rounded-xl bg-white border border-[#C5E1F5]/80 shadow-md overflow-hidden flex items-center justify-center p-1">
               <Image
                 src="/ulas-logo.jpg"
                 alt="Ulaş Balık — Fish Restaurant"
@@ -135,7 +135,7 @@ export default function Header() {
                 ULAŞ
               </span>
               <span
-                className="text-[10px] sm:text-[11px] font-bold text-[#DCECE7] tracking-[0.26em] uppercase mt-1 leading-none"
+                className="text-[10px] sm:text-[11px] font-bold text-[#EBF4FA] tracking-[0.26em] uppercase mt-1 leading-none"
                 style={{ fontFamily: "var(--font-inter)" }}
               >
                 BALIKÇILIK
@@ -154,8 +154,8 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className={`w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl border transition-colors cursor-pointer ${
                   isMenuOpen
-                    ? "bg-[#F26B45] border-[#F26B45] text-white"
-                    : "bg-[#092230]/70 border-[#6CA6A1]/45 text-white hover:bg-[#0E394D]/80"
+                    ? "bg-[#29ABE2] border-[#29ABE2] text-white"
+                    : "bg-[#162536]/70 border-[#38B6FF]/45 text-white hover:bg-[#1F364D]/80"
                 }`}
                 aria-label="Menu"
               >
@@ -163,12 +163,12 @@ export default function Header() {
               </button>
 
               {isMenuOpen && (
-                <div className="absolute end-0 mt-2 w-60 rounded-2xl bg-[#F4F1E8] border border-[#B8DCD3] shadow-2xl overflow-hidden z-50 animate-fadeIn text-[#18323B]">
-                  <div className="px-4 py-2.5 bg-[#0B2B3B] text-[#F4F1E8] flex items-center justify-between">
+                <div className="absolute end-0 mt-2 w-60 rounded-2xl bg-[#F8FBFE] border border-[#C5E1F5] shadow-2xl overflow-hidden z-50 animate-fadeIn text-[#1E2D3D]">
+                  <div className="px-4 py-2.5 bg-[#1E2D3D] text-[#F8FBFE] flex items-center justify-between">
                     <span className="text-[11px] font-bold tracking-wider uppercase">
                       Ulaş Balıkçılık
                     </span>
-                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#0E4F4A] text-[#B8DCD3] font-semibold">
+                    <span className="text-[10px] px-2 py-0.5 rounded-full bg-[#0077B6] text-[#C5E1F5] font-semibold">
                       Cihangir &amp; Maslak
                     </span>
                   </div>
@@ -176,42 +176,42 @@ export default function Header() {
                     <Link
                       href={prefix || "/"}
                       onClick={() => setIsMenuOpen(false)}
-                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#18323B] hover:bg-[#DCECE7] transition-colors"
+                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#1E2D3D] hover:bg-[#EBF4FA] transition-colors"
                     >
-                      <House size={18} weight="duotone" className="text-[#0E4F4A]" />
+                      <House size={18} weight="duotone" className="text-[#0077B6]" />
                       <span style={{ fontFamily: "var(--font-cairo)" }}>{getNavLabel("home")}</span>
                     </Link>
                     <Link
                       href={`${prefix}/menu`}
                       onClick={() => setIsMenuOpen(false)}
-                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#18323B] hover:bg-[#DCECE7] transition-colors"
+                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#1E2D3D] hover:bg-[#EBF4FA] transition-colors"
                     >
-                      <BookOpen size={18} weight="duotone" className="text-[#F26B45]" />
+                      <BookOpen size={18} weight="duotone" className="text-[#29ABE2]" />
                       <span style={{ fontFamily: "var(--font-cairo)" }}>{getNavLabel("menu")}</span>
                     </Link>
                     <Link
                       href={`${prefix}/about`}
                       onClick={() => setIsMenuOpen(false)}
-                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#18323B] hover:bg-[#DCECE7] transition-colors"
+                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#1E2D3D] hover:bg-[#EBF4FA] transition-colors"
                     >
-                      <Info size={18} weight="duotone" className="text-[#0E4F4A]" />
+                      <Info size={18} weight="duotone" className="text-[#0077B6]" />
                       <span style={{ fontFamily: "var(--font-cairo)" }}>{getNavLabel("about")}</span>
                     </Link>
                     <Link
                       href={`${prefix}/contact`}
                       onClick={() => setIsMenuOpen(false)}
-                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#18323B] hover:bg-[#DCECE7] transition-colors"
+                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#1E2D3D] hover:bg-[#EBF4FA] transition-colors"
                     >
-                      <Phone size={18} weight="duotone" className="text-[#0E4F4A]" />
+                      <Phone size={18} weight="duotone" className="text-[#0077B6]" />
                       <span style={{ fontFamily: "var(--font-cairo)" }}>
                         {getNavLabel("contact")}
                       </span>
                     </Link>
-                    <div className="h-px bg-[#B8DCD3] my-1" />
-                    <div className="px-4 py-2 text-[11px] text-[#47626B] flex items-start gap-2">
-                      <MapPin size={15} weight="fill" className="text-[#F26B45] shrink-0 mt-0.5" />
+                    <div className="h-px bg-[#C5E1F5] my-1" />
+                    <div className="px-4 py-2 text-[11px] text-[#52667A] flex items-start gap-2">
+                      <MapPin size={15} weight="fill" className="text-[#29ABE2] shrink-0 mt-0.5" />
                       <div>
-                        <div className="font-bold text-[#18323B]">Cihangir &amp; Maslak 1453</div>
+                        <div className="font-bold text-[#1E2D3D]">Cihangir &amp; Maslak 1453</div>
                         <div className="text-[10px]">Beyoğlu &amp; Sarıyer / İstanbul</div>
                       </div>
                     </div>
@@ -225,7 +225,7 @@ export default function Header() {
         {/* Lower Right: Handwritten Tagline + Detailed Black Sea Fishing Trawler Silhouette */}
         <div className="flex items-end justify-end gap-2 sm:gap-3 mt-0.5 pe-1 relative z-10 pointer-events-none">
           <div
-            className="text-[14px] sm:text-[17px] font-semibold text-[#9BCAC3] leading-[1.05] text-center -rotate-6"
+            className="text-[14px] sm:text-[17px] font-semibold text-[#38B6FF] leading-[1.05] text-center -rotate-6"
             style={{ fontFamily: "var(--font-caveat), cursive" }}
           >
             <div>
@@ -257,7 +257,7 @@ export default function Header() {
             <path d="M22 26 L50 29 L96 27 L90 38 L30 38 Z" fill="#041520" />
             <path
               d="M18 40 Q45 38 75 41 T112 40"
-              stroke="#4FA3A5"
+              stroke="#38B6FF"
               strokeWidth="1"
               fill="none"
               opacity="0.45"
@@ -277,9 +277,9 @@ export default function Header() {
         >
           <defs>
             <linearGradient id="ulasHeaderWaveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#071D2B" />
-              <stop offset="50%" stopColor="#0B2B3B" />
-              <stop offset="100%" stopColor="#0E4F4A" />
+              <stop offset="0%" stopColor="#13202E" />
+              <stop offset="50%" stopColor="#1E2D3D" />
+              <stop offset="100%" stopColor="#0077B6" />
             </linearGradient>
           </defs>
           {/* Dark header wave hanging down from the top of the SVG; transparent below the curve! */}
@@ -291,7 +291,7 @@ export default function Header() {
           <path
             d="M0,24 C240,2 480,2 740,22 C940,38 1080,42 1200,34"
             fill="none"
-            stroke="#8CC7C0"
+            stroke="#38B6FF"
             strokeWidth="2"
             opacity="0.4"
           />

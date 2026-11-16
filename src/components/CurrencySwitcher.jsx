@@ -49,11 +49,11 @@ export default function CurrencySwitcher() {
         aria-label={`Current Currency: ${currency}`}
         className={`flex items-center gap-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-xl border transition-colors h-9 sm:h-10 text-xs font-bold cursor-pointer ${
           isOpen
-            ? "bg-[#0E394D] border-[#8CC7C0]/70 text-white"
-            : "bg-[#092230]/70 border-[#6CA6A1]/45 text-white hover:bg-[#0E394D]/80"
+            ? "bg-[#1F364D] border-[#38B6FF]/70 text-white"
+            : "bg-[#162536]/70 border-[#38B6FF]/45 text-white hover:bg-[#1F364D]/80"
         }`}
       >
-        <span className="text-[#8CC7C0] flex items-center">{currentCurrencyObj.icon}</span>
+        <span className="text-[#38B6FF] flex items-center">{currentCurrencyObj.icon}</span>
         <span className="tracking-wider font-extrabold text-white/95">{currency}</span>
         <TbChevronDown
           size={13}
@@ -64,8 +64,8 @@ export default function CurrencySwitcher() {
       </button>
 
       {isOpen && (
-        <div className="absolute mt-2 w-44 bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl overflow-hidden shadow-2xl z-50 end-0 p-1.5 animate-fadeIn text-[#18323B]">
-          <div className="px-3 py-1.5 text-[10px] uppercase tracking-wider text-[#0E4F4A] font-extrabold border-b border-[#B8DCD3]">
+        <div className="absolute mt-2 w-44 bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl overflow-hidden shadow-2xl z-50 end-0 p-1.5 animate-fadeIn text-[#1E2D3D]">
+          <div className="px-3 py-1.5 text-[10px] uppercase tracking-wider text-[#0077B6] font-extrabold border-b border-[#C5E1F5]">
             Döviz / Currency
           </div>
           <div className="py-1 space-y-0.5">
@@ -80,8 +80,8 @@ export default function CurrencySwitcher() {
                   }}
                   className={`w-full text-start px-3 py-2 text-xs rounded-xl font-medium transition-colors flex items-center justify-between gap-2 cursor-pointer ${
                     isSelected
-                      ? "bg-[#0E4F4A] text-white font-bold"
-                      : "text-[#18323B] hover:bg-[#DCECE7]"
+                      ? "bg-[#0077B6] text-white font-bold"
+                      : "text-[#1E2D3D] hover:bg-[#EBF4FA]"
                   }`}
                 >
                   <div className="flex items-center gap-2.5">
@@ -89,7 +89,7 @@ export default function CurrencySwitcher() {
                       className={`w-6 h-5 rounded-md flex items-center justify-center font-bold text-xs border ${
                         isSelected
                           ? "bg-white/20 text-white border-white/30"
-                          : "bg-white text-[#0E4F4A] border-[#B8DCD3]"
+                          : "bg-white text-[#0077B6] border-[#C5E1F5]"
                       }`}
                     >
                       {c.icon}

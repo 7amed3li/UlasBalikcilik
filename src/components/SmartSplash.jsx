@@ -47,7 +47,7 @@ export default function SmartSplash() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(160deg, #0B2B3B 0%, #0E4F4A 100%);
+          background: linear-gradient(160deg, #1E2D3D 0%, #0077B6 100%);
           overflow: hidden;
           font-family: var(--font-inter, sans-serif);
           transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -96,7 +96,7 @@ export default function SmartSplash() {
           font-weight: 800;
           letter-spacing: 0.28em;
           font-size: clamp(11px, 1.5vw, 13px);
-          color: #F4F1E8;
+          color: #F8FBFE;
           text-transform: uppercase;
           opacity: 0;
           text-align: center;
@@ -105,7 +105,7 @@ export default function SmartSplash() {
         }
 
         .tagline span {
-          color: #F26B45;
+          color: #29ABE2;
         }
 
         @keyframes fade-up {
@@ -128,7 +128,7 @@ export default function SmartSplash() {
         .loader-bar {
           height: 100%;
           width: 100%;
-          background: linear-gradient(90deg, #B8DCD3, #F26B45);
+          background: linear-gradient(90deg, #C5E1F5, #29ABE2);
           border-radius: 99px;
           transform-origin: left center;
           transform: scaleX(0);

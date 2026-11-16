@@ -27,11 +27,11 @@ export default function ContactPage() {
   const prefix = lang === "tr" ? "" : `/${lang}`;
 
   return (
-    <div className="min-h-screen bg-[#DCE8E6] text-[#18323B] pt-7 pb-20">
+    <div className="min-h-screen bg-[#EBF4FA] text-[#1E2D3D] pt-7 pb-20">
       <div className="max-w-4xl mx-auto px-3 sm:px-5 space-y-6">
         {/* Header Card */}
-        <section className="rounded-3xl bg-gradient-to-r from-[#071D2B] via-[#0B2B3B] to-[#0E4F4A] text-white p-6 sm:p-8 text-center border border-[#B8DCD3]/30 shadow-md">
-          <div className="relative w-32 h-20 mx-auto mb-3 rounded-2xl bg-white p-2 border border-[#B8DCD3] shadow-xs">
+        <section className="rounded-3xl bg-gradient-to-r from-[#13202E] via-[#1E2D3D] to-[#0077B6] text-white p-6 sm:p-8 text-center border border-[#C5E1F5]/30 shadow-md">
+          <div className="relative w-32 h-20 mx-auto mb-3 rounded-2xl bg-white p-2 border border-[#C5E1F5] shadow-xs">
             <Image
               src="/ulas-logo.jpg"
               alt="Ulaş Balıkçılık"
@@ -46,44 +46,44 @@ export default function ContactPage() {
           >
             {c.title || "Şubelerimiz & İletişim"}
           </h1>
-          <p className="text-[#B8DCD3] text-xs sm:text-sm font-bold tracking-wide">
+          <p className="text-[#C5E1F5] text-xs sm:text-sm font-bold tracking-wide">
             {c.subtitle || "Ulaş Balıkçılık — Cihangir (Beyoğlu) & Maslak 1453 (Sarıyer)"}
           </p>
         </section>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {/* Cihangir Branch Card */}
-          <div className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-6 shadow-xs space-y-4 flex flex-col justify-between">
+          <div className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-6 shadow-xs space-y-4 flex flex-col justify-between">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <span className="px-3 py-1 rounded-full bg-[#0E4F4A] text-white text-xs font-extrabold">
+                <span className="px-3 py-1 rounded-full bg-[#0077B6] text-white text-xs font-extrabold">
                   {cihangir.name[lang] || cihangir.name.tr}
                 </span>
-                <span className="text-xs font-extrabold text-[#0E4F4A] inline-flex items-center gap-1">
-                  <Star size={12} className="fill-[#0E4F4A] text-[#0E4F4A]" />
+                <span className="text-xs font-extrabold text-[#0077B6] inline-flex items-center gap-1">
+                  <Star size={12} className="fill-[#0077B6] text-[#0077B6]" />
                   <span>{cihangir.rating} ({cihangir.reviewsCount})</span>
                 </span>
               </div>
 
               <div className="space-y-3 text-sm">
                 <div className="flex items-start gap-3">
-                  <MapPin size={18} className="text-[#0E4F4A] shrink-0 mt-0.5" />
+                  <MapPin size={18} className="text-[#0077B6] shrink-0 mt-0.5" />
                   <div>
-                    <div className="font-bold text-[#0B2B3B]">{c.addressLabel || "Adres"}</div>
-                    <div className="text-[#47626B]">{cihangir.address}</div>
-                    <div className="text-xs text-[#0E4F4A] font-semibold mt-0.5">
+                    <div className="font-bold text-[#1E2D3D]">{c.addressLabel || "Adres"}</div>
+                    <div className="text-[#52667A]">{cihangir.address}</div>
+                    <div className="text-xs text-[#0077B6] font-semibold mt-0.5">
                       Plus Code: {cihangir.plusCode}
                     </div>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Clock size={18} className="text-[#0E4F4A] shrink-0 mt-0.5" />
+                  <Clock size={18} className="text-[#0077B6] shrink-0 mt-0.5" />
                   <div>
-                    <div className="font-bold text-[#0B2B3B]">
+                    <div className="font-bold text-[#1E2D3D]">
                       {c.hoursLabel || "Çalışma Saatleri"}
                     </div>
-                    <div className="text-[#47626B]">
+                    <div className="text-[#52667A]">
                       {cihangir.hours[lang] || cihangir.hours.tr}
                     </div>
                   </div>
@@ -92,16 +92,16 @@ export default function ContactPage() {
                 {cihangir.phoneHref ? (
                   <a
                     href={cihangir.phoneHref}
-                    className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#0E4F4A] text-white font-bold text-sm"
+                    className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#0077B6] text-white font-bold text-sm"
                   >
                     <Phone size={16} />
                     <span>{cihangir.confirmedPhone}</span>
                   </a>
                 ) : (
-                  <div className="p-3 rounded-xl bg-white border border-dashed border-[#D93829] text-xs text-[#47626B] flex items-start gap-2.5">
-                    <AlertCircle size={16} className="text-[#D93829] shrink-0 mt-0.5" />
+                  <div className="p-3 rounded-xl bg-white border border-dashed border-[#0088CC] text-xs text-[#52667A] flex items-start gap-2.5">
+                    <AlertCircle size={16} className="text-[#0088CC] shrink-0 mt-0.5" />
                     <div>
-                      <strong className="text-[#0B2B3B] block mb-0.5">
+                      <strong className="text-[#1E2D3D] block mb-0.5">
                         {lang === "ar"
                           ? "رقم هاتف جيهانغير بانتظار تأكيد الإدارة:"
                           : "Cihangir Telefon Numarası Teyit Bekliyor:"}
@@ -119,7 +119,7 @@ export default function ContactPage() {
                 href={cihangir.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#0E4F4A] hover:bg-[#0B2B3B] text-white font-extrabold text-xs uppercase tracking-wider transition-colors"
+                className="flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#0077B6] hover:bg-[#1E2D3D] text-white font-extrabold text-xs uppercase tracking-wider transition-colors"
               >
                 <span>{c.directions || "Google Haritalar'da Aç"}</span>
                 <ExternalLink size={13} />
@@ -128,36 +128,36 @@ export default function ContactPage() {
           </div>
 
           {/* Maslak 1453 Branch Card */}
-          <div className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-6 shadow-xs space-y-4 flex flex-col justify-between">
+          <div className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-6 shadow-xs space-y-4 flex flex-col justify-between">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <span className="px-3 py-1 rounded-full bg-[#D93829] text-white text-xs font-extrabold">
+                <span className="px-3 py-1 rounded-full bg-[#0088CC] text-white text-xs font-extrabold">
                   {maslak.name[lang] || maslak.name.tr}
                 </span>
-                <span className="text-xs font-bold text-[#47626B]">Sarıyer / İstanbul</span>
+                <span className="text-xs font-bold text-[#52667A]">Sarıyer / İstanbul</span>
               </div>
 
               <div className="space-y-3 text-sm">
                 <div className="flex items-start gap-3">
-                  <MapPin size={18} className="text-[#0E4F4A] shrink-0 mt-0.5" />
+                  <MapPin size={18} className="text-[#0077B6] shrink-0 mt-0.5" />
                   <div>
-                    <div className="font-bold text-[#0B2B3B]">{c.addressLabel || "Adres"}</div>
-                    <div className="text-[#47626B]">{maslak.address}</div>
-                    <div className="text-xs text-[#47626B]/80 mt-0.5">
+                    <div className="font-bold text-[#1E2D3D]">{c.addressLabel || "Adres"}</div>
+                    <div className="text-[#52667A]">{maslak.address}</div>
+                    <div className="text-xs text-[#52667A]/80 mt-0.5">
                       {maslak.addressNote[lang] || maslak.addressNote.tr}
                     </div>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Phone size={18} className="text-[#D93829] shrink-0 mt-0.5" />
+                  <Phone size={18} className="text-[#0088CC] shrink-0 mt-0.5" />
                   <div>
-                    <div className="font-bold text-[#0B2B3B]">
+                    <div className="font-bold text-[#1E2D3D]">
                       {c.phoneLabel || "Sipariş & İletişim Hattı"}
                     </div>
                     <a
                       href={maslak.phoneHref}
-                      className="text-base font-black text-[#0E4F4A] hover:underline"
+                      className="text-base font-black text-[#0077B6] hover:underline"
                     >
                       {maslak.confirmedPhone}
                     </a>
@@ -165,12 +165,12 @@ export default function ContactPage() {
                 </div>
 
                 <div className="flex items-start gap-3">
-                  <Clock size={18} className="text-[#0E4F4A] shrink-0 mt-0.5" />
+                  <Clock size={18} className="text-[#0077B6] shrink-0 mt-0.5" />
                   <div>
-                    <div className="font-bold text-[#0B2B3B]">
+                    <div className="font-bold text-[#1E2D3D]">
                       {c.hoursLabel || "Çalışma Saatleri"}
                     </div>
-                    <div className="text-xs text-[#47626B]">
+                    <div className="text-xs text-[#52667A]">
                       {maslak.hoursNote[lang] || maslak.hoursNote.tr}
                     </div>
                   </div>
@@ -181,7 +181,7 @@ export default function ContactPage() {
             <div className="pt-2 flex flex-col sm:flex-row gap-2">
               <a
                 href={maslak.phoneHref}
-                className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-[#D93829] hover:bg-[#B82D20] text-white font-extrabold text-xs uppercase tracking-wider transition-colors"
+                className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl bg-[#0088CC] hover:bg-[#006DA3] text-white font-extrabold text-xs uppercase tracking-wider transition-colors"
               >
                 <Phone size={15} />
                 <span>
@@ -192,7 +192,7 @@ export default function ContactPage() {
                 href={maslak.yandexMapsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl bg-white border border-[#B8DCD3] text-[#0B2B3B] font-bold text-xs hover:border-[#0E4F4A]"
+                className="flex items-center justify-center gap-1.5 px-4 py-3 rounded-xl bg-white border border-[#C5E1F5] text-[#1E2D3D] font-bold text-xs hover:border-[#0077B6]"
               >
                 <span>Yandex Harita</span>
                 <ExternalLink size={13} />
@@ -203,29 +203,29 @@ export default function ContactPage() {
 
         {/* Table Reservation & Social Media Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-5 flex items-start gap-3.5">
-            <div className="w-10 h-10 rounded-xl bg-[#0E4F4A] text-white flex items-center justify-center shrink-0">
+          <div className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-5 flex items-start gap-3.5">
+            <div className="w-10 h-10 rounded-xl bg-[#0077B6] text-white flex items-center justify-center shrink-0">
               <PhoneCall size={18} />
             </div>
             <div>
-              <h2 className="text-base font-black text-[#0B2B3B] mb-1">
+              <h2 className="text-base font-black text-[#1E2D3D] mb-1">
                 {t.vipBooking || "Masa Rezervasyonu & Paket Sipariş"}
               </h2>
-              <p className="text-xs text-[#47626B] leading-relaxed font-medium">
+              <p className="text-xs text-[#52667A] leading-relaxed font-medium">
                 {t.phoneReservationNotice ||
                   "En iyi hizmeti sunabilmek adına rezervasyonları ve paket siparişlerinizi telefon üzerinden kabul etmekteyiz."}
               </p>
             </div>
           </div>
 
-          <div className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-5 flex items-center justify-between gap-4">
+          <div className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-5 flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#0B2B3B] to-[#0E4F4A] text-white flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#1E2D3D] to-[#0077B6] text-white flex items-center justify-center shrink-0">
                 <FaInstagram size={20} />
               </div>
               <div>
-                <h2 className="text-base font-black text-[#0B2B3B]">@ulasbalik</h2>
-                <p className="text-xs text-[#47626B] font-medium">
+                <h2 className="text-base font-black text-[#1E2D3D]">@ulasbalik</h2>
+                <p className="text-xs text-[#52667A] font-medium">
                   Resmi Instagram Hesabımız
                 </p>
               </div>
@@ -234,7 +234,7 @@ export default function ContactPage() {
               href={ULAS_CONFIG.social.instagram}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2.5 rounded-xl bg-[#0B2B3B] hover:bg-[#0E4F4A] text-white text-xs font-extrabold flex items-center gap-1.5 transition-colors"
+              className="px-4 py-2.5 rounded-xl bg-[#1E2D3D] hover:bg-[#0077B6] text-white text-xs font-extrabold flex items-center gap-1.5 transition-colors"
             >
               <span>Takip Et</span>
               <ExternalLink size={12} />
@@ -243,17 +243,17 @@ export default function ContactPage() {
         </div>
 
         {/* Cihangir Map */}
-        <div className="bg-[#F4F1E8] border border-[#B8DCD3] rounded-2xl p-6 shadow-xs">
+        <div className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-6 shadow-xs">
           <div className="flex items-center justify-between gap-2 mb-4">
             <h2
-              className="text-xl font-black text-[#0B2B3B]"
+              className="text-xl font-black text-[#1E2D3D]"
               style={{ fontFamily: "var(--font-cairo)" }}
             >
               Cihangir Şube Haritası
             </h2>
             <Link
               href={`${prefix}/menu`}
-              className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#0E4F4A] hover:underline"
+              className="inline-flex items-center gap-1.5 text-xs font-extrabold text-[#0077B6] hover:underline"
             >
               <Utensils size={14} />
               <span>{t.backToMenu || "Menüye Dön"}</span>

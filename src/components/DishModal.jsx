@@ -33,7 +33,7 @@ function CartCounter({ item, compact = false }) {
       <button
         onClick={handleAdd}
         aria-label="Add to cart"
-        className={`flex items-center justify-center gap-1.5 rounded-xl bg-[#F26B45] hover:bg-[#D95632] text-white transition-all duration-200 hover:scale-102 active:scale-95 shadow-sm cursor-pointer ${
+        className={`flex items-center justify-center gap-1.5 rounded-xl bg-[#29ABE2] hover:bg-[#D95632] text-white transition-all duration-200 hover:scale-102 active:scale-95 shadow-sm cursor-pointer ${
           compact ? "w-8 h-8" : "px-5 py-2.5 w-full max-w-[220px]"
         }`}
       >
@@ -49,7 +49,7 @@ function CartCounter({ item, compact = false }) {
 
   return (
     <div
-      className={`flex items-center justify-between rounded-xl border border-[#0E4F4A]/30 bg-[#DCECE7] ${
+      className={`flex items-center justify-between rounded-xl border border-[#0077B6]/30 bg-[#EBF4FA] ${
         compact ? "gap-1 px-1 py-0.5" : "gap-4 px-4 py-2 w-full max-w-[220px]"
       }`}
       onClick={(e) => e.stopPropagation()}
@@ -57,7 +57,7 @@ function CartCounter({ item, compact = false }) {
       <button
         onClick={handleRemove}
         aria-label="Decrease quantity"
-        className={`flex items-center justify-center rounded-lg bg-white text-[#18323B] hover:text-[#F26B45] transition-colors cursor-pointer ${
+        className={`flex items-center justify-center rounded-lg bg-white text-[#1E2D3D] hover:text-[#29ABE2] transition-colors cursor-pointer ${
           compact ? "w-6 h-6" : "w-9 h-9"
         }`}
       >
@@ -65,7 +65,7 @@ function CartCounter({ item, compact = false }) {
       </button>
       <span
         key={qty}
-        className={`text-center font-extrabold text-[#0B2B3B] ${
+        className={`text-center font-extrabold text-[#1E2D3D] ${
           compact ? "w-5 text-xs" : "w-8 text-lg"
         }`}
       >
@@ -74,7 +74,7 @@ function CartCounter({ item, compact = false }) {
       <button
         onClick={handleAdd}
         aria-label="Increase quantity"
-        className={`flex items-center justify-center rounded-lg bg-[#0E4F4A] text-white hover:bg-[#0B2B3B] transition-colors cursor-pointer ${
+        className={`flex items-center justify-center rounded-lg bg-[#0077B6] text-white hover:bg-[#1E2D3D] transition-colors cursor-pointer ${
           compact ? "w-6 h-6" : "w-9 h-9"
         }`}
       >
@@ -166,12 +166,12 @@ export default function DishModal({
       />
       {createPortal(
         <div
-          className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#0B2B3B]/80 backdrop-blur-sm p-4 modal-overlay"
+          className="fixed inset-0 z-[99999] flex items-center justify-center bg-[#1E2D3D]/80 backdrop-blur-sm p-4 modal-overlay"
           onClick={() => setIsOpen(false)}
         >
           <div
             dir={isRTL ? "rtl" : "ltr"}
-            className="bg-[#F4F1E8] rounded-2xl w-full max-w-md max-h-[90vh] overflow-hidden flex flex-col shadow-2xl relative modal-content border border-[#B8DCD3] text-start"
+            className="bg-[#F8FBFE] rounded-2xl w-full max-w-md max-h-[90vh] overflow-hidden flex flex-col shadow-2xl relative modal-content border border-[#C5E1F5] text-start"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button */}
@@ -180,7 +180,7 @@ export default function DishModal({
               aria-label="Close modal"
               className={`absolute top-4 ${
                 isRTL ? "start-4" : "end-4"
-              } z-50 w-9 h-9 flex items-center justify-center rounded-xl bg-white/90 text-[#18323B] hover:text-[#F26B45] transition-colors border border-[#B8DCD3] cursor-pointer`}
+              } z-50 w-9 h-9 flex items-center justify-center rounded-xl bg-white/90 text-[#1E2D3D] hover:text-[#29ABE2] transition-colors border border-[#C5E1F5] cursor-pointer`}
             >
               <X size={18} weight="bold" />
             </button>
@@ -200,22 +200,22 @@ export default function DishModal({
                   aria-label="View fullscreen image"
                   className={`absolute bottom-4 ${
                     isRTL ? "start-4" : "end-4"
-                  } z-20 w-9 h-9 flex items-center justify-center rounded-xl bg-[#0B2B3B] text-white hover:bg-[#0E4F4A] transition-all shadow-md`}
+                  } z-20 w-9 h-9 flex items-center justify-center rounded-xl bg-[#1E2D3D] text-white hover:bg-[#0077B6] transition-all shadow-md`}
                 >
                   <MagnifyingGlassPlus size={16} weight="bold" />
                 </button>
               </div>
             ) : (
-              <div className="w-full h-44 shrink-0 relative bg-gradient-to-br from-[#0B2B3B] via-[#0E4F4A] to-[#14635C] flex flex-col items-center justify-center p-4 text-center">
-                <div className="w-16 h-16 rounded-2xl bg-white/10 border border-[#B8DCD3]/30 flex items-center justify-center text-[#F4F1E8] mb-2">
+              <div className="w-full h-44 shrink-0 relative bg-gradient-to-br from-[#1E2D3D] via-[#0077B6] to-[#14635C] flex flex-col items-center justify-center p-4 text-center">
+                <div className="w-16 h-16 rounded-2xl bg-white/10 border border-[#C5E1F5]/30 flex items-center justify-center text-[#F8FBFE] mb-2">
                   <CategoryIcon
                     id={item?.categoryId || "izgaralar"}
                     size={36}
-                    className="text-[#F4F1E8]"
+                    className="text-[#F8FBFE]"
                   />
                 </div>
-                <div className="flex items-center gap-2 text-[#B8DCD3] text-xs font-bold uppercase tracking-widest">
-                  <FishLineArt className="w-5 h-2.5 text-[#B8DCD3]" />
+                <div className="flex items-center gap-2 text-[#C5E1F5] text-xs font-bold uppercase tracking-widest">
+                  <FishLineArt className="w-5 h-2.5 text-[#C5E1F5]" />
                   <span>Ulaş Balıkçılık</span>
                 </div>
               </div>
@@ -225,14 +225,14 @@ export default function DishModal({
             <div className="p-5 sm:p-6 overflow-y-auto no-scrollbar flex flex-col gap-4 text-start">
               <div className="flex justify-between items-start gap-4">
                 <h2
-                  className="text-xl sm:text-2xl font-black text-[#0B2B3B] leading-tight text-start"
+                  className="text-xl sm:text-2xl font-black text-[#1E2D3D] leading-tight text-start"
                   style={{ fontFamily: "var(--font-cairo)" }}
                 >
                   {name}
                 </h2>
                 {displayPrice != null && (
                   <span
-                    className="shrink-0 flex items-center gap-1 text-base sm:text-lg font-extrabold text-[#0E4F4A] bg-[#DCECE7] px-3 py-1 rounded-xl border border-[#B8DCD3]"
+                    className="shrink-0 flex items-center gap-1 text-base sm:text-lg font-extrabold text-[#0077B6] bg-[#EBF4FA] px-3 py-1 rounded-xl border border-[#C5E1F5]"
                     style={{ fontFamily: "var(--font-inter)" }}
                   >
                     {pricesLoading && displayPrice == null ? (
@@ -249,12 +249,12 @@ export default function DishModal({
               {tags && tags.length > 0 && (
                 <div className="flex flex-wrap gap-1.5">
                   {tags.includes("signature") && (
-                    <span className="px-2.5 py-0.5 bg-[#F26B45]/15 text-[#F26B45] border border-[#F26B45]/30 text-xs font-bold rounded-full uppercase tracking-wider">
+                    <span className="px-2.5 py-0.5 bg-[#29ABE2]/15 text-[#29ABE2] border border-[#29ABE2]/30 text-xs font-bold rounded-full uppercase tracking-wider">
                       {t?.signature || "Şefin Seçimi"}
                     </span>
                   )}
                   {tags.includes("trending") && (
-                    <span className="px-2.5 py-0.5 bg-[#0E4F4A]/15 text-[#0E4F4A] border border-[#0E4F4A]/30 text-xs font-bold rounded-full uppercase tracking-wider">
+                    <span className="px-2.5 py-0.5 bg-[#0077B6]/15 text-[#0077B6] border border-[#0077B6]/30 text-xs font-bold rounded-full uppercase tracking-wider">
                       {t?.trending || "En Çok Satan"}
                     </span>
                   )}
@@ -264,7 +264,7 @@ export default function DishModal({
                     </span>
                   )}
                   {tags.includes("vegetarian") && (
-                    <span className="px-2.5 py-0.5 bg-[#0E4F4A]/15 text-[#0E4F4A] border border-[#0E4F4A]/30 text-xs font-bold rounded-full uppercase tracking-wider">
+                    <span className="px-2.5 py-0.5 bg-[#0077B6]/15 text-[#0077B6] border border-[#0077B6]/30 text-xs font-bold rounded-full uppercase tracking-wider">
                       {t?.vegetarian || "Vejetaryen"}
                     </span>
                   )}
@@ -274,13 +274,13 @@ export default function DishModal({
               {description && (
                 <div className="mt-1 text-start" dir={isRTL ? "rtl" : "ltr"}>
                   <h4
-                    className="text-xs font-extrabold text-[#0E4F4A] mb-1 uppercase tracking-widest text-start"
+                    className="text-xs font-extrabold text-[#0077B6] mb-1 uppercase tracking-widest text-start"
                     style={{ fontFamily: isRTL ? "var(--font-cairo)" : "var(--font-inter)" }}
                   >
                     {t?.description || "Detaylar"}
                   </h4>
                   <p
-                    className="text-[#47626B] leading-relaxed text-sm text-start"
+                    className="text-[#52667A] leading-relaxed text-sm text-start"
                     style={{ fontFamily: isRTL ? "var(--font-cairo)" : "var(--font-inter)" }}
                   >
                     {description}
@@ -298,7 +298,7 @@ export default function DishModal({
               <button
                 onClick={() => setIsOpen(false)}
                 aria-label="Close modal"
-                className="mt-1 w-full py-2.5 rounded-xl bg-white text-[#18323B] font-bold hover:bg-[#0B2B3B] hover:text-white transition-colors border border-[#B8DCD3] text-xs uppercase tracking-wider cursor-pointer"
+                className="mt-1 w-full py-2.5 rounded-xl bg-white text-[#1E2D3D] font-bold hover:bg-[#1E2D3D] hover:text-white transition-colors border border-[#C5E1F5] text-xs uppercase tracking-wider cursor-pointer"
               >
                 {t?.close || "Kapat"}
               </button>
@@ -319,7 +319,7 @@ export default function DishModal({
             <button
               onClick={() => setIsFullscreenImage(false)}
               aria-label="Close fullscreen image"
-              className="absolute top-6 end-6 z-[9999999] w-12 h-12 flex items-center justify-center rounded-full bg-white text-[#0B2B3B] hover:bg-[#F26B45] hover:text-white transition-all shadow-lg"
+              className="absolute top-6 end-6 z-[9999999] w-12 h-12 flex items-center justify-center rounded-full bg-white text-[#1E2D3D] hover:bg-[#29ABE2] hover:text-white transition-all shadow-lg"
             >
               <X size={28} weight="bold" />
             </button>
