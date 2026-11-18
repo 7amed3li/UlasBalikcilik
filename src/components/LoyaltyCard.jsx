@@ -30,8 +30,8 @@ export default function LoyaltyCard() {
         aria-label="Loyalty Card"
         className="flex items-center gap-2 p-2 rounded-full bg-white/10 hover:bg-white/20 transition-all border border-white/10 backdrop-blur-md"
       >
-        <Gift size={20} className="text-[#D4AF37]" />
-        <span className="text-sm font-bold text-[#D4AF37] hidden sm:block">
+        <Gift size={20} className="text-[#EE7B3F]" />
+        <span className="text-sm font-bold text-[#EE7B3F] hidden sm:block">
           {visits}/10
         </span>
       </button>
@@ -42,7 +42,7 @@ export default function LoyaltyCard() {
           onClick={closeModal}
         >
           <div
-            className="bg-[#111] border border-[#D4AF37]/30 rounded-3xl p-8 max-w-sm w-full relative shadow-2xl"
+            className="bg-[#082A3A] border border-[#EE7B3F]/30 rounded-3xl p-8 max-w-sm w-full relative shadow-2xl"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Close Button - Top Right */}
@@ -55,7 +55,7 @@ export default function LoyaltyCard() {
             </button>
 
             <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-tr from-[#D4AF37] to-[#8a6b1c] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-[#D4AF37]/20">
+              <div className="w-16 h-16 bg-gradient-to-tr from-[#EE7B3F] to-[#D15015] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-[#EE7B3F]/20">
                 <Gift size={32} className="text-black" />
               </div>
               <h2 className="text-2xl font-bold text-white mb-2">{t.loyalty}</h2>
@@ -73,7 +73,7 @@ export default function LoyaltyCard() {
                   key={i}
                   className={`aspect-square rounded-xl flex items-center justify-center border-2 transition-all ${
                     i < visits
-                      ? "bg-[#D4AF37]/20 border-[#D4AF37] text-[#D4AF37]"
+                      ? "bg-[#EE7B3F]/20 border-[#EE7B3F] text-[#EE7B3F]"
                       : "bg-white/5 border-white/10 text-transparent"
                   }`}
                 >
@@ -83,7 +83,7 @@ export default function LoyaltyCard() {
             </div>
 
             {visits >= 10 && (
-              <button className="w-full bg-gradient-to-r from-[#D4AF37] to-[#8a6b1c] text-black font-bold py-3 rounded-xl shadow-lg mb-3">
+              <button className="w-full bg-gradient-to-r from-[#EE7B3F] to-[#D15015] text-black font-bold py-3 rounded-xl shadow-lg mb-3">
                 Claim Reward
               </button>
             )}

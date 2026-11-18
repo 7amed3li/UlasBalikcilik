@@ -5,8 +5,8 @@ export default function manifest() {
     description: "Cihangir ve Maslak 1453 şubelerimizde günlük taze balık, ızgara, tava ve deniz mezeleri.",
     start_url: "/",
     display: "standalone",
-    background_color: "#1E2D3D",
-    theme_color: "#0088CC",
+    background_color: "#F4F9FB",
+    theme_color: "#0C96DF",
     icons: [
       {
         src: "/ulas-logo.webp",

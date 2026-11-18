@@ -3,14 +3,14 @@ import FoodCardSkeleton from "@/components/FoodCardSkeleton";
 
 export default function Loading() {
   return (
-    <div className="min-h-screen bg-[#EBF4FA] text-[#1E2D3D] p-4 space-y-6 animate-fadeIn">
+    <div className="min-h-screen bg-[#E7F3F9] text-[#2E3B44] p-4 space-y-6 animate-fadeIn">
       {/* Category & Filter Skeleton */}
       <div className="max-w-5xl mx-auto pt-4 space-y-3">
-        <div className="w-full h-16 bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl animate-pulse" />
+        <div className="w-full h-16 bg-[#F4F9FB] border border-[#D6EBF5] rounded-2xl animate-pulse" />
         <div className="flex gap-2">
-          <div className="w-32 h-9 bg-[#F8FBFE] border border-[#C5E1F5] rounded-full animate-pulse" />
-          <div className="w-24 h-9 bg-[#F8FBFE] border border-[#C5E1F5] rounded-full animate-pulse" />
-          <div className="w-28 h-9 bg-[#F8FBFE] border border-[#C5E1F5] rounded-full animate-pulse" />
+          <div className="w-32 h-9 bg-[#F4F9FB] border border-[#D6EBF5] rounded-full animate-pulse" />
+          <div className="w-24 h-9 bg-[#F4F9FB] border border-[#D6EBF5] rounded-full animate-pulse" />
+          <div className="w-28 h-9 bg-[#F4F9FB] border border-[#D6EBF5] rounded-full animate-pulse" />
         </div>
       </div>
 

@@ -29,15 +29,15 @@ export default function MenuSelector({ categories, activeCategory, setActiveCate
   };
 
   return (
-    <div className="relative w-full bg-[#EDE3CE]">
+    <div className="relative w-full bg-[#F4F9FB]">
       {/* Left fade + arrow */}
       {canScrollLeft && (
         <button 
           onClick={() => scroll(-1)} 
           aria-label="Scroll left"
-          className="absolute start-0 top-0 bottom-0 z-10 w-10 flex items-center justify-center bg-gradient-to-r from-[#EDE3CE] via-[#EDE3CE]/80 to-transparent"
+          className="absolute start-0 top-0 bottom-0 z-10 w-10 flex items-center justify-center bg-gradient-to-r from-[#F4F9FB] via-[#F4F9FB]/80 to-transparent"
         >
-          <ChevronLeft size={18} className="text-[#7A7364]" />
+          <ChevronLeft size={18} className="text-[#53636E]" />
         </button>
       )}
 
@@ -46,9 +46,9 @@ export default function MenuSelector({ categories, activeCategory, setActiveCate
         <button 
           onClick={() => scroll(1)} 
           aria-label="Scroll right"
-          className="absolute end-0 top-0 bottom-0 z-10 w-10 flex items-center justify-center bg-gradient-to-l from-[#EDE3CE] via-[#EDE3CE]/80 to-transparent"
+          className="absolute end-0 top-0 bottom-0 z-10 w-10 flex items-center justify-center bg-gradient-to-l from-[#F4F9FB] via-[#F4F9FB]/80 to-transparent"
         >
-          <ChevronRight size={18} className="text-[#7A7364]" />
+          <ChevronRight size={18} className="text-[#53636E]" />
         </button>
       )}
 
@@ -65,7 +65,7 @@ export default function MenuSelector({ categories, activeCategory, setActiveCate
               className="relative shrink-0 px-3.5 py-2.5 my-1"
             >
               <span className={`relative z-10 block text-[11px] sm:text-xs font-bold tracking-wider uppercase whitespace-nowrap transition-colors ${
-                isActive ? "text-white" : "text-[#7A7364] hover:text-[#2B2620]"
+                isActive ? "text-white" : "text-[#53636E] hover:text-[#2E3B44]"
               }`}>
                 {menuT.categories[cat.id] || cat.category.en}
               </span>
@@ -73,7 +73,7 @@ export default function MenuSelector({ categories, activeCategory, setActiveCate
               {/* Active pill background */}
               {isActive && (
                 <div
-                  className="absolute inset-0 rounded-md bg-[#4E5F4C] animate-fadeIn"
+                  className="absolute inset-0 rounded-md bg-[#06384E] animate-fadeIn"
                 />
               )}
             </button>

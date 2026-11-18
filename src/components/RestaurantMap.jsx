@@ -95,12 +95,12 @@ export default function RestaurantMap({
         target="_blank"
         rel="noopener noreferrer"
         ref={mapRef}
-        className={`block w-full ${heightClass} rounded-2xl relative bg-[#EBF4FA] overflow-hidden group cursor-pointer border border-[#C5E1F5] hover:border-[#0077B6] transition-colors shadow-xs`}
+        className={`block w-full ${heightClass} rounded-2xl relative bg-[#E7F3F9] overflow-hidden group cursor-pointer border border-[#D6EBF5] hover:border-[#0C96DF] transition-colors shadow-xs`}
         aria-label="Google Maps Location for Ulaş Balıkçılık Cihangir"
       >
         {!isMapVisible ? (
-          <div className="absolute inset-0 flex flex-col items-center justify-center text-[#0077B6]">
-            <MapPin className="w-8 h-8 mb-2 animate-bounce text-[#29ABE2]" />
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-[#0C96DF]">
+            <MapPin className="w-8 h-8 mb-2 animate-bounce text-[#0C96DF]" />
             <span className="text-xs uppercase tracking-widest font-bold">
               {currentLabels.loading}
             </span>
@@ -118,27 +118,27 @@ export default function RestaurantMap({
             onError={handleIframeError}
           />
         ) : (
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#F8FBFE]">
-            <MapPin className="w-10 h-10 mb-2 text-[#0077B6]" />
-            <span className="text-sm font-bold text-[#1E2D3D]">{currentLabels.restaurantName}</span>
-            <span className="text-xs text-[#52667A] mt-1">{currentLabels.address}</span>
-            <span className="text-xs text-[#29ABE2] mt-2 font-bold">{currentLabels.tapToOpen}</span>
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-[#F4F9FB]">
+            <MapPin className="w-10 h-10 mb-2 text-[#0C96DF]" />
+            <span className="text-sm font-bold text-[#2E3B44]">{currentLabels.restaurantName}</span>
+            <span className="text-xs text-[#53636E] mt-1">{currentLabels.address}</span>
+            <span className="text-xs text-[#0C96DF] mt-2 font-bold">{currentLabels.tapToOpen}</span>
           </div>
         )}
 
-        <div className="absolute inset-0 bg-[#1E2D3D]/10 pointer-events-none" />
+        <div className="absolute inset-0 bg-[#06384E]/10 pointer-events-none" />
 
         {/* Pin Overlay */}
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-10">
           <div className="flex flex-col items-center -translate-y-4">
-            <div className="px-3 py-1.5 rounded-xl bg-[#F8FBFE] border border-[#C5E1F5] shadow-md flex items-center gap-2 mb-1.5">
-              <span className="w-2 h-2 rounded-full bg-[#29ABE2]" />
-              <span className="text-xs font-extrabold text-[#1E2D3D] tracking-tight whitespace-nowrap">
+            <div className="px-3 py-1.5 rounded-xl bg-[#F4F9FB] border border-[#D6EBF5] shadow-md flex items-center gap-2 mb-1.5">
+              <span className="w-2 h-2 rounded-full bg-[#0C96DF]" />
+              <span className="text-xs font-extrabold text-[#2E3B44] tracking-tight whitespace-nowrap">
                 {currentLabels.restaurantName}
               </span>
             </div>
 
-            <div className="relative z-10 w-9 h-9 rounded-full bg-[#0077B6] shadow-md flex items-center justify-center border-2 border-[#F8FBFE]">
+            <div className="relative z-10 w-9 h-9 rounded-full bg-[#0C96DF] shadow-md flex items-center justify-center border-2 border-[#F4F9FB]">
               <MapPin size={18} className="text-white" />
             </div>
           </div>
@@ -146,16 +146,16 @@ export default function RestaurantMap({
 
         {/* Top Floating Action: Open in Maps */}
         <div className="absolute top-3 end-3 z-10">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#F8FBFE] border border-[#C5E1F5] text-[#1E2D3D] text-xs font-extrabold shadow-xs">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-[#F4F9FB] border border-[#D6EBF5] text-[#2E3B44] text-xs font-extrabold shadow-xs">
             <span>{currentLabels.openMaps}</span>
-            <ExternalLink size={12} className="text-[#0077B6]" />
+            <ExternalLink size={12} className="text-[#0C96DF]" />
           </div>
         </div>
 
         {/* Bottom Floating Tag */}
         <div className="absolute bottom-3 start-3 z-10">
-          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-[#F8FBFE] border border-[#C5E1F5] text-[#1E2D3D] text-[11px] font-bold shadow-xs">
-            <Navigation size={11} className="text-[#29ABE2]" />
+          <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-xl bg-[#F4F9FB] border border-[#D6EBF5] text-[#2E3B44] text-[11px] font-bold shadow-xs">
+            <Navigation size={11} className="text-[#0C96DF]" />
             <span>{currentLabels.plusCode}</span>
           </div>
         </div>
@@ -166,7 +166,7 @@ export default function RestaurantMap({
           href={googleMapsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-3 flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#0077B6] hover:bg-[#1E2D3D] text-white font-extrabold text-xs uppercase tracking-wider transition-colors shadow-sm"
+          className="mt-3 flex items-center justify-center gap-2 w-full py-3 rounded-xl bg-[#0C96DF] hover:bg-[#06384E] text-white font-extrabold text-xs uppercase tracking-wider transition-colors shadow-sm"
         >
           <Navigation size={15} />
           <span>{currentLabels.getDirections}</span>

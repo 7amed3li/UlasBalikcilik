@@ -96,13 +96,13 @@ function FeaturedDishesShowcase({ onExplore }) {
   };
 
   return (
-    <section className="relative w-full overflow-hidden bg-[#F8FBFE] border-b border-[#C5E1F5]/70 pt-6 sm:pt-7 pb-3.5 shadow-2xs">
+    <section className="relative w-full overflow-hidden bg-[#F4F9FB] border-b border-[#D6EBF5]/70 pt-6 sm:pt-7 pb-3.5 shadow-2xs">
       <div className="max-w-5xl mx-auto px-3 sm:px-5">
         {/* Header Row: GÜNÜN AVI + Coral Brush Stroke on Left, Subtitle + Chevron on Right */}
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2.5">
             <h2
-              className="text-base sm:text-lg font-black text-[#1E2D3D] tracking-wide uppercase"
+              className="text-base sm:text-lg font-black text-[#2E3B44] tracking-wide uppercase"
               style={{ fontFamily: "var(--font-cairo)" }}
             >
               {getSectionTitle()}
@@ -110,7 +110,7 @@ function FeaturedDishesShowcase({ onExplore }) {
             {/* Coral Red Brush Stroke SVG matching reference */}
             <svg
               viewBox="0 0 64 10"
-              className="w-12 sm:w-14 h-2.5 text-[#0088CC] fill-current"
+              className="w-12 sm:w-14 h-2.5 text-[#0C96DF] fill-current"
               aria-hidden="true"
             >
               <path d="M2,7 C18,2 42,1 62,5 C45,8 20,9 2,7 Z" />
@@ -120,10 +120,10 @@ function FeaturedDishesShowcase({ onExplore }) {
           <button
             type="button"
             onClick={onExplore}
-            className="flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-[#52667A] hover:text-[#1E2D3D] transition-colors cursor-pointer"
+            className="flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-[#53636E] hover:text-[#2E3B44] transition-colors cursor-pointer"
           >
             <span>{getSubtitle()}</span>
-            <CaretRight size={13} weight="bold" className="text-[#1E2D3D]" />
+            <CaretRight size={13} weight="bold" className="text-[#2E3B44]" />
           </button>
         </div>
 
@@ -161,8 +161,8 @@ function FeaturedDishesShowcase({ onExplore }) {
                 }
               >
                 {/* Ceramic Plate Circle Frame */}
-                <div className="relative w-[76px] h-[76px] sm:w-[88px] sm:h-[88px] rounded-full p-1 bg-white border border-[#C5E1F5] shadow-md group-hover:border-[#0077B6] transition-all">
-                  <div className="relative w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-[#12384B] via-[#0077B6] to-[#1E2D3D] border border-[#EBF4FA] flex flex-col items-center justify-center">
+                <div className="relative w-[76px] h-[76px] sm:w-[88px] sm:h-[88px] rounded-full p-1 bg-white border border-[#D6EBF5] shadow-md group-hover:border-[#0C96DF] transition-all">
+                  <div className="relative w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-[#06384E] via-[#0C96DF] to-[#06384E] border border-[#E7F3F9] flex flex-col items-center justify-center">
                     {itemImage ? (
                       <Image
                         src={itemImage}
@@ -174,14 +174,14 @@ function FeaturedDishesShowcase({ onExplore }) {
                       />
                     ) : (
                       /* Ceramic Plate Rim + Coastal Icon Slot */
-                      <div className="w-[84%] h-[84%] rounded-full border border-dashed border-[#C5E1F5]/45 flex flex-col items-center justify-center text-[#F8FBFE] group-hover:scale-110 transition-transform">
+                      <div className="w-[84%] h-[84%] rounded-full border border-dashed border-[#D6EBF5]/45 flex flex-col items-center justify-center text-[#F4F9FB] group-hover:scale-110 transition-transform">
                         <CategoryIcon
                           id={dish.categoryId}
                           size={28}
-                          className="text-[#F8FBFE] drop-shadow-xs"
+                          className="text-[#F4F9FB] drop-shadow-xs"
                         />
                         {/* Lemon slice accent dot */}
-                        <span className="w-2.5 h-1.5 rounded-full bg-[#F5C242] mt-0.5 opacity-90" />
+                        <span className="w-2.5 h-1.5 rounded-full bg-[#EE7B3F] mt-0.5 opacity-90" />
                       </div>
                     )}
                   </div>
@@ -189,7 +189,7 @@ function FeaturedDishesShowcase({ onExplore }) {
 
                 {/* Dish Name Underneath */}
                 <span
-                  className="text-[11px] sm:text-xs text-center font-extrabold text-[#1E2D3D] leading-tight mt-1.5 group-hover:text-[#0077B6] transition-colors line-clamp-1 w-full"
+                  className="text-[11px] sm:text-xs text-center font-extrabold text-[#2E3B44] leading-tight mt-1.5 group-hover:text-[#0C96DF] transition-colors line-clamp-1 w-full"
                   style={{ fontFamily: "var(--font-cairo)" }}
                 >
                   {translatedName}
@@ -246,7 +246,7 @@ function MenuCategoryBar({ categories, activeCategory, setActiveCategory }) {
         {/* Single Unified Ivory Bar */}
         <div
           ref={scrollRef}
-          className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl p-1 shadow-sm flex items-stretch overflow-x-auto no-scrollbar gap-1"
+          className="bg-[#F4F9FB] border border-[#D6EBF5] rounded-2xl p-1 shadow-sm flex items-stretch overflow-x-auto no-scrollbar gap-1"
         >
           {categories.map((cat) => {
             const isActive = activeCategory === cat.id;
@@ -258,19 +258,19 @@ function MenuCategoryBar({ categories, activeCategory, setActiveCategory }) {
                 onClick={() => setActiveCategory(cat.id)}
                 className={`relative shrink-0 flex flex-col items-center justify-center gap-1 min-w-[74px] sm:min-w-[96px] py-2.5 px-2.5 rounded-xl transition-all duration-200 cursor-pointer ${
                   isActive
-                    ? "bg-gradient-to-b from-[#0088CC] to-[#006BA6] text-white shadow-sm"
-                    : "bg-transparent text-[#1E2D3D] hover:bg-[#EBF4FA]/60"
+                    ? "bg-gradient-to-b from-[#0C96DF] to-[#104760] text-white shadow-sm"
+                    : "bg-transparent text-[#2E3B44] hover:bg-[#E7F3F9]/60"
                 }`}
               >
                 <CategoryIcon
                   id={cat.id}
                   size={25}
-                  className={isActive ? "text-white" : "text-[#1E2D3D]"}
+                  className={isActive ? "text-white" : "text-[#2E3B44]"}
                 />
 
                 <span
                   className={`text-[11px] sm:text-xs font-extrabold text-center leading-tight whitespace-nowrap ${
-                    isActive ? "text-white" : "text-[#1E2D3D]"
+                    isActive ? "text-white" : "text-[#2E3B44]"
                   }`}
                   style={{ fontFamily: "var(--font-cairo)" }}
                 >
@@ -358,7 +358,7 @@ export default function MenuPage() {
   }, [activeCategory, activeFilter]);
 
   return (
-    <div className="bg-[#EBF4FA] min-h-screen text-[#1E2D3D] font-sans">
+    <div className="bg-[#E7F3F9] min-h-screen text-[#2E3B44] font-sans">
       {/* ═══════════════════════════════════════════
           GÜNÜN AVI — COMPACT HORIZONTAL STRIP
           ═══════════════════════════════════════════ */}
@@ -377,7 +377,7 @@ export default function MenuPage() {
           ═══════════════════════════════════════════ */}
       <div
         style={{ top: "var(--header-height, 88px)" }}
-        className="sticky z-30 bg-[#EBF4FA]/95 backdrop-blur-md pb-2.5 border-b border-[#C5E1F5]/50 shadow-2xs transition-[top] duration-150"
+        className="sticky z-30 bg-[#E7F3F9]/95 backdrop-blur-md pb-2.5 border-b border-[#D6EBF5]/50 shadow-2xs transition-[top] duration-150"
       >
         <MenuCategoryBar
           categories={menuData}
@@ -438,8 +438,8 @@ export default function MenuPage() {
                       />
                     ))
                 ) : (
-                  <div className="col-span-full py-16 text-center bg-[#F8FBFE] rounded-2xl border border-[#C5E1F5]">
-                    <p className="text-[#52667A] font-semibold tracking-wide">
+                  <div className="col-span-full py-16 text-center bg-[#F4F9FB] rounded-2xl border border-[#D6EBF5]">
+                    <p className="text-[#53636E] font-semibold tracking-wide">
                       {t?.noResults ||
                         (lang === "ar"
                           ? "لا توجد أطباق تطابق الفلتر المحدد."

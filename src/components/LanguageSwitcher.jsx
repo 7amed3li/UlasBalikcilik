@@ -84,12 +84,12 @@ export default function LanguageSwitcher() {
         aria-label={`Selected Language: ${currentLangObj.name}`}
         className={`flex items-center gap-1.5 px-2.5 sm:px-3.5 py-1.5 rounded-xl border transition-colors h-9 sm:h-10 text-xs font-bold cursor-pointer ${
           isOpen
-            ? "bg-white border-white text-[#0077B6]"
+            ? "bg-white border-white text-[#0C96DF]"
             : "bg-white/15 border-white/35 text-white hover:bg-white/25"
         }`}
       >
-        <TbWorld size={15} className={isOpen ? "text-[#0077B6]" : "text-white"} />
-        <span className={`tracking-wider font-extrabold ${isOpen ? "text-[#0077B6]" : "text-white"}`}>
+        <TbWorld size={15} className={isOpen ? "text-[#0C96DF]" : "text-white"} />
+        <span className={`tracking-wider font-extrabold ${isOpen ? "text-[#0C96DF]" : "text-white"}`}>
           {currentLangObj.short}
         </span>
         <TbChevronDown
@@ -101,10 +101,10 @@ export default function LanguageSwitcher() {
       </button>
 
       {isOpen && (
-        <div className="absolute mt-2 end-0 w-48 bg-[#F8FBFE] border border-[#C5E1F5] rounded-2xl shadow-2xl overflow-hidden z-50 p-1.5 animate-fadeIn text-[#1E2D3D]">
-          <div className="px-3 py-1.5 flex items-center justify-between text-[10px] uppercase tracking-wider text-[#0077B6] font-extrabold border-b border-[#C5E1F5]">
+        <div className="absolute mt-2 end-0 w-48 bg-[#F4F9FB] border border-[#D6EBF5] rounded-2xl shadow-2xl overflow-hidden z-50 p-1.5 animate-fadeIn text-[#2E3B44]">
+          <div className="px-3 py-1.5 flex items-center justify-between text-[10px] uppercase tracking-wider text-[#0C96DF] font-extrabold border-b border-[#D6EBF5]">
             <span className="flex items-center gap-1.5">
-              <TbWorld size={13} className="text-[#0077B6]" />
+              <TbWorld size={13} className="text-[#0C96DF]" />
               <span>Dil / Language</span>
             </span>
           </div>
@@ -118,8 +118,8 @@ export default function LanguageSwitcher() {
                   onClick={() => selectLang(item.code)}
                   className={`w-full px-3 py-2 text-xs rounded-xl font-medium transition-colors flex items-center justify-between gap-2 text-start cursor-pointer ${
                     isSelected
-                      ? "bg-[#0077B6] text-white font-bold"
-                      : "text-[#1E2D3D] hover:bg-[#EBF4FA]"
+                      ? "bg-[#0C96DF] text-white font-bold"
+                      : "text-[#2E3B44] hover:bg-[#E7F3F9]"
                   }`}
                 >
                   <div className="flex items-center gap-2.5">
@@ -127,7 +127,7 @@ export default function LanguageSwitcher() {
                       className={`w-6 h-5 rounded-md text-[10px] font-extrabold flex items-center justify-center border ${
                         isSelected
                           ? "bg-white/20 text-white border-white/30"
-                          : "bg-white text-[#0077B6] border-[#C5E1F5]"
+                          : "bg-white text-[#0C96DF] border-[#D6EBF5]"
                       }`}
                     >
                       {item.short}

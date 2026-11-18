@@ -164,13 +164,13 @@ export default function ReservationModal({ isOpen, onClose }) {
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-md animate-fadeIn">
       <div 
-        className="relative w-full max-w-lg rounded-2xl bg-[#F7F2E7] border border-[#9C7A3F]/30 shadow-xl p-6 sm:p-8 text-[#2B2620] overflow-hidden max-h-[90vh] overflow-y-auto"
+        className="relative w-full max-w-lg rounded-2xl bg-[#F4F9FB] border border-[#90C6DF]/30 shadow-xl p-6 sm:p-8 text-[#2E3B44] overflow-hidden max-h-[90vh] overflow-y-auto"
         dir={isRtl ? "rtl" : "ltr"}
       >
         {/* Close Button */}
         <button
           onClick={onClose}
-          className="absolute top-4 end-4 w-9 h-9 rounded-md bg-[#EDE3CE] border border-[#9C7A3F]/20 flex items-center justify-center text-[#2B2620] hover:text-[#9C7A3F] transition-colors"
+          className="absolute top-4 end-4 w-9 h-9 rounded-md bg-[#E7F3F9] border border-[#90C6DF]/20 flex items-center justify-center text-[#2E3B44] hover:text-[#0C96DF] transition-colors"
           aria-label="Close"
         >
           <X size={18} />
@@ -178,14 +178,14 @@ export default function ReservationModal({ isOpen, onClose }) {
 
         {/* Header */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-[#9C7A3F]/15 border border-[#9C7A3F]/30 text-[#9C7A3F] text-xs font-bold uppercase tracking-wider mb-2">
-            <span className="w-1.5 h-1.5 rounded-full bg-[#9C7A3F]"></span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-md bg-[#0C96DF]/15 border border-[#90C6DF]/30 text-[#0C96DF] text-xs font-bold uppercase tracking-wider mb-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#0C96DF]"></span>
             <span>{appT?.vipBooking || "VIP & Table Booking"}</span>
           </div>
-          <h3 className="text-2xl sm:text-3xl font-black text-[#2B2620] tracking-tight" style={{ fontFamily: "var(--font-cairo)" }}>
+          <h3 className="text-2xl sm:text-3xl font-black text-[#2E3B44] tracking-tight" style={{ fontFamily: "var(--font-cairo)" }}>
             {t.title}
           </h3>
-          <p className="text-[#7A7364] text-xs sm:text-sm mt-1" style={{ fontFamily: "var(--font-inter)" }}>
+          <p className="text-[#53636E] text-xs sm:text-sm mt-1" style={{ fontFamily: "var(--font-inter)" }}>
             {t.subtitle}
           </p>
         </div>
@@ -195,17 +195,17 @@ export default function ReservationModal({ isOpen, onClose }) {
         <div className="pt-4 pb-2 space-y-3">
           <a
             href="tel:+902122513696"
-            className="w-full py-4 px-6 rounded-xl bg-[#4E5F4C] hover:bg-[#3D4B3B] text-[#EAF0E6] font-bold text-base tracking-wider uppercase flex items-center justify-center gap-3 transition-colors shadow-lg"
+            className="w-full py-4 px-6 rounded-xl bg-[#EE7B3F] hover:bg-[#D15015] text-[#06384E] font-bold text-base tracking-wider uppercase flex items-center justify-center gap-3 transition-colors shadow-lg"
           >
             <Phone size={22} className="animate-pulse" />
             <span>{t.directCall}: +90 212 251 36 96</span>
           </a>
-          <p className="text-center text-xs text-[#7A7364]">
+          <p className="text-center text-xs text-[#53636E]">
             {appT?.phoneReservationNotice || (lang === "ar" ? "نحن نستقبل الحجوزات عبر الهاتف فقط لضمان أفضل خدمة." : "We accept reservations by phone only to ensure the best service.")}
           </p>
         </div>
 
-        <p className="text-center text-[11px] text-[#7A7364] mt-4 flex items-center justify-center gap-1">
+        <p className="text-center text-[11px] text-[#53636E] mt-4 flex items-center justify-center gap-1">
           <span>Firuzağa Mah., Cihangir, Beyoğlu • 09:00 - 02:00</span>
         </p>
       </div>

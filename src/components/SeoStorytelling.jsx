@@ -119,24 +119,24 @@ export default function SeoStorytelling({ locale = 'en' }) {
   const dropCapFloat = isRtl ? "float-right ml-3" : "float-left mr-3";
 
   return (
-    <section className="py-12 sm:py-24 px-4 sm:px-6 lg:px-8 bg-[#EDE3CE] border-y border-[#9C7A3F]/20">
+    <section className="py-12 sm:py-24 px-4 sm:px-6 lg:px-8 bg-[#F1E8D8] border-y border-[#90C6DF]/20">
       <div className={`max-w-6xl mx-auto ${isRtl ? 'text-right' : 'text-left'}`} dir={isRtl ? 'rtl' : 'ltr'}>
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8">
           
           {/* Main Story Block (Bento Large) */}
-          <div className="col-span-1 lg:col-span-7 bg-[#F7F2E7] rounded-2xl p-6 sm:p-10 border border-[#9C7A3F]/30 relative overflow-hidden group shadow-sm order-1">
+          <div className="col-span-1 lg:col-span-7 bg-[#F4F9FB] rounded-2xl p-6 sm:p-10 border border-[#90C6DF]/30 relative overflow-hidden group shadow-sm order-1">
             <div className="relative z-10 space-y-4 sm:space-y-6">
-              <div className="w-12 h-[2px] bg-[#9C7A3F] mb-4 rounded-full"></div>
-              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#2B2620] leading-tight" style={{ fontFamily: "var(--font-cairo)" }}>
+              <div className="w-12 h-[2px] bg-[#0C96DF] mb-4 rounded-full"></div>
+              <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold text-[#2E3B44] leading-tight" style={{ fontFamily: "var(--font-cairo)" }}>
                 {t.storyTitle}
               </h2>
-              <div className="space-y-4 text-[#7A7364] text-sm sm:text-base leading-relaxed font-medium">
+              <div className="space-y-4 text-[#53636E] text-sm sm:text-base leading-relaxed font-medium">
                 <p>
                   {isRtl ? (
                     t.storyText1
                   ) : (
                     <>
-                      <span className={`text-5xl font-black text-[#9C7A3F] leading-none mt-1 float-left mr-3`} style={{ fontFamily: "var(--font-cairo)" }}>
+                      <span className={`text-5xl font-black text-[#0C96DF] leading-none mt-1 float-left mr-3`} style={{ fontFamily: "var(--font-cairo)" }}>
                         {t.storyText1.charAt(0)}
                       </span>
                       {t.storyText1.substring(1)}
@@ -151,7 +151,7 @@ export default function SeoStorytelling({ locale = 'en' }) {
           {/* Image Block 1 */}
           <button 
             onClick={() => setActiveModal('kebab')}
-            className="col-span-1 lg:col-span-5 relative min-h-[250px] sm:min-h-[320px] rounded-2xl overflow-hidden border border-[#9C7A3F]/30 shadow-sm block w-full text-left cursor-zoom-in group order-2 bg-[#EDE3CE]"
+            className="col-span-1 lg:col-span-5 relative min-h-[250px] sm:min-h-[320px] rounded-2xl overflow-hidden border border-[#90C6DF]/30 shadow-sm block w-full text-left cursor-zoom-in group order-2 bg-[#F1E8D8]"
           >
             <Image 
               src="/images/27-Karisik-Kebap_1.webp" 
@@ -160,15 +160,15 @@ export default function SeoStorytelling({ locale = 'en' }) {
               sizes="(max-width: 1024px) 100vw, 40vw"
               className="object-cover group-hover:scale-105 transition-transform duration-500" 
             />
-            <div className="absolute inset-0 bg-[#2B2620]/30 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
-               <span className="text-white text-xs font-bold bg-[#4E5F4C] px-4 py-2 rounded-md">{t.viewDish}</span>
+            <div className="absolute inset-0 bg-[#2E3B44]/30 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+               <span className="text-white text-xs font-bold bg-[#06384E] px-4 py-2 rounded-md">{t.viewDish}</span>
             </div>
           </button>
 
           {/* Image Block 2 */}
           <button 
             onClick={() => setActiveModal('lahmacun')}
-            className="col-span-1 lg:col-span-4 relative min-h-[250px] sm:min-h-[300px] rounded-2xl overflow-hidden border border-[#9C7A3F]/30 shadow-sm block w-full text-left cursor-zoom-in group order-4 lg:order-3 bg-[#EDE3CE]"
+            className="col-span-1 lg:col-span-4 relative min-h-[250px] sm:min-h-[300px] rounded-2xl overflow-hidden border border-[#90C6DF]/30 shadow-sm block w-full text-left cursor-zoom-in group order-4 lg:order-3 bg-[#F1E8D8]"
           >
             <Image 
               src="/images/lahmacun.webp" 
@@ -177,19 +177,19 @@ export default function SeoStorytelling({ locale = 'en' }) {
               sizes="(max-width: 1024px) 100vw, 33vw"
               className="object-cover group-hover:scale-105 transition-transform duration-500" 
             />
-             <div className="absolute inset-0 bg-[#2B2620]/30 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
-               <span className="text-white text-xs font-bold bg-[#4E5F4C] px-4 py-2 rounded-md">{t.viewDish}</span>
+             <div className="absolute inset-0 bg-[#2E3B44]/30 flex items-end p-6 opacity-0 group-hover:opacity-100 transition-opacity">
+               <span className="text-white text-xs font-bold bg-[#06384E] px-4 py-2 rounded-md">{t.viewDish}</span>
             </div>
           </button>
 
           {/* Secondary Story Block */}
-          <div className="col-span-1 lg:col-span-8 bg-[#F7F2E7] rounded-2xl p-6 sm:p-8 border border-[#9C7A3F]/30 relative overflow-hidden group shadow-sm order-3 lg:order-4">
+          <div className="col-span-1 lg:col-span-8 bg-[#F4F9FB] rounded-2xl p-6 sm:p-8 border border-[#90C6DF]/30 relative overflow-hidden group shadow-sm order-3 lg:order-4">
             <div className="relative z-10 space-y-4 sm:space-y-5">
-              <div className="w-12 h-[2px] bg-[#9C7A3F] mb-4 rounded-full"></div>
-              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#2B2620]" style={{ fontFamily: "var(--font-cairo)" }}>
+              <div className="w-12 h-[2px] bg-[#0C96DF] mb-4 rounded-full"></div>
+              <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#2E3B44]" style={{ fontFamily: "var(--font-cairo)" }}>
                 {t.craftTitle}
               </h3>
-              <div className="space-y-3 text-[#7A7364] text-sm sm:text-base leading-relaxed font-medium">
+              <div className="space-y-3 text-[#53636E] text-sm sm:text-base leading-relaxed font-medium">
                 <p>{t.craftText1}</p>
                 <p>{t.craftText2}</p>
               </div>
@@ -197,13 +197,13 @@ export default function SeoStorytelling({ locale = 'en' }) {
           </div>
 
           {/* SEO Block 3 (Hospitality) */}
-          <div className="col-span-1 lg:col-span-6 bg-[#F7F2E7] rounded-2xl p-6 sm:p-8 border border-[#9C7A3F]/30 relative overflow-hidden group shadow-sm order-5">
+          <div className="col-span-1 lg:col-span-6 bg-[#F4F9FB] rounded-2xl p-6 sm:p-8 border border-[#90C6DF]/30 relative overflow-hidden group shadow-sm order-5">
             <div className="relative z-10 space-y-4">
-              <div className="w-12 h-[2px] bg-[#9C7A3F] mb-4 rounded-full"></div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#2B2620]" style={{ fontFamily: "var(--font-cairo)" }}>
+              <div className="w-12 h-[2px] bg-[#0C96DF] mb-4 rounded-full"></div>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#2E3B44]" style={{ fontFamily: "var(--font-cairo)" }}>
                 {t.hospitalityTitle}
               </h3>
-              <div className="space-y-3 text-[#7A7364] text-sm leading-relaxed font-medium">
+              <div className="space-y-3 text-[#53636E] text-sm leading-relaxed font-medium">
                 <p>{t.hospitalityText1}</p>
                 <p>{t.hospitalityText2}</p>
               </div>
@@ -211,13 +211,13 @@ export default function SeoStorytelling({ locale = 'en' }) {
           </div>
 
           {/* SEO Block 4 (Quality) */}
-          <div className="col-span-1 lg:col-span-6 bg-[#F7F2E7] rounded-2xl p-6 sm:p-8 border border-[#9C7A3F]/30 relative overflow-hidden group shadow-sm order-6">
+          <div className="col-span-1 lg:col-span-6 bg-[#F4F9FB] rounded-2xl p-6 sm:p-8 border border-[#90C6DF]/30 relative overflow-hidden group shadow-sm order-6">
             <div className="relative z-10 space-y-4">
-              <div className="w-12 h-[2px] bg-[#9C7A3F] mb-4 rounded-full"></div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#2B2620]" style={{ fontFamily: "var(--font-cairo)" }}>
+              <div className="w-12 h-[2px] bg-[#0C96DF] mb-4 rounded-full"></div>
+              <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#2E3B44]" style={{ fontFamily: "var(--font-cairo)" }}>
                 {t.qualityTitle}
               </h3>
-              <div className="space-y-3 text-[#7A7364] text-sm leading-relaxed font-medium">
+              <div className="space-y-3 text-[#53636E] text-sm leading-relaxed font-medium">
                 <p>{t.qualityText1}</p>
                 <p>{t.qualityText2}</p>
               </div>

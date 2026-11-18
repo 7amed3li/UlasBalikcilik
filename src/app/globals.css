@@ -1,30 +1,47 @@
 @import "tailwindcss";
 
 :root {
-  /* Ulaş Balıkçılık — Official Logo Color Palette (Ocean Blue, Sky Wave, Dark Slate Navy & Crisp White) */
-  --bg: #EDF5FC;             /* Clean Coastal Ice-Blue Page Background */
-  --bg-card: #FFFFFF;        /* Crisp Logo White Card Surface */
-  --primary: #0088CC;        /* Official Ulaş Balık Logo Ocean Blue */
-  --primary-dim: #1E2D3D;    /* Official Ulaş Balık Logo Fish Slate Navy */
-  --navy: #1E2D3D;           /* Deep Slate Navy */
-  --sea-glass: #C5E1F5;      /* Soft Sky Blue for borders & details */
-  --accent: #29ABE2;         /* Official Logo Light Wave Sky Blue */
-  --gold: #29ABE2;           /* Mapped to Logo Sky Blue Accent */
-  --text: #1E2D3D;           /* High-Contrast Dark Slate Navy Text */
-  --text-secondary: #52667A; /* Muted Maritime Slate Secondary Text */
-  --error: #006DA3;          /* Deep Ocean Blue */
-  
-  /* Legacy mapping aliases for gradual component compatibility */
-  --ink: #EDF5FC;
-  --ink-2: #FFFFFF;
-  --teal: #0088CC;
-  --teal-dim: #1E2D3D;
-  --copper: #29ABE2;
-  --cream: #1E2D3D;
-  --cream-dim: #52667A;
-  --brick: #006DA3;
-  --ink-text: #FFFFFF;
+  /* Ulaş Balıkçılık — Logo-hue colour system (azure hue line 198°–205°; 60-30-10) */
+  /* 60% sea family */
+  --sea-deep: #06384E;
+  --sea-abyss: #082A3A;
+  --sea-mid: #104760;
+  --foam: #F4F9FB;
+  /* 30% support */
+  --tint-1: #D6EBF5;
+  --tint-2: #E7F3F9;
+  --sea-haze: #90C6DF;   /* graphics / dividers only — never text */
+  --sand: #F1E8D8;       /* story & testimonials only */
+  /* 10% accents */
+  --brand-azure: #0C96DF;   /* logo blue: buttons, links, icons, badges */
+  --accent-amber: #EE7B3F;  /* prices, catch-of-the-day, reservation CTA, stars */
+  --accent-amber-deep: #D15015; /* amber when it must carry text on light */
+  /* text */
+  --ink: #2E3B44;
+  --ink-soft: #53636E;
 
+  /* Semantic aliases (existing components) */
+  --bg: var(--foam);
+  --bg-card: #FFFFFF;
+  --primary: var(--brand-azure);
+  --primary-dim: var(--sea-mid);
+  --navy: var(--sea-deep);
+  --sea-glass: var(--tint-1);
+  --accent: var(--brand-azure);
+  --gold: var(--accent-amber);
+  --text: var(--ink);
+  --text-secondary: var(--ink-soft);
+  --error: var(--accent-amber-deep);
+
+  /* Legacy mapping aliases */
+  --ink-2: #FFFFFF;
+  --teal: var(--brand-azure);
+  --teal-dim: var(--sea-mid);
+  --copper: var(--accent-amber);
+  --cream: var(--ink);
+  --cream-dim: var(--ink-soft);
+  --brick: var(--accent-amber-deep);
+  --ink-text: #FFFFFF;
   /* Spacing & Radius Tokens */
   --spacing-margin-ext: 16px;
   --spacing-padding-card: 12px;
@@ -57,17 +74,29 @@
   --color-navy: var(--navy);
   --color-sea-glass: var(--sea-glass);
   --color-accent: var(--accent);
-  --color-gold: var(--accent);
+  --color-gold: var(--accent-amber);
   --color-text: var(--text);
   --color-text-secondary: var(--text-secondary);
   --color-error: var(--error);
+  --color-sea-deep: var(--sea-deep);
+  --color-sea-abyss: var(--sea-abyss);
+  --color-sea-mid: var(--sea-mid);
+  --color-foam: var(--foam);
+  --color-tint-1: var(--tint-1);
+  --color-tint-2: var(--tint-2);
+  --color-sea-haze: var(--sea-haze);
+  --color-sand: var(--sand);
+  --color-brand-azure: var(--brand-azure);
+  --color-accent-amber: var(--accent-amber);
+  --color-accent-amber-deep: var(--accent-amber-deep);
+  --color-ink-soft: var(--ink-soft);
 
   /* Mapping legacy Tailwind utility names */
-  --color-ink: var(--bg);
+  --color-ink-old: var(--bg);
   --color-ink-2: var(--bg-card);
   --color-teal: var(--primary);
   --color-teal-dim: var(--primary-dim);
-  --color-copper: var(--accent);
+  --color-copper: var(--accent-amber);
   --color-cream: var(--text);
   --color-cream-dim: var(--text-secondary);
   --color-brick: var(--error);
@@ -156,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 .glass-card,
 .flat-card {
   background: var(--bg-card);
-  border: 1px solid rgba(197, 225, 245, 0.85);
+  border: 1px solid rgba(214, 235, 245, 0.85);
   border-radius: var(--radius-card);
 }
 
@@ -170,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Subtle fish scale / sea notebook background texture */
 .notebook-surface {
   background-color: var(--bg-card);
-  background-image: radial-gradient(rgba(0, 136, 204, 0.05) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(12, 150, 223, 0.05) 1px, transparent 1px);
   background-size: 18px 18px;
 }
 
@@ -178,8 +207,8 @@ h1, h2, h3, h4, h5, h6 {
 .market-awning-bar {
   background: repeating-linear-gradient(
     90deg,
-    #0088CC 0px,
-    #0088CC 18px,
+    #0C96DF 0px,
+    #0C96DF 18px,
     #FFFFFF 18px,
     #FFFFFF 36px
   );
@@ -199,9 +228,9 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(
     to right,
     transparent,
-    rgba(0, 136, 204, 0.2) 20%,
-    rgba(0, 136, 204, 0.5) 50%,
-    rgba(0, 136, 204, 0.2) 80%,
+    rgba(12, 150, 223, 0.2) 20%,
+    rgba(12, 150, 223, 0.5) 50%,
+    rgba(12, 150, 223, 0.2) 80%,
     transparent
   );
   margin: 1.5rem 0;
@@ -242,9 +271,51 @@ h1, h2, h3, h4, h5, h6 {
 
 .modal-overlay {
   animation: fadeIn 0.2s ease-out both;
-  background-color: rgba(11, 43, 59, 0.72);
+  background-color: rgba(8, 42, 58, 0.72);
 }
 
 .modal-content {
   animation: scaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+
+/* ==========================================================================
+   LUXURY HOMEPAGE — type & motion
+   ========================================================================== */
+
+.lux-serif { font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif; font-weight: 500; }
+.lux-sans  { font-family: "Manrope", "Inter", system-ui, sans-serif; }
+.lux-kicker {
+  font-family: "Manrope", "Inter", system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+.lux-reveal {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 800ms ease-out, transform 800ms ease-out;
+  transition-delay: var(--lux-delay, 0ms);
+}
+.lux-reveal.is-in { opacity: 1; transform: none; }
+
+.lux-link {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size 500ms ease-out, color 300ms ease-out;
+}
+.lux-link:hover { background-size: 100% 1px; }
+
+@keyframes luxCue {
+  0%, 100% { transform: scaleY(0.35); opacity: 0.4; transform-origin: top; }
+  50% { transform: scaleY(1); opacity: 0.9; transform-origin: top; }
+}
+.lux-cue { animation: luxCue 3.2s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .lux-reveal { opacity: 1; transform: none; transition: none; }
 }

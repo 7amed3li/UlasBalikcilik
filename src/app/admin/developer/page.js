@@ -34,8 +34,8 @@ export default async function DeveloperPage() {
   } = await adminAuth.listUsers();
 
   return (
-    <div className="min-h-screen bg-[#EBF4FA] text-[#1E2D3D] font-sans">
-      <nav className="bg-gradient-to-r from-[#006BA6] via-[#0088CC] to-[#1AA3E8] text-white border-b border-[#C5E1F5]/30 px-6 py-4 flex justify-between items-center sticky top-0 z-10 shadow-md">
+    <div className="min-h-screen bg-[#E7F3F9] text-[#2E3B44] font-sans">
+      <nav className="bg-gradient-to-r from-[#082A3A] via-[#06384E] to-[#104760] text-white border-b border-[#D6EBF5]/30 px-6 py-4 flex justify-between items-center sticky top-0 z-10 shadow-md">
         <div>
           <h1
             className="text-xl font-black text-white tracking-wider uppercase"
@@ -43,7 +43,7 @@ export default async function DeveloperPage() {
           >
             Ulaş Balıkçılık — Geliştirici Paneli
           </h1>
-          <p className="text-xs text-[#C5E1F5] uppercase tracking-wider font-bold">
+          <p className="text-xs text-[#D6EBF5] uppercase tracking-wider font-bold">
             Tam Yetkili Yönetim
           </p>
         </div>
@@ -51,7 +51,7 @@ export default async function DeveloperPage() {
           <form action="/api/auth/signout" method="POST">
             <button
               type="submit"
-              className="text-xs font-extrabold uppercase tracking-wider px-4 py-2 bg-[#0088CC] hover:bg-[#006DA3] rounded-xl transition-colors text-white cursor-pointer"
+              className="text-xs font-extrabold uppercase tracking-wider px-4 py-2 bg-[#0C96DF] hover:bg-[#104760] rounded-xl transition-colors text-white cursor-pointer"
             >
               Çıkış Yap
             </button>
@@ -61,7 +61,7 @@ export default async function DeveloperPage() {
 
       <main className="max-w-5xl mx-auto p-4 sm:p-6 space-y-10">
         {usersError ? (
-          <div className="text-[#0088CC] font-bold">
+          <div className="text-[#0C96DF] font-bold">
             Error loading users: {usersError.message}
           </div>
         ) : (
@@ -70,13 +70,13 @@ export default async function DeveloperPage() {
 
         <section>
           <h2
-            className="text-xl font-black mb-4 text-[#1E2D3D]"
+            className="text-xl font-black mb-4 text-[#2E3B44]"
             style={{ fontFamily: "var(--font-cairo)" }}
           >
             Ürünler ve Fiyat Yönetimi (81 Çeşit)
           </h2>
           {itemsError ? (
-            <div className="text-[#0088CC] font-bold">
+            <div className="text-[#0C96DF] font-bold">
               Error loading items: {itemsError.message}
             </div>
           ) : (
@@ -86,18 +86,18 @@ export default async function DeveloperPage() {
 
         <section>
           <h2
-            className="text-xl font-black mb-4 text-[#1E2D3D]"
+            className="text-xl font-black mb-4 text-[#2E3B44]"
             style={{ fontFamily: "var(--font-cairo)" }}
           >
             Fiyat Değişim Geçmişi (Son 50)
           </h2>
           {historyError ? (
-            <div className="text-[#0088CC] font-bold">Error: {historyError.message}</div>
+            <div className="text-[#0C96DF] font-bold">Error: {historyError.message}</div>
           ) : (
-            <div className="bg-[#F8FBFE] rounded-2xl border border-[#C5E1F5] overflow-hidden shadow-xs">
+            <div className="bg-[#F4F9FB] rounded-2xl border border-[#D6EBF5] overflow-hidden shadow-xs">
               <table className="w-full text-left border-collapse">
                 <thead>
-                  <tr className="bg-[#1E2D3D] text-white border-b border-[#C5E1F5] text-xs uppercase tracking-wider">
+                  <tr className="bg-[#06384E] text-white border-b border-[#D6EBF5] text-xs uppercase tracking-wider">
                     <th className="p-4 font-extrabold">Tarih</th>
                     <th className="p-4 font-extrabold">Ürün</th>
                     <th className="p-4 font-extrabold">Eski Fiyat</th>
@@ -105,23 +105,23 @@ export default async function DeveloperPage() {
                     <th className="p-4 font-extrabold">Kullanıcı</th>
                   </tr>
                 </thead>
-                <tbody className="divide-y divide-[#C5E1F5]/60">
+                <tbody className="divide-y divide-[#D6EBF5]/60">
                   {history?.map((record) => (
                     <tr key={record.id} className="hover:bg-white/60 transition-colors">
-                      <td className="p-4 text-sm text-[#52667A]">
+                      <td className="p-4 text-sm text-[#53636E]">
                         {new Date(record.created_at).toLocaleString("tr-TR")}
                       </td>
-                      <td className="p-4 font-bold text-[#1E2D3D]">{record.item_id}</td>
-                      <td className="p-4 text-[#52667A]">{record.old_price} ₺</td>
-                      <td className="p-4 text-[#0077B6] font-black">{record.new_price} ₺</td>
-                      <td className="p-4 text-xs text-[#52667A] font-mono">
+                      <td className="p-4 font-bold text-[#2E3B44]">{record.item_id}</td>
+                      <td className="p-4 text-[#53636E]">{record.old_price} ₺</td>
+                      <td className="p-4 text-[#D15015] font-black">{record.new_price} ₺</td>
+                      <td className="p-4 text-xs text-[#53636E] font-mono">
                         {record.modified_by || "Bilinmiyor"}
                       </td>
                     </tr>
                   ))}
                   {history?.length === 0 && (
                     <tr>
-                      <td colSpan="5" className="p-8 text-center text-[#52667A] font-medium">
+                      <td colSpan="5" className="p-8 text-center text-[#53636E] font-medium">
                         Geçmiş kaydı yok.
                       </td>
                     </tr>

@@ -47,7 +47,7 @@ export default function SmartSplash() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          background: linear-gradient(160deg, #006BA6 0%, #0088CC 50%, #29ABE2 100%);
+          background: linear-gradient(160deg, #104760 0%, #0C96DF 50%, #0C96DF 100%);
           overflow: hidden;
           font-family: var(--font-inter, sans-serif);
           transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
@@ -75,7 +75,7 @@ export default function SmartSplash() {
           background: #FFFFFF;
           border-radius: 20px;
           padding: 16px;
-          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35), 0 0 0 3px rgba(184, 220, 211, 0.35);
+          box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35), 0 0 0 3px rgba(144, 198, 223, 0.35);
           animation: mid-settle 450ms cubic-bezier(.22, .9, .32, 1.15) forwards;
         }
 
@@ -96,7 +96,7 @@ export default function SmartSplash() {
           font-weight: 800;
           letter-spacing: 0.28em;
           font-size: clamp(11px, 1.5vw, 13px);
-          color: #F8FBFE;
+          color: #F4F9FB;
           text-transform: uppercase;
           opacity: 0;
           text-align: center;
@@ -105,7 +105,7 @@ export default function SmartSplash() {
         }
 
         .tagline span {
-          color: #29ABE2;
+          color: #0C96DF;
         }
 
         @keyframes fade-up {
@@ -117,7 +117,7 @@ export default function SmartSplash() {
           margin-top: 14px;
           width: 120px;
           height: 3px;
-          background: rgba(184, 220, 211, 0.2);
+          background: rgba(144, 198, 223, 0.2);
           border-radius: 99px;
           overflow: hidden;
           opacity: 0;
@@ -128,7 +128,7 @@ export default function SmartSplash() {
         .loader-bar {
           height: 100%;
           width: 100%;
-          background: linear-gradient(90deg, #C5E1F5, #29ABE2);
+          background: linear-gradient(90deg, #D6EBF5, #0C96DF);
           border-radius: 99px;
           transform-origin: left center;
           transform: scaleX(0);

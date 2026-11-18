@@ -80,7 +80,7 @@ export default function Header() {
   return (
     <header
       ref={headerRef}
-      className="sticky top-0 z-40 w-full bg-gradient-to-r from-[#006BA6] via-[#0088CC] to-[#1AA3E8] text-white overflow-visible select-none"
+      className="sticky top-0 z-40 w-full bg-gradient-to-r from-[#104760] via-[#104760] to-[#06384E] text-white overflow-visible select-none"
     >
       {/* Background Decorative Layer: Topographic Sea Contour Lines + Radial Glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none" aria-hidden="true">
@@ -101,7 +101,7 @@ export default function Header() {
         <div
           className="absolute -top-10 end-12 w-72 h-44 rounded-full opacity-30 blur-2xl"
           style={{
-            background: "radial-gradient(circle, #38B6FF 0%, transparent 70%)",
+            background: "radial-gradient(circle, #90C6DF 0%, transparent 70%)",
           }}
         />
       </div>
@@ -135,7 +135,7 @@ export default function Header() {
                 ULAŞ
               </span>
               <span
-                className="text-[10px] sm:text-[11px] font-bold text-[#EBF4FA] tracking-[0.26em] uppercase mt-1 leading-none"
+                className="text-[10px] sm:text-[11px] font-bold text-[#E7F3F9] tracking-[0.26em] uppercase mt-1 leading-none"
                 style={{ fontFamily: "var(--font-inter)" }}
               >
                 BALIKÇILIK
@@ -154,7 +154,7 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className={`w-9 h-9 sm:w-10 sm:h-10 flex items-center justify-center rounded-xl border transition-colors cursor-pointer ${
                   isMenuOpen
-                    ? "bg-white border-white text-[#0088CC]"
+                    ? "bg-white border-white text-[#0C96DF]"
                     : "bg-white/15 border-white/35 text-white hover:bg-white/25"
                 }`}
                 aria-label="Menu"
@@ -163,8 +163,8 @@ export default function Header() {
               </button>
 
               {isMenuOpen && (
-                <div className="absolute end-0 mt-2 w-60 rounded-2xl bg-[#F8FBFE] border border-[#C5E1F5] shadow-2xl overflow-hidden z-50 animate-fadeIn text-[#1E2D3D]">
-                  <div className="px-4 py-2.5 bg-[#0088CC] text-white flex items-center justify-between">
+                <div className="absolute end-0 mt-2 w-60 rounded-2xl bg-[#F4F9FB] border border-[#D6EBF5] shadow-2xl overflow-hidden z-50 animate-fadeIn text-[#2E3B44]">
+                  <div className="px-4 py-2.5 bg-[#0C96DF] text-white flex items-center justify-between">
                     <span className="text-[11px] font-bold tracking-wider uppercase">
                       Ulaş Balıkçılık
                     </span>
@@ -176,42 +176,42 @@ export default function Header() {
                     <Link
                       href={prefix || "/"}
                       onClick={() => setIsMenuOpen(false)}
-                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#1E2D3D] hover:bg-[#EBF4FA] transition-colors"
+                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#2E3B44] hover:bg-[#E7F3F9] transition-colors"
                     >
-                      <House size={18} weight="duotone" className="text-[#0077B6]" />
+                      <House size={18} weight="duotone" className="text-[#0C96DF]" />
                       <span style={{ fontFamily: "var(--font-cairo)" }}>{getNavLabel("home")}</span>
                     </Link>
                     <Link
                       href={`${prefix}/menu`}
                       onClick={() => setIsMenuOpen(false)}
-                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#1E2D3D] hover:bg-[#EBF4FA] transition-colors"
+                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#2E3B44] hover:bg-[#E7F3F9] transition-colors"
                     >
-                      <BookOpen size={18} weight="duotone" className="text-[#29ABE2]" />
+                      <BookOpen size={18} weight="duotone" className="text-[#0C96DF]" />
                       <span style={{ fontFamily: "var(--font-cairo)" }}>{getNavLabel("menu")}</span>
                     </Link>
                     <Link
                       href={`${prefix}/about`}
                       onClick={() => setIsMenuOpen(false)}
-                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#1E2D3D] hover:bg-[#EBF4FA] transition-colors"
+                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#2E3B44] hover:bg-[#E7F3F9] transition-colors"
                     >
-                      <Info size={18} weight="duotone" className="text-[#0077B6]" />
+                      <Info size={18} weight="duotone" className="text-[#0C96DF]" />
                       <span style={{ fontFamily: "var(--font-cairo)" }}>{getNavLabel("about")}</span>
                     </Link>
                     <Link
                       href={`${prefix}/contact`}
                       onClick={() => setIsMenuOpen(false)}
-                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#1E2D3D] hover:bg-[#EBF4FA] transition-colors"
+                      className="px-4 py-2.5 flex items-center gap-3 text-xs font-bold text-[#2E3B44] hover:bg-[#E7F3F9] transition-colors"
                     >
-                      <Phone size={18} weight="duotone" className="text-[#0077B6]" />
+                      <Phone size={18} weight="duotone" className="text-[#0C96DF]" />
                       <span style={{ fontFamily: "var(--font-cairo)" }}>
                         {getNavLabel("contact")}
                       </span>
                     </Link>
-                    <div className="h-px bg-[#C5E1F5] my-1" />
-                    <div className="px-4 py-2 text-[11px] text-[#52667A] flex items-start gap-2">
-                      <MapPin size={15} weight="fill" className="text-[#29ABE2] shrink-0 mt-0.5" />
+                    <div className="h-px bg-[#D6EBF5] my-1" />
+                    <div className="px-4 py-2 text-[11px] text-[#53636E] flex items-start gap-2">
+                      <MapPin size={15} weight="fill" className="text-[#0C96DF] shrink-0 mt-0.5" />
                       <div>
-                        <div className="font-bold text-[#1E2D3D]">Cihangir &amp; Maslak 1453</div>
+                        <div className="font-bold text-[#2E3B44]">Cihangir &amp; Maslak 1453</div>
                         <div className="text-[10px]">Beyoğlu &amp; Sarıyer / İstanbul</div>
                       </div>
                     </div>
@@ -237,24 +237,24 @@ export default function Header() {
           {/* Black Sea Trawler Silhouette */}
           <svg
             viewBox="0 0 120 50"
-            className="w-18 h-8 sm:w-22 sm:h-9 text-[#004A75] shrink-0 translate-y-1"
+            className="w-18 h-8 sm:w-22 sm:h-9 text-[#06384E] shrink-0 translate-y-1"
             aria-hidden="true"
           >
             <path
               d="M0 40 Q25 35 55 39 T120 38 L120 44 L0 44 Z"
-              fill="#005585"
+              fill="#104760"
               opacity="0.7"
             />
             <path
               d="M52 6 L52 30 M76 10 L76 30 M52 9 L30 29 M52 9 L76 14 M76 12 L98 27 M45 16 L59 16"
-              stroke="#00446B"
+              stroke="#06384E"
               strokeWidth="1.5"
               strokeLinecap="round"
             />
-            <path d="M56 20 H74 L77 29 H54 Z" fill="#00446B" />
-            <rect x="60" y="22" width="5" height="3.5" fill="#EBF4FA" opacity="0.85" />
-            <rect x="67" y="22" width="5" height="3.5" fill="#EBF4FA" opacity="0.85" />
-            <path d="M22 26 L50 29 L96 27 L90 38 L30 38 Z" fill="#00446B" />
+            <path d="M56 20 H74 L77 29 H54 Z" fill="#06384E" />
+            <rect x="60" y="22" width="5" height="3.5" fill="#E7F3F9" opacity="0.85" />
+            <rect x="67" y="22" width="5" height="3.5" fill="#E7F3F9" opacity="0.85" />
+            <path d="M22 26 L50 29 L96 27 L90 38 L30 38 Z" fill="#06384E" />
             <path
               d="M18 40 Q45 38 75 41 T112 40"
               stroke="#FFFFFF"
@@ -275,9 +275,9 @@ export default function Header() {
         >
           <defs>
             <linearGradient id="ulasHeaderWaveGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-              <stop offset="0%" stopColor="#006BA6" />
-              <stop offset="50%" stopColor="#0088CC" />
-              <stop offset="100%" stopColor="#1AA3E8" />
+              <stop offset="0%" stopColor="#104760" />
+              <stop offset="50%" stopColor="#104760" />
+              <stop offset="100%" stopColor="#06384E" />
             </linearGradient>
           </defs>
           <path

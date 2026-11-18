@@ -94,8 +94,8 @@ export default function OwnerDashboardClient({ items }) {
       {message.text && (
         <div
           className={`p-4 rounded-xl flex items-center gap-3 font-bold text-sm ${message.type === "success"
-              ? "bg-[#0077B6]/15 text-[#0077B6] border border-[#0077B6]"
-              : "bg-[#0088CC]/15 text-[#0088CC] border border-[#0088CC]"
+              ? "bg-[#0C96DF]/15 text-[#0C96DF] border border-[#0C96DF]"
+              : "bg-[#0C96DF]/15 text-[#0C96DF] border border-[#0C96DF]"
             }`}
         >
           {message.type === "success" ? <CheckCircle size={20} /> : <AlertCircle size={20} />}
@@ -107,19 +107,19 @@ export default function OwnerDashboardClient({ items }) {
       <div className="flex flex-col sm:flex-row gap-3 mb-6">
         <div className="relative flex-1">
           <Search
-            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#52667A]"
+            className="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#53636E]"
             size={18}
           />
           <input
             type="text"
             placeholder="Balık, meze veya ürün ara..."
-            className="w-full pl-10 pr-4 py-2.5 bg-[#F8FBFE] border border-[#C5E1F5] rounded-xl text-[#1E2D3D] focus:outline-none focus:border-[#0077B6] text-sm font-medium"
+            className="w-full pl-10 pr-4 py-2.5 bg-[#F4F9FB] border border-[#D6EBF5] rounded-xl text-[#2E3B44] focus:outline-none focus:border-[#0C96DF] text-sm font-medium"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
         </div>
         <select
-          className="bg-[#F8FBFE] border border-[#C5E1F5] rounded-xl px-4 py-2.5 text-[#1E2D3D] font-bold text-sm focus:outline-none focus:border-[#0077B6]"
+          className="bg-[#F4F9FB] border border-[#D6EBF5] rounded-xl px-4 py-2.5 text-[#2E3B44] font-bold text-sm focus:outline-none focus:border-[#0C96DF]"
           value={categoryFilter}
           onChange={(e) => setCategoryFilter(e.target.value)}
         >
@@ -133,56 +133,56 @@ export default function OwnerDashboardClient({ items }) {
       </div>
 
       {/* Table */}
-      <div className="bg-[#F8FBFE] rounded-2xl border border-[#C5E1F5] overflow-hidden shadow-xs">
+      <div className="bg-[#F4F9FB] rounded-2xl border border-[#D6EBF5] overflow-hidden shadow-xs">
         <div className="overflow-x-auto">
           <table className="w-full text-left border-collapse block md:table">
             <thead className="hidden md:table-header-group">
-              <tr className="bg-[#1E2D3D] text-white border-b border-[#C5E1F5] text-xs uppercase tracking-wider">
+              <tr className="bg-[#06384E] text-white border-b border-[#D6EBF5] text-xs uppercase tracking-wider">
                 <th className="p-4 font-extrabold">Ürün</th>
                 <th className="p-4 font-extrabold">Kategori</th>
                 <th className="p-4 font-extrabold">Fiyat (₺)</th>
                 <th className="p-4 font-extrabold text-right">İşlem</th>
               </tr>
             </thead>
-            <tbody className="block md:table-row-group divide-y divide-[#C5E1F5]/60">
+            <tbody className="block md:table-row-group divide-y divide-[#D6EBF5]/60">
               {filteredItems.map((item) => (
                 <tr
                   key={item.id}
                   className="block md:table-row hover:bg-white/60 transition-colors p-4 md:p-0 mb-2 md:mb-0"
                 >
                   <td className="flex justify-between md:table-cell p-2 md:p-4">
-                    <span className="md:hidden text-xs font-bold text-[#52667A] uppercase">
+                    <span className="md:hidden text-xs font-bold text-[#53636E] uppercase">
                       Ürün
                     </span>
-                    <span className="font-bold text-[#1E2D3D]">
+                    <span className="font-bold text-[#2E3B44]">
                       {formatProductName(item.id)}
                     </span>
                   </td>
 
                   <td className="flex justify-between md:table-cell p-2 md:p-4">
-                    <span className="md:hidden text-xs font-bold text-[#52667A] uppercase">
+                    <span className="md:hidden text-xs font-bold text-[#53636E] uppercase">
                       Kategori
                     </span>
-                    <span className="text-[#52667A] text-sm font-medium">
+                    <span className="text-[#53636E] text-sm font-medium">
                       {item.categories?.name_tr || item.category_id}
                     </span>
                   </td>
 
                   <td className="flex justify-between md:table-cell p-2 md:p-4 items-center">
-                    <span className="md:hidden text-xs font-bold text-[#52667A] uppercase">
+                    <span className="md:hidden text-xs font-bold text-[#53636E] uppercase">
                       Fiyat
                     </span>
                     <div>
                       {editingId === item.id ? (
                         <input
                           type="number"
-                          className="w-28 bg-white border-2 border-[#0077B6] rounded-lg px-2.5 py-1 text-[#1E2D3D] font-bold focus:outline-none"
+                          className="w-28 bg-white border-2 border-[#0C96DF] rounded-lg px-2.5 py-1 text-[#2E3B44] font-bold focus:outline-none"
                           value={newPrice}
                           onChange={(e) => setNewPrice(e.target.value)}
                           autoFocus
                         />
                       ) : (
-                        <span className="text-[#0077B6] font-black">{item.price} ₺</span>
+                        <span className="text-[#D15015] font-black">{item.price} ₺</span>
                       )}
                     </div>
                   </td>
@@ -192,13 +192,13 @@ export default function OwnerDashboardClient({ items }) {
                       <div className="flex justify-end gap-2 w-full md:w-auto">
                         <button
                           onClick={() => setEditingId(null)}
-                          className="text-xs px-3 py-1.5 border border-[#C5E1F5] rounded-lg text-[#52667A] font-bold hover:bg-white cursor-pointer"
+                          className="text-xs px-3 py-1.5 border border-[#D6EBF5] rounded-lg text-[#53636E] font-bold hover:bg-white cursor-pointer"
                         >
                           İptal
                         </button>
                         <button
                           onClick={() => handleSave(item.id)}
-                          className="text-xs px-3 py-1.5 bg-[#0077B6] rounded-lg text-white font-bold flex items-center justify-center gap-1 hover:bg-[#1E2D3D] cursor-pointer"
+                          className="text-xs px-3 py-1.5 bg-[#0C96DF] rounded-lg text-white font-bold flex items-center justify-center gap-1 hover:bg-[#06384E] cursor-pointer"
                         >
                           <Save size={14} /> Kaydet
                         </button>
@@ -206,7 +206,7 @@ export default function OwnerDashboardClient({ items }) {
                     ) : (
                       <button
                         onClick={() => handleEdit(item)}
-                        className="w-full md:w-auto text-xs px-4 py-1.5 border border-[#0077B6] rounded-lg text-[#0077B6] font-extrabold hover:bg-[#0077B6] hover:text-white transition-colors cursor-pointer"
+                        className="w-full md:w-auto text-xs px-4 py-1.5 border border-[#0C96DF] rounded-lg text-[#0C96DF] font-extrabold hover:bg-[#0C96DF] hover:text-white transition-colors cursor-pointer"
                       >
                         Düzenle
                       </button>
@@ -216,7 +216,7 @@ export default function OwnerDashboardClient({ items }) {
               ))}
               {filteredItems.length === 0 && (
                 <tr>
-                  <td colSpan="4" className="p-8 text-center text-[#52667A] font-medium">
+                  <td colSpan="4" className="p-8 text-center text-[#53636E] font-medium">
                     Ürün bulunamadı.
                   </td>
                 </tr>

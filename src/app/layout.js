@@ -1,13 +1,9 @@
 import { AppProvider } from "@/context/AppContext";
-import Header from "@/components/Header";
-import SmartSplash from "@/components/SmartSplash";
-import OrderFlowWrapper from "@/components/OrderFlowWrapper";
-import MobileStickyCTA from "@/components/MobileStickyCTA";
+import SiteChrome from "@/components/SiteChrome";
 import { Analytics } from "@vercel/analytics/next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 import { headers } from "next/headers";
-import Footer from "@/components/Footer";
 import { ULAS_CONFIG } from "@/data/ulasConfig";
 import "./globals.css";
 
@@ -87,7 +83,7 @@ export const metadata = {
     follow: true,
   },
   other: {
-    "theme-color": "#0077B6",
+    "theme-color": "#0C96DF",
     "apple-mobile-web-app-capable": "yes",
     "apple-mobile-web-app-status-bar-style": "default",
   },
@@ -225,7 +221,7 @@ export default async function RootLayout({ children }) {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800;900&family=Caveat:wght@600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800;900&family=Caveat:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
           rel="stylesheet"
         />
         {process.env.NEXT_PUBLIC_GA4_ID && (
@@ -251,21 +247,14 @@ export default async function RootLayout({ children }) {
         />
       </head>
       <body
-        className="min-h-full flex flex-col bg-[#EBF4FA] text-[#1E2D3D] font-[var(--font-inter)]"
+        className="min-h-full flex flex-col bg-[#F4F9FB] text-[#2E3B44] font-[var(--font-inter)]"
         suppressHydrationWarning
       >
         <GoogleTagManager gtmId="GTM-PRHLP84Z" />
 
         <AppProvider>
-          <SmartSplash />
           <Analytics />
-          <Header />
-          <main className="flex-grow w-full max-w-5xl mx-auto flex flex-col relative">
-            {children}
-          </main>
-          <Footer />
-          <MobileStickyCTA />
-          <OrderFlowWrapper />
+          <SiteChrome>{children}</SiteChrome>
         </AppProvider>
       </body>
     </html>

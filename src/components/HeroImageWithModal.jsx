@@ -23,7 +23,7 @@ export default function HeroImageWithModal() {
           sizes="(max-width: 1024px) 100vw, 50vw"
           className="object-cover group-hover:scale-105 transition-transform duration-700"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#0E0804] via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[#082A3A] via-transparent to-transparent"></div>
 
         {/* Zoom hint overlay */}
         <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">

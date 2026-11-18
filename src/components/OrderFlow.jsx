@@ -74,15 +74,15 @@ export default function OrderFlow() {
           onClick={() => setIsCartOpen(true)}
           className={`fixed bottom-16 ${
             isRTL ? "left-4 sm:left-6" : "right-4 sm:right-6"
-          } z-[99990] flex items-center gap-2.5 bg-gradient-to-r from-[#006BA6] via-[#0088CC] to-[#1AA3E8] text-white ps-3 pe-4 py-2 rounded-2xl shadow-[0_10px_28px_rgba(7,29,43,0.45)] hover:scale-103 active:scale-95 transition-all duration-200 border-2 border-[#C5E1F5] cursor-pointer group ${
+          } z-[99990] flex items-center gap-2.5 bg-gradient-to-r from-[#082A3A] via-[#06384E] to-[#104760] text-white ps-3 pe-4 py-2 rounded-2xl shadow-[0_10px_28px_rgba(8, 42, 58,0.45)] hover:scale-103 active:scale-95 transition-all duration-200 border-2 border-[#D6EBF5] cursor-pointer group ${
             cartPulse ? "animate-bounce" : ""
           }`}
           aria-label={listTitle}
         >
           {/* Coral Icon Box with Count Badge */}
-          <div className="relative w-9 h-9 rounded-xl bg-[#0088CC] flex items-center justify-center text-white shadow-xs shrink-0 group-hover:bg-[#29ABE2] transition-colors">
+          <div className="relative w-9 h-9 rounded-xl bg-[#0C96DF] flex items-center justify-center text-white shadow-xs shrink-0 group-hover:bg-[#0C96DF] transition-colors">
             <ShoppingBag size={18} />
-            <span className="absolute -top-1.5 -end-1.5 min-w-[19px] h-[19px] px-1 rounded-full bg-[#F8FBFE] text-[#1E2D3D] text-[10px] font-black flex items-center justify-center border border-[#1E2D3D] shadow-2xs">
+            <span className="absolute -top-1.5 -end-1.5 min-w-[19px] h-[19px] px-1 rounded-full bg-[#F4F9FB] text-[#2E3B44] text-[10px] font-black flex items-center justify-center border border-[#2E3B44] shadow-2xs">
               {cartCount}
             </span>
           </div>
@@ -90,20 +90,20 @@ export default function OrderFlow() {
           {/* Label + Live Total */}
           <div className="flex flex-col items-start text-start leading-tight">
             <span
-              className="font-extrabold text-xs sm:text-[13px] text-[#F8FBFE] tracking-wide"
+              className="font-extrabold text-xs sm:text-[13px] text-[#F4F9FB] tracking-wide"
               style={{ fontFamily: "var(--font-cairo)" }}
             >
               {listTitle}
             </span>
             {cartCount > 0 && cartTotal != null ? (
               <span
-                className="text-xs font-black text-[#C5E1F5]"
+                className="text-xs font-black text-[#D6EBF5]"
                 style={{ fontFamily: "var(--font-inter)" }}
               >
                 {convertPrice(cartTotal)} {symbol}
               </span>
             ) : (
-              <span className="text-[10px] font-semibold text-[#C5E1F5]/85">
+              <span className="text-[10px] font-semibold text-[#D6EBF5]/85">
                 {lang === "ar" ? "أضف أطباقك" : "Liste Oluştur"}
               </span>
             )}
@@ -116,18 +116,18 @@ export default function OrderFlow() {
           ═══════════════════════════════════════════ */}
       {isCartOpen && (
         <div
-          className="fixed inset-0 z-[99998] flex items-end sm:items-stretch sm:justify-end bg-[#13202E]/80 backdrop-blur-sm modal-overlay"
+          className="fixed inset-0 z-[99998] flex items-end sm:items-stretch sm:justify-end bg-[#082A3A]/80 backdrop-blur-sm modal-overlay"
           onClick={() => setIsCartOpen(false)}
         >
           <div
             dir={isRTL ? "rtl" : "ltr"}
-            className="bg-[#EBF4FA] w-full sm:max-w-md sm:h-full max-h-[90vh] sm:max-h-full rounded-t-3xl sm:rounded-none overflow-hidden flex flex-col shadow-2xl relative border-t-2 sm:border-t-0 sm:border-s-2 border-[#C5E1F5]"
+            className="bg-[#E7F3F9] w-full sm:max-w-md sm:h-full max-h-[90vh] sm:max-h-full rounded-t-3xl sm:rounded-none overflow-hidden flex flex-col shadow-2xl relative border-t-2 sm:border-t-0 sm:border-s-2 border-[#D6EBF5]"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Coastal Navy Drawer Header */}
-            <div className="relative bg-gradient-to-r from-[#006BA6] via-[#0088CC] to-[#1AA3E8] text-white px-5 py-4 shrink-0 flex items-center justify-between border-b border-[#C5E1F5]/30">
+            <div className="relative bg-gradient-to-r from-[#082A3A] via-[#06384E] to-[#104760] text-white px-5 py-4 shrink-0 flex items-center justify-between border-b border-[#D6EBF5]/30">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl bg-[#0088CC] flex items-center justify-center text-white shadow-sm">
+                <div className="w-10 h-10 rounded-xl bg-[#0C96DF] flex items-center justify-center text-white shadow-sm">
                   <ShoppingBag size={20} />
                 </div>
                 <div className="text-start">
@@ -137,7 +137,7 @@ export default function OrderFlow() {
                   >
                     {listTitle} ({cartCount})
                   </h2>
-                  <span className="text-[11px] font-bold text-[#C5E1F5] mt-1 block">
+                  <span className="text-[11px] font-bold text-[#D6EBF5] mt-1 block">
                     Ulaş Balıkçılık • Cihangir &amp; Maslak 1453
                   </span>
                 </div>
@@ -146,17 +146,17 @@ export default function OrderFlow() {
               <button
                 onClick={() => setIsCartOpen(false)}
                 aria-label="Close basket"
-                className="w-9 h-9 rounded-xl bg-white/10 border border-white/25 flex items-center justify-center text-white hover:bg-[#0088CC] hover:border-[#0088CC] transition-colors cursor-pointer"
+                className="w-9 h-9 rounded-xl bg-white/10 border border-white/25 flex items-center justify-center text-white hover:bg-[#0C96DF] hover:border-[#0C96DF] transition-colors cursor-pointer"
               >
                 <X size={18} />
               </button>
             </div>
 
             {/* Waiter / Table Order Banner */}
-            <div className="bg-[#F8FBFE] border-b border-[#C5E1F5] px-4 py-2.5 flex items-center justify-center gap-2 text-center shrink-0">
-              <PiFishSimpleDuotone size={15} className="text-[#0077B6] shrink-0" />
+            <div className="bg-[#F4F9FB] border-b border-[#D6EBF5] px-4 py-2.5 flex items-center justify-center gap-2 text-center shrink-0">
+              <PiFishSimpleDuotone size={15} className="text-[#0C96DF] shrink-0" />
               <p
-                className="font-extrabold text-xs text-[#1E2D3D] leading-snug"
+                className="font-extrabold text-xs text-[#2E3B44] leading-snug"
                 style={{ fontFamily: "var(--font-cairo)" }}
               >
                 {waiterText}
@@ -166,14 +166,14 @@ export default function OrderFlow() {
             {/* Basket Items List */}
             <div className="flex-1 overflow-y-auto no-scrollbar px-3.5 sm:px-4 py-3.5 space-y-2.5">
               {cart.length === 0 ? (
-                <div className="flex flex-col items-center justify-center py-16 text-center bg-[#F8FBFE] rounded-2xl border border-[#C5E1F5] p-6">
-                  <div className="w-16 h-16 rounded-full bg-[#EBF4FA] border border-[#C5E1F5] flex items-center justify-center mb-3">
-                    <Utensils size={26} className="text-[#0077B6]" />
+                <div className="flex flex-col items-center justify-center py-16 text-center bg-[#F4F9FB] rounded-2xl border border-[#D6EBF5] p-6">
+                  <div className="w-16 h-16 rounded-full bg-[#E7F3F9] border border-[#D6EBF5] flex items-center justify-center mb-3">
+                    <Utensils size={26} className="text-[#0C96DF]" />
                   </div>
-                  <p className="text-[#1E2D3D] font-extrabold text-sm mb-1">
+                  <p className="text-[#2E3B44] font-extrabold text-sm mb-1">
                     {labels.empty || (lang === "ar" ? "سلتك فارغة حالياً" : "Sepetiniz şu an boş")}
                   </p>
-                  <p className="text-xs text-[#52667A]">
+                  <p className="text-xs text-[#53636E]">
                     {lang === "ar"
                       ? "أضف أطباقك المفضلة من القائمة باستخدام زر (+)"
                       : "Menüden (+) butonuna dokunarak lezzetleri ekleyebilirsiniz."}
@@ -192,11 +192,11 @@ export default function OrderFlow() {
                   return (
                     <div
                       key={item.id}
-                      className="flex items-center gap-3 p-3 rounded-2xl bg-[#F8FBFE] border border-[#C5E1F5] shadow-2xs hover:border-[#0077B6]/50 transition-colors"
+                      className="flex items-center gap-3 p-3 rounded-2xl bg-[#F4F9FB] border border-[#D6EBF5] shadow-2xs hover:border-[#90C6DF]/50 transition-colors"
                     >
                       {/* Ceramic Plate / Dish Thumbnail */}
                       {item.image ? (
-                        <div className="w-13 h-13 rounded-xl overflow-hidden shrink-0 relative bg-white border border-[#C5E1F5]">
+                        <div className="w-13 h-13 rounded-xl overflow-hidden shrink-0 relative bg-white border border-[#D6EBF5]">
                           <Image
                             src={item.image}
                             alt={name}
@@ -206,11 +206,11 @@ export default function OrderFlow() {
                           />
                         </div>
                       ) : (
-                        <div className="w-13 h-13 rounded-xl bg-gradient-to-br from-[#006BA6] to-[#0088CC] border border-[#C5E1F5] flex flex-col items-center justify-center shrink-0 text-[#F8FBFE]">
+                        <div className="w-13 h-13 rounded-xl bg-gradient-to-br from-[#104760] to-[#0C96DF] border border-[#D6EBF5] flex flex-col items-center justify-center shrink-0 text-[#F4F9FB]">
                           <CategoryIcon
                             id={item.category || "izgaralar"}
                             size={22}
-                            className="text-[#F8FBFE]"
+                            className="text-[#F4F9FB]"
                           />
                         </div>
                       )}
@@ -218,7 +218,7 @@ export default function OrderFlow() {
                       {/* Dish Name & Sea-Glass Price Pill */}
                       <div className="flex-1 min-w-0 text-start">
                         <p
-                          className="text-sm font-black text-[#1E2D3D] truncate"
+                          className="text-sm font-black text-[#2E3B44] truncate"
                           style={{ fontFamily: "var(--font-cairo)" }}
                         >
                           {name}
@@ -226,14 +226,14 @@ export default function OrderFlow() {
 
                         <div className="mt-1 flex items-center gap-2">
                           {pricesLoading && itemSubtotal == null ? (
-                            <span className="text-[11px] text-[#0077B6] animate-pulse">...</span>
+                            <span className="text-[11px] text-[#0C96DF] animate-pulse">...</span>
                           ) : itemSubtotal == null ? (
-                            <span className="inline-flex px-2 py-0.5 rounded-md bg-[#CFE3DF] text-[#1E2D3D] text-[11px] font-black">
+                            <span className="inline-flex px-2 py-0.5 rounded-md bg-[#D6EBF5] text-[#D15015] text-[11px] font-black">
                               — {symbol}
                             </span>
                           ) : (
                             <span
-                              className="inline-flex px-2.5 py-0.5 rounded-md bg-[#CFE3DF] text-[#1E2D3D] text-xs font-black"
+                              className="inline-flex px-2.5 py-0.5 rounded-md bg-[#D6EBF5] text-[#D15015] text-xs font-black"
                               style={{ fontFamily: "var(--font-inter)" }}
                             >
                               {convertPrice(itemSubtotal)} {symbol}
@@ -243,20 +243,20 @@ export default function OrderFlow() {
                       </div>
 
                       {/* Quantity Stepper (`- qty +`) */}
-                      <div className="flex items-center gap-1.5 shrink-0 bg-white rounded-xl p-1 border border-[#C5E1F5] shadow-2xs">
+                      <div className="flex items-center gap-1.5 shrink-0 bg-white rounded-xl p-1 border border-[#D6EBF5] shadow-2xs">
                         <button
                           onClick={() => removeFromCart(item.id)}
-                          className="w-7 h-7 rounded-lg bg-[#F8FBFE] flex items-center justify-center text-[#1E2D3D] hover:bg-[#0088CC] hover:text-white transition-colors cursor-pointer"
+                          className="w-7 h-7 rounded-lg bg-[#F4F9FB] flex items-center justify-center text-[#2E3B44] hover:bg-[#0C96DF] hover:text-white transition-colors cursor-pointer"
                           aria-label="Decrease quantity"
                         >
                           {item.qty === 1 ? <Trash2 size={13} /> : <Minus size={13} />}
                         </button>
-                        <span className="w-5 text-center text-xs font-black text-[#1E2D3D]">
+                        <span className="w-5 text-center text-xs font-black text-[#2E3B44]">
                           {item.qty}
                         </span>
                         <button
                           onClick={() => addToCart(item)}
-                          className="w-7 h-7 rounded-lg bg-[#0088CC] flex items-center justify-center text-white hover:bg-[#006DA3] transition-colors cursor-pointer"
+                          className="w-7 h-7 rounded-lg bg-[#0C96DF] flex items-center justify-center text-white hover:bg-[#104760] transition-colors cursor-pointer"
                           aria-label="Increase quantity"
                         >
                           <Plus size={13} />
@@ -270,14 +270,14 @@ export default function OrderFlow() {
 
             {/* Basket Footer — Total Summary & Branch Order Actions */}
             {cart.length > 0 && (
-              <div className="px-4 py-4 border-t border-[#C5E1F5] bg-[#F8FBFE] space-y-2.5 shrink-0">
+              <div className="px-4 py-4 border-t border-[#D6EBF5] bg-[#F4F9FB] space-y-2.5 shrink-0">
                 {/* Estimated Total Box */}
-                <div className="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-[#CFE3DF] border border-[#38B6FF]">
-                  <span className="text-xs sm:text-sm font-extrabold text-[#1E2D3D]">
+                <div className="flex items-center justify-between px-3.5 py-2.5 rounded-xl bg-[#D6EBF5] border border-[#90C6DF]">
+                  <span className="text-xs sm:text-sm font-extrabold text-[#2E3B44]">
                     {t.estimatedTotal || labels.total || "Tahmini Toplam:"}
                   </span>
                   <span
-                    className="text-base sm:text-lg font-black text-[#1E2D3D]"
+                    className="text-base sm:text-lg font-black text-[#D15015]"
                     style={{ fontFamily: "var(--font-inter)" }}
                   >
                     {cartTotal != null ? (
@@ -293,7 +293,7 @@ export default function OrderFlow() {
                 {/* Maslak 1453 Confirmed Phone Call Button */}
                 <a
                   href={maslakBranch.phoneHref}
-                  className="w-full py-3 px-4 rounded-xl bg-[#0088CC] hover:bg-[#006DA3] text-white font-extrabold text-xs sm:text-sm tracking-wide flex items-center justify-between transition-colors shadow-sm"
+                  className="w-full py-3 px-4 rounded-xl bg-[#0C96DF] hover:bg-[#104760] text-white font-extrabold text-xs sm:text-sm tracking-wide flex items-center justify-between transition-colors shadow-sm"
                 >
                   <span className="flex items-center gap-2">
                     <PhoneCall size={16} />
@@ -308,7 +308,7 @@ export default function OrderFlow() {
                 {cihangirBranch.phoneHref ? (
                   <a
                     href={cihangirBranch.phoneHref}
-                    className="w-full py-3 px-4 rounded-xl bg-[#0077B6] hover:bg-[#1E2D3D] text-white font-extrabold text-xs sm:text-sm tracking-wide flex items-center justify-between transition-colors shadow-sm"
+                    className="w-full py-3 px-4 rounded-xl bg-[#0C96DF] hover:bg-[#06384E] text-white font-extrabold text-xs sm:text-sm tracking-wide flex items-center justify-between transition-colors shadow-sm"
                   >
                     <span className="flex items-center gap-2">
                       <PhoneCall size={16} />
@@ -319,10 +319,10 @@ export default function OrderFlow() {
                     </span>
                   </a>
                 ) : (
-                  <div className="p-2.5 rounded-xl bg-white border border-dashed border-[#0077B6]/40 text-[11px] text-[#52667A] flex items-start gap-2 text-start">
-                    <Info size={14} className="text-[#0077B6] shrink-0 mt-0.5" />
+                  <div className="p-2.5 rounded-xl bg-white border border-dashed border-[#90C6DF]/40 text-[11px] text-[#53636E] flex items-start gap-2 text-start">
+                    <Info size={14} className="text-[#0C96DF] shrink-0 mt-0.5" />
                     <div className="leading-snug">
-                      <span className="font-bold text-[#1E2D3D] block">
+                      <span className="font-bold text-[#2E3B44] block">
                         {lang === "ar"
                           ? "فرع جيهانغير (بانتظار تأكيد الرقم النهائي):"
                           : lang === "tr"
@@ -339,13 +339,13 @@ export default function OrderFlow() {
 
                 {/* Clear Basket Action */}
                 <div className="flex items-center justify-between pt-1 px-1">
-                  <div className="flex items-center gap-1.5 text-[11px] font-semibold text-[#52667A]">
-                    <FishLineArt className="w-5 h-2.5 text-[#0077B6]" />
+                  <div className="flex items-center gap-1.5 text-[11px] font-semibold text-[#53636E]">
+                    <FishLineArt className="w-5 h-2.5 text-[#0C96DF]" />
                     <span>Ulaş Balıkçılık</span>
                   </div>
                   <button
                     onClick={clearCart}
-                    className="inline-flex items-center gap-1 text-xs text-[#0088CC] font-extrabold hover:underline cursor-pointer"
+                    className="inline-flex items-center gap-1 text-xs text-[#0C96DF] font-extrabold hover:underline cursor-pointer"
                   >
                     <Trash2 size={13} />
                     <span>{labels.clear || "Sepeti Temizle"}</span>

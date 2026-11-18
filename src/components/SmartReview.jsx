@@ -31,7 +31,7 @@ export default function SmartReview({ onClose }) {
   if (submitted && rating < 4) {
     return (
       <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
-        <div className="bg-[#111] border border-white/10 rounded-3xl p-6 max-w-sm w-full relative">
+        <div className="bg-[#082A3A] border border-white/10 rounded-3xl p-6 max-w-sm w-full relative">
           <button onClick={onClose} aria-label="Close modal" className="absolute top-4 end-4 text-gray-300 hover:text-white">
             <X size={20} />
           </button>
@@ -43,9 +43,9 @@ export default function SmartReview({ onClose }) {
             value={feedback}
             onChange={(e) => setFeedback(e.target.value)}
             placeholder="Tell us what happened..."
-            className="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-white focus:outline-none focus:border-[#D4AF37] h-32 resize-none mb-4"
+            className="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-white focus:outline-none focus:border-[#EE7B3F] h-32 resize-none mb-4"
           ></textarea>
-          <button onClick={onClose} className="w-full bg-gradient-to-r from-[#D4AF37] to-[#8a6b1c] text-black font-bold py-3 rounded-xl">
+          <button onClick={onClose} className="w-full bg-gradient-to-r from-[#EE7B3F] to-[#D15015] text-black font-bold py-3 rounded-xl">
             {t.submitFeedback}
           </button>
         </div>
@@ -56,11 +56,11 @@ export default function SmartReview({ onClose }) {
   if (submitted && rating >= 4) {
     return (
       <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
-        <div className="bg-[#111] border border-white/10 rounded-3xl p-6 max-w-sm w-full relative text-center">
+        <div className="bg-[#082A3A] border border-white/10 rounded-3xl p-6 max-w-sm w-full relative text-center">
           <button onClick={onClose} aria-label="Close modal" className="absolute top-4 end-4 text-gray-300 hover:text-white">
             <X size={20} />
           </button>
-          <div className="w-16 h-16 bg-[#D4AF37]/20 text-[#D4AF37] rounded-full flex items-center justify-center mx-auto mb-4">
+          <div className="w-16 h-16 bg-[#EE7B3F]/20 text-[#EE7B3F] rounded-full flex items-center justify-center mx-auto mb-4">
             <Star size={32} fill="currentColor" />
           </div>
           <h3 className="text-xl font-bold text-white mb-2">Thank you!</h3>
@@ -72,7 +72,7 @@ export default function SmartReview({ onClose }) {
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/80 backdrop-blur-sm p-4">
-      <div className="bg-[#111] border border-white/10 rounded-3xl p-8 max-w-sm w-full relative shadow-2xl">
+      <div className="bg-[#082A3A] border border-white/10 rounded-3xl p-8 max-w-sm w-full relative shadow-2xl">
         <button onClick={onClose} aria-label="Close modal" className="absolute top-4 end-4 text-gray-300 hover:text-white transition-colors">
           <X size={20} />
         </button>
@@ -95,7 +95,7 @@ export default function SmartReview({ onClose }) {
               <Star
                 size={40}
                 className={`transition-colors ${(hoverRating || rating) >= star
-                    ? "text-[#D4AF37]"
+                    ? "text-[#EE7B3F]"
                     : "text-white/10"
                   }`}
                 fill={(hoverRating || rating) >= star ? "currentColor" : "none"}
@@ -107,7 +107,7 @@ export default function SmartReview({ onClose }) {
         {rating > 0 && (
           <button
             onClick={handleSubmit}
-            className="w-full bg-gradient-to-r from-[#D4AF37] to-[#8a6b1c] text-black font-bold py-3 rounded-xl shadow-lg shadow-[#D4AF37]/20 hover:scale-[1.02] transition-transform animate-in fade-in slide-in-from-bottom-4"
+            className="w-full bg-gradient-to-r from-[#EE7B3F] to-[#D15015] text-black font-bold py-3 rounded-xl shadow-lg shadow-[#EE7B3F]/20 hover:scale-[1.02] transition-transform animate-in fade-in slide-in-from-bottom-4"
           >
             {rating >= 4 ? "Rate on Google Maps" : "Leave Feedback"}
           </button>

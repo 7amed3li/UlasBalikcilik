@@ -25,7 +25,7 @@ export default function SmartFilters({
       return (
         <FaAward
           size={14}
-          className={`shrink-0 ${isActive ? "text-white" : "text-[#1E2D3D]"}`}
+          className={`shrink-0 ${isActive ? "text-white" : "text-[#2E3B44]"}`}
         />
       );
     }
@@ -33,7 +33,7 @@ export default function SmartFilters({
       return (
         <FaPepperHot
           size={13}
-          className={`shrink-0 ${isActive ? "text-white" : "text-[#0088CC]"}`}
+          className={`shrink-0 ${isActive ? "text-white" : "text-[#0C96DF]"}`}
         />
       );
     }
@@ -41,14 +41,14 @@ export default function SmartFilters({
       return (
         <FaSeedling
           size={13}
-          className={`shrink-0 ${isActive ? "text-white" : "text-[#0077B6]"}`}
+          className={`shrink-0 ${isActive ? "text-white" : "text-[#0C96DF]"}`}
         />
       );
     }
     return (
       <FaLeaf
         size={13}
-        className={`shrink-0 ${isActive ? "text-white" : "text-[#0077B6]"}`}
+        className={`shrink-0 ${isActive ? "text-white" : "text-[#0C96DF]"}`}
       />
     );
   };
@@ -65,8 +65,8 @@ export default function SmartFilters({
               key={f.id}
               onClick={() => setActiveFilter(isActive ? null : f.id)}
               className={`shrink-0 flex items-center justify-center gap-2 px-4 sm:px-5 py-2 rounded-full text-xs sm:text-[13px] font-extrabold tracking-wide transition-all cursor-pointer border ${isActive
-                  ? "bg-gradient-to-r from-[#006BA6] to-[#0088CC] text-white border-[#1E2D3D] shadow-md"
-                  : "bg-[#F8FBFE] border-[#C5E1F5] text-[#1E2D3D] hover:border-[#0077B6] shadow-2xs"
+                  ? "bg-gradient-to-r from-[#104760] to-[#0C96DF] text-white border-[#2E3B44] shadow-md"
+                  : "bg-[#F4F9FB] border-[#D6EBF5] text-[#2E3B44] hover:border-[#0C96DF] shadow-2xs"
                 }`}
             >
               {renderIcon(f.icon, isActive)}
@@ -82,20 +82,20 @@ export default function SmartFilters({
         <div className="relative w-full sm:w-56 shrink-0">
           <TbSearch
             size={15}
-            className="absolute start-3.5 top-1/2 -translate-y-1/2 text-[#52667A] pointer-events-none"
+            className="absolute start-3.5 top-1/2 -translate-y-1/2 text-[#53636E] pointer-events-none"
           />
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder={t.searchPlaceholder || "Menüde ara..."}
-            className="w-full ps-9 pe-7 py-2 rounded-full bg-[#F8FBFE] border border-[#C5E1F5] text-xs font-bold text-[#1E2D3D] placeholder:text-[#52667A]/75 focus:outline-none focus:border-[#0077B6] shadow-2xs"
+            className="w-full ps-9 pe-7 py-2 rounded-full bg-[#F4F9FB] border border-[#D6EBF5] text-xs font-bold text-[#2E3B44] placeholder:text-[#53636E]/75 focus:outline-none focus:border-[#0C96DF] shadow-2xs"
           />
           {searchQuery && (
             <button
               type="button"
               onClick={() => setSearchQuery("")}
-              className="absolute end-2.5 top-1/2 -translate-y-1/2 text-[#52667A] hover:text-[#1E2D3D] cursor-pointer"
+              className="absolute end-2.5 top-1/2 -translate-y-1/2 text-[#53636E] hover:text-[#2E3B44] cursor-pointer"
               aria-label="Clear search"
             >
               <TbX size={14} />

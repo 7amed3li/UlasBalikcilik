@@ -27,7 +27,7 @@ function renderMessageText(text) {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="underline decoration-[#9C7A3F]/60 underline-offset-2 hover:text-[#9C7A3F] transition-colors font-medium"
+          className="underline decoration-[#0C96DF]/60 underline-offset-2 hover:text-[#0C96DF] transition-colors font-medium"
         >
           {part}
         </a>
@@ -209,7 +209,7 @@ export default function ChatWidget() {
       {!isOpen && (
         <button
           onClick={handleOpen}
-          className="flex items-center justify-center w-12 h-12 rounded-full bg-[#4E5F4C] text-white shadow-md hover:bg-[#3D4B3B] transition-colors focus:outline-none"
+          className="flex items-center justify-center w-12 h-12 rounded-full bg-[#06384E] text-white shadow-md hover:bg-[#082A3A] transition-colors focus:outline-none"
           aria-label="Open AI Concierge"
         >
           <MessageCircle className="w-6 h-6" />
@@ -219,7 +219,7 @@ export default function ChatWidget() {
       {/* Chat Window */}
       <div 
         ref={chatWindowRef}
-        className={`flex flex-col bg-[#F7F2E7] text-[#2B2620] border border-[#9C7A3F]/30 shadow-xl overflow-hidden transition-all duration-200 ease-out origin-bottom-right
+        className={`flex flex-col bg-[#F4F9FB] text-[#2E3B44] border border-[#90C6DF]/30 shadow-xl overflow-hidden transition-all duration-200 ease-out origin-bottom-right
           ${isOpen ? "opacity-100 scale-100 w-full h-full flex-1 sm:flex-none sm:h-[500px]" : "opacity-0 scale-95 h-0 pointer-events-none"}
           sm:w-[380px] sm:rounded-2xl
         `}
@@ -229,14 +229,14 @@ export default function ChatWidget() {
         aria-label="AI Concierge Chat"
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-4 py-3 border-b border-[#9C7A3F]/20 bg-[#EDE3CE]">
+        <div className="flex items-center justify-between px-4 py-3 border-b border-[#90C6DF]/20 bg-[#E7F3F9]">
           <div className="flex items-center gap-2">
-            <UtensilsCrossed className="w-5 h-5 text-[#4E5F4C]" />
-            <h3 className="font-bold text-[#2B2620]">AI Concierge</h3>
+            <UtensilsCrossed className="w-5 h-5 text-[#06384E]" />
+            <h3 className="font-bold text-[#2E3B44]">AI Concierge</h3>
           </div>
           <button
             onClick={() => setIsOpen(false)}
-            className="p-1 rounded-md text-[#2B2620] hover:text-[#9C7A3F] transition-colors focus:outline-none"
+            className="p-1 rounded-md text-[#2E3B44] hover:text-[#0C96DF] transition-colors focus:outline-none"
             aria-label="Close chat"
           >
             <X className="w-5 h-5" />
@@ -244,15 +244,15 @@ export default function ChatWidget() {
         </div>
 
         {/* WhatsApp Fallback Link */}
-        <div className="px-4 py-2 bg-[#F7F2E7] text-xs text-center border-b border-[#9C7A3F]/10 text-[#7A7364]">
-          <a href="https://wa.me/902122513696" target="_blank" rel="noopener noreferrer" className="hover:text-[#2B2620] transition-colors underline decoration-[#9C7A3F]/50 underline-offset-2 font-medium">
+        <div className="px-4 py-2 bg-[#F4F9FB] text-xs text-center border-b border-[#90C6DF]/10 text-[#53636E]">
+          <a href="https://wa.me/902122513696" target="_blank" rel="noopener noreferrer" className="hover:text-[#2E3B44] transition-colors underline decoration-[#0C96DF]/50 underline-offset-2 font-medium">
             {strings.contact}
           </a>
         </div>
 
         {/* Messages Area */}
         <div 
-          className="flex-1 overflow-y-auto p-4 space-y-4 no-scrollbar scroll-smooth bg-[#EDE3CE]"
+          className="flex-1 overflow-y-auto p-4 space-y-4 no-scrollbar scroll-smooth bg-[#E7F3F9]"
           aria-live="polite"
         >
           {messages.map((msg, idx) => (
@@ -263,8 +263,8 @@ export default function ChatWidget() {
               <div 
                 className={`max-w-[85%] px-4 py-2 rounded-2xl ${
                   msg.role === "user" 
-                    ? "bg-[#4E5F4C] text-[#EAF0E6] rounded-tr-sm" 
-                    : "bg-[#F7F2E7] text-[#2B2620] border border-[#9C7A3F]/20 rounded-tl-sm"
+                    ? "bg-[#06384E] text-[#F4F9FB] rounded-tr-sm" 
+                    : "bg-[#F4F9FB] text-[#2E3B44] border border-[#90C6DF]/20 rounded-tl-sm"
                 }`}
               >
                 <p className="text-sm leading-relaxed whitespace-pre-wrap font-medium">{renderMessageText(msg.text)}</p>
@@ -275,10 +275,10 @@ export default function ChatWidget() {
           {/* Typing Indicator */}
           {isLoading && (
             <div className="flex justify-start animate-fadeIn">
-              <div className="bg-[#F7F2E7] border border-[#9C7A3F]/20 text-[#2B2620] px-4 py-3 rounded-2xl rounded-tl-sm flex gap-1 items-center h-10">
-                <span className="w-1.5 h-1.5 bg-[#9C7A3F] rounded-full animate-bounce" style={{ animationDelay: "0ms" }}></span>
-                <span className="w-1.5 h-1.5 bg-[#9C7A3F] rounded-full animate-bounce" style={{ animationDelay: "150ms" }}></span>
-                <span className="w-1.5 h-1.5 bg-[#9C7A3F] rounded-full animate-bounce" style={{ animationDelay: "300ms" }}></span>
+              <div className="bg-[#F4F9FB] border border-[#90C6DF]/20 text-[#2E3B44] px-4 py-3 rounded-2xl rounded-tl-sm flex gap-1 items-center h-10">
+                <span className="w-1.5 h-1.5 bg-[#0C96DF] rounded-full animate-bounce" style={{ animationDelay: "0ms" }}></span>
+                <span className="w-1.5 h-1.5 bg-[#0C96DF] rounded-full animate-bounce" style={{ animationDelay: "150ms" }}></span>
+                <span className="w-1.5 h-1.5 bg-[#0C96DF] rounded-full animate-bounce" style={{ animationDelay: "300ms" }}></span>
                 <span className="sr-only">{strings.loading}</span>
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function ChatWidget() {
         </div>
 
         {/* Input Area */}
-        <div className="p-3 bg-[#FAF7F0] border-t border-[#9C7A3F]/20 shrink-0" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
+        <div className="p-3 bg-[#F4F9FB] border-t border-[#90C6DF]/20 shrink-0" style={{ paddingBottom: 'max(0.75rem, env(safe-area-inset-bottom))' }}>
           <form onSubmit={handleSubmit} className="relative flex items-center">
             <input
               ref={inputRef}
@@ -296,7 +296,7 @@ export default function ChatWidget() {
               value={input}
               onChange={(e) => setInput(e.target.value)}
               placeholder={strings.placeholder}
-              className={`w-full bg-[#EDE3CE] text-[#2B2620] placeholder:text-[#7A7364] border border-[#9C7A3F]/30 rounded-full py-2.5 outline-none focus:border-[#9C7A3F] focus:ring-1 focus:ring-[#9C7A3F] transition-colors
+              className={`w-full bg-[#E7F3F9] text-[#2E3B44] placeholder:text-[#53636E] border border-[#90C6DF]/30 rounded-full py-2.5 outline-none focus:border-[#0C96DF] focus:ring-1 focus:ring-[#0C96DF] transition-colors
                 ${isRTL ? "pr-4 pl-12" : "pl-4 pr-12"}
               `}
               disabled={isLoading}
@@ -305,7 +305,7 @@ export default function ChatWidget() {
             <button
               type="submit"
               disabled={!input.trim() || isLoading}
-              className={`absolute top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-[#4E5F4C] text-[#EAF0E6] disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#3D4B3B] transition-colors
+              className={`absolute top-1/2 -translate-y-1/2 p-1.5 rounded-full bg-[#06384E] text-[#F4F9FB] disabled:opacity-50 disabled:cursor-not-allowed hover:bg-[#082A3A] transition-colors
                 ${isRTL ? "left-2" : "right-2"}
               `}
               aria-label={strings.send}
