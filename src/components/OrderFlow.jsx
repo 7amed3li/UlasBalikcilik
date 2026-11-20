@@ -74,7 +74,7 @@ export default function OrderFlow() {
           onClick={() => setIsCartOpen(true)}
           className={`fixed bottom-16 ${
             isRTL ? "left-4 sm:left-6" : "right-4 sm:right-6"
-          } z-[99990] flex items-center gap-2.5 bg-gradient-to-r from-[#082A3A] via-[#06384E] to-[#104760] text-white ps-3 pe-4 py-2 rounded-2xl shadow-[0_10px_28px_rgba(8, 42, 58,0.45)] hover:scale-103 active:scale-95 transition-all duration-200 border-2 border-[#D6EBF5] cursor-pointer group ${
+          } z-[99990] flex items-center gap-2.5 bg-[#06384E] text-white ps-3 pe-4 py-2 rounded-2xl shadow-[0_10px_28px_rgba(8, 42, 58,0.45)] hover:scale-103 active:scale-95 transition-all duration-200 border-2 border-[#D6EBF5] cursor-pointer group ${
             cartPulse ? "animate-bounce" : ""
           }`}
           aria-label={listTitle}
@@ -125,7 +125,7 @@ export default function OrderFlow() {
             onClick={(e) => e.stopPropagation()}
           >
             {/* Coastal Navy Drawer Header */}
-            <div className="relative bg-gradient-to-r from-[#082A3A] via-[#06384E] to-[#104760] text-white px-5 py-4 shrink-0 flex items-center justify-between border-b border-[#D6EBF5]/30">
+            <div className="relative bg-[#06384E] text-white px-5 py-4 shrink-0 flex items-center justify-between border-b border-[#D6EBF5]/30">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 rounded-xl bg-[#0C96DF] flex items-center justify-center text-white shadow-sm">
                   <ShoppingBag size={20} />
@@ -206,7 +206,7 @@ export default function OrderFlow() {
                           />
                         </div>
                       ) : (
-                        <div className="w-13 h-13 rounded-xl bg-gradient-to-br from-[#104760] to-[#0C96DF] border border-[#D6EBF5] flex flex-col items-center justify-center shrink-0 text-[#F4F9FB]">
+                        <div className="w-13 h-13 rounded-xl bg-[#06384E] border border-[#D6EBF5] flex flex-col items-center justify-center shrink-0 text-[#F4F9FB]">
                           <CategoryIcon
                             id={item.category || "izgaralar"}
                             size={22}

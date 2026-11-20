@@ -138,7 +138,7 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
         {/* Left Dish Image / Ceramic Plate Slot */}
         <div
           className={`${isVertical ? "w-full aspect-[4/3]" : "w-[136px] sm:w-[162px] shrink-0"
-            } relative overflow-hidden bg-gradient-to-br from-[#06384E] via-[#06384E] to-[#0C96DF] z-10 cursor-pointer flex flex-col items-center justify-center p-2.5`}
+            } relative overflow-hidden bg-[#06384E] z-10 cursor-pointer flex flex-col items-center justify-center p-2.5`}
           onClick={() => setIsModalOpen(true)}
         >
           {item.image ? (
@@ -311,7 +311,7 @@ export default function FoodCard({ item, categoryId = "izgaralar", isVertical = 
                   </button>
                 </div>
               ) : (
-                <div className="w-full h-44 shrink-0 relative bg-gradient-to-br from-[#082A3A] via-[#06384E] to-[#104760] flex flex-col items-center justify-center p-4 text-center">
+                <div className="w-full h-44 shrink-0 relative bg-[#06384E] flex flex-col items-center justify-center p-4 text-center">
                   <div className="w-16 h-16 rounded-2xl bg-white/10 border border-[#D6EBF5]/30 flex items-center justify-center text-[#F4F9FB] mb-2">
                     <CategoryIcon id={categoryId} size={36} className="text-[#F4F9FB]" />
                   </div>

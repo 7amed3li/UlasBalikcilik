@@ -162,7 +162,7 @@ function FeaturedDishesShowcase({ onExplore }) {
               >
                 {/* Ceramic Plate Circle Frame */}
                 <div className="relative w-[76px] h-[76px] sm:w-[88px] sm:h-[88px] rounded-full p-1 bg-white border border-[#D6EBF5] shadow-md group-hover:border-[#0C96DF] transition-all">
-                  <div className="relative w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-[#06384E] via-[#0C96DF] to-[#06384E] border border-[#E7F3F9] flex flex-col items-center justify-center">
+                  <div className="relative w-full h-full rounded-full overflow-hidden bg-[#06384E] border border-[#E7F3F9] flex flex-col items-center justify-center">
                     {itemImage ? (
                       <Image
                         src={itemImage}
@@ -258,7 +258,7 @@ function MenuCategoryBar({ categories, activeCategory, setActiveCategory }) {
                 onClick={() => setActiveCategory(cat.id)}
                 className={`relative shrink-0 flex flex-col items-center justify-center gap-1 min-w-[74px] sm:min-w-[96px] py-2.5 px-2.5 rounded-xl transition-all duration-200 cursor-pointer ${
                   isActive
-                    ? "bg-gradient-to-b from-[#0C96DF] to-[#104760] text-white shadow-sm"
+                    ? "bg-[#06384E] text-white shadow-sm"
                     : "bg-transparent text-[#2E3B44] hover:bg-[#E7F3F9]/60"
                 }`}
               >

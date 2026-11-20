@@ -45,7 +45,7 @@ export default function SmartReview({ onClose }) {
             placeholder="Tell us what happened..."
             className="w-full bg-white/5 border border-white/10 rounded-xl p-3 text-white focus:outline-none focus:border-[#EE7B3F] h-32 resize-none mb-4"
           ></textarea>
-          <button onClick={onClose} className="w-full bg-gradient-to-r from-[#EE7B3F] to-[#D15015] text-black font-bold py-3 rounded-xl">
+          <button onClick={onClose} className="w-full bg-[#EE7B3F] hover:bg-[#D15015] text-black font-bold py-3 rounded-xl">
             {t.submitFeedback}
           </button>
         </div>
@@ -107,7 +107,7 @@ export default function SmartReview({ onClose }) {
         {rating > 0 && (
           <button
             onClick={handleSubmit}
-            className="w-full bg-gradient-to-r from-[#EE7B3F] to-[#D15015] text-black font-bold py-3 rounded-xl shadow-lg shadow-[#EE7B3F]/20 hover:scale-[1.02] transition-transform animate-in fade-in slide-in-from-bottom-4"
+            className="w-full bg-[#EE7B3F] hover:bg-[#D15015] text-black font-bold py-3 rounded-xl shadow-lg shadow-[#EE7B3F]/20 hover:scale-[1.02] transition-transform animate-in fade-in slide-in-from-bottom-4"
           >
             {rating >= 4 ? "Rate on Google Maps" : "Leave Feedback"}
           </button>

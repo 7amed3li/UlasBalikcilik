@@ -206,7 +206,7 @@ export default function DishModal({
                 </button>
               </div>
             ) : (
-              <div className="w-full h-44 shrink-0 relative bg-gradient-to-br from-[#082A3A] via-[#06384E] to-[#104760] flex flex-col items-center justify-center p-4 text-center">
+              <div className="w-full h-44 shrink-0 relative bg-[#06384E] flex flex-col items-center justify-center p-4 text-center">
                 <div className="w-16 h-16 rounded-2xl bg-white/10 border border-[#D6EBF5]/30 flex items-center justify-center text-[#F4F9FB] mb-2">
                   <CategoryIcon
                     id={item?.categoryId || "izgaralar"}

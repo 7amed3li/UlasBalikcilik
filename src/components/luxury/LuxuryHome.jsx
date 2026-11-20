@@ -185,55 +185,75 @@ function Hero() {
   }, []);
 
   return (
-    <section className="relative flex min-h-[calc(100vh-110px)] items-center justify-center overflow-hidden text-center" style={{ background: C.sea }}>
-      <div ref={imgRef} className="absolute inset-0 will-change-transform" style={{ transform: "scale(1.08)" }}>
+    <section
+      className="relative flex min-h-[85vh] md:min-h-[calc(100vh-110px)] items-end md:items-center justify-center overflow-hidden text-center"
+      style={{ background: C.sea }}
+    >
+      <div ref={imgRef} className="absolute inset-0 will-change-transform">
         <Image
-          src="/images/ulas-balik-restaurant-hero.webp"
-          alt="Ulaş Balıkçılık sofrası"
+          src="/images/ulas-hero-mobile-indoor.webp"
+          alt="Ulaş Balıkçılık — Izgara Levrek ve Hamsi Tava"
           fill
           priority
-         
           sizes="100vw"
-          style={{ objectFit: "cover" }}
+          className="md:hidden"
+          style={{ objectFit: "cover", objectPosition: "center top" }}
+        />
+        <Image
+          src="/images/ulas-hero-desktop-indoor.webp"
+          alt="Ulaş Balıkçılık — Izgara Levrek ve Hamsi Tava"
+          fill
+          priority
+          sizes="100vw"
+          className="hidden md:block"
+          style={{ objectFit: "cover", objectPosition: "center" }}
         />
       </div>
-      <div className="absolute inset-0" style={{ background: "linear-gradient(180deg, rgba(8,42,58,0.92) 0%, rgba(6,56,78,0.80) 50%, rgba(8,42,58,0.95) 100%)" }} />
 
-      <div className="relative z-10 mx-auto max-w-6xl px-6 py-24">
-        <p className="lux-kicker mb-8" style={{ color: C.tint1 }}>
+      {/* Light top scrim so the food stays bright & visible, deeper lower scrim for crisp text contrast */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(6,56,78,0.12) 0%, rgba(6,56,78,0.28) 42%, rgba(6,56,78,0.82) 72%, rgba(8,42,58,0.94) 100%)",
+        }}
+      />
+
+      <div className="relative z-10 mx-auto w-full max-w-6xl px-5 pt-48 pb-24 sm:px-6 md:py-24">
+        <p className="lux-kicker text-[10px] sm:text-[11px] mb-4 md:mb-8" style={{ color: C.tint1 }}>
           ULAŞ BALIKÇILIK — CİHANGİR &amp; MASLAK 1453
         </p>
-        <h1 className="lux-serif text-[clamp(3.2rem,9.5vw,8.5rem)] leading-[0.95] tracking-tight text-white">
+        <h1 className="lux-serif text-[clamp(2.6rem,11vw,8rem)] leading-[0.96] tracking-tight text-white drop-shadow-sm">
           Karadeniz&apos;in
           <br />
           <em className="font-normal italic">Bereketi</em> Soframızda
         </h1>
-        <div className="mx-auto mt-12 flex items-center justify-center gap-4">
-          <span className="h-px w-10" style={{ background: C.amber }} />
-          <p className="lux-sans text-sm tracking-[0.12em]" style={{ color: C.amber }}>
+        <div className="mx-auto mt-6 md:mt-10 flex items-center justify-center gap-3 md:gap-4">
+          <span className="h-px w-8 md:w-10" style={{ background: C.amber }} />
+          <p className="lux-sans text-xs sm:text-sm tracking-[0.12em]" style={{ color: C.amber }}>
             Günün Avı: Hamsi Tava
           </p>
-          <span className="h-px w-10" style={{ background: C.amber }} />
+          <span className="h-px w-8 md:w-10" style={{ background: C.amber }} />
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+        <div className="mt-8 md:mt-10 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 max-w-sm sm:max-w-none mx-auto">
           <Link
             href="/menu"
-            className="lux-sans inline-flex min-w-[210px] items-center justify-center px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-white bg-[#0C96DF] hover:bg-[#104760] transition-colors duration-300"
+            className="lux-sans inline-flex w-full sm:w-auto sm:min-w-[210px] min-h-[46px] items-center justify-center px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-white bg-[#0C96DF] hover:bg-[#104760] transition-colors duration-300 shadow-lg"
           >
             Menüyü Keşfet
           </Link>
           <button
             type="button"
             onClick={() => setResOpen(true)}
-            className="lux-sans inline-flex min-w-[210px] items-center justify-center px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-[#F4F9FB] border border-[#F4F9FB]/40 hover:border-[#EE7B3F] hover:text-[#EE7B3F] transition-colors duration-300 cursor-pointer"
+            className="lux-sans inline-flex w-full sm:w-auto sm:min-w-[210px] min-h-[46px] items-center justify-center px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-[#F4F9FB] bg-[#06384E]/55 backdrop-blur-xs border border-[#F4F9FB]/50 hover:border-[#EE7B3F] hover:text-[#EE7B3F] transition-colors duration-300 cursor-pointer"
           >
             Rezervasyon Yap
           </button>
         </div>
       </div>
 
-      <a href="#manifesto" aria-label="Aşağı kaydır" className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2">
+      <a href="#manifesto" aria-label="Aşağı kaydır" className="hidden md:block absolute bottom-8 left-1/2 z-10 -translate-x-1/2">
         <span className="lux-cue block h-12 w-px" style={{ background: C.tint1 }} />
       </a>
       <ReservationModal isOpen={resOpen} onClose={() => setResOpen(false)} />
@@ -243,7 +263,7 @@ function Hero() {
 
 function Manifesto() {
   return (
-    <section id="manifesto" className="flex min-h-screen items-center justify-center px-6 py-24 text-center" style={{ background: C.foam }}>
+    <section id="manifesto" className="flex min-h-[58vh] md:min-h-screen items-center justify-center px-6 py-16 md:py-24 text-center" style={{ background: C.foam }}>
       <div className="mx-auto max-w-4xl">
         <Reveal>
           <p className="lux-serif text-[clamp(2rem,5vw,4rem)] leading-[1.15]" style={{ color: C.ink }}>
@@ -264,9 +284,9 @@ function Manifesto() {
 
 function Signature() {
   return (
-    <section id="imza" className="px-6 py-28 sm:px-10 sm:py-40" style={{ background: C.foam }}>
+    <section id="imza" className="px-5 py-16 sm:px-10 md:py-36" style={{ background: C.foam }}>
       <div className="mx-auto max-w-7xl">
-        <Reveal className="mb-20 text-center sm:mb-28">
+        <Reveal className="mb-12 text-center md:mb-24">
           <p className="lux-kicker mb-5" style={{ color: C.azure }}>İMZA LEZZETLER</p>
           <h2 className="lux-serif text-5xl sm:text-7xl" style={{ color: C.ink }}>Sofranın imzası</h2>
         </Reveal>
@@ -425,7 +445,7 @@ function Branches() {
 
 function GuestVoice() {
   return (
-    <section className="flex min-h-[80vh] items-center justify-center px-6 py-28 text-center" style={{ background: C.foam }}>
+    <section className="flex min-h-[55vh] md:min-h-[80vh] items-center justify-center px-6 py-16 md:py-28 text-center" style={{ background: C.foam }}>
       <Reveal className="mx-auto max-w-5xl">
         <blockquote className="lux-serif text-[clamp(2rem,4.8vw,4.2rem)] italic leading-[1.2]" style={{ color: C.ink }}>
           “Hamsi tavası sanki sabah denizdeydi; çıtır, sıcak ve tertemiz.”

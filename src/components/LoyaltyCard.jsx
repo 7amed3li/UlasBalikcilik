@@ -55,7 +55,7 @@ export default function LoyaltyCard() {
             </button>
 
             <div className="text-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-tr from-[#EE7B3F] to-[#D15015] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-[#EE7B3F]/20">
+              <div className="w-16 h-16 bg-[#EE7B3F] hover:bg-[#D15015] rounded-full flex items-center justify-center mx-auto mb-4 shadow-lg shadow-[#EE7B3F]/20">
                 <Gift size={32} className="text-black" />
               </div>
               <h2 className="text-2xl font-bold text-white mb-2">{t.loyalty}</h2>
@@ -83,7 +83,7 @@ export default function LoyaltyCard() {
             </div>
 
             {visits >= 10 && (
-              <button className="w-full bg-gradient-to-r from-[#EE7B3F] to-[#D15015] text-black font-bold py-3 rounded-xl shadow-lg mb-3">
+              <button className="w-full bg-[#EE7B3F] hover:bg-[#D15015] text-black font-bold py-3 rounded-xl shadow-lg mb-3">
                 Claim Reward
               </button>
             )}

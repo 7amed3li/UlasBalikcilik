@@ -30,7 +30,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-[#E7F3F9] text-[#2E3B44] pt-7 pb-20">
       <div className="max-w-4xl mx-auto px-3 sm:px-5 space-y-6">
         {/* Header Card */}
-        <section className="rounded-3xl bg-gradient-to-r from-[#082A3A] via-[#06384E] to-[#104760] text-white p-6 sm:p-8 text-center border border-[#D6EBF5]/30 shadow-md">
+        <section className="rounded-3xl bg-[#06384E] text-white p-6 sm:p-8 text-center border border-[#D6EBF5]/30 shadow-md">
           <div className="relative w-32 h-20 mx-auto mb-3 rounded-2xl bg-white p-2 border border-[#D6EBF5] shadow-xs">
             <Image
               src="/ulas-logo.webp"
@@ -220,7 +220,7 @@ export default function ContactPage() {
 
           <div className="bg-[#F4F9FB] border border-[#D6EBF5] rounded-2xl p-5 flex items-center justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-[#104760] to-[#0C96DF] text-white flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-xl bg-[#06384E] text-white flex items-center justify-center shrink-0">
                 <FaInstagram size={20} />
               </div>
               <div>

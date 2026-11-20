@@ -91,7 +91,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#F4F9FB] text-[#2E3B44] pb-20">
       {/* 1. HERO SECTION */}
       <section className="relative pt-5 pb-4 px-3 sm:px-5 max-w-5xl mx-auto">
-        <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#082A3A] via-[#06384E] to-[#104760] text-white border border-[#D6EBF5]/50 shadow-2xl">
+        <div className="relative overflow-hidden rounded-3xl bg-[#06384E] text-white border border-[#D6EBF5]/50 shadow-2xl">
           {/* Background Seafood Table Photography */}
           <div className="absolute inset-0 z-0">
             <Image
@@ -329,7 +329,7 @@ export default function Home() {
                 >
                   <Link href={`${prefix}/dish/${item.id}`} className="w-full flex flex-col items-center">
                     <div className="relative w-20 h-20 sm:w-24 sm:h-24 rounded-full p-1 bg-white border border-[#D6EBF5] shadow-md mb-2.5 flex items-center justify-center group-hover:border-[#0C96DF] transition-all">
-                      <div className="w-full h-full rounded-full bg-gradient-to-br from-[#082A3A] via-[#06384E] to-[#104760] border border-[#E7F3F9] flex flex-col items-center justify-center relative overflow-hidden">
+                      <div className="w-full h-full rounded-full bg-[#06384E] border border-[#E7F3F9] flex flex-col items-center justify-center relative overflow-hidden">
                         {item.image ? (
                           <Image
                             src={item.image}
@@ -426,7 +426,7 @@ export default function Home() {
               >
                 <div>
                   <div className="flex items-center justify-between gap-2 mb-3">
-                    <div className="w-11 h-11 rounded-xl bg-gradient-to-b from-[#0C96DF] to-[#104760] text-white flex items-center justify-center shadow-2xs group-hover:scale-105 transition-transform">
+                    <div className="w-11 h-11 rounded-xl bg-[#06384E] text-white flex items-center justify-center shadow-2xs group-hover:scale-105 transition-transform">
                       <CategoryIcon id={cat.id} size={24} className="text-white" />
                     </div>
                     <span className="px-2.5 py-0.5 rounded-full bg-[#E7F3F9] text-[#0C96DF] text-[11px] font-black">
@@ -482,7 +482,7 @@ export default function Home() {
         <div className="mt-5 text-center">
           <Link
             href={`${prefix}/menu`}
-            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-gradient-to-r from-[#104760] to-[#0C96DF] hover:from-[#0C96DF] hover:to-[#06384E] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-md transition-all"
+            className="inline-flex items-center gap-2 px-7 py-3.5 rounded-2xl bg-[#0C96DF] hover:bg-[#104760] text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-md transition-all"
             style={{ fontFamily: "var(--font-cairo)" }}
           >
             <Utensils size={16} className="text-[#0C96DF]" />

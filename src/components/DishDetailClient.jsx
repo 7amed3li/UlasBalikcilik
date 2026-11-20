@@ -122,7 +122,7 @@ export default function DishDetailClient({ itemId, livePrice }) {
               />
             </div>
           ) : (
-            <div className="w-full md:w-2/5 min-h-[240px] bg-gradient-to-br from-[#082A3A] via-[#06384E] to-[#104760] flex flex-col items-center justify-center p-8 text-[#F4F9FB] relative overflow-hidden">
+            <div className="w-full md:w-2/5 min-h-[240px] bg-[#06384E] flex flex-col items-center justify-center p-8 text-[#F4F9FB] relative overflow-hidden">
               <div className="w-24 h-24 rounded-full bg-white/10 border border-[#90C6DF]/40 flex items-center justify-center mb-3 shadow-inner">
                 <CategoryIcon
                   id={categoryData?.id || "izgaralar"}
