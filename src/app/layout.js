@@ -4,8 +4,23 @@ import { Analytics } from "@vercel/analytics/next";
 import { GoogleTagManager } from "@next/third-parties/google";
 import Script from "next/script";
 import { headers } from "next/headers";
+import {
+  Alexandria,
+  Caveat,
+  Cormorant_Garamond,
+  Manrope,
+  Outfit,
+  Plus_Jakarta_Sans,
+} from "next/font/google";
 import { ULAS_CONFIG } from "@/data/ulasConfig";
 import "./globals.css";
+
+const outfit = Outfit({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: "--font-outfit", display: "swap" });
+const jakarta = Plus_Jakarta_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700", "800"], variable: "--font-jakarta", display: "swap" });
+const alexandria = Alexandria({ subsets: ["arabic", "latin"], weight: ["400", "500", "600", "700", "800", "900"], variable: "--font-alexandria", display: "swap" });
+const caveat = Caveat({ subsets: ["latin"], weight: ["600", "700"], variable: "--font-caveat", display: "swap" });
+const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["400", "500", "600"], style: ["normal", "italic"], variable: "--font-cormorant", display: "swap" });
+const manrope = Manrope({ subsets: ["latin"], weight: ["400", "500", "600", "700"], variable: "--font-manrope", display: "swap" });
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.ulasbalikcilik.com";
 
@@ -64,7 +79,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "/ulas-logo.jpg",
+        url: "/ulas-logo.webp",
         width: 1024,
         height: 675,
         alt: "Ulaş Balıkçılık — Fish Restaurant Logo",
@@ -76,7 +91,7 @@ export const metadata = {
     title: "Ulaş Balıkçılık | Cihangir & Maslak 1453",
     description:
       "Günlük taze Karadeniz balıkları, ızgaralar, tavalar ve mezeler. Dijital menümüzü inceleyin.",
-    images: ["/ulas-logo.jpg"],
+    images: ["/ulas-logo.webp"],
   },
   robots: {
     index: true,
@@ -106,13 +121,13 @@ const globalSchemaGraph = {
       logo: {
         "@type": "ImageObject",
         "@id": `${siteUrl}/#logo`,
-        url: `${siteUrl}/ulas-logo.jpg`,
-        contentUrl: `${siteUrl}/ulas-logo.jpg`,
+        url: `${siteUrl}/ulas-logo.webp`,
+        contentUrl: `${siteUrl}/ulas-logo.webp`,
         caption: "Ulaş Balıkçılık — Fish Restaurant Logo",
         width: 1024,
         height: 675,
       },
-      image: [`${siteUrl}/ulas-logo.jpg`],
+      image: [`${siteUrl}/ulas-logo.webp`],
       address: {
         "@type": "PostalAddress",
         streetAddress: "Kuloğlu, Liva Sk. No: 15/A",
@@ -214,16 +229,10 @@ export default async function RootLayout({ children }) {
       lang={locale}
       dir={dir}
       suppressHydrationWarning
-      className="h-full antialiased"
+      className={`h-full antialiased ${outfit.variable} ${jakarta.variable} ${alexandria.variable} ${caveat.variable} ${cormorant.variable} ${manrope.variable}`}
       data-scroll-behavior="smooth"
     >
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800;900&family=Caveat:wght@600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
         {process.env.NEXT_PUBLIC_GA4_ID && (
           <>
             <Script

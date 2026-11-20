@@ -108,7 +108,7 @@ export default function Header() {
 
       {/* Main Header Content */}
       <div className="relative max-w-5xl mx-auto px-3 sm:px-5 pt-2.5 pb-3">
-        {/* Top Row: Official Ulaş Balık Logo (`/ulas-logo.jpg`) + ULAŞ BALIKÇILIK | Controls */}
+        {/* Top Row: Official Ulaş Balık Logo (`/ulas-logo.webp`) + ULAŞ BALIKÇILIK | Controls */}
         <div className="flex items-center justify-between gap-2 relative z-20">
           {/* Official Restaurant Logo Icon + Brand Name */}
           <Link
@@ -117,11 +117,11 @@ export default function Header() {
           >
             <div className="relative w-12 h-10 sm:w-14 sm:h-11 shrink-0 rounded-xl bg-white border border-white/50 shadow-md overflow-hidden flex items-center justify-center p-1.5">
               <Image
-                src="/ulas-fish-icon.png"
+                src="/ulas-fish-icon.webp"
                 alt="Ulaş Balıkçılık"
                 fill
                 priority
-                unoptimized={true}
+               
                 style={{ objectFit: "contain", padding: "2px" }}
                 className="transition-transform duration-200 group-hover:scale-105"
               />

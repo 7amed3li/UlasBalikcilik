@@ -25,7 +25,7 @@ export const metadata = {
     siteName: "Ulaş Balıkçılık",
     images: [
       {
-        url: "/ulas-logo.jpg",
+        url: "/ulas-logo.webp",
         width: 1024,
         height: 675,
         alt: "Ulaş Balıkçılık Menü",

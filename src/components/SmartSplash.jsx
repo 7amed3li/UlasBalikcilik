@@ -143,11 +143,11 @@ export default function SmartSplash() {
       <div className="stage">
         <Image
           className="logo-layer"
-          src="/ulas-logo.jpg"
+          src="/ulas-logo.webp"
           alt="Ulaş Balıkçılık Logo"
           fill
           priority
-          unoptimized={true}
+         
           sizes="280px"
           style={{ objectFit: "contain", padding: "10px" }}
         />

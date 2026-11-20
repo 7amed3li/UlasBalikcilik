@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ULAS_CONFIG } from "@/data/ulasConfig";
+import ReservationModal from "@/components/ReservationModal";
 
 /* Palette — logo hue line, 60-30-10 */
 const C = {
@@ -30,20 +31,20 @@ const SIGNATURE = [
     name: "Levrek Izgara",
     price: "600 ₺",
     line: "Kömür ateşinde derisi çıtır, içi sulu — bütün levrek.",
-    src: "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-levrek__3535450.jpg",
+    src: "/images/ulas_photos/BA07-levrek-izgara.webp",
   },
   {
     name: "Hamsi Tava",
     price: "500 ₺",
     line: "Mısır ununa bulanıp tavada çıtırdayan Karadeniz hamsisi.",
-    src: "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__hamsi-tava__3535417.jpg",
+    src: "/images/ulas_photos/KL20-hamsi-tava.webp",
     icon: true,
   },
   {
     name: "Kalamar Tava",
     price: "500 ₺",
     line: "Altın sarısı çıtır kaplama, içi yumuşacık taze kalamar.",
-    src: "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__kalamar-tava__3535430.jpg",
+    src: "/images/ulas_photos/KL32-kalamar-tava.webp",
   },
 ];
 
@@ -132,7 +133,7 @@ export function LuxHeader({ extra = null }) {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-6 px-5 py-3 sm:px-10">
         <Link href="/" aria-label="Ulaş Balıkçılık" className="shrink-0">
-          <Image src="/ulas-logo.jpg" alt="Ulaş Balıkçılık" width={150} height={56} unoptimized className="h-10 w-auto sm:h-12" priority />
+          <Image src="/ulas-logo.webp" alt="Ulaş Balıkçılık" width={150} height={56} className="h-10 w-auto sm:h-12" priority />
         </Link>
         <nav className="hidden items-center gap-9 md:flex">
           {links.map((l) => (
@@ -166,6 +167,7 @@ export function LuxHeader({ extra = null }) {
 
 function Hero() {
   const imgRef = useRef(null);
+  const [resOpen, setResOpen] = useState(false);
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     let raf = 0;
@@ -186,11 +188,11 @@ function Hero() {
     <section className="relative flex min-h-[calc(100vh-110px)] items-center justify-center overflow-hidden text-center" style={{ background: C.sea }}>
       <div ref={imgRef} className="absolute inset-0 will-change-transform" style={{ transform: "scale(1.08)" }}>
         <Image
-          src="/images/ulas-balik-restaurant-hero.jpg"
+          src="/images/ulas-balik-restaurant-hero.webp"
           alt="Ulaş Balıkçılık sofrası"
           fill
           priority
-          unoptimized
+         
           sizes="100vw"
           style={{ objectFit: "cover" }}
         />
@@ -213,11 +215,28 @@ function Hero() {
           </p>
           <span className="h-px w-10" style={{ background: C.amber }} />
         </div>
+
+        <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
+          <Link
+            href="/menu"
+            className="lux-sans inline-flex min-w-[210px] items-center justify-center px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-white bg-[#0C96DF] hover:bg-[#104760] transition-colors duration-300"
+          >
+            Menüyü Keşfet
+          </Link>
+          <button
+            type="button"
+            onClick={() => setResOpen(true)}
+            className="lux-sans inline-flex min-w-[210px] items-center justify-center px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.22em] text-[#F4F9FB] border border-[#F4F9FB]/40 hover:border-[#EE7B3F] hover:text-[#EE7B3F] transition-colors duration-300 cursor-pointer"
+          >
+            Rezervasyon Yap
+          </button>
+        </div>
       </div>
 
       <a href="#manifesto" aria-label="Aşağı kaydır" className="absolute bottom-8 left-1/2 z-10 -translate-x-1/2">
         <span className="lux-cue block h-12 w-px" style={{ background: C.tint1 }} />
       </a>
+      <ReservationModal isOpen={resOpen} onClose={() => setResOpen(false)} />
     </section>
   );
 }
@@ -262,7 +281,7 @@ function Signature() {
                     src={d.src}
                     alt={d.name}
                     fill
-                    unoptimized
+                   
                     sizes="(min-width: 768px) 33vw, 100vw"
                     style={{ objectFit: "cover" }}
                     className="transition-transform duration-[1200ms] ease-out hover:scale-[1.03]"
@@ -422,7 +441,7 @@ export function Colophon() {
     <footer className="px-6 py-24 text-center sm:py-32" style={{ background: C.abyss, color: C.foam }}>
       <div className="mx-auto max-w-3xl">
         <div className="mx-auto inline-flex items-center justify-center p-4" style={{ background: C.foam }}>
-          <Image src="/ulas-logo.jpg" alt="Ulaş Balıkçılık" width={140} height={52} unoptimized className="h-12 w-auto" />
+          <Image src="/ulas-logo.webp" alt="Ulaş Balıkçılık" width={140} height={52} className="h-12 w-auto" />
         </div>
         <a href={PHONE_MASLAK.href} className="lux-serif mt-14 block text-[clamp(2.6rem,7vw,5rem)] leading-none">{PHONE_MASLAK.display}</a>
         <a

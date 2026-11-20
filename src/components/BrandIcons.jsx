@@ -61,6 +61,8 @@ export function CategoryIcon({ id, categoryId, className = "text-current", size 
       return <TbGlassFull size={size} className={className} />;
     case "ekonomik_menuler":
       return <TbToolsKitchen2 size={size} className={className} />;
+    case "kahvalti":
+      return <TbToolsKitchen2 size={size} className={className} />;
     default:
       return <TbFish size={size} className={className} />;
   }

@@ -8,7 +8,8 @@
     "ekmek_arasi": "Ekmek Arası",
     "tatlilar": "Tatlılar",
     "icecekler": "İçecekler",
-    "ekonomik_menuler": "Ekonomik Menüler"
+    "ekonomik_menuler": "Ekonomik Menüler",
+    "kahvalti": "Kahvaltı"
   },
   "items": {
     "levrek_izgara": {
@@ -370,6 +371,66 @@
     "seven_up_1lt": {
       "name": "7UP (1 Lt.)",
       "desc": "1 Litre paylaşımlık boy"
+    },
+    "karides_sis": {
+      "name": "Karides Şiş",
+      "desc": "Izgarada özenle pişirilmiş taze karides şiş."
+    },
+    "kalkan_tava": {
+      "name": "Kalkan Tava",
+      "desc": "Mevsiminde taze Karadeniz kalkanı, tavada çıtır."
+    },
+    "icli_kofte": {
+      "name": "İçli Köfte",
+      "desc": "Dışı çıtır bulgur, içi özenle hazırlanmış sıcak lezzet."
+    },
+    "pancar_salatasi": {
+      "name": "Pancar Salatası",
+      "desc": "Taze haşlanmış pancar ve yeşilliklerle ferah salata."
+    },
+    "nane_limonata": {
+      "name": "Nane Limonata",
+      "desc": "Taze sıkılmış limon ve ferah nane yapraklarıyla ev yapımı limonata."
+    },
+    "cilek_limonata": {
+      "name": "Çilek Limonata",
+      "desc": "Taze çilek püresi ve limonla hazırlanan serinletici içecek."
+    },
+    "iced_mocha": {
+      "name": "Iced Mocha",
+      "desc": "Soğuk espresso, süt ve çikolata uyumuyla serin kahve."
+    },
+    "iced_latte_americano": {
+      "name": "Iced Latte & Iced Americano",
+      "desc": "Buz gibi taze demlenmiş soğuk kahve seçenekleri."
+    },
+    "redbull_mojito_alkolsuz": {
+      "name": "Redbull Mojito (Alkolsüz)",
+      "desc": "Misket limonu, taze nane ve Red Bull ile alkolsüz serinlik."
+    },
+    "misket_limonlu_mojito_alkolsuz": {
+      "name": "Taze Misket Limonlu Mojito (Alkolsüz)",
+      "desc": "Taze misket limonu ve nane ile hazırlanan alkolsüz kokteyl."
+    },
+    "caramel_vanilla_iced_latte": {
+      "name": "Caramel & Vanilla Iced Latte",
+      "desc": "Karamel veya vanilya aromalı soğuk sütlü espresso."
+    },
+    "cikolatali_milkshake": {
+      "name": "Çikolatalı Milkshake",
+      "desc": "Yoğun çikolata ve soğuk sütle hazırlanan kremsi milkshake."
+    },
+    "cilekli_milkshake": {
+      "name": "Çilekli Milkshake",
+      "desc": "Taze çilek aromalı soğuk ve kremsi milkshake."
+    },
+    "serpme_kahvalti_ulas": {
+      "name": "Serpme Kahvaltı",
+      "desc": "Zengin peynir çeşitleri, zeytin, sıcaklar ve taze demlenmiş çayla serpme kahvaltı."
+    },
+    "kahvalti_sogus_tabagi": {
+      "name": "Kahvaltı Söğüş Tabağı",
+      "desc": "Taze domates, salatalık ve mevsim yeşillikleri tabağı."
     }
   }
 }

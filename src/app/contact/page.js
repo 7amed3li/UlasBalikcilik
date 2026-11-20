@@ -33,7 +33,7 @@ export default function ContactPage() {
         <section className="rounded-3xl bg-gradient-to-r from-[#082A3A] via-[#06384E] to-[#104760] text-white p-6 sm:p-8 text-center border border-[#D6EBF5]/30 shadow-md">
           <div className="relative w-32 h-20 mx-auto mb-3 rounded-2xl bg-white p-2 border border-[#D6EBF5] shadow-xs">
             <Image
-              src="/ulas-logo.jpg"
+              src="/ulas-logo.webp"
               alt="Ulaş Balıkçılık"
               fill
               unoptimized={true}

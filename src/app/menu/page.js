@@ -72,7 +72,7 @@ const featuredDishes = [
     id: "kabak_tatlisi",
     menuItemId: "kabak_tatlisi",
     categoryId: "tatlilar",
-    image: "/images/menu_photos/tatl-lar/tatl-lar__kabak-tatl-s__3535484.jpg",
+    image: "/images/menu_photos/tatl-lar/tatl-lar__kabak-tatl-s__3535484.webp",
   },
 ];
 
@@ -296,16 +296,19 @@ export default function MenuPage() {
   useEffect(() => {
     const hash = window.location.hash.slice(1);
     if (!hash) return;
-    const [catPart, queryPart] = hash.split("?");
-    const catId = catPart?.trim();
-    if (catId && menuData.find((c) => c.id === catId)) {
-      setActiveCategory(catId);
-    }
-    if (queryPart) {
-      const params = new URLSearchParams(queryPart);
-      const filter = params.get("filter");
-      if (filter) setActiveFilter(filter);
-    }
+    const rafId = requestAnimationFrame(() => {
+      const [catPart, queryPart] = hash.split("?");
+      const catId = catPart?.trim();
+      if (catId && menuData.find((c) => c.id === catId)) {
+        setActiveCategory(catId);
+      }
+      if (queryPart) {
+        const params = new URLSearchParams(queryPart);
+        const filter = params.get("filter");
+        if (filter) setActiveFilter(filter);
+      }
+    });
+    return () => cancelAnimationFrame(rafId);
   }, []);
 
   // Persist state to URL hash whenever it changes

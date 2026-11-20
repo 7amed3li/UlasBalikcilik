@@ -16,7 +16,7 @@ export const menuData = [
         "id": "levrek_izgara",
         "categoryId": "izgaralar",
         "price": 600,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-levrek__3535450.jpg",
+        "image": "/images/ulas_photos/BA07-levrek-izgara.webp",
         "tags": [
           "signature"
         ],
@@ -32,7 +32,7 @@ export const menuData = [
         "id": "cipura_izgara",
         "categoryId": "izgaralar",
         "price": 600,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-cipura__3535444.jpg",
+        "image": "/images/ulas_photos/KL17-cipura-izgara.webp",
         "tags": [
           "signature"
         ],
@@ -48,7 +48,7 @@ export const menuData = [
         "id": "levrek_deniz_izgara",
         "categoryId": "izgaralar",
         "price": 990,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-deniz-levregi-700-gr__3535446.jpg",
+        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-deniz-levregi-700-gr__3535446.webp",
         "tags": [
           "signature"
         ],
@@ -64,7 +64,7 @@ export const menuData = [
         "id": "cipura_deniz_izgara",
         "categoryId": "izgaralar",
         "price": 990,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-deniz-cipuras-700-gr__3535445.jpg",
+        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-deniz-cipuras-700-gr__3535445.webp",
         "tags": [
           "signature"
         ],
@@ -80,7 +80,7 @@ export const menuData = [
         "id": "levrek_sis_izgara",
         "categoryId": "izgaralar",
         "price": 625,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-levrek-sis__3535451.jpg",
+        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-levrek-sis__3535451.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -94,7 +94,7 @@ export const menuData = [
         "id": "somon_dilim_izgara",
         "categoryId": "izgaralar",
         "price": 625,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-dilim-somon__3535447.jpg",
+        "image": "/images/ulas_photos/KL12-somon-dilim-izgara.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -108,7 +108,7 @@ export const menuData = [
         "id": "somon_fileto_izgara",
         "categoryId": "izgaralar",
         "price": 650,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-somon-fileto__3535457.jpg",
+        "image": "/images/ulas_photos/KL07-somon-fileto-izgara.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -122,7 +122,7 @@ export const menuData = [
         "id": "somon_sis_izgara",
         "categoryId": "izgaralar",
         "price": 670,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-somon-sis__3535458.jpg",
+        "image": "/images/ulas_photos/KL34-somon-sis-izgara.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -136,7 +136,7 @@ export const menuData = [
         "id": "lufer_izgara",
         "categoryId": "izgaralar",
         "price": 1600,
-        "image": null,
+        "image": "/images/ulas_photos/BA02-lufer-izgara.webp",
         "tags": [
           "signature"
         ],
@@ -152,7 +152,7 @@ export const menuData = [
         "id": "sari_kanat_izgara",
         "categoryId": "izgaralar",
         "price": 1000,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-sar-kanat__3535456.jpg",
+        "image": "/images/ulas_photos/KL29-sari-kanat-izgara.webp",
         "tags": [
           "signature"
         ],
@@ -168,7 +168,7 @@ export const menuData = [
         "id": "fener_sis_izgara",
         "categoryId": "izgaralar",
         "price": 800,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-fener-sis__3535448.jpg",
+        "image": "/images/ulas_photos/KL35-fener-sis-izgara.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -196,7 +196,7 @@ export const menuData = [
         "id": "citir_levrek",
         "categoryId": "izgaralar",
         "price": 650,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__c-t-r-levrek__67287747.jpg",
+        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__c-t-r-levrek__67287747.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -210,7 +210,7 @@ export const menuData = [
         "id": "palamut_izgara",
         "categoryId": "izgaralar",
         "price": 800,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-palamut__29991091.jpg",
+        "image": "/images/ulas_photos/KL14-palamut-izgara.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -224,7 +224,7 @@ export const menuData = [
         "id": "sardalya_izgara",
         "categoryId": "izgaralar",
         "price": 500,
-        "image": null,
+        "image": "/images/ulas_photos/KL26-sardalya-izgara.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -238,7 +238,7 @@ export const menuData = [
         "id": "uskumru_izgara",
         "categoryId": "izgaralar",
         "price": 500,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-uskumru__3535439.jpg",
+        "image": "/images/ulas_photos/KL13-uskumru-izgara.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -266,7 +266,7 @@ export const menuData = [
         "id": "jumbo_karides",
         "categoryId": "izgaralar",
         "price": 990,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-karides-jumbo__3535449.jpg",
+        "image": "/images/ulas_photos/KL27-jumbo-karides.webp",
         "tags": [
           "signature"
         ],
@@ -276,6 +276,20 @@ export const menuData = [
         },
         "description": {
           "en": "Succulent jumbo prawns from the grill."
+        }
+      },
+      {
+        "id": "karides_sis",
+        "categoryId": "izgaralar",
+        "price": null,
+        "image": "/images/ulas_photos/KL16-karides-sis.webp",
+        "tags": [],
+        "trending": false,
+        "name": {
+          "en": "Grilled Shrimp Skewer"
+        },
+        "description": {
+          "en": "Fresh shrimp skewered and grilled to perfection."
         }
       }
     ]
@@ -290,7 +304,7 @@ export const menuData = [
         "id": "hamsi_tava",
         "categoryId": "tavalar",
         "price": 500,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__hamsi-tava__3535417.jpg",
+        "image": "/images/ulas_photos/KL20-hamsi-tava.webp",
         "tags": [
           "signature"
         ],
@@ -306,7 +320,7 @@ export const menuData = [
         "id": "istavrit_tava",
         "categoryId": "tavalar",
         "price": 500,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__istavrit-tava__3535426.jpg",
+        "image": "/images/ulas_photos/KL18-i-stavrit-tava.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -334,7 +348,7 @@ export const menuData = [
         "id": "mezgit_tava",
         "categoryId": "tavalar",
         "price": 650,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__mezgit-tava__3535429.jpg",
+        "image": "/images/ulas_photos/KL09-mezgit-tava.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -348,7 +362,7 @@ export const menuData = [
         "id": "tekir_tava",
         "categoryId": "tavalar",
         "price": 700,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__tekir-tava__3535432.jpg",
+        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__tekir-tava__3535432.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -362,7 +376,7 @@ export const menuData = [
         "id": "barbun_tava",
         "categoryId": "tavalar",
         "price": 800,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__barbun-tava__25438005.jpg",
+        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__barbun-tava__25438005.webp",
         "tags": [
           "signature"
         ],
@@ -392,7 +406,7 @@ export const menuData = [
         "id": "dil_tava",
         "categoryId": "tavalar",
         "price": 600,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__dil-fileto__3535435.jpg",
+        "image": "/images/ulas_photos/KL49-dil-tava.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -406,7 +420,7 @@ export const menuData = [
         "id": "dil_sis_tava",
         "categoryId": "tavalar",
         "price": 600,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__dil-sis-tava__3535434.jpg",
+        "image": "/images/ulas_photos/KL15-dil-sis-tava.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -420,7 +434,7 @@ export const menuData = [
         "id": "karides_tava",
         "categoryId": "tavalar",
         "price": 500,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__karides-tava__3535433.jpg",
+        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__karides-tava__3535433.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -434,7 +448,7 @@ export const menuData = [
         "id": "kalamar_tava",
         "categoryId": "tavalar",
         "price": 500,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__kalamar-tava__3535430.jpg",
+        "image": "/images/ulas_photos/KL32-kalamar-tava.webp",
         "tags": [
           "signature"
         ],
@@ -450,7 +464,7 @@ export const menuData = [
         "id": "palamut_tava",
         "categoryId": "tavalar",
         "price": 800,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__palamut-tava__3535431.jpg",
+        "image": "/images/ulas_photos/KL08-palamut-tava.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -464,7 +478,7 @@ export const menuData = [
         "id": "balik_kokorec",
         "categoryId": "tavalar",
         "price": 550,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__bal-k-kokorec__67287751.jpg",
+        "image": "/images/ulas_photos/KL37-balik-kokorec.webp",
         "tags": [
           "spicy"
         ],
@@ -480,7 +494,7 @@ export const menuData = [
         "id": "zargana_tava",
         "categoryId": "tavalar",
         "price": 550,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__zargana-tava__3535427.jpg",
+        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__zargana-tava__3535427.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -494,7 +508,7 @@ export const menuData = [
         "id": "balik_koftesi",
         "categoryId": "tavalar",
         "price": 500,
-        "image": null,
+        "image": "/images/ulas_photos/KL28-balik-koftesi.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -508,7 +522,7 @@ export const menuData = [
         "id": "okyanus_lokumu",
         "categoryId": "tavalar",
         "price": 500,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__okyanus-lokumu__3535425.jpg",
+        "image": "/images/ulas_photos/BA04-okyanus-lokumu.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -522,7 +536,7 @@ export const menuData = [
         "id": "fener_kavurma",
         "categoryId": "tavalar",
         "price": 850,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__fener-kavurma__3535438.jpg",
+        "image": "/images/ulas_photos/KL31-fener-kavurma.webp",
         "tags": [
           "signature"
         ],
@@ -538,7 +552,7 @@ export const menuData = [
         "id": "levrek_kavurma",
         "categoryId": "tavalar",
         "price": 650,
-        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__levrek-kavurma__3535440.jpg",
+        "image": "/images/menu_photos/izgara-bal-klar/izgara-bal-klar__levrek-kavurma__3535440.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -552,7 +566,7 @@ export const menuData = [
         "id": "hamsili_pilav",
         "categoryId": "tavalar",
         "price": 500,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__hamsili-pilav__74717745.jpg",
+        "image": "/images/ulas_photos/BA11-hamsili-pilav.webp",
         "tags": [
           "signature"
         ],
@@ -568,7 +582,7 @@ export const menuData = [
         "id": "midye_tava",
         "categoryId": "tavalar",
         "price": 375,
-        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__midye-tava-16-adet__78761868.jpg",
+        "image": "/images/menu_photos/tavada-bal-klar/tavada-bal-klar__midye-tava-16-adet__78761868.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -576,6 +590,22 @@ export const menuData = [
         },
         "description": {
           "en": "Crispy battered fried mussels."
+        }
+      },
+      {
+        "id": "kalkan_tava",
+        "categoryId": "tavalar",
+        "price": null,
+        "image": "/images/ulas_photos/KL50-kalkan-tava.webp",
+        "tags": [
+          "signature"
+        ],
+        "trending": false,
+        "name": {
+          "en": "Pan-Fried Turbot (Kalkan)"
+        },
+        "description": {
+          "en": "Seasonal Black Sea turbot pan-fried until crisp."
         }
       }
     ]
@@ -590,7 +620,7 @@ export const menuData = [
         "id": "midye_dolma",
         "categoryId": "mezeler",
         "price": 20,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__midye-dolma-adet__3535459.jpg",
+        "image": "/images/ulas_photos/KL30-midye-dolma.webp",
         "tags": [
           "signature"
         ],
@@ -606,7 +636,7 @@ export const menuData = [
         "id": "ahtapot_salatasi",
         "categoryId": "mezeler",
         "price": 500,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__ahtapot-salatas__3535468.jpg",
+        "image": "/images/ulas_photos/KL48-ahtapot-salatasi.webp",
         "tags": [
           "signature"
         ],
@@ -622,7 +652,7 @@ export const menuData = [
         "id": "deniz_urunleri_salatasi",
         "categoryId": "mezeler",
         "price": 500,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__deniz-urunleri-salatas__3535481.jpg",
+        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__deniz-urunleri-salatas__3535481.webp",
         "tags": [
           "signature"
         ],
@@ -638,7 +668,7 @@ export const menuData = [
         "id": "isli_midye",
         "categoryId": "mezeler",
         "price": 500,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__isli-midye-200-gr__3535473.jpg",
+        "image": "/images/ulas_photos/KL46-i-sli-midye.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -652,7 +682,7 @@ export const menuData = [
         "id": "lekarda",
         "categoryId": "mezeler",
         "price": 500,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__lakerda-200-gr__3535469.jpg",
+        "image": "/images/ulas_photos/KL47-lakerda.webp",
         "tags": [
           "signature"
         ],
@@ -668,7 +698,7 @@ export const menuData = [
         "id": "ciroz",
         "categoryId": "mezeler",
         "price": 500,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__uskumru-ciroz-250-gr__3535472.jpg",
+        "image": "/images/ulas_photos/KL44-ciroz.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -682,7 +712,7 @@ export const menuData = [
         "id": "karides_sogus",
         "categoryId": "mezeler",
         "price": 550,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__karides-sogus-200-gr__3535471.jpg",
+        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__karides-sogus-200-gr__3535471.webp",
         "tags": [
           "signature"
         ],
@@ -702,7 +732,7 @@ export const menuData = [
         "id": "hamsi_soslu",
         "categoryId": "mezeler",
         "price": 400,
-        "image": null,
+        "image": "/images/ulas_photos/KL43-hamsi-soslu.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -716,7 +746,7 @@ export const menuData = [
         "id": "arnavut_cigeri",
         "categoryId": "mezeler",
         "price": 350,
-        "image": "/images/menu_photos/cigerler/cigerler__tavuk-cigeri-150-gr__3535474.jpg",
+        "image": "/images/ulas_photos/KL51-arnavut-cigeri.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -730,7 +760,7 @@ export const menuData = [
         "id": "peynir_dolgulu_kirmizi_biber",
         "categoryId": "mezeler",
         "price": 450,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__peynir-dolgulu-kiraz-biber-250-gr__3535480.jpg",
+        "image": "/images/ulas_photos/KL45-peynir-dolgulu-kirmizi-biber.webp",
         "tags": [
           "vegetarian",
           "spicy"
@@ -747,7 +777,7 @@ export const menuData = [
         "id": "saksuka_ulas",
         "categoryId": "mezeler",
         "price": 300,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__saksuka-200-gr__3535478.jpg",
+        "image": "/images/ulas_photos/KL05-saksuka.webp",
         "tags": [
           "vegetarian",
           "vegan"
@@ -764,7 +794,7 @@ export const menuData = [
         "id": "acili_ezme",
         "categoryId": "mezeler",
         "price": 250,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__ac-l-ezme-250-gr__3535479.jpg",
+        "image": "/images/ulas_photos/KL02-acili-ezme.webp",
         "tags": [
           "vegetarian",
           "vegan",
@@ -782,7 +812,7 @@ export const menuData = [
         "id": "haydari",
         "categoryId": "mezeler",
         "price": 250,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__haydari-200-gr__3535475.jpg",
+        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__haydari-200-gr__3535475.webp",
         "tags": [
           "vegetarian"
         ],
@@ -798,7 +828,7 @@ export const menuData = [
         "id": "patlican_ezmesi",
         "categoryId": "mezeler",
         "price": 250,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__patl-can-ezmesi-200-gr__3535477.jpg",
+        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__patl-can-ezmesi-200-gr__3535477.webp",
         "tags": [
           "vegetarian",
           "vegan"
@@ -815,7 +845,7 @@ export const menuData = [
         "id": "rus_salatasi",
         "categoryId": "mezeler",
         "price": 250,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__rus-salatas-250-gr__3535476.jpg",
+        "image": "/images/ulas_photos/KL03-rus-salatasi.webp",
         "tags": [
           "vegetarian"
         ],
@@ -831,7 +861,7 @@ export const menuData = [
         "id": "humus_ulas",
         "categoryId": "mezeler",
         "price": 250,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__humus__3535464.jpg",
+        "image": "/images/ulas_photos/KL06-humus.webp",
         "tags": [
           "vegetarian",
           "vegan"
@@ -848,7 +878,7 @@ export const menuData = [
         "id": "havuc_tarator_ulas",
         "categoryId": "mezeler",
         "price": 250,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__havuc-tarama__3535462.jpg",
+        "image": "/images/ulas_photos/KL01-havuc-tarator.webp",
         "tags": [
           "vegetarian"
         ],
@@ -864,7 +894,7 @@ export const menuData = [
         "id": "patates_ulas",
         "categoryId": "mezeler",
         "price": 200,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__patates-k-zartmas__3535483.jpg",
+        "image": "/images/ulas_photos/KL41-patates-kizartmasi.webp",
         "tags": [
           "vegetarian",
           "vegan"
@@ -881,7 +911,7 @@ export const menuData = [
         "id": "sigara_boregi_ulas",
         "categoryId": "mezeler",
         "price": 200,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__sigara-boregi-4-adet__74076737.jpg",
+        "image": "/images/ulas_photos/KL42-sigara-boregi.webp",
         "tags": [
           "vegetarian"
         ],
@@ -891,6 +921,20 @@ export const menuData = [
         },
         "description": {
           "en": "Crispy rolled phyllo pastry stuffed with cheese."
+        }
+      },
+      {
+        "id": "icli_kofte",
+        "categoryId": "mezeler",
+        "price": null,
+        "image": "/images/ulas_photos/KL25-i-cli-kofte.webp",
+        "tags": [],
+        "trending": false,
+        "name": {
+          "en": "Stuffed Bulgur Meatballs (İçli Köfte)"
+        },
+        "description": {
+          "en": "Crispy bulgur shell with savory seasoned filling."
         }
       }
     ]
@@ -905,7 +949,7 @@ export const menuData = [
         "id": "balik_corbasi",
         "categoryId": "corbalar",
         "price": 250,
-        "image": "/images/menu_photos/corbalar/corbalar__bal-k-corbas__3535416.jpg",
+        "image": "/images/ulas_photos/KL38-balik-corbasi.webp",
         "tags": [
           "signature"
         ],
@@ -921,7 +965,7 @@ export const menuData = [
         "id": "mercimek_corbasi",
         "categoryId": "corbalar",
         "price": 200,
-        "image": "/images/menu_photos/corbalar/corbalar__mercimek-corbas__80067292.jpg",
+        "image": "/images/ulas_photos/KL39-mercimek-corbasi.webp",
         "tags": [
           "vegetarian",
           "vegan"
@@ -946,7 +990,7 @@ export const menuData = [
         "id": "mevsim_salata",
         "categoryId": "salatalar",
         "price": 300,
-        "image": "/images/menu_photos/salatalar-mezeler/salatalar-mezeler__mevsim-salata__3535482.jpg",
+        "image": "/images/ulas_photos/KL11-mevsim-salata.webp",
         "tags": [
           "vegetarian",
           "vegan"
@@ -980,7 +1024,7 @@ export const menuData = [
         "id": "coban_salata_ulas",
         "categoryId": "salatalar",
         "price": 300,
-        "image": null,
+        "image": "/images/ulas_photos/KL36-coban-salata.webp",
         "tags": [
           "vegetarian",
           "vegan"
@@ -991,6 +1035,22 @@ export const menuData = [
         },
         "description": {
           "en": "Diced tomatoes, cucumbers, peppers, onions, and parsley."
+        }
+      },
+      {
+        "id": "pancar_salatasi",
+        "categoryId": "salatalar",
+        "price": null,
+        "image": "/images/ulas_photos/KL04-pancar-salatasi.webp",
+        "tags": [
+          "vegetarian"
+        ],
+        "trending": false,
+        "name": {
+          "en": "Beetroot Salad"
+        },
+        "description": {
+          "en": "Fresh roasted beetroot salad with greens and olive oil."
         }
       }
     ]
@@ -1021,7 +1081,7 @@ export const menuData = [
         "id": "ekmek_arasi_uskumru",
         "categoryId": "ekmek_arasi",
         "price": 300,
-        "image": null,
+        "image": "/images/ulas_photos/KL10-ekmek-arasi-uskumru.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1043,7 +1103,7 @@ export const menuData = [
         "id": "kabak_tatlisi",
         "categoryId": "tatlilar",
         "price": 250,
-        "image": "/images/menu_photos/tatl-lar/tatl-lar__kabak-tatl-s__3535484.jpg",
+        "image": "/images/menu_photos/tatl-lar/tatl-lar__kabak-tatl-s__3535484.webp",
         "tags": [
           "signature",
           "vegetarian",
@@ -1102,7 +1162,7 @@ export const menuData = [
         "id": "su_ulas",
         "categoryId": "icecekler",
         "price": 50,
-        "image": "/images/menu_photos/icecekler/icecekler__su-33-cl__3535508.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__su-33-cl__3535508.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1116,7 +1176,7 @@ export const menuData = [
         "id": "sade_soda",
         "categoryId": "icecekler",
         "price": 50,
-        "image": "/images/menu_photos/icecekler/icecekler__soda-20-cl__3535507.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__soda-20-cl__3535507.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1130,7 +1190,7 @@ export const menuData = [
         "id": "limonlu_soda",
         "categoryId": "icecekler",
         "price": 65,
-        "image": "/images/menu_photos/icecekler/icecekler__meyveli-soda-20-cl__3535506.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__meyveli-soda-20-cl__3535506.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1144,7 +1204,7 @@ export const menuData = [
         "id": "salgam_ulas",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__salgam-suyu-30-cl__3535505.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__salgam-suyu-30-cl__3535505.webp",
         "tags": [
           "spicy",
           "vegan",
@@ -1162,7 +1222,7 @@ export const menuData = [
         "id": "coco_cola",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-33-cl__3535498.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-33-cl__3535498.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1176,7 +1236,7 @@ export const menuData = [
         "id": "coco_cola_zero",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-zero-sugar-33-cl__3535497.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-zero-sugar-33-cl__3535497.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1190,7 +1250,7 @@ export const menuData = [
         "id": "coco_cola_light",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-light-33-cl__3535499.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-light-33-cl__3535499.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1204,7 +1264,7 @@ export const menuData = [
         "id": "coco_cola_sekersiz",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-sekersiz-33-cl__3535500.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-sekersiz-33-cl__3535500.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1222,7 +1282,7 @@ export const menuData = [
         "id": "fanta_ulas",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__fanta-33-cl__3535501.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__fanta-33-cl__3535501.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1236,7 +1296,7 @@ export const menuData = [
         "id": "sprite_ulas",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__sprite-33-cl__3535502.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__sprite-33-cl__3535502.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1250,7 +1310,7 @@ export const menuData = [
         "id": "pepsi",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__pepsi-33-cl__79431452.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__pepsi-33-cl__79431452.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1264,7 +1324,7 @@ export const menuData = [
         "id": "pepsi_max",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__pepsi-zero-sugar-33-cl__79431465.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__pepsi-zero-sugar-33-cl__79431465.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1278,7 +1338,7 @@ export const menuData = [
         "id": "yedigun",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__yedigun-33-cl__79436066.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__yedigun-33-cl__79436066.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1292,7 +1352,7 @@ export const menuData = [
         "id": "cappy_meyve_suyu",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__cappy-33-cl__3535503.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__cappy-33-cl__3535503.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1306,7 +1366,7 @@ export const menuData = [
         "id": "tropicana",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__tropicana-33-cl__79436630.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__tropicana-33-cl__79436630.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1320,7 +1380,7 @@ export const menuData = [
         "id": "ice_tea_seftali",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__fuse-tea-33-cl__3535504.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__fuse-tea-33-cl__3535504.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1334,7 +1394,7 @@ export const menuData = [
         "id": "ice_tea_limon",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__fuse-tea-33-cl__3535504.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__fuse-tea-33-cl__3535504.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1348,7 +1408,7 @@ export const menuData = [
         "id": "lipton",
         "categoryId": "icecekler",
         "price": 90,
-        "image": "/images/menu_photos/icecekler/icecekler__lipton-ice-tea-33-cl__79436624.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__lipton-ice-tea-33-cl__79436624.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1362,7 +1422,7 @@ export const menuData = [
         "id": "coco_cola_1lt",
         "categoryId": "icecekler",
         "price": 120,
-        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-1-l__3535509.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-1-l__3535509.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1376,7 +1436,7 @@ export const menuData = [
         "id": "coco_cola_zero_1lt",
         "categoryId": "icecekler",
         "price": 120,
-        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-zero-sugar-1-l__3535512.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-zero-sugar-1-l__3535512.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1390,7 +1450,7 @@ export const menuData = [
         "id": "coco_cola_light_1lt",
         "categoryId": "icecekler",
         "price": 120,
-        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-light-1-l__3535510.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-light-1-l__3535510.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1408,7 +1468,7 @@ export const menuData = [
         "id": "coco_cola_sekersiz_1lt",
         "categoryId": "icecekler",
         "price": 120,
-        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-sekersiz-1-l__3535511.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__coca-cola-sekersiz-1-l__3535511.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1426,7 +1486,7 @@ export const menuData = [
         "id": "fanta_1lt",
         "categoryId": "icecekler",
         "price": 120,
-        "image": "/images/menu_photos/icecekler/icecekler__fanta-1-l__3535513.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__fanta-1-l__3535513.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1440,7 +1500,7 @@ export const menuData = [
         "id": "sprite_1lt",
         "categoryId": "icecekler",
         "price": 120,
-        "image": "/images/menu_photos/icecekler/icecekler__sprite-1-l__3535514.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__sprite-1-l__3535514.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1458,7 +1518,7 @@ export const menuData = [
         "id": "pepsi_1lt",
         "categoryId": "icecekler",
         "price": 120,
-        "image": "/images/menu_photos/icecekler/icecekler__pepsi-1-l__79432798.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__pepsi-1-l__79432798.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1472,7 +1532,7 @@ export const menuData = [
         "id": "pepsi_max_1lt",
         "categoryId": "icecekler",
         "price": 120,
-        "image": "/images/menu_photos/icecekler/icecekler__pepsi-zero-sugar-1-l__79432801.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__pepsi-zero-sugar-1-l__79432801.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1486,7 +1546,7 @@ export const menuData = [
         "id": "yedigun_1lt",
         "categoryId": "icecekler",
         "price": 120,
-        "image": "/images/menu_photos/icecekler/icecekler__yedigun-1-l__79436068.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__yedigun-1-l__79436068.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1500,7 +1560,7 @@ export const menuData = [
         "id": "seven_up_1lt",
         "categoryId": "icecekler",
         "price": 120,
-        "image": "/images/menu_photos/icecekler/icecekler__7up-1-l__79436069.jpg",
+        "image": "/images/menu_photos/icecekler/icecekler__7up-1-l__79436069.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1508,6 +1568,140 @@ export const menuData = [
         },
         "description": {
           "en": "1 Liter bottle"
+        }
+      },
+      {
+        "id": "nane_limonata",
+        "categoryId": "icecekler",
+        "price": null,
+        "image": "/images/ulas_photos/IC01-nane-limonata.webp",
+        "tags": [
+          "vegetarian"
+        ],
+        "trending": false,
+        "name": {
+          "en": "Mint Lemonade"
+        },
+        "description": {
+          "en": "House-made fresh lemonade with crushed mint leaves."
+        }
+      },
+      {
+        "id": "cilek_limonata",
+        "categoryId": "icecekler",
+        "price": null,
+        "image": "/images/ulas_photos/IC02-cilek-limonata.webp",
+        "tags": [
+          "vegetarian"
+        ],
+        "trending": false,
+        "name": {
+          "en": "Strawberry Lemonade"
+        },
+        "description": {
+          "en": "Refreshing house lemonade blended with fresh strawberries."
+        }
+      },
+      {
+        "id": "iced_mocha",
+        "categoryId": "icecekler",
+        "price": null,
+        "image": "/images/ulas_photos/IC03-iced-mocha.webp",
+        "tags": [],
+        "trending": false,
+        "name": {
+          "en": "Iced Mocha"
+        },
+        "description": {
+          "en": "Chilled espresso with milk and rich chocolate."
+        }
+      },
+      {
+        "id": "iced_latte_americano",
+        "categoryId": "icecekler",
+        "price": null,
+        "image": "/images/ulas_photos/IC04-iced-latte-ve-iced-americano.webp",
+        "tags": [],
+        "trending": false,
+        "name": {
+          "en": "Iced Latte & Iced Americano"
+        },
+        "description": {
+          "en": "Freshly brewed espresso served cold over ice."
+        }
+      },
+      {
+        "id": "redbull_mojito_alkolsuz",
+        "categoryId": "icecekler",
+        "price": null,
+        "image": "/images/ulas_photos/IC05-redbull-mojito.webp",
+        "tags": [
+          "vegetarian"
+        ],
+        "trending": false,
+        "name": {
+          "en": "Redbull Mojito (Non-Alcoholic)"
+        },
+        "description": {
+          "en": "Alcohol-free lime and mint mocktail with Red Bull."
+        }
+      },
+      {
+        "id": "misket_limonlu_mojito_alkolsuz",
+        "categoryId": "icecekler",
+        "price": null,
+        "image": "/images/ulas_photos/IC06-taze-misket-limonlu-mojito.webp",
+        "tags": [
+          "vegetarian"
+        ],
+        "trending": false,
+        "name": {
+          "en": "Fresh Lime Mojito (Non-Alcoholic)"
+        },
+        "description": {
+          "en": "Alcohol-free sparkling mocktail with fresh lime and mint."
+        }
+      },
+      {
+        "id": "caramel_vanilla_iced_latte",
+        "categoryId": "icecekler",
+        "price": null,
+        "image": "/images/ulas_photos/IC07-caramel-iced-latte-ve-iced-vanilla-latte.webp",
+        "tags": [],
+        "trending": false,
+        "name": {
+          "en": "Caramel & Vanilla Iced Latte"
+        },
+        "description": {
+          "en": "Chilled espresso with milk and caramel or vanilla."
+        }
+      },
+      {
+        "id": "cikolatali_milkshake",
+        "categoryId": "icecekler",
+        "price": null,
+        "image": "/images/ulas_photos/IC08-cikolatali-milkshake.webp",
+        "tags": [],
+        "trending": false,
+        "name": {
+          "en": "Chocolate Milkshake"
+        },
+        "description": {
+          "en": "Creamy chilled milkshake blended with rich chocolate."
+        }
+      },
+      {
+        "id": "cilekli_milkshake",
+        "categoryId": "icecekler",
+        "price": null,
+        "image": "/images/ulas_photos/IC09-cilekli-milkshake.webp",
+        "tags": [],
+        "trending": false,
+        "name": {
+          "en": "Strawberry Milkshake"
+        },
+        "description": {
+          "en": "Creamy chilled milkshake with sweet strawberry flavor."
         }
       }
     ]
@@ -1524,7 +1718,7 @@ export const menuData = [
         "id": "coca_cola_firsati_cipura",
         "categoryId": "ekonomik_menuler",
         "price": 720,
-        "image": "/images/menu_photos/coca-cola-f-rsat-menuleri/coca-cola-f-rsat-menuleri__coca-cola-f-rsat-izgara-cipura__39172111.jpg",
+        "image": "/images/menu_photos/coca-cola-f-rsat-menuleri/coca-cola-f-rsat-menuleri__coca-cola-f-rsat-izgara-cipura__39172111.webp",
         "tags": [
           "signature"
         ],
@@ -1544,7 +1738,7 @@ export const menuData = [
         "id": "menu_1",
         "categoryId": "ekonomik_menuler",
         "price": 800,
-        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-1__3535403.jpg",
+        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-1__3535403.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1562,7 +1756,7 @@ export const menuData = [
         "id": "menu_2",
         "categoryId": "ekonomik_menuler",
         "price": 800,
-        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-2__3535404.jpg",
+        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-2__3535404.webp",
         "tags": [
           "signature"
         ],
@@ -1582,7 +1776,7 @@ export const menuData = [
         "id": "menu_4",
         "categoryId": "ekonomik_menuler",
         "price": 900,
-        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-4__3535406.jpg",
+        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-4__3535406.webp",
         "tags": [
           "signature"
         ],
@@ -1602,7 +1796,7 @@ export const menuData = [
         "id": "menu_5",
         "categoryId": "ekonomik_menuler",
         "price": 900,
-        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-5__3535407.jpg",
+        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-5__3535407.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1620,7 +1814,7 @@ export const menuData = [
         "id": "menu_6",
         "categoryId": "ekonomik_menuler",
         "price": 900,
-        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-6__3535408.jpg",
+        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-6__3535408.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1638,7 +1832,7 @@ export const menuData = [
         "id": "menu_7",
         "categoryId": "ekonomik_menuler",
         "price": 900,
-        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-7__3535409.jpg",
+        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-7__3535409.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1656,7 +1850,7 @@ export const menuData = [
         "id": "menu_8",
         "categoryId": "ekonomik_menuler",
         "price": 1600,
-        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-8__3535410.jpg",
+        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-8__3535410.webp",
         "tags": [
           "signature"
         ],
@@ -1676,7 +1870,7 @@ export const menuData = [
         "id": "menu_9",
         "categoryId": "ekonomik_menuler",
         "price": 1600,
-        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-9__3535411.jpg",
+        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-9__3535411.webp",
         "tags": [
           "signature"
         ],
@@ -1696,7 +1890,7 @@ export const menuData = [
         "id": "menu_10",
         "categoryId": "ekonomik_menuler",
         "price": 1750,
-        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-10__3535412.jpg",
+        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-10__3535412.webp",
         "tags": [
           "signature"
         ],
@@ -1716,7 +1910,7 @@ export const menuData = [
         "id": "menu_13",
         "categoryId": "ekonomik_menuler",
         "price": 1600,
-        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-13__3535415.jpg",
+        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-13__3535415.webp",
         "tags": [
           "signature"
         ],
@@ -1736,7 +1930,7 @@ export const menuData = [
         "id": "menu_14",
         "categoryId": "ekonomik_menuler",
         "price": 900,
-        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-14__67288279.jpg",
+        "image": "/images/menu_photos/ekonomik-menuler/ekonomik-menuler__menu-14__67288279.webp",
         "tags": [],
         "trending": false,
         "name": {
@@ -1748,6 +1942,46 @@ export const menuData = [
           "tr": "Çıtır Levrek + Patates Kızartması + Kutu İçecek",
           "en": "Crispy Sea Bass + French Fries + Soft Drink",
           "ar": "سمك قاروص مقرمش + بطاطس مقلية + مشروب غازي"
+        }
+      }
+    ]
+  },
+  {
+    "id": "kahvalti",
+    "category": {
+      "en": "Breakfast"
+    },
+    "items": [
+      {
+        "id": "serpme_kahvalti_ulas",
+        "categoryId": "kahvalti",
+        "price": null,
+        "image": "/images/ulas_photos/KA01-serpme-kahvalti.webp",
+        "tags": [
+          "signature"
+        ],
+        "trending": false,
+        "name": {
+          "en": "Traditional Turkish Spread Breakfast"
+        },
+        "description": {
+          "en": "Rich spread of cheeses, olives, warm pastries, and fresh tea."
+        }
+      },
+      {
+        "id": "kahvalti_sogus_tabagi",
+        "categoryId": "kahvalti",
+        "price": null,
+        "image": "/images/ulas_photos/KA06-kahvalti-sogus-tabagi.webp",
+        "tags": [
+          "vegetarian"
+        ],
+        "trending": false,
+        "name": {
+          "en": "Fresh Breakfast Crudités Plate"
+        },
+        "description": {
+          "en": "Fresh sliced tomatoes, cucumbers, and seasonal greens."
         }
       }
     ]

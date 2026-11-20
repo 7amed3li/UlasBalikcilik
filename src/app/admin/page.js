@@ -60,7 +60,7 @@ export default function AdminLogin() {
         <div className="flex flex-col items-center mb-6">
           <div className="relative w-32 h-20 rounded-2xl bg-white p-2 border border-[#D6EBF5] shadow-xs mb-3">
             <Image
-              src="/ulas-logo.jpg"
+              src="/ulas-logo.webp"
               alt="Ulaş Balıkçılık"
               fill
               unoptimized={true}

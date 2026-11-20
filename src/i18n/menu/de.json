@@ -7,7 +7,8 @@
     "salatalar": "Salate",
     "ekmek_arasi": "Fischbrötchen",
     "tatlilar": "Desserts",
-    "icecekler": "Getränke"
+    "icecekler": "Getränke",
+    "kahvalti": "Frühstück"
   },
   "items": {
     "levrek_izgara": {
@@ -369,6 +370,66 @@
     "seven_up_1lt": {
       "name": "7UP (1L)",
       "desc": "1 Liter bottle"
+    },
+    "karides_sis": {
+      "name": "Grilled Shrimp Skewer",
+      "desc": "Fresh shrimp skewered and grilled to perfection."
+    },
+    "kalkan_tava": {
+      "name": "Pan-Fried Turbot (Kalkan)",
+      "desc": "Seasonal Black Sea turbot pan-fried until crisp."
+    },
+    "icli_kofte": {
+      "name": "Stuffed Bulgur Meatballs (İçli Köfte)",
+      "desc": "Crispy bulgur shell with savory seasoned filling."
+    },
+    "pancar_salatasi": {
+      "name": "Beetroot Salad",
+      "desc": "Fresh roasted beetroot salad with greens and olive oil."
+    },
+    "nane_limonata": {
+      "name": "Mint Lemonade",
+      "desc": "House-made fresh lemonade with crushed mint leaves."
+    },
+    "cilek_limonata": {
+      "name": "Strawberry Lemonade",
+      "desc": "Refreshing house lemonade blended with fresh strawberries."
+    },
+    "iced_mocha": {
+      "name": "Iced Mocha",
+      "desc": "Chilled espresso with milk and rich chocolate."
+    },
+    "iced_latte_americano": {
+      "name": "Iced Latte & Iced Americano",
+      "desc": "Freshly brewed espresso served cold over ice."
+    },
+    "redbull_mojito_alkolsuz": {
+      "name": "Redbull Mojito (Non-Alcoholic)",
+      "desc": "Alcohol-free lime and mint mocktail with Red Bull."
+    },
+    "misket_limonlu_mojito_alkolsuz": {
+      "name": "Fresh Lime Mojito (Non-Alcoholic)",
+      "desc": "Alcohol-free sparkling mocktail with fresh lime and mint."
+    },
+    "caramel_vanilla_iced_latte": {
+      "name": "Caramel & Vanilla Iced Latte",
+      "desc": "Chilled espresso with milk and caramel or vanilla."
+    },
+    "cikolatali_milkshake": {
+      "name": "Chocolate Milkshake",
+      "desc": "Creamy chilled milkshake blended with rich chocolate."
+    },
+    "cilekli_milkshake": {
+      "name": "Strawberry Milkshake",
+      "desc": "Creamy chilled milkshake with sweet strawberry flavor."
+    },
+    "serpme_kahvalti_ulas": {
+      "name": "Traditional Turkish Spread Breakfast",
+      "desc": "Rich spread of cheeses, olives, warm pastries, and fresh tea."
+    },
+    "kahvalti_sogus_tabagi": {
+      "name": "Fresh Breakfast Crudités Plate",
+      "desc": "Fresh sliced tomatoes, cucumbers, and seasonal greens."
     }
   }
 }

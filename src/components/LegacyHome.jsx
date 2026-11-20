@@ -95,11 +95,11 @@ export default function Home() {
           {/* Background Seafood Table Photography */}
           <div className="absolute inset-0 z-0">
             <Image
-              src="/images/ulas-balik-restaurant-hero.jpg"
+              src="/images/ulas-balik-restaurant-hero.webp"
               alt="Ulaş Balıkçılık — Taze Deniz Ürünleri"
               fill
               priority
-              unoptimized={true}
+             
               style={{ objectFit: "cover", objectPosition: "center" }}
               className="opacity-25 scale-105 mix-blend-luminosity"
             />
@@ -199,10 +199,10 @@ export default function Home() {
                   className="group relative h-36 sm:h-44 rounded-2xl overflow-hidden border border-white/30 shadow-lg bg-[#104760]"
                 >
                   <Image
-                    src="/images/menu_photos/izgara-bal-klar/izgara-bal-klar__izgara-levrek__3535450.jpg"
+                    src="/images/ulas_photos/BA07-levrek-izgara.webp"
                     alt="Izgara Levrek"
                     fill
-                    unoptimized={true}
+                   
                     style={{ objectFit: "cover" }}
                     className="group-hover:scale-105 transition-transform duration-300"
                   />
@@ -224,10 +224,10 @@ export default function Home() {
                   className="group relative h-36 sm:h-44 rounded-2xl overflow-hidden border border-white/30 shadow-lg bg-[#104760]"
                 >
                   <Image
-                    src="/images/menu_photos/tavada-bal-klar/tavada-bal-klar__hamsi-tava__3535417.jpg"
+                    src="/images/ulas_photos/KL20-hamsi-tava.webp"
                     alt="Karadeniz Hamsi Tava"
                     fill
-                    unoptimized={true}
+                   
                     style={{ objectFit: "cover" }}
                     className="group-hover:scale-105 transition-transform duration-300"
                   />
@@ -249,10 +249,10 @@ export default function Home() {
                   className="group relative h-32 sm:h-36 rounded-2xl overflow-hidden border border-white/30 shadow-lg bg-[#104760] col-span-2"
                 >
                   <Image
-                    src="/images/menu_photos/tavada-bal-klar/tavada-bal-klar__kalamar-tava__3535430.jpg"
+                    src="/images/ulas_photos/KL32-kalamar-tava.webp"
                     alt="Kalamar Tava & Mezeler"
                     fill
-                    unoptimized={true}
+                   
                     style={{ objectFit: "cover" }}
                     className="group-hover:scale-105 transition-transform duration-300"
                   />
@@ -549,7 +549,7 @@ export default function Home() {
         <div className="bg-[#F4F9FB] border border-[#D6EBF5] rounded-2xl p-6 sm:p-8 shadow-xs flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="relative w-full md:w-64 h-44 sm:h-48 shrink-0 rounded-2xl overflow-hidden border border-[#D6EBF5] shadow-sm">
             <Image
-              src="/images/ulas-balik-restaurant-hero.jpg"
+              src="/images/ulas-balik-restaurant-hero.webp"
               alt="Ulaş Balıkçılık"
               fill
               style={{ objectFit: "cover" }}

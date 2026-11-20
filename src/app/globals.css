@@ -283,10 +283,10 @@ h1, h2, h3, h4, h5, h6 {
    LUXURY HOMEPAGE — type & motion
    ========================================================================== */
 
-.lux-serif { font-family: "Cormorant Garamond", "Playfair Display", Georgia, serif; font-weight: 500; }
-.lux-sans  { font-family: "Manrope", "Inter", system-ui, sans-serif; }
+.lux-serif { font-family: var(--font-cormorant), "Cormorant Garamond", Georgia, serif; font-weight: 500; }
+.lux-sans  { font-family: var(--font-manrope), "Manrope", system-ui, sans-serif; }
 .lux-kicker {
-  font-family: "Manrope", "Inter", system-ui, sans-serif;
+  font-family: var(--font-manrope), "Manrope", system-ui, sans-serif;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.28em;

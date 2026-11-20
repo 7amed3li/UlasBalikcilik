@@ -30,7 +30,7 @@ export const ULAS_CONFIG = {
     zh: "海鲜鱼类餐厅 • Cihangir & Maslak 1453",
   },
   logoPath: "/ulas-logo.webp",
-  logoJpgPath: "/ulas-logo.jpg",
+  logoJpgPath: "/ulas-logo.webp",
   instagramUrl: "https://www.instagram.com/ulasbalik/",
   instagramHandle: "@ulasbalik",
   branches: {

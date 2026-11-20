@@ -103,7 +103,7 @@ export default function AboutPage() {
         <section className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#082A3A] via-[#06384E] to-[#104760] text-white p-6 sm:p-10 text-center border border-[#D6EBF5]/30 shadow-lg">
           <div className="relative w-44 h-20 mx-auto mb-4 rounded-2xl bg-white p-2.5 border border-[#D6EBF5] shadow-md">
             <Image
-              src="/ulas-logo.jpg"
+              src="/ulas-logo.webp"
               alt="Ulaş Balıkçılık Logo"
               fill
               unoptimized={true}
