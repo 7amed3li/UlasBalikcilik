@@ -24,17 +24,22 @@ export default function DeepMenuSchema({ locale = "tr" }) {
       const itemDesc =
         mt.items?.[item.id]?.desc || item.description?.[locale] || item.description?.tr || "";
 
+      const livePrice = getLivePrice(item);
       const menuItem = {
         "@type": "MenuItem",
         name: itemName,
         description: itemDesc,
         url: `${menuUrl}#${item.id}`,
-        offers: {
-          "@type": "Offer",
-          price: getLivePrice(item) || 0,
-          priceCurrency: "TRY",
-          availability: "https://schema.org/InStock",
-        },
+        ...(livePrice > 0
+          ? {
+              offers: {
+                "@type": "Offer",
+                price: livePrice,
+                priceCurrency: "TRY",
+                availability: "https://schema.org/InStock",
+              },
+            }
+          : {}),
       };
 
       if (item.image) {
@@ -61,7 +66,7 @@ export default function DeepMenuSchema({ locale = "tr" }) {
     name: `Ulaş Balıkçılık — Fish & Seafood Menu (${locale.toUpperCase()})`,
     url: menuUrl,
     mainEntityOfPage: menuUrl,
-    isPartOf: { "@id": `${baseUrl}/#restaurant` },
+    isPartOf: { "@id": `${baseUrl}/#restaurant-cihangir` },
     hasMenuSection,
   };
 

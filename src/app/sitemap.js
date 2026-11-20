@@ -32,14 +32,36 @@ export default async function sitemap() {
     },
   ];
 
-  locales.forEach((loc) => {
-    pages.push({
-      url: `${baseUrl}/${loc}/menu`,
-      lastModified: currentDate,
-      changeFrequency: "daily",
-      priority: 0.9,
+  locales
+    .filter((loc) => loc !== "tr")
+    .forEach((loc) => {
+      pages.push(
+        {
+          url: `${baseUrl}/${loc}`,
+          lastModified: currentDate,
+          changeFrequency: "daily",
+          priority: 0.9,
+        },
+        {
+          url: `${baseUrl}/${loc}/menu`,
+          lastModified: currentDate,
+          changeFrequency: "daily",
+          priority: 0.9,
+        },
+        {
+          url: `${baseUrl}/${loc}/about`,
+          lastModified: currentDate,
+          changeFrequency: "monthly",
+          priority: 0.75,
+        },
+        {
+          url: `${baseUrl}/${loc}/contact`,
+          lastModified: currentDate,
+          changeFrequency: "monthly",
+          priority: 0.8,
+        }
+      );
     });
-  });
 
   menuData.forEach((cat) => {
     (cat.items || []).forEach((item) => {

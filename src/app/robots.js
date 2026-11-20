@@ -5,7 +5,24 @@ export default function robots() {
     rules: [
       {
         userAgent: "*",
-        allow: ["/"],
+        allow: ["/", "/llms.txt"],
+        disallow: ["/api/", "/admin/"],
+      },
+      {
+        userAgent: [
+          "Googlebot",
+          "Bingbot",
+          "Yandex",
+          "OAI-SearchBot",
+          "ChatGPT-User",
+          "GPTBot",
+          "PerplexityBot",
+          "ClaudeBot",
+          "anthropic-ai",
+          "Google-Extended",
+          "Applebot-Extended",
+        ],
+        allow: ["/", "/llms.txt"],
         disallow: ["/api/", "/admin/"],
       },
     ],

@@ -187,8 +187,15 @@ const globalSchemaGraph = {
           { "@type": "MenuSection", name: "Ekmek Arası" },
           { "@type": "MenuSection", name: "Tatlılar" },
           { "@type": "MenuSection", name: "İçecekler" },
+          { "@type": "MenuSection", name: "Kahvaltı" },
         ],
       },
+      acceptsReservations: "True",
+      amenityFeature: [
+        { "@type": "LocationFeatureSpecification", name: "Alcohol-Free Family Restaurant", value: true },
+        { "@type": "LocationFeatureSpecification", name: "Daily Fresh Black Sea Fish", value: true },
+        { "@type": "LocationFeatureSpecification", name: "Transparent Published Menu Prices", value: true },
+      ],
       department: [
         {
           "@type": "Restaurant",
@@ -202,10 +209,51 @@ const globalSchemaGraph = {
             addressRegion: "İstanbul",
             addressCountry: "TR",
           },
-          servesCuisine: ["Seafood", "Fish", "Turkish"],
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: "4.9",
+            bestRating: "5",
+            worstRating: "1",
+          },
+          servesCuisine: ["Seafood", "Fish", "Turkish", "Black Sea"],
+          priceRange: "₺₺",
+          acceptsReservations: "True",
         },
       ],
-      sameAs: ["https://www.instagram.com/ulasbalik/"],
+      sameAs: [
+        "https://www.instagram.com/ulasbalik_restaurant/",
+        "https://www.instagram.com/ulasbalik/",
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${siteUrl}/#faq`,
+      mainEntity: [
+        {
+          "@type": "Question",
+          name: "Ulaş Balıkçılık alkolsüz bir aile restoranı mı?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Evet, Ulaş Balıkçılık hem Cihangir hem de Maslak 1453 şubelerinde %100 alkolsüz, aile dostu bir balık ve deniz ürünleri restoranıdır.",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Ulaş Balıkçılık şubeleri nerede ve telefon numaraları nedir?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Cihangir şubesi Kuloğlu, Liva Sk. No: 15/A Beyoğlu/İstanbul adresindedir (0212 434 25 02). Maslak 1453 şubesi Ağaoğlu Maslak 1453 Sarıyer/İstanbul adresindedir (0212 813 57 57).",
+          },
+        },
+        {
+          "@type": "Question",
+          name: "Balıklar günlük taze mi geliyor ve fiyatlar şeffaf mı?",
+          acceptedAnswer: {
+            "@type": "Answer",
+            text: "Evet, şefimiz her gece 01.00'de İstanbul balık halinden günlük taze Karadeniz balıklarını bizzat seçer. Tüm menü fiyatları web sitemizde şeffaf olarak yayınlanmaktadır.",
+          },
+        },
+      ],
     },
     {
       "@type": "WebSite",
